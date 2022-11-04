@@ -1,6 +1,6 @@
 package es.deusto.ingenieria.sd.auctions.server.services;
 
-import es.deusto.ingenieria.sd.auctions.server.data.domain.User;
+import DatosUsuario.User;
 
 //TODO: Implement Singleton Pattern
 public class LoginAppService {

@@ -7,9 +7,9 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import es.deusto.ingenieria.sd.auctions.server.data.domain.Article;
-import es.deusto.ingenieria.sd.auctions.server.data.domain.Category;
-import es.deusto.ingenieria.sd.auctions.server.data.domain.User;
+import DatosUsuario.Article;
+import DatosUsuario.Category;
+import DatosUsuario.User;
 import es.deusto.ingenieria.sd.auctions.server.data.dto.ArticleAssembler;
 import es.deusto.ingenieria.sd.auctions.server.data.dto.ArticleDTO;
 import es.deusto.ingenieria.sd.auctions.server.data.dto.CategoryAssembler;

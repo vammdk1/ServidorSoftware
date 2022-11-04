@@ -1,6 +1,6 @@
 package es.deusto.ingenieria.sd.auctions.server.data.dto;
 
-import es.deusto.ingenieria.sd.auctions.server.data.domain.User;
+import DatosUsuario.User;
 
 //This class is part of the DTO pattern. It also implements Singleton Pattern.
 public class UserAssembler {

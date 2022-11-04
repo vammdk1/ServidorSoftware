@@ -5,10 +5,10 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
 
-import es.deusto.ingenieria.sd.auctions.server.data.domain.Article;
-import es.deusto.ingenieria.sd.auctions.server.data.domain.Bid;
-import es.deusto.ingenieria.sd.auctions.server.data.domain.Category;
-import es.deusto.ingenieria.sd.auctions.server.data.domain.User;
+import DatosUsuario.Article;
+import DatosUsuario.Bid;
+import DatosUsuario.Category;
+import DatosUsuario.User;
 
 //TODO: Implement Singleton Pattern
 public class BidAppService {

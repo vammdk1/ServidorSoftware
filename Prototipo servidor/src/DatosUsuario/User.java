@@ -1,4 +1,4 @@
-package es.deusto.ingenieria.sd.auctions.server.data.domain;
+package DatosUsuario;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -12,8 +12,18 @@ public class User {
 	private float peso;
 	private int altura;
 	private int pulsoxMinuto;
-	private int pusoReposo;
+	private int pulsoReposo;
 	//private "nose" token;
+	
+	public User(String nombre,String email,Date fechaNac,float peso,int altura,int pulsoxMinuto,int pulsoReposo) {
+		this.nombre=nombre;
+		this.email=email;
+		this.fechaNac=fechaNac;
+		this.peso=peso;
+		this.altura=altura;
+		this.pulsoxMinuto=pulsoxMinuto;
+		this.pulsoReposo=pulsoReposo;
+	}
 		
 	public String getNombre() {
 		return nombre;
@@ -63,12 +73,12 @@ public class User {
 		this.pulsoxMinuto = pulsoxMinuto;
 	}
 
-	public int getPusoReposo() {
-		return pusoReposo;
+	public int getPulsoReposo() {
+		return pulsoReposo;
 	}
 
-	public void setPusoReposo(int pusoReposo) {
-		this.pusoReposo = pusoReposo;
+	public void setPulsoReposo(int pulsoReposo) {
+		this.pulsoReposo = pulsoReposo;
 	}
 
 	@Override
