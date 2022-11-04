@@ -1,29 +1,26 @@
 package es.deusto.ingenieria.sd.auctions.server.data.domain;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 public class User {	
-	private String nickname;
-	private String password;
+	//fecha nac, peso ,altura, frec car 1 , frec car 2,token token
+	private String nombre;
 	private String email;
-	private List<Bid> bids = new ArrayList<>();
-	private List<Article> articles = new ArrayList<>();
+	private Date fechaNac;
+	private float peso;
+	private int altura;
+	private int pulsoxMinuto;
+	private int pusoReposo;
+	//private "nose" token;
 		
-	public String getNickname() {
-		return nickname;
+	public String getNombre() {
+		return nombre;
 	}
 	
-	public void setNickname(String nickname) {
-		this.nickname = nickname;
-	}
-	
-	public boolean checkPassword(String password) {
-		return this.password.equals(password);
-	}
-	
-	public void setPassword(String password) {
-		this.password = password;
+	public void setNombre(String nickname) {
+		this.nombre = nombre;
 	}
 	
 	public String getEmail() {
@@ -33,47 +30,54 @@ public class User {
 	public void setEmail(String email) {
 		this.email = email;
 	}
-	
-	public List<Bid> getBids() {
-		return bids;
+			
+	public Date getFechaNac() {
+		return fechaNac;
 	}
-	
-	public void setBids(List<Bid> bids) {
-		this.bids = bids;
+
+	public void setFechaNac(Date fechaNac) {
+		this.fechaNac = fechaNac;
 	}
-	
-	public void addBid(Bid bid) {
-		if (bid != null && !this.bids.contains(bid)) {
-			this.bids.add(bid);
-		}
+
+	public float getPeso() {
+		return peso;
 	}
-	
-	public List<Article> getArticles() {
-		return articles;
+
+	public void setPeso(float peso) {
+		this.peso = peso;
 	}
-	
-	public void setArticles(List<Article> articles) {
-		this.articles = articles;
+
+	public int getAltura() {
+		return altura;
 	}
-	
-	public void addArticle(Article article) {
-		if (article != null && !this.articles.contains(article)) {
-			this.articles.add(article);
-		}
+
+	public void setAltura(int altura) {
+		this.altura = altura;
 	}
-		
+
+	public int getPulsoxMinuto() {
+		return pulsoxMinuto;
+	}
+
+	public void setPulsoxMinuto(int pulsoxMinuto) {
+		this.pulsoxMinuto = pulsoxMinuto;
+	}
+
+	public int getPusoReposo() {
+		return pusoReposo;
+	}
+
+	public void setPusoReposo(int pusoReposo) {
+		this.pusoReposo = pusoReposo;
+	}
+
 	@Override
 	public String toString() {
 		StringBuffer result = new StringBuffer();
 		
-		result.append(this.nickname);
+		result.append(this.nombre);
 		result.append(" - ");
 		result.append(this.email);
-		result.append(" - (");
-		result.append(this.articles.size());
-		result.append(" articles) - (");
-		result.append(this.bids.size());
-		result.append(" bids)");
 		
 		return result.toString();
 	}
