@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
+import Funcionalidad.Reto;
+
 public class User {	
 	//fecha nac, peso ,altura, frec car 1 , frec car 2,token token
 	private String nombre;
@@ -14,6 +16,8 @@ public class User {
 	private int pulsoxMinuto;
 	private int pulsoReposo;
 	//private "nose" token;
+	
+	private ArrayList<Reto> retos = new ArrayList<>();
 	
 	public User(String nombre,String email,Date fechaNac,float peso,int altura,int pulsoxMinuto,int pulsoReposo) {
 		this.nombre=nombre;
@@ -99,5 +103,21 @@ public class User {
 		}
 		
 		return false;
+	}
+	
+	public void anadirReto(Reto r) {
+		retos.add(r);
+	}
+	
+	
+	public ArrayList<Reto> getRetosActivos() {
+		ArrayList<Reto> retosActivos = new ArrayList<>();
+		for (Reto r:retos) {
+			if(new Date().compareTo(r.getFechaFin())<0) {
+				retosActivos.add(r);
+			}
+		}
+		return retosActivos;
+		
 	}
 }

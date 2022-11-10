@@ -11,7 +11,7 @@ public class Reto {
 	private String deporte;
 	
 	/**
-	 * Crea un reto
+	 * 
 	 * @param nombre
 	 * @param fechaIni
 	 * @param fechaFin
