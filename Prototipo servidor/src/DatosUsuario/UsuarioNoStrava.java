@@ -8,7 +8,7 @@ public class UsuarioNoStrava extends User{
 	/**
 	 * @param GoogleFacebookc True para google y False para Facebook
 	 */
-	public UsuarioNoStrava(String nombre, String email, Date fechaNac, float peso, int altura, int pulsoxMinuto,
+	public UsuarioNoStrava(String nombre, String email, String fechaNac, float peso, int altura, int pulsoxMinuto,
 			int pulsoReposo,boolean GoogleFacebook) {
 		super(nombre, email, fechaNac, peso, altura, pulsoxMinuto, pulsoReposo);
 		this.GoogleFacebook=GoogleFacebook;

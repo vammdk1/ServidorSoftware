@@ -8,14 +8,14 @@ public class User {
 	//fecha nac, peso ,altura, frec car 1 , frec car 2,token token
 	private String nombre;
 	private String email;
-	private Date fechaNac;
+	private String fechaNac;
 	private float peso;
 	private int altura;
 	private int pulsoxMinuto;
 	private int pulsoReposo;
 	//private "nose" token;
 	
-	public User(String nombre,String email,Date fechaNac,float peso,int altura,int pulsoxMinuto,int pulsoReposo) {
+	public User(String nombre,String email,String fechaNac,float peso,int altura,int pulsoxMinuto,int pulsoReposo) {
 		this.nombre=nombre;
 		this.email=email;
 		this.fechaNac=fechaNac;
@@ -41,11 +41,11 @@ public class User {
 		this.email = email;
 	}
 			
-	public Date getFechaNac() {
+	public String getFechaNac() {
 		return fechaNac;
 	}
 
-	public void setFechaNac(Date fechaNac) {
+	public void setFechaNac(String fechaNac) {
 		this.fechaNac = fechaNac;
 	}
 
