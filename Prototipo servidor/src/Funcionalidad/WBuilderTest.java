@@ -1,4 +1,4 @@
-package es.deusto.ingenieria.sd.auctions.server;
+package Funcionalidad;
 
 import java.awt.EventQueue;
 
