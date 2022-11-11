@@ -9,8 +9,9 @@ public class UsuarioNoStrava extends User{
 	 * @param GoogleFacebookc True para google y False para Facebook
 	 */
 	public UsuarioNoStrava(String nombre, String email, String fechaNac, float peso, int altura, int pulsoxMinuto,
-			int pulsoReposo,boolean GoogleFacebook) {
+			int pulsoReposo,String password,boolean GoogleFacebook) {
 		super(nombre, email, fechaNac, peso, altura, pulsoxMinuto, pulsoReposo);
+	
 		this.GoogleFacebook=GoogleFacebook;
 		
 	}
@@ -20,6 +21,12 @@ public class UsuarioNoStrava extends User{
 	public void setGoogleFacebook(boolean googleFacebook) {
 		GoogleFacebook = googleFacebook;
 	}
+	
+	//TODO
+	/**getContrasennaDeProovedor
+	public boolean checkPasswordProovedor(String password) {
+		return this.password.equals(password);
+	}**/
 
 	
 	

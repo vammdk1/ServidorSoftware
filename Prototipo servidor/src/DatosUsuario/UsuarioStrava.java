@@ -19,5 +19,8 @@ public class UsuarioStrava extends User{
 		this.contrasenna = contrasenna;
 	}
 	
+	public boolean checkPassword(String password) {
+		return this.contrasenna.equals(password);
+	}
 
 }

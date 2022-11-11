@@ -20,9 +20,9 @@ public class LocalTest {
 			
 		
 		try {
-			//Login
+			//Login: se intenta iniciar seción con estos datos
 			String sha1 = org.apache.commons.codec.digest.DigestUtils.sha1Hex("$!9PhNz,");
-			token = facade.login("thomas.e2001@gmail.com", sha1);			
+			token = facade.login("Victor.e2001@gmail.com", sha1);			
 			//Make a bid
 			//Logout
 			facade.logout(token);
