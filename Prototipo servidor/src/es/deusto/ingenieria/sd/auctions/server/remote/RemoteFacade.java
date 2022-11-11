@@ -1,5 +1,4 @@
 package es.deusto.ingenieria.sd.auctions.server.remote;
-
 import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;
 import java.util.Calendar;
@@ -8,18 +7,18 @@ import java.util.List;
 import java.util.Map;
 
 import DatosUsuario.User;
-import es.deusto.ingenieria.sd.auctions.server.services.BidAppService;
+import DatosUsuario.UsuarioStrava;
 import es.deusto.ingenieria.sd.auctions.server.services.LoginAppService;
+
 
 public class RemoteFacade extends UnicastRemoteObject implements IRemoteFacade {	
 	private static final long serialVersionUID = 1L;
 
 	//Data structure for manage Server State
-	private Map<Long, User> serverState = new HashMap<>();
+	private Map<Long, UsuarioStrava> serverState = new HashMap<>();
 	
 	//TODO: Remove this instances when Singleton Pattern is implemented
 	private LoginAppService loginService = new LoginAppService();
-	private BidAppService bidService = new BidAppService();
 
 	public RemoteFacade() throws RemoteException {
 		super();		
@@ -37,7 +36,7 @@ public class RemoteFacade extends UnicastRemoteObject implements IRemoteFacade {
 			//If user is not logged in 
 			if (!this.serverState.values().contains(user)) {
 				Long token = Calendar.getInstance().getTimeInMillis();		
-				this.serverState.put(token, user);		
+				this.serverState.put(token, (UsuarioStrava) user);		
 				return(token);
 			} else {
 				throw new RemoteException("User is already logged in!");
