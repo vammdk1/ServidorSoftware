@@ -5,6 +5,7 @@ import java.util.Date;
 import java.util.List;
 
 import Funcionalidad.Reto;
+import Funcionalidad.SesionEntrenamiento;
 
 public class User {	
 	//fecha nac, peso ,altura, frec car 1 , frec car 2,token token
@@ -19,6 +20,7 @@ public class User {
 	
 	
 	private ArrayList<Reto> retos = new ArrayList<>();
+	private ArrayList<SesionEntrenamiento> sesiones = new ArrayList<>();
 	
 	public User(String nombre,String email,String fechaNac,float peso,int altura,int pulsoxMinuto,int pulsoReposo) {
 
@@ -112,6 +114,12 @@ public class User {
 	}
 	
 	
+public ArrayList<Reto> getRetos() {
+		
+		return retos;
+		
+	}
+	
 	public ArrayList<Reto> getRetosActivos() {
 		ArrayList<Reto> retosActivos = new ArrayList<>();
 		for (Reto r:retos) {
@@ -120,6 +128,16 @@ public class User {
 			}
 		}
 		return retosActivos;
+		
+	}
+	
+	public void anadirSesion(SesionEntrenamiento s) {
+		sesiones.add(s);
+	}
+	
+	public ArrayList<SesionEntrenamiento> getSesiones() {
+		
+		return sesiones;
 		
 	}
 }
