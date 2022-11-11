@@ -1,4 +1,4 @@
-package es.deusto.ingenieria.sd.auctions.server;
+package es.deusto.ingenieria.sd.auctions.client;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
@@ -16,7 +16,7 @@ import javax.swing.JPasswordField;
 import javax.swing.JTextArea;
 
 public class VentanaLogin {
-	static JFrame VPrincipal = new JFrame("Loggin");
+	static JFrame VPrincipal = new JFrame("STRAVA");
 	static int x = 500;
 	static int y = 300;
 	
@@ -32,7 +32,7 @@ public class VentanaLogin {
 		JButton BRegistro = new JButton();
 		BRegistro.setText("Registrarme");
 		JButton BInicioSecion = new JButton();
-		BInicioSecion.setText("Iniciar Seción");
+		BInicioSecion.setText("Iniciar Sesion");
 			JPanel PBotones2 = new JPanel();
 		JButton BGoogle = new JButton();
 		BGoogle.setText("Iniciar con Google");
