@@ -10,30 +10,17 @@ public class LocalTest {
 
 	public static void main(String[] args) {		
 		RemoteFacade facade = null;
-		List<CategoryDTO> categories = null;
-		CategoryDTO category = null;
-		List<ArticleDTO> articles = null;
-		ArticleDTO article = null;
 		long token = 0l;
 		
 		try {
 			facade = new RemoteFacade();
 			
 			//Get Categories
-			categories = facade.getCategories();
-			category = categories.get(0);
 			
-			for (CategoryDTO c : categories) {
-				System.out.println("\t- " + c);
-			}			
+					
 						
 			//Get Articles of a Category
-			articles = facade.getArticles(category.getName());
-			article = articles.get(0);
-			
-			for (ArticleDTO a : articles) {
-				System.out.println("\t- " + a);
-			}
+		
 			
 			//Check currency conversion
 			float rateGBP = facade.getGBPRate();
@@ -43,7 +30,7 @@ public class LocalTest {
 			System.out.println("\t- USD rate = " + rateUSD);
 			
 			//Make a bid (fails because no login has been done)
-			facade.makeBid(0, article.getNumber(), article.getActualPrice()+1);						
+			facade.makeBid(0);						
 		} catch (Exception e) {			
 			System.out.println("\t# Error: " + e.getMessage());
 		} 

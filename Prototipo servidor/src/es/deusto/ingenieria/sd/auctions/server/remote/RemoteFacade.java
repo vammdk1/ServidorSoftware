@@ -7,13 +7,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import DatosUsuario.Article;
-import DatosUsuario.Category;
 import DatosUsuario.User;
-import es.deusto.ingenieria.sd.auctions.server.data.dto.ArticleAssembler;
-import es.deusto.ingenieria.sd.auctions.server.data.dto.ArticleDTO;
-import es.deusto.ingenieria.sd.auctions.server.data.dto.CategoryAssembler;
-import es.deusto.ingenieria.sd.auctions.server.data.dto.CategoryDTO;
 import es.deusto.ingenieria.sd.auctions.server.services.BidAppService;
 import es.deusto.ingenieria.sd.auctions.server.services.LoginAppService;
 
@@ -62,80 +56,6 @@ public class RemoteFacade extends UnicastRemoteObject implements IRemoteFacade {
 			this.serverState.remove(token);
 		} else {
 			throw new RemoteException("User is not logged in!");
-		}
-	}
-	
-	@Override
-	public List<CategoryDTO> getCategories() throws RemoteException {
-		System.out.println(" * RemoteFacade getCategories()");
-		
-		//Get Categories using BidAppService
-		List<Category> categories = bidService.getCategories();
-		
-		if (categories != null) {
-			//Convert domain object to DTO
-			return CategoryAssembler.getInstance().categoryToDTO(categories);
-		} else {
-			throw new RemoteException("getCategories() fails!");
-		}
-	}
-
-	@Override
-	public List<ArticleDTO> getArticles(String category) throws RemoteException {
-		System.out.println(" * RemoteFacade getArticle('" + category + "')");
-
-		//Get Articles using BidAppService
-		List<Article> articles = bidService.getArticles(category);
-		
-		if (articles != null) {
-			//Convert domain object to DTO
-			return ArticleAssembler.getInstance().articleToDTO(articles);
-		} else {
-			throw new RemoteException("getArticles() fails!");
-		}
-	}
-	
-	@Override
-	public boolean makeBid(long token, int article, float amount) throws RemoteException {		
-		System.out.println(" * RemoteFacade makeBid article : " + article + " / amount " + amount);
-		
-		if (this.serverState.containsKey(token)) {						
-			//Make the bid using Bid Application Service
-			if (bidService.makeBid(this.serverState.get(token), article, amount)) {
-				return true;
-			} else {
-				throw new RemoteException("makeBid() fails!");
-			}
-		} else {
-			throw new RemoteException("To place a bid you must first log in");
-		}
-	}
-
-	@Override
-	public float getUSDRate() throws RemoteException {
-		System.out.println(" * RemoteFacade get USD rate");
-
-		//Get rate using BidAppService
-		float rate = bidService.getUSDRate();
-		
-		if (rate != -1) {
-			return rate;
-		} else {
-			throw new RemoteException("getUSDRate() fails!");
-		}
-	}
-
-	@Override
-	public float getGBPRate() throws RemoteException {
-		System.out.println(" * RemoteFacade get GBP rate");
-		
-		//Get rate using BidAppService
-		float rate = bidService.getGBPRate();
-		
-		if (rate != -1) {
-			return rate;
-		} else {
-			throw new RemoteException("getGBPRate() fails!");
 		}
 	}
 }
