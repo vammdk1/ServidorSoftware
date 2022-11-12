@@ -19,6 +19,9 @@ import javax.swing.JTextArea;
 import javax.swing.JTextField;
 import java.awt.Font;
 import javax.swing.SwingConstants;
+
+import es.deusto.ingenieria.sd.auctions.client.remote.ServiceLocator;
+
 import java.awt.GridLayout;
 import javax.swing.BoxLayout;
 import javax.swing.JLabel;
@@ -29,8 +32,12 @@ public class VentanaRetosAceptados {
 	static int x = 500;
 	static int y = 300;
 	
-	VentanaRetosAceptados()
+	private ServiceLocator serviceLocator;
+	
+	public VentanaRetosAceptados(ServiceLocator serviceLocator)
 	{
+		this.serviceLocator = serviceLocator;
+		
 		VPrincipal.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		VPrincipal.setSize(new Dimension(750, 500));
 		VPrincipal.getContentPane().setLayout(null);
@@ -56,7 +63,7 @@ public class VentanaRetosAceptados {
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				VPrincipal.setVisible(false);
-				new VentanaUsuario();
+				new VentanaUsuario(serviceLocator);
 			}
 		});
 	}
