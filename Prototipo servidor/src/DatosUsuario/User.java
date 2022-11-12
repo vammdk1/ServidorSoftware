@@ -2,7 +2,9 @@ package DatosUsuario;
 
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import Funcionalidad.Reto;
 import Funcionalidad.SesionEntrenamiento;
@@ -140,6 +142,8 @@ public ArrayList<Reto> getRetos() {
 		return sesiones;
 		
 	}
+	
+	
 	
 	
 }

@@ -7,6 +7,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import DatosUsuario.UsuarioNoStrava;
+import DatosUsuario.UsuarioStrava;
 import es.deusto.ingenieria.sd.auctions.server.data.domain.User;
 import es.deusto.ingenieria.sd.auctions.server.services.LoginAppService;
 
@@ -14,6 +16,7 @@ import es.deusto.ingenieria.sd.auctions.server.services.LoginAppService;
 
 public class RemoteFacade extends UnicastRemoteObject implements IRemoteFacade {	
 	private static final long serialVersionUID = 1L;
+
 
 	//Data structure for manage Server State
 	private Map<Long, User> serverState = new HashMap<>();
@@ -57,6 +60,48 @@ public class RemoteFacade extends UnicastRemoteObject implements IRemoteFacade {
 		} else {
 			throw new RemoteException("User is not logged in!");
 		}
+	}
+
+	@Override
+	public void Registro(UsuarioStrava usuario) throws RemoteException {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void InicioGoogle(UsuarioNoStrava usuario) throws RemoteException {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void InicioFacebook(UsuarioNoStrava usuario) throws RemoteException {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void VerRetosActivos(long token) throws RemoteException {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void CrearReto(long token) throws RemoteException {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void CrearSesionEntrenamiento(long token) throws RemoteException {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void VerRetosAceptados(long token) throws RemoteException {
+		// TODO Auto-generated method stub
+		
 	}
 	
 
