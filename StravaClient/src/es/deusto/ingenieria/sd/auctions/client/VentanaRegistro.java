@@ -19,6 +19,9 @@ import javax.swing.JTextArea;
 import javax.swing.JTextField;
 import java.awt.Font;
 import javax.swing.SwingConstants;
+
+import es.deusto.ingenieria.sd.auctions.client.remote.ServiceLocator;
+
 import java.awt.GridLayout;
 import javax.swing.BoxLayout;
 import javax.swing.JLabel;
@@ -29,7 +32,12 @@ public class VentanaRegistro {
 	static int x = 500;
 	static int y = 300;
 	
-	public VentanaRegistro(){
+	private ServiceLocator serviceLocator;
+	
+	public VentanaRegistro(ServiceLocator serviceLocator){
+		
+		this.serviceLocator = serviceLocator;
+		
 		VPrincipal.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		VPrincipal.setSize(new Dimension(750, 500));
 		JPanel PanelGlobal = new JPanel();
@@ -116,7 +124,7 @@ public class VentanaRegistro {
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				VPrincipal.setVisible(false);
-				new VentanaRegistro2();
+				new VentanaRegistro2(serviceLocator);
 			}
 		});
 	}

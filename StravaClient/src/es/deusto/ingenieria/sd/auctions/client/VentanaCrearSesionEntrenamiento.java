@@ -19,6 +19,9 @@ import javax.swing.JTextArea;
 import javax.swing.JTextField;
 import java.awt.Font;
 import javax.swing.SwingConstants;
+
+import es.deusto.ingenieria.sd.auctions.client.remote.ServiceLocator;
+
 import java.awt.GridLayout;
 import javax.swing.BoxLayout;
 import javax.swing.DefaultComboBoxModel;
@@ -37,8 +40,12 @@ public class VentanaCrearSesionEntrenamiento {
 	private JTextField textField_4;
 	private JTextField textField_5;
 	
-	VentanaCrearSesionEntrenamiento()
+	private ServiceLocator serviceLocator;
+	
+	VentanaCrearSesionEntrenamiento(ServiceLocator serviceLocator)
 	{
+		this.serviceLocator = serviceLocator;
+		
 		VPrincipal.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		VPrincipal.setSize(new Dimension(750, 500));
 		VPrincipal.getContentPane().setLayout(null);
@@ -149,7 +156,7 @@ public class VentanaCrearSesionEntrenamiento {
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				VPrincipal.setVisible(false);
-				new VentanaUsuario();
+				new VentanaUsuario(serviceLocator);
 			}
 		});
 		
@@ -158,7 +165,7 @@ public class VentanaCrearSesionEntrenamiento {
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				VPrincipal.setVisible(false);
-				new VentanaUsuario();
+				new VentanaUsuario(serviceLocator);
 			}
 		});
 	}
