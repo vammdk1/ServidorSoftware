@@ -7,9 +7,10 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import DatosUsuario.User;
 import DatosUsuario.UsuarioNoStrava;
 import DatosUsuario.UsuarioStrava;
-import es.deusto.ingenieria.sd.auctions.server.data.domain.User;
+import es.deusto.ingenieria.sd.auctions.server.services.BaseDatos;
 import es.deusto.ingenieria.sd.auctions.server.services.LoginAppService;
 
 
@@ -63,21 +64,56 @@ public class RemoteFacade extends UnicastRemoteObject implements IRemoteFacade {
 	}
 
 	@Override
-	public void Registro(UsuarioStrava usuario) throws RemoteException {
-		// TODO Auto-generated method stub
+	public synchronized void Registro (DatosUsuario.User usuario) throws RemoteException {
+		if(BaseDatos.RegistrarUsuario(usuario)) {
+			System.out.println("RemoteFacade Registro(): " + usuario.getEmail());
+		}else {
+			throw new RemoteException("El correo ingresado ya se encuentra en uso");
+		}
 		
 	}
 
 	@Override
-	public void InicioGoogle(UsuarioNoStrava usuario) throws RemoteException {
-		// TODO Auto-generated method stub
+	public synchronized long InicioGoogle(UsuarioNoStrava usuario) throws RemoteException {
+		System.out.println("RemoteFacade loginGoogle()");
+		
+		//Perform login() using LoginAppService
+		User user = loginService.loginGoogleFacebook(usuario.getEmail(), true);
+			
+		//If login() success user is stored in the Server State
+		if (user != null) {
+			//If user is not logged in 
+			if (!this.serverState.values().contains(user)) {
+				Long token = Calendar.getInstance().getTimeInMillis();		
+				this.serverState.put(token, user);		
+				return(token);
+			} else {
+				throw new RemoteException("User is already logged in!");
+			}
+		} else {
+			throw new RemoteException("Login fails!");
+		}
 		
 	}
 
 	@Override
-	public void InicioFacebook(UsuarioNoStrava usuario) throws RemoteException {
-		// TODO Auto-generated method stub
-		
+	public synchronized long InicioFacebook(UsuarioNoStrava usuario) throws RemoteException {
+		System.out.println("RemoteFacade loginFacebook()");
+		//Perform login() using LoginAppService
+		User user = loginService.loginGoogleFacebook(usuario.getEmail(), false);
+		//If login() success user is stored in the Server State
+		if (user != null) {
+			//If user is not logged in 
+			if (!this.serverState.values().contains(user)) {
+				Long token = Calendar.getInstance().getTimeInMillis();		
+				this.serverState.put(token, user);		
+				return(token);
+			} else {
+				throw new RemoteException("User is already logged in!");
+			}
+		} else {
+			throw new RemoteException("Login fails!");
+		}	
 	}
 
 	@Override
@@ -103,6 +139,10 @@ public class RemoteFacade extends UnicastRemoteObject implements IRemoteFacade {
 		// TODO Auto-generated method stub
 		
 	}
+
+
+
+
 	
 
 
