@@ -1,72 +1,100 @@
 package es.deusto.ingenieria.sd.auctions.client;
 
-import java.awt.EventQueue;
+import java.awt.BorderLayout;
+import java.awt.Color;
+import java.awt.Component;
+import java.awt.Container;
+import java.awt.Dimension;
+import java.awt.LayoutManager;
+import java.awt.Toolkit;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
+import javax.swing.BorderFactory;
+import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
-import javax.swing.border.EmptyBorder;
-import javax.swing.JLabel;
+import javax.swing.JPasswordField;
+import javax.swing.JTextArea;
+import javax.swing.JTextField;
 import java.awt.Font;
 import javax.swing.SwingConstants;
-import javax.swing.JButton;
+import java.awt.GridLayout;
+import javax.swing.BoxLayout;
+import javax.swing.JLabel;
+import java.awt.FlowLayout;
 
-public class VentanaUsuario extends JFrame {
-
-	private JPanel contentPane;
-
-	/**
-	 * Launch the application.
-	 */
-	public static void main(String[] args) {
-		EventQueue.invokeLater(new Runnable() {
-			public void run() {
-				try {
-					VentanaUsuario frame = new VentanaUsuario();
-					frame.setVisible(true);
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
-			}
-		});
-	}
-
-	/**
-	 * Create the frame.
-	 */
-	public VentanaUsuario() {
-		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 750, 500);
-		contentPane = new JPanel();
-		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
-
-		setContentPane(contentPane);
-		contentPane.setLayout(null);
+public class VentanaUsuario {
+	static JFrame VPrincipal = new JFrame("STRAVA");
+	static int x = 500;
+	static int y = 300;
+	
+	public VentanaUsuario()
+	{
+		VPrincipal.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		VPrincipal.setSize(new Dimension(750, 500));
+		VPrincipal.getContentPane().setLayout(null);
 		
 		JLabel lblPanelDeUsuario = new JLabel("Panel de usuario");
-		lblPanelDeUsuario.setBounds(214, 10, 306, 51);
 		lblPanelDeUsuario.setHorizontalAlignment(SwingConstants.CENTER);
 		lblPanelDeUsuario.setFont(new Font("Tahoma", Font.PLAIN, 42));
-		contentPane.add(lblPanelDeUsuario);
+		lblPanelDeUsuario.setBounds(214, 10, 306, 51);
+		VPrincipal.getContentPane().add(lblPanelDeUsuario);
 		
 		JButton CrearSesionEntrenamiento = new JButton("Crear sesion de entrenamiento");
 		CrearSesionEntrenamiento.setFont(new Font("Tahoma", Font.PLAIN, 18));
 		CrearSesionEntrenamiento.setBounds(214, 119, 295, 51);
-		contentPane.add(CrearSesionEntrenamiento);
+		VPrincipal.getContentPane().add(CrearSesionEntrenamiento);
 		
 		JButton CrearReto = new JButton("Crear un reto");
 		CrearReto.setFont(new Font("Tahoma", Font.PLAIN, 18));
 		CrearReto.setBounds(270, 204, 178, 51);
-		contentPane.add(CrearReto);
+		VPrincipal.getContentPane().add(CrearReto);
 		
 		JButton ConsultarReto = new JButton("Consultar un reto");
-		ConsultarReto.setFont(new Font("Tahoma", Font.PLAIN, 18));
+		ConsultarReto.setFont(new Font("Tahoma", Font.PLAIN, 18));	
 		ConsultarReto.setBounds(270, 293, 178, 51);
-		contentPane.add(ConsultarReto);
+		VPrincipal.getContentPane().add(ConsultarReto);
 		
 		JButton CerrarSesion = new JButton("Cerrar sesion");
 		CerrarSesion.setFont(new Font("Tahoma", Font.PLAIN, 16));
 		CerrarSesion.setBounds(589, 407, 135, 43);
-		contentPane.add(CerrarSesion);
-	}
+		VPrincipal.getContentPane().add(CerrarSesion);
+		VPrincipal.setVisible(true);
+	
+		CrearSesionEntrenamiento.addActionListener(new ActionListener() {
+			
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				VPrincipal.setVisible(false);
+				new VentanaCrearSesionEntrenamiento();
+			}
+		});
+		
+		CrearReto.addActionListener(new ActionListener() {
+			
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				VPrincipal.setVisible(false);
+				new VentanaCrearReto();
+			}
+		});
 
+		ConsultarReto.addActionListener(new ActionListener() {
+	
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				VPrincipal.setVisible(false);
+				new VentanaRetosAceptados();
+			}
+		});
+
+		CerrarSesion.addActionListener(new ActionListener() {
+	
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				System.exit(0);
+			}
+		});
+	}
 }

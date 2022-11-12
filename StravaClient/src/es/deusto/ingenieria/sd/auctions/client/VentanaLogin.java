@@ -101,6 +101,15 @@ public class VentanaLogin {
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				VPrincipal.setVisible(false);
+				new VentanaUsuario();
+			}
+		});
+		
+		BRegistro.addActionListener(new ActionListener() {
+			
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				VPrincipal.setVisible(false);
 				new VentanaRegistro();
 			}
 		});

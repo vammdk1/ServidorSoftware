@@ -7,6 +7,8 @@ import java.awt.Container;
 import java.awt.Dimension;
 import java.awt.LayoutManager;
 import java.awt.Toolkit;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 import javax.swing.BorderFactory;
 import javax.swing.JButton;
@@ -27,7 +29,7 @@ public class VentanaRegistro2 {
 	static int x = 500;
 	static int y = 300;
 	
-	public static void main (String[] args) {
+	public VentanaRegistro2(){
 		
 		VPrincipal.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		VPrincipal.setSize(new Dimension(750, 500));
@@ -54,10 +56,10 @@ public class VentanaRegistro2 {
 		PBotones.setSize(x, y);
 		VPrincipal.getContentPane().add(PanelGlobal,BorderLayout.CENTER);
 		
-		JTextArea nombre = new JTextArea();
-		nombre.setFont(new Font("Monospaced", Font.PLAIN, 20));
-		nombre.setBounds(120, 70, 500, 31);
-		PanelGlobal.add(nombre);
+		JTextArea Peso = new JTextArea();
+		Peso.setFont(new Font("Monospaced", Font.PLAIN, 20));
+		Peso.setBounds(120, 70, 500, 31);
+		PanelGlobal.add(Peso);
 		
 		JLabel lblInfo = new JLabel("Esta informacion es opcional, si no quieres a\u00F1adirla pulsa en continuar.");
 		lblInfo.setFont(new Font("Tahoma", Font.PLAIN, 18));
@@ -69,35 +71,35 @@ public class VentanaRegistro2 {
 		lblPeso.setBounds(115, 30, 289, 38);
 		PanelGlobal.add(lblPeso);
 		
-		JLabel lblAltura = new JLabel("Altura(cm)");
+		JLabel lblAltura = new JLabel("Frecuencia cardiaca maxima");
 		lblAltura.setFont(new Font("Tahoma", Font.PLAIN, 18));
-		lblAltura.setBounds(115, 100, 163, 38);
+		lblAltura.setBounds(115, 100, 505, 38);
 		PanelGlobal.add(lblAltura);
 		
-		JTextArea nombre_1 = new JTextArea();
-		nombre_1.setFont(new Font("Monospaced", Font.PLAIN, 20));
-		nombre_1.setBounds(120, 140, 500, 31);
-		PanelGlobal.add(nombre_1);
+		JTextArea frecMax = new JTextArea();
+		frecMax.setFont(new Font("Monospaced", Font.PLAIN, 20));
+		frecMax.setBounds(120, 140, 500, 31);
+		PanelGlobal.add(frecMax);
 		
-		JLabel lblAltura_1 = new JLabel("Altura(cm)");
+		JLabel lblAltura_1 = new JLabel("Frecuencia cardiaca en reposo");
 		lblAltura_1.setFont(new Font("Tahoma", Font.PLAIN, 18));
-		lblAltura_1.setBounds(115, 170, 163, 38);
+		lblAltura_1.setBounds(115, 170, 505, 38);
 		PanelGlobal.add(lblAltura_1);
 		
-		JTextArea nombre_1_1 = new JTextArea();
-		nombre_1_1.setFont(new Font("Monospaced", Font.PLAIN, 20));
-		nombre_1_1.setBounds(120, 210, 500, 31);
-		PanelGlobal.add(nombre_1_1);
+		JTextArea frecRep = new JTextArea();
+		frecRep.setFont(new Font("Monospaced", Font.PLAIN, 20));
+		frecRep.setBounds(120, 210, 500, 31);
+		PanelGlobal.add(frecRep);
 		
 		JLabel lblAltura_1_1 = new JLabel("Altura(cm)");
 		lblAltura_1_1.setFont(new Font("Tahoma", Font.PLAIN, 18));
 		lblAltura_1_1.setBounds(115, 240, 163, 38);
 		PanelGlobal.add(lblAltura_1_1);
 		
-		JTextArea nombre_1_1_1 = new JTextArea();
-		nombre_1_1_1.setFont(new Font("Monospaced", Font.PLAIN, 20));
-		nombre_1_1_1.setBounds(120, 280, 500, 31);
-		PanelGlobal.add(nombre_1_1_1);
+		JTextArea altura = new JTextArea();
+		altura.setFont(new Font("Monospaced", Font.PLAIN, 20));
+		altura.setBounds(120, 280, 500, 31);
+		PanelGlobal.add(altura);
 		
 		JPanel panelSuperior = new JPanel();
 		VPrincipal.getContentPane().add(panelSuperior, BorderLayout.NORTH);
@@ -107,5 +109,13 @@ public class VentanaRegistro2 {
 		panelSuperior.add(lblTitulo);
 		VPrincipal.setVisible(true);	
 		
+		BRegistro.addActionListener(new ActionListener() {
+			
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				VPrincipal.setVisible(false);
+				new VentanaUsuario();
+			}
+		});
 	}
 }
