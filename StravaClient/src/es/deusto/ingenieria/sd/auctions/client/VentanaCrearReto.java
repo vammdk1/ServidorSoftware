@@ -1,32 +1,19 @@
 package es.deusto.ingenieria.sd.auctions.client;
 
-import java.awt.BorderLayout;
-import java.awt.Color;
-import java.awt.Component;
-import java.awt.Container;
+
 import java.awt.Dimension;
-import java.awt.LayoutManager;
-import java.awt.Toolkit;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-import javax.swing.BorderFactory;
 import javax.swing.JButton;
 import javax.swing.JFrame;
-import javax.swing.JPanel;
-import javax.swing.JPasswordField;
-import javax.swing.JTextArea;
 import javax.swing.JTextField;
 import java.awt.Font;
 import javax.swing.SwingConstants;
 
 import es.deusto.ingenieria.sd.auctions.client.remote.ServiceLocator;
-
-import java.awt.GridLayout;
-import javax.swing.BoxLayout;
 import javax.swing.DefaultComboBoxModel;
 import javax.swing.JLabel;
-import java.awt.FlowLayout;
 import javax.swing.JComboBox;
 
 public class VentanaCrearReto {
@@ -47,7 +34,7 @@ public class VentanaCrearReto {
 	
 	public VentanaCrearReto(ServiceLocator serviceLocator)
 	{
-		this.serviceLocator = serviceLocator;
+		this.setServiceLocator(serviceLocator);
 		
 		VPrincipal.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		VPrincipal.setSize(new Dimension(750, 500));
@@ -188,5 +175,13 @@ public class VentanaCrearReto {
 				new VentanaUsuario(serviceLocator);
 			}
 		});
+	}
+
+	public ServiceLocator getServiceLocator() {
+		return serviceLocator;
+	}
+
+	public void setServiceLocator(ServiceLocator serviceLocator) {
+		this.serviceLocator = serviceLocator;
 	}
 }
