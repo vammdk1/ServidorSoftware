@@ -25,6 +25,8 @@ public class VentanaCrearReto extends JFrame {
 	private JTextField AnoFin;
 	private JTextField textField;
 	private JTextField textField_1;
+	private JLabel lblNewLabel_1_3;
+	private JLabel lblNewLabel_1_6;
 
 	/**
 	 * Launch the application.
@@ -72,11 +74,23 @@ public class VentanaCrearReto extends JFrame {
 		lblNewLabel_1_1.setBounds(109, 156, 139, 51);
 		contentPane.add(lblNewLabel_1_1);
 		
+		lblNewLabel_1_3 = new JLabel("(dd/mm/aaaa) ");
+		lblNewLabel_1_3.setHorizontalAlignment(SwingConstants.RIGHT);
+		lblNewLabel_1_3.setFont(new Font("Tahoma", Font.PLAIN, 11));
+		lblNewLabel_1_3.setBounds(109, 180, 139, 51);
+		contentPane.add(lblNewLabel_1_3);
+		
 		JLabel lblNewLabel_1_2 = new JLabel("Fecha fin");
 		lblNewLabel_1_2.setHorizontalAlignment(SwingConstants.RIGHT);
 		lblNewLabel_1_2.setFont(new Font("Tahoma", Font.PLAIN, 20));
 		lblNewLabel_1_2.setBounds(109, 218, 139, 51);
 		contentPane.add(lblNewLabel_1_2);
+		
+		lblNewLabel_1_6 = new JLabel("(dd/mm/aaaa) ");
+		lblNewLabel_1_6.setHorizontalAlignment(SwingConstants.RIGHT);
+		lblNewLabel_1_6.setFont(new Font("Tahoma", Font.PLAIN, 11));
+		lblNewLabel_1_6.setBounds(109, 241, 139, 51);
+		contentPane.add(lblNewLabel_1_6);
 		
 		JLabel lblNewLabel_1_4 = new JLabel("Objetivo");
 		lblNewLabel_1_4.setHorizontalAlignment(SwingConstants.RIGHT);

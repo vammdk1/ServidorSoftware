@@ -24,6 +24,8 @@ public class VentanaCrearSesionEntrenamiento extends JFrame {
 	private JLabel lblNewLabel_1_2;
 	private JTextField textField_2;
 	private JLabel lblNewLabel_1_3;
+	private JLabel lblNewLabel_1_6;
+	private JLabel lblNewLabel_1_7;
 
 	/**
 	 * Launch the application.
@@ -77,6 +79,12 @@ public class VentanaCrearSesionEntrenamiento extends JFrame {
 		lblNewLabel_1_4.setBounds(129, 211, 139, 51);
 		contentPane.add(lblNewLabel_1_4);
 		
+		lblNewLabel_1_6 = new JLabel("(km)");
+		lblNewLabel_1_6.setHorizontalAlignment(SwingConstants.RIGHT);
+		lblNewLabel_1_6.setFont(new Font("Tahoma", Font.PLAIN, 11));
+		lblNewLabel_1_6.setBounds(236, 252, 32, 14);
+		contentPane.add(lblNewLabel_1_6);
+		
 		JLabel lblNewLabel_1_5 = new JLabel("Deporte");
 		lblNewLabel_1_5.setHorizontalAlignment(SwingConstants.RIGHT);
 		lblNewLabel_1_5.setFont(new Font("Tahoma", Font.PLAIN, 20));
@@ -128,6 +136,12 @@ public class VentanaCrearSesionEntrenamiento extends JFrame {
 		lblNewLabel_1_2.setFont(new Font("Tahoma", Font.PLAIN, 20));
 		lblNewLabel_1_2.setBounds(128, 335, 139, 51);
 		contentPane.add(lblNewLabel_1_2);
+		
+		lblNewLabel_1_7 = new JLabel("(min)");
+		lblNewLabel_1_7.setHorizontalAlignment(SwingConstants.RIGHT);
+		lblNewLabel_1_7.setFont(new Font("Tahoma", Font.PLAIN, 11));
+		lblNewLabel_1_7.setBounds(129, 358, 139, 40);
+		contentPane.add(lblNewLabel_1_7);
 		
 		textField_2 = new JTextField();
 		textField_2.setFont(new Font("Tahoma", Font.PLAIN, 20));
