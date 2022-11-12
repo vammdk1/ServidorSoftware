@@ -101,7 +101,7 @@ public class VentanaLogin {
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				VPrincipal.setVisible(false);
-				new VentanaRegistro();
+				new VentanaUsuario();
 			}
 		});
 		
