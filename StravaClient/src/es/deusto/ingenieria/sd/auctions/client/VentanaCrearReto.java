@@ -1,32 +1,19 @@
 package es.deusto.ingenieria.sd.auctions.client;
 
-import java.awt.BorderLayout;
-import java.awt.Color;
-import java.awt.Component;
-import java.awt.Container;
+
 import java.awt.Dimension;
-import java.awt.LayoutManager;
-import java.awt.Toolkit;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-import javax.swing.BorderFactory;
 import javax.swing.JButton;
 import javax.swing.JFrame;
-import javax.swing.JPanel;
-import javax.swing.JPasswordField;
-import javax.swing.JTextArea;
 import javax.swing.JTextField;
 import java.awt.Font;
 import javax.swing.SwingConstants;
 
 import es.deusto.ingenieria.sd.auctions.client.remote.ServiceLocator;
-
-import java.awt.GridLayout;
-import javax.swing.BoxLayout;
 import javax.swing.DefaultComboBoxModel;
 import javax.swing.JLabel;
-import java.awt.FlowLayout;
 import javax.swing.JComboBox;
 
 public class VentanaCrearReto {
@@ -34,20 +21,20 @@ public class VentanaCrearReto {
 	static int x = 500;
 	static int y = 300;
 	private JTextField titulo;
-	private JTextField textField;
-	private JTextField textField_1;
-	private JTextField textField_2;
-	private JTextField textField_3;
-	private JTextField textField_4;
-	private JTextField textField_5;
-	private JTextField textField_6;
-	private JTextField textField_7;
+	private JTextField tfInicioDia;
+	private JTextField tfFinDia;
+	private JTextField tfInicioMes;
+	private JTextField tfFinMes;
+	private JTextField tfInicioAno;
+	private JTextField tfFinAno;
+	private JTextField tfObjetivo;
+	private JTextField tfDeporte;
 	
 	private ServiceLocator serviceLocator;
 	
 	public VentanaCrearReto(ServiceLocator serviceLocator)
 	{
-		this.serviceLocator = serviceLocator;
+		this.setServiceLocator(serviceLocator);
 		
 		VPrincipal.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		VPrincipal.setSize(new Dimension(750, 500));
@@ -122,53 +109,53 @@ public class VentanaCrearReto {
 		VPrincipal.getContentPane().add(titulo);
 		titulo.setColumns(10);
 		
-		textField = new JTextField();
-		textField.setFont(new Font("Tahoma", Font.PLAIN, 20));
-		textField.setColumns(10);
-		textField.setBounds(272, 169, 67, 32);
-		VPrincipal.getContentPane().add(textField);
+		tfInicioDia = new JTextField();
+		tfInicioDia.setFont(new Font("Tahoma", Font.PLAIN, 20));
+		tfInicioDia.setColumns(10);
+		tfInicioDia.setBounds(272, 169, 67, 32);
+		VPrincipal.getContentPane().add(tfInicioDia);
 		
-		textField_1 = new JTextField();
-		textField_1.setFont(new Font("Tahoma", Font.PLAIN, 20));
-		textField_1.setColumns(10);
-		textField_1.setBounds(272, 231, 67, 32);
-		VPrincipal.getContentPane().add(textField_1);
+		tfFinDia = new JTextField();
+		tfFinDia.setFont(new Font("Tahoma", Font.PLAIN, 20));
+		tfFinDia.setColumns(10);
+		tfFinDia.setBounds(272, 231, 67, 32);
+		VPrincipal.getContentPane().add(tfFinDia);
 		
-		textField_2 = new JTextField();
-		textField_2.setFont(new Font("Tahoma", Font.PLAIN, 20));
-		textField_2.setColumns(10);
-		textField_2.setBounds(349, 169, 67, 32);
-		VPrincipal.getContentPane().add(textField_2);
+		tfInicioMes = new JTextField();
+		tfInicioMes.setFont(new Font("Tahoma", Font.PLAIN, 20));
+		tfInicioMes.setColumns(10);
+		tfInicioMes.setBounds(349, 169, 67, 32);
+		VPrincipal.getContentPane().add(tfInicioMes);
 		
-		textField_3 = new JTextField();
-		textField_3.setFont(new Font("Tahoma", Font.PLAIN, 20));
-		textField_3.setColumns(10);
-		textField_3.setBounds(349, 231, 67, 32);
-		VPrincipal.getContentPane().add(textField_3);
+		tfFinMes = new JTextField();
+		tfFinMes.setFont(new Font("Tahoma", Font.PLAIN, 20));
+		tfFinMes.setColumns(10);
+		tfFinMes.setBounds(349, 231, 67, 32);
+		VPrincipal.getContentPane().add(tfFinMes);
 		
-		textField_4 = new JTextField();
-		textField_4.setFont(new Font("Tahoma", Font.PLAIN, 20));
-		textField_4.setColumns(20);
-		textField_4.setBounds(426, 169, 67, 32);
-		VPrincipal.getContentPane().add(textField_4);
+		tfInicioAno = new JTextField();
+		tfInicioAno.setFont(new Font("Tahoma", Font.PLAIN, 20));
+		tfInicioAno.setColumns(20);
+		tfInicioAno.setBounds(426, 169, 67, 32);
+		VPrincipal.getContentPane().add(tfInicioAno);
 		
-		textField_5 = new JTextField();
-		textField_5.setFont(new Font("Tahoma", Font.PLAIN, 20));
-		textField_5.setColumns(20);
-		textField_5.setBounds(426, 231, 67, 32);
-		VPrincipal.getContentPane().add(textField_5);
+		tfFinAno = new JTextField();
+		tfFinAno.setFont(new Font("Tahoma", Font.PLAIN, 20));
+		tfFinAno.setColumns(20);
+		tfFinAno.setBounds(426, 231, 67, 32);
+		VPrincipal.getContentPane().add(tfFinAno);
 		
-		textField_6 = new JTextField();
-		textField_6.setFont(new Font("Tahoma", Font.PLAIN, 20));
-		textField_6.setColumns(10);
-		textField_6.setBounds(272, 352, 210, 32);
-		VPrincipal.getContentPane().add(textField_6);
+		tfObjetivo = new JTextField();
+		tfObjetivo.setFont(new Font("Tahoma", Font.PLAIN, 20));
+		tfObjetivo.setColumns(10);
+		tfObjetivo.setBounds(272, 352, 210, 32);
+		VPrincipal.getContentPane().add(tfObjetivo);
 		
-		textField_7 = new JTextField();
-		textField_7.setFont(new Font("Tahoma", Font.PLAIN, 20));
-		textField_7.setColumns(10);
-		textField_7.setBounds(272, 414, 210, 32);
-		VPrincipal.getContentPane().add(textField_7);
+		tfDeporte = new JTextField();
+		tfDeporte.setFont(new Font("Tahoma", Font.PLAIN, 20));
+		tfDeporte.setColumns(10);
+		tfDeporte.setBounds(272, 414, 210, 32);
+		VPrincipal.getContentPane().add(tfDeporte);
 		VPrincipal.setVisible(true);
 		
 		volver.addActionListener(new ActionListener() {
@@ -188,5 +175,13 @@ public class VentanaCrearReto {
 				new VentanaUsuario(serviceLocator);
 			}
 		});
+	}
+
+	public ServiceLocator getServiceLocator() {
+		return serviceLocator;
+	}
+
+	public void setServiceLocator(ServiceLocator serviceLocator) {
+		this.serviceLocator = serviceLocator;
 	}
 }
