@@ -2,6 +2,7 @@ package es.deusto.ingenieria.sd.auctions.server.remote;
 
 import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;
+import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.HashMap;
 import java.util.List;
@@ -10,7 +11,10 @@ import java.util.Map;
 import DatosUsuario.User;
 import DatosUsuario.UsuarioNoStrava;
 import DatosUsuario.UsuarioStrava;
+import Funcionalidad.Reto;
+import Funcionalidad.SesionEntrenamiento;
 import es.deusto.ingenieria.sd.auctions.server.services.BaseDatos;
+import es.deusto.ingenieria.sd.auctions.server.services.GeneralAppServices;
 import es.deusto.ingenieria.sd.auctions.server.services.LoginAppService;
 
 
@@ -24,6 +28,7 @@ public class RemoteFacade extends UnicastRemoteObject implements IRemoteFacade {
 	
 	//TODO: Remove this instances when Singleton Pattern is implemented
 	private LoginAppService loginService = new LoginAppService();
+	private GeneralAppServices appServices = new GeneralAppServices();
 
 	public RemoteFacade() throws RemoteException {
 		super();		
@@ -64,9 +69,10 @@ public class RemoteFacade extends UnicastRemoteObject implements IRemoteFacade {
 	}
 
 	@Override
-	public synchronized void Registro (DatosUsuario.User usuario) throws RemoteException {
+	public synchronized boolean Registro (User usuario) throws RemoteException {
 		if(BaseDatos.RegistrarUsuario(usuario)) {
 			System.out.println("RemoteFacade Registro(): " + usuario.getEmail());
+			return true;
 		}else {
 			throw new RemoteException("El correo ingresado ya se encuentra en uso");
 		}
@@ -117,27 +123,40 @@ public class RemoteFacade extends UnicastRemoteObject implements IRemoteFacade {
 	}
 
 	@Override
-	public void VerRetosActivos(long token) throws RemoteException {
-		// TODO Auto-generated method stub
+	public synchronized ArrayList<Reto> VerRetosActivos() throws RemoteException {
+		ArrayList<Reto> retosActivos = appServices.DevolverRetosActivos();
+		if(retosActivos!=null) {
+			return retosActivos;
+		}
+		throw new RemoteException("No hay retos activos");
+	}
+
+	@Override
+	public synchronized boolean CrearReto(Reto reto) throws RemoteException {
+		//hace falta el token para crear el reto ?/ como evitar retos duplicados (usar el nombre)
+			if(GeneralAppServices.setReto(reto)) {
+				return true; //para la pantalla sacar los datos del reto ?
+			}
+			throw new RemoteException("No se puedo crear el reto");
+		//si se crea el reto , devolver reto
+	}
+
+	@Override
+	public synchronized boolean CrearSesionEntrenamiento(User usuario, SesionEntrenamiento sesion) throws RemoteException {
+		if(GeneralAppServices.setSesion(usuario, sesion)) {
+			return true;
+		}
+		throw new RemoteException("No se puedo la sesion");
 		
 	}
 
 	@Override
-	public void CrearReto(long token) throws RemoteException {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public void CrearSesionEntrenamiento(long token) throws RemoteException {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public void VerRetosAceptados(long token) throws RemoteException {
-		// TODO Auto-generated method stub
-		
+	public synchronized ArrayList<Reto> VerRetosAceptados(User usuario) throws RemoteException {
+		ArrayList<Reto> retosAceptados = appServices.DevolverRetosAceptados(usuario);
+		if(retosAceptados!=null) {
+			return retosAceptados;
+		}
+		throw new RemoteException("No hay retos aceptados");
 	}
 
 
