@@ -29,7 +29,7 @@ public class VentanaUsuario {
 	static int x = 500;
 	static int y = 300;
 	
-	VentanaUsuario()
+	public VentanaUsuario()
 	{
 		VPrincipal.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		VPrincipal.setSize(new Dimension(750, 500));
@@ -61,5 +61,40 @@ public class VentanaUsuario {
 		CerrarSesion.setBounds(589, 407, 135, 43);
 		VPrincipal.getContentPane().add(CerrarSesion);
 		VPrincipal.setVisible(true);
+	
+		CrearSesionEntrenamiento.addActionListener(new ActionListener() {
+			
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				VPrincipal.setVisible(false);
+				new VentanaCrearSesionEntrenamiento();
+			}
+		});
+		
+		CrearReto.addActionListener(new ActionListener() {
+			
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				VPrincipal.setVisible(false);
+				new VentanaCrearReto();
+			}
+		});
+
+		ConsultarReto.addActionListener(new ActionListener() {
+	
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				VPrincipal.setVisible(false);
+				new VentanaRetosAceptados();
+			}
+		});
+
+		CerrarSesion.addActionListener(new ActionListener() {
+	
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				System.exit(0);
+			}
+		});
 	}
 }

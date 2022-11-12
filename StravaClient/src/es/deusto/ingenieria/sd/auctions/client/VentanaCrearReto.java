@@ -163,5 +163,23 @@ public class VentanaCrearReto {
 		textField_7.setBounds(272, 414, 210, 32);
 		VPrincipal.getContentPane().add(textField_7);
 		VPrincipal.setVisible(true);
+		
+		volver.addActionListener(new ActionListener() {
+			
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				VPrincipal.setVisible(false);
+				new VentanaUsuario();
+			}
+		});
+		
+		crear.addActionListener(new ActionListener() {
+			
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				VPrincipal.setVisible(false);
+				new VentanaUsuario();
+			}
+		});
 	}
 }

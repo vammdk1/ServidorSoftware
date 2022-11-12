@@ -7,6 +7,8 @@ import java.awt.Container;
 import java.awt.Dimension;
 import java.awt.LayoutManager;
 import java.awt.Toolkit;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 import javax.swing.BorderFactory;
 import javax.swing.JButton;
@@ -108,11 +110,14 @@ public class VentanaRegistro {
 		lblTitulo.setFont(new Font("Tahoma", Font.PLAIN, 60));
 		panelSuperior.add(lblTitulo);
 		VPrincipal.setVisible(true);
-	}
 	
-	public static void main (String[] args) {
-		
+		BRegistro.addActionListener(new ActionListener() {
 			
-		
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				VPrincipal.setVisible(false);
+				new VentanaRegistro2();
+			}
+		});
 	}
 }

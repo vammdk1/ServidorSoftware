@@ -143,5 +143,23 @@ public class VentanaCrearSesionEntrenamiento {
 		lblNewLabel_1_3.setBounds(129, 298, 139, 51);
 		VPrincipal.getContentPane().add(lblNewLabel_1_3);
 		VPrincipal.setVisible(true);
+		
+		volver.addActionListener(new ActionListener() {
+			
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				VPrincipal.setVisible(false);
+				new VentanaUsuario();
+			}
+		});
+		
+		crear.addActionListener(new ActionListener() {
+			
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				VPrincipal.setVisible(false);
+				new VentanaUsuario();
+			}
+		});
 	}
 }

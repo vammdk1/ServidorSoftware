@@ -50,5 +50,14 @@ public class VentanaRetosAceptados {
 		btnNewButton.setBounds(10, 401, 107, 49);
 		VPrincipal.getContentPane().add(btnNewButton);
 		VPrincipal.setVisible(true);
+		
+		btnNewButton.addActionListener(new ActionListener() {
+			
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				VPrincipal.setVisible(false);
+				new VentanaUsuario();
+			}
+		});
 	}
 }

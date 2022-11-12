@@ -7,6 +7,8 @@ import java.awt.Container;
 import java.awt.Dimension;
 import java.awt.LayoutManager;
 import java.awt.Toolkit;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 import javax.swing.BorderFactory;
 import javax.swing.JButton;
@@ -27,7 +29,7 @@ public class VentanaRegistro2 {
 	static int x = 500;
 	static int y = 300;
 	
-	public static void main (String[] args) {
+	public VentanaRegistro2(){
 		
 		VPrincipal.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		VPrincipal.setSize(new Dimension(750, 500));
@@ -107,5 +109,13 @@ public class VentanaRegistro2 {
 		panelSuperior.add(lblTitulo);
 		VPrincipal.setVisible(true);	
 		
+		BRegistro.addActionListener(new ActionListener() {
+			
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				VPrincipal.setVisible(false);
+				new VentanaUsuario();
+			}
+		});
 	}
 }
