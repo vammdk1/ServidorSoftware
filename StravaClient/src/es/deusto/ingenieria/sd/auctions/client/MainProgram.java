@@ -16,6 +16,8 @@ public class MainProgram {
 		//args[2] = Service Name
 		serviceLocator.setService(args[0], args[1], args[2]);
 		
+		new VentanaLogin(serviceLocator);
+		
 		LoginController loginController = new LoginController(serviceLocator);
 		LoginDialog loginDialog = new LoginDialog(loginController);		
 		

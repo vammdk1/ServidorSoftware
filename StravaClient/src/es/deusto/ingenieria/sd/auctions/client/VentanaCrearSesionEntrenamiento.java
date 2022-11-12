@@ -33,12 +33,12 @@ public class VentanaCrearSesionEntrenamiento {
 	static JFrame VPrincipal = new JFrame("STRAVA");
 	static int x = 500;
 	static int y = 300;
-	private JTextField textField;
-	private JTextField textField_1;
-	private JTextField textField_2;
-	private JTextField textField_3;
-	private JTextField textField_4;
-	private JTextField textField_5;
+	private JTextField tfTitulo;
+	private JTextField tfFecha;
+	private JTextField tfHora;
+	private JTextField tfDistancia;
+	private JTextField tfDeporte;
+	private JTextField tfDuracion;
 	
 	private ServiceLocator serviceLocator;
 	
@@ -91,35 +91,35 @@ public class VentanaCrearSesionEntrenamiento {
 		volver.setBounds(10, 394, 126, 51);
 		VPrincipal.getContentPane().add(volver);
 		
-		textField = new JTextField();
-		textField.setFont(new Font("Tahoma", Font.PLAIN, 20));
-		textField.setColumns(10);
-		textField.setBounds(292, 94, 210, 32);
-		VPrincipal.getContentPane().add(textField);
+		tfTitulo = new JTextField();
+		tfTitulo.setFont(new Font("Tahoma", Font.PLAIN, 20));
+		tfTitulo.setColumns(10);
+		tfTitulo.setBounds(292, 94, 210, 32);
+		VPrincipal.getContentPane().add(tfTitulo);
 		
-		textField_1 = new JTextField();
-		textField_1.setFont(new Font("Tahoma", Font.PLAIN, 20));
-		textField_1.setColumns(10);
-		textField_1.setBounds(292, 286, 86, 32);
-		VPrincipal.getContentPane().add(textField_1);
+		tfFecha = new JTextField();
+		tfFecha.setFont(new Font("Tahoma", Font.PLAIN, 20));
+		tfFecha.setColumns(10);
+		tfFecha.setBounds(292, 286, 86, 32);
+		VPrincipal.getContentPane().add(tfFecha);
 		
-		textField_2 = new JTextField();
-		textField_2.setFont(new Font("Tahoma", Font.PLAIN, 20));
-		textField_2.setColumns(10);
-		textField_2.setBounds(416, 286, 86, 32);
-		VPrincipal.getContentPane().add(textField_2);
+		tfHora = new JTextField();
+		tfHora.setFont(new Font("Tahoma", Font.PLAIN, 20));
+		tfHora.setColumns(10);
+		tfHora.setBounds(416, 286, 86, 32);
+		VPrincipal.getContentPane().add(tfHora);
 		
-		textField_3 = new JTextField();
-		textField_3.setFont(new Font("Tahoma", Font.PLAIN, 20));
-		textField_3.setColumns(10);
-		textField_3.setBounds(292, 221, 210, 32);
-		VPrincipal.getContentPane().add(textField_3);
+		tfDistancia = new JTextField();
+		tfDistancia.setFont(new Font("Tahoma", Font.PLAIN, 20));
+		tfDistancia.setColumns(10);
+		tfDistancia.setBounds(292, 221, 210, 32);
+		VPrincipal.getContentPane().add(tfDistancia);
 		
-		textField_4 = new JTextField();
-		textField_4.setFont(new Font("Tahoma", Font.PLAIN, 20));
-		textField_4.setColumns(10);
-		textField_4.setBounds(292, 159, 210, 32);
-		VPrincipal.getContentPane().add(textField_4);
+		tfDeporte = new JTextField();
+		tfDeporte.setFont(new Font("Tahoma", Font.PLAIN, 20));
+		tfDeporte.setColumns(10);
+		tfDeporte.setBounds(292, 159, 210, 32);
+		VPrincipal.getContentPane().add(tfDeporte);
 		
 		JButton crear = new JButton("Crear");
 		crear.setFont(new Font("Tahoma", Font.PLAIN, 20));
@@ -138,11 +138,11 @@ public class VentanaCrearSesionEntrenamiento {
 		lblNewLabel_1_7.setBounds(129, 358, 139, 40);
 		VPrincipal.getContentPane().add(lblNewLabel_1_7);
 		
-		textField_5 = new JTextField();
-		textField_5.setFont(new Font("Tahoma", Font.PLAIN, 20));
-		textField_5.setColumns(10);
-		textField_5.setBounds(291, 345, 210, 32);
-		VPrincipal.getContentPane().add(textField_5);
+		tfDuracion = new JTextField();
+		tfDuracion.setFont(new Font("Tahoma", Font.PLAIN, 20));
+		tfDuracion.setColumns(10);
+		tfDuracion.setBounds(291, 345, 210, 32);
+		VPrincipal.getContentPane().add(tfDuracion);
 		
 		JLabel lblNewLabel_1_3 = new JLabel("(dd/mm)   (hh:mm)");
 		lblNewLabel_1_3.setHorizontalAlignment(SwingConstants.RIGHT);
