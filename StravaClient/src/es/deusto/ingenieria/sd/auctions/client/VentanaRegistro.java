@@ -27,8 +27,7 @@ public class VentanaRegistro {
 	static int x = 500;
 	static int y = 300;
 	
-	public static void main (String[] args) {
-		
+	public VentanaRegistro(){
 		VPrincipal.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		VPrincipal.setSize(new Dimension(750, 500));
 		JPanel PanelGlobal = new JPanel();
@@ -108,7 +107,12 @@ public class VentanaRegistro {
 		JLabel lblTitulo = new JLabel("STRAVA");
 		lblTitulo.setFont(new Font("Tahoma", Font.PLAIN, 60));
 		panelSuperior.add(lblTitulo);
-		VPrincipal.setVisible(true);	
+		VPrincipal.setVisible(true);
+	}
+	
+	public static void main (String[] args) {
+		
+			
 		
 	}
 }
