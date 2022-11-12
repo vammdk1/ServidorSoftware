@@ -21,8 +21,8 @@ public class VentanaCrearReto extends JFrame {
 	private JTextField DiaFin;
 	private JTextField MesIni;
 	private JTextField MesFin;
-	private JTextField AñoIni;
-	private JTextField AñoFin;
+	private JTextField AnoIni;
+	private JTextField AnoFin;
 	private JTextField textField;
 	private JTextField textField_1;
 
@@ -131,17 +131,17 @@ public class VentanaCrearReto extends JFrame {
 		MesFin.setBounds(349, 231, 67, 32);
 		contentPane.add(MesFin);
 		
-		AñoIni = new JTextField();
-		AñoIni.setFont(new Font("Tahoma", Font.PLAIN, 20));
-		AñoIni.setColumns(20);
-		AñoIni.setBounds(426, 169, 67, 32);
-		contentPane.add(AñoIni);
+		AnoIni = new JTextField();
+		AnoIni.setFont(new Font("Tahoma", Font.PLAIN, 20));
+		AnoIni.setColumns(20);
+		AnoIni.setBounds(426, 169, 67, 32);
+		contentPane.add(AnoIni);
 		
-		AñoFin = new JTextField();
-		AñoFin.setFont(new Font("Tahoma", Font.PLAIN, 20));
-		AñoFin.setColumns(20);
-		AñoFin.setBounds(426, 231, 67, 32);
-		contentPane.add(AñoFin);
+		AnoFin = new JTextField();
+		AnoFin.setFont(new Font("Tahoma", Font.PLAIN, 20));
+		AnoFin.setColumns(20);
+		AnoFin.setBounds(426, 231, 67, 32);
+		contentPane.add(AnoFin);
 		
 		textField = new JTextField();
 		textField.setFont(new Font("Tahoma", Font.PLAIN, 20));
