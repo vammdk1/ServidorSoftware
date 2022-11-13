@@ -126,12 +126,16 @@ public class VentanaRegistro2 {
 			public void actionPerformed(ActionEvent e) {
 				System.out.println("Boton registro pulsado");
 				VPrincipal.setVisible(false);
-				getUsuario().setPeso(Float.parseFloat(peso.getText()));
-				getUsuario().setAltura(Integer.parseInt(altura.getText()));
-				getUsuario().setPulsoxMinuto(Integer.parseInt(frecMax.getText()));
-				getUsuario().setPulsoReposo(Integer.parseInt(frecRep.getText()));
-				System.out.println("intentando anadir al usuario el peso: " + Float.parseFloat(peso.getText()) + " la altura: " + Integer.parseInt(altura.getText()) + " el pulso max: " +  Integer.parseInt(frecMax.getText()) + " el pulso rep: " + Integer.parseInt(frecRep.getText()));
-				controller.register(getUsuario().getNombre(), getUsuario().getEmail(), getUsuario().getFechaNac(), getUsuario().getPeso(), getUsuario().getAltura(), getUsuario().getPulsoxMinuto(), getUsuario().getPulsoReposo(), getPassword());
+				try {
+					getUsuario().setPeso(Float.parseFloat(peso.getText()));
+					getUsuario().setAltura(Integer.parseInt(altura.getText()));
+					getUsuario().setPulsoxMinuto(Integer.parseInt(frecMax.getText()));
+					getUsuario().setPulsoReposo(Integer.parseInt(frecRep.getText()));
+					System.out.println("intentando anadir al usuario el peso: " + Float.parseFloat(peso.getText()) + " la altura: " + Integer.parseInt(altura.getText()) + " el pulso max: " +  Integer.parseInt(frecMax.getText()) + " el pulso rep: " + Integer.parseInt(frecRep.getText()));
+					controller.register(getUsuario().getNombre(), getUsuario().getEmail(), getUsuario().getFechaNac(), getUsuario().getPeso(), getUsuario().getAltura(), getUsuario().getPulsoxMinuto(), getUsuario().getPulsoReposo(), getPassword());
+				} catch (Exception e2) {
+					System.out.println("# Error en el registro "+ e2);
+				}
 				VentanaLogin.VPrincipal.setVisible(true);
 			}
 		});
