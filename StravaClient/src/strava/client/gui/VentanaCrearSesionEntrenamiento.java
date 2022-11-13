@@ -160,6 +160,7 @@ public class VentanaCrearSesionEntrenamiento {
 			
 			@Override
 			public void actionPerformed(ActionEvent e) {
+				System.out.println("boton volver pulsado");
 				VPrincipal.setVisible(false);
 				VentanaUsuario.VPrincipal.setVisible(true);
 			}
