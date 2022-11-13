@@ -126,7 +126,9 @@ public class VentanaRegistro {
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				VPrincipal.setVisible(false);
+				System.out.println("boton registro pulsado");
 				User usuario = new User(nombre.getText(), correo.getText(), fecha.getText(), 0f, 0, 0, 0);
+				System.out.println("creando usuario: " + usuario);
 				VentanaRegistro2.setUsuario(usuario);
 				VentanaRegistro2.setPassword(contrasena.getSelectedText());
 				VentanaRegistro2.VPrincipal.setVisible(true);

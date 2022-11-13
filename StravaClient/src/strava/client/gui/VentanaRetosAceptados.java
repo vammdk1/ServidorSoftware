@@ -59,6 +59,7 @@ public class VentanaRetosAceptados {
 			
 			@Override
 			public void actionPerformed(ActionEvent e) {
+				System.out.println("Boton volver pulsado");
 				VPrincipal.setVisible(false);
 				VentanaUsuario.VPrincipal.setVisible(true);
 			}
