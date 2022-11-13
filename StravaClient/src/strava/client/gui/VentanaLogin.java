@@ -109,7 +109,8 @@ public class VentanaLogin {
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				VPrincipal.setVisible(false);
-				
+				System.out.println("boton inicio de sesion pulsado");
+				System.out.println("intentando registrarse con correo: " + lblCorreo.getText() + " y contrasena: " + lblContrasena.getText());
 				if (controller.login(lblCorreo.getText(), lblContrasena.getText())) {
 					VentanaUsuario.VPrincipal.setVisible(true);
 				}
@@ -121,6 +122,7 @@ public class VentanaLogin {
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				VPrincipal.setVisible(false);
+				System.out.println("boton registro pulsado");
 				VentanaRegistro.VPrincipal.setVisible(true);
 			}
 		});
