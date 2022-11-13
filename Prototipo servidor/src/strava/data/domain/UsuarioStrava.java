@@ -1,4 +1,4 @@
-package DatosUsuario;
+package strava.data.domain;
 
 import java.util.Date;
 

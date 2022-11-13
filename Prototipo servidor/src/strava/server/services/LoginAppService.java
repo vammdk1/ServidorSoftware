@@ -1,8 +1,8 @@
-package es.deusto.ingenieria.sd.auctions.server.services;
+package strava.server.services;
 
-import DatosUsuario.User;
-import DatosUsuario.UsuarioNoStrava;
-import DatosUsuario.UsuarioStrava;
+import strava.data.domain.User;
+import strava.data.domain.UsuarioNoStrava;
+import strava.data.domain.UsuarioStrava;
 
 //TODO: Implement Singleton Pattern
 public class LoginAppService {

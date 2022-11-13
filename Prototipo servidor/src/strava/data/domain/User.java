@@ -1,13 +1,10 @@
-package DatosUsuario;
+package strava.data.domain;
 
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-
-import Funcionalidad.Reto;
-import Funcionalidad.SesionEntrenamiento;
 
 public class User {	
 	//fecha nac, peso ,altura, frec car 1 , frec car 2,token token

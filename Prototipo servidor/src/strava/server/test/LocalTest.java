@@ -1,8 +1,8 @@
-package es.deusto.ingenieria.sd.auctions.server.test;
+package strava.server.test;
 
 import java.util.List;
 
-import es.deusto.ingenieria.sd.auctions.server.remote.RemoteFacade;
+import strava.server.remote.RemoteFacade;
 
 public class LocalTest {
 

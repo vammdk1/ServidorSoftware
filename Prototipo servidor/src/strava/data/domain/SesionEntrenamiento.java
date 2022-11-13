@@ -1,4 +1,4 @@
-package Funcionalidad;
+package strava.data.domain;
 
 import java.util.Date;
 

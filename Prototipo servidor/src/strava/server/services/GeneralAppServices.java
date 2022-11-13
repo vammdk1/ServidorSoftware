@@ -1,11 +1,11 @@
-package es.deusto.ingenieria.sd.auctions.server.services;
+package strava.server.services;
 
 import java.rmi.RemoteException;
 import java.util.ArrayList;
 
-import DatosUsuario.User;
-import Funcionalidad.Reto;
-import Funcionalidad.SesionEntrenamiento;
+import strava.data.domain.Reto;
+import strava.data.domain.SesionEntrenamiento;
+import strava.data.domain.User;
 
 public class GeneralAppServices {
 

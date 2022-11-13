@@ -1,15 +1,15 @@
-package es.deusto.ingenieria.sd.auctions.server.remote;
+package strava.server.remote;
 
 import java.rmi.Remote;
 import java.rmi.RemoteException;
 import java.util.ArrayList;
 import java.util.List;
 
-import DatosUsuario.User;
-import DatosUsuario.UsuarioNoStrava;
-import DatosUsuario.UsuarioStrava;
-import Funcionalidad.Reto;
-import Funcionalidad.SesionEntrenamiento;
+import strava.data.domain.Reto;
+import strava.data.domain.SesionEntrenamiento;
+import strava.data.domain.User;
+import strava.data.domain.UsuarioNoStrava;
+import strava.data.domain.UsuarioStrava;
 
 
 //This interface defines the API of the Server. It represents the Remote Facade pattern

@@ -1,4 +1,4 @@
-package es.deusto.ingenieria.sd.auctions.server.services;
+package strava.server.services;
 
 import java.sql.Date;
 import java.text.SimpleDateFormat;
@@ -11,11 +11,11 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 
-import DatosUsuario.User;
-import DatosUsuario.UsuarioNoStrava;
-import DatosUsuario.UsuarioStrava;
-import Funcionalidad.Reto;
-import Funcionalidad.SesionEntrenamiento;
+import strava.data.domain.Reto;
+import strava.data.domain.SesionEntrenamiento;
+import strava.data.domain.User;
+import strava.data.domain.UsuarioNoStrava;
+import strava.data.domain.UsuarioStrava;
 
 public class BaseDatos {
 	
@@ -48,7 +48,7 @@ public class BaseDatos {
 	/**
 	 * @param NuevoUsuario objeto tipo user (acepta Strava y no Strava)
 	 */
-	public static boolean RegistrarUsuario(DatosUsuario.User NuevoUsuario) {
+	public static boolean RegistrarUsuario(strava.data.domain.User NuevoUsuario) {
 		if(!UsuariosRegistrados.containsKey(NuevoUsuario.getEmail())) {
 			UsuariosRegistrados.put(NuevoUsuario.getEmail(), NuevoUsuario);
 			return true;

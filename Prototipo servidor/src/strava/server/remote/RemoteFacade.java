@@ -1,4 +1,4 @@
-package es.deusto.ingenieria.sd.auctions.server.remote;
+package strava.server.remote;
 
 import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;
@@ -8,14 +8,14 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import DatosUsuario.User;
-import DatosUsuario.UsuarioNoStrava;
-import DatosUsuario.UsuarioStrava;
-import Funcionalidad.Reto;
-import Funcionalidad.SesionEntrenamiento;
-import es.deusto.ingenieria.sd.auctions.server.services.BaseDatos;
-import es.deusto.ingenieria.sd.auctions.server.services.GeneralAppServices;
-import es.deusto.ingenieria.sd.auctions.server.services.LoginAppService;
+import strava.data.domain.Reto;
+import strava.data.domain.SesionEntrenamiento;
+import strava.data.domain.User;
+import strava.data.domain.UsuarioNoStrava;
+import strava.data.domain.UsuarioStrava;
+import strava.server.services.BaseDatos;
+import strava.server.services.GeneralAppServices;
+import strava.server.services.LoginAppService;
 
 
 

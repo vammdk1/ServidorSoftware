@@ -1,9 +1,9 @@
 package es.deusto.ingenieria.sd.auctions.client;
 
-import java.util.List;
+import java.util.List; 
 
 import es.deusto.ingenieria.sd.auctions.client.controller.LoginController;
-import es.deusto.ingenieria.sd.auctions.client.gui.LoginDialog;
+//import es.deusto.ingenieria.sd.auctions.client.gui.LoginDialog;
 import es.deusto.ingenieria.sd.auctions.client.remote.ServiceLocator;
 
 public class MainProgram {
@@ -19,12 +19,12 @@ public class MainProgram {
 		new VentanaLogin(serviceLocator);
 		
 		LoginController loginController = new LoginController(serviceLocator);
-		LoginDialog loginDialog = new LoginDialog(loginController);		
+		//LoginDialog loginDialog = new LoginDialog(loginController);		
 		
 		//Login
-		loginDialog.login();		
+		//loginDialog.login();		
 		//Get Categories
 		//Logout
-		loginDialog.logout();
+		//loginDialog.logout();
 	}
 }
