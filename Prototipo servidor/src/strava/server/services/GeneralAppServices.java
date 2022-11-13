@@ -16,10 +16,13 @@ public class GeneralAppServices {
 		}
 	}
 	
-	public static boolean setReto(Reto reto) { //puede que tenga que justarla como el de abajo
+	public static boolean setReto(User usuario,Reto reto) { //puede que tenga que justarla como el de abajo
 		// TODO Auto-generated method stub
-		BaseDatos.RegistrarReto(reto);
-		return false;
+		if(BaseDatos.RegistrarReto(usuario, reto)) {
+			return true;
+		}else {
+			return false;
+		}
 	}
 	
 	public static boolean setSesion(User usuario,SesionEntrenamiento sesion) {
@@ -37,7 +40,5 @@ public class GeneralAppServices {
 		return null;
 	}
 
-	
 
-	
 }

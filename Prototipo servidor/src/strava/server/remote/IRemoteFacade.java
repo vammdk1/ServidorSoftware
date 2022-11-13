@@ -27,7 +27,7 @@ public interface IRemoteFacade extends Remote {
 	
 	public ArrayList<Reto> verRetosActivos () throws RemoteException;
 	
-	public boolean crearReto (Reto reto) throws RemoteException;
+	public boolean crearReto (User usuario, Reto reto) throws RemoteException;
 	
 	public boolean crearSesionEntrenamiento (User usuario ,SesionEntrenamiento sesion) throws RemoteException;
 	

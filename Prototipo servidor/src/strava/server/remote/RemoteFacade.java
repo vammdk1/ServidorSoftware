@@ -132,9 +132,8 @@ public class RemoteFacade extends UnicastRemoteObject implements IRemoteFacade {
 	}
 
 	@Override
-	public synchronized boolean crearReto(Reto reto) throws RemoteException {
-		//hace falta el token para crear el reto ?/ como evitar retos duplicados (usar el nombre)
-			if(GeneralAppServices.setReto(reto)) {
+	public synchronized boolean crearReto(User usuario,Reto reto) throws RemoteException {
+			if(GeneralAppServices.setReto(usuario,reto)) {
 				return true; //para la pantalla sacar los datos del reto ?
 			}
 			throw new RemoteException("No se puedo crear el reto");

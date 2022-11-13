@@ -59,12 +59,13 @@ public class BaseDatos {
 		
 	}
 	
-	public static boolean RegistrarReto(Reto reto) {
+	public static boolean RegistrarReto(User usuario,Reto reto) {
 		Date in = new Date(0);
 		LocalDateTime ldt = LocalDateTime.ofInstant(in.toInstant(), ZoneId.systemDefault());
 		Date out = (Date) Date.from(ldt.atZone(ZoneId.systemDefault()).toInstant());
 		if(reto.getFechaFin().compareTo(out)>0) {
 			RetosActivos.add(reto);
+			UsuariosRegistrados.get(usuario).anadirReto(reto);
 			return true;
 		}else {
 			return false;
