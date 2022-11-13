@@ -74,6 +74,7 @@ public class VentanaUsuario {
 			
 			@Override
 			public void actionPerformed(ActionEvent e) {
+				System.out.println("Boton crear sesion de entrenamiento pulsado");
 				VPrincipal.setVisible(false);
 				VentanaCrearSesionEntrenamiento.VPrincipal.setVisible(true);
 			}
@@ -83,6 +84,7 @@ public class VentanaUsuario {
 			
 			@Override
 			public void actionPerformed(ActionEvent e) {
+				System.out.println("Boton crear reto pulsado");
 				VPrincipal.setVisible(false);
 				VentanaCrearReto.VPrincipal.setVisible(true);
 			}
@@ -92,6 +94,7 @@ public class VentanaUsuario {
 	
 			@Override
 			public void actionPerformed(ActionEvent e) {
+				System.out.println("Boton consultar reto pulsado");
 				VPrincipal.setVisible(false);
 				VentanaRetosAceptados.VPrincipal.setVisible(true);
 			}
@@ -101,6 +104,7 @@ public class VentanaUsuario {
 	
 			@Override
 			public void actionPerformed(ActionEvent e) {
+				System.out.println("Boton cerrar sesion pulsado");
 				controller.logout();
 				System.exit(0);
 			}
