@@ -1,9 +1,12 @@
 package strava.client.gui;
 
 
-import java.awt.Dimension;
+import java.awt.Dimension; 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -11,6 +14,7 @@ import javax.swing.JTextField;
 import java.awt.Font;
 import javax.swing.SwingConstants;
 
+import strava.client.controller.RetoController;
 import strava.client.remote.ServiceLocator;
 
 import javax.swing.DefaultComboBoxModel;
@@ -31,12 +35,12 @@ public class VentanaCrearReto {
 	private JTextField tfObjetivo;
 	private JTextField tfDeporte;
 	
-	private ServiceLocator serviceLocator;
+	private RetoController controller;
 	
-	public VentanaCrearReto(ServiceLocator serviceLocator)
+	public VentanaCrearReto(RetoController reto)
 	{
-		this.setServiceLocator(serviceLocator);
-		
+		this.controller = reto;
+
 		VPrincipal.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		VPrincipal.setSize(new Dimension(750, 500));
 		VPrincipal.getContentPane().setLayout(null);
@@ -157,14 +161,14 @@ public class VentanaCrearReto {
 		tfDeporte.setColumns(10);
 		tfDeporte.setBounds(272, 414, 210, 32);
 		VPrincipal.getContentPane().add(tfDeporte);
-		VPrincipal.setVisible(true);
+		VPrincipal.setVisible(false);
 		
 		volver.addActionListener(new ActionListener() {
 			
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				VPrincipal.setVisible(false);
-				new VentanaUsuario(serviceLocator);
+				VentanaUsuario.VPrincipal.setVisible(true);
 			}
 		});
 		
@@ -172,17 +176,20 @@ public class VentanaCrearReto {
 			
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				VPrincipal.setVisible(false);
-				new VentanaUsuario(serviceLocator);
+				SimpleDateFormat format = new SimpleDateFormat("dd-mm-yyyy");
+				try {
+					Date fechaInicio = format.parse(tfInicioDia.getText() + "-" + tfInicioMes.getText() + "-" + tfInicioAno.getText());
+					Date fechaFin = format.parse(tfFinDia.getText() + "-" + tfFinMes.getText() + "-" + tfFinAno.getText());
+					controller.crearReto(null, titulo.getText(), tfDeporte.getText(), fechaInicio, fechaFin, y, x);
+					VPrincipal.setVisible(false);
+					VentanaUsuario.VPrincipal.setVisible(true);
+				} catch (ParseException e1) {
+					// TODO Auto-generated catch block
+					System.out.println("Formato de fecha incorrecto " + e);
+				}
 			}
 		});
-	}
-
-	public ServiceLocator getServiceLocator() {
-		return serviceLocator;
-	}
-
-	public void setServiceLocator(ServiceLocator serviceLocator) {
-		this.serviceLocator = serviceLocator;
+		
+		
 	}
 }

@@ -32,11 +32,8 @@ public class VentanaRetosAceptados {
 	static int x = 500;
 	static int y = 300;
 	
-	private ServiceLocator serviceLocator;
-	
-	public VentanaRetosAceptados(ServiceLocator serviceLocator)
+	public VentanaRetosAceptados()
 	{
-		this.serviceLocator = serviceLocator;
 		
 		VPrincipal.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		VPrincipal.setSize(new Dimension(750, 500));
@@ -56,14 +53,14 @@ public class VentanaRetosAceptados {
 		btnNewButton.setFont(new Font("Tahoma", Font.PLAIN, 20));
 		btnNewButton.setBounds(10, 401, 107, 49);
 		VPrincipal.getContentPane().add(btnNewButton);
-		VPrincipal.setVisible(true);
+		VPrincipal.setVisible(false);
 		
 		btnNewButton.addActionListener(new ActionListener() {
 			
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				VPrincipal.setVisible(false);
-				new VentanaUsuario(serviceLocator);
+				VentanaUsuario.VPrincipal.setVisible(true);
 			}
 		});
 	}

@@ -20,6 +20,8 @@ import javax.swing.JTextField;
 import java.awt.Font;
 import javax.swing.SwingConstants;
 
+import strava.client.controller.LoginController;
+import strava.client.controller.RegisterController;
 import strava.client.remote.ServiceLocator;
 
 import java.awt.GridLayout;
@@ -32,11 +34,10 @@ public class VentanaLogin {
 	static int x = 500;
 	static int y = 300;
 	
-	private ServiceLocator serviceLocator;
+	private LoginController controller;
 	
-	public VentanaLogin(ServiceLocator serviceLocator) {
-		
-		this.serviceLocator = serviceLocator;
+	public VentanaLogin(LoginController login) {
+		this.controller = login;
 		
 		VPrincipal.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		VPrincipal.setSize(new Dimension(750, 500));
@@ -108,7 +109,10 @@ public class VentanaLogin {
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				VPrincipal.setVisible(false);
-				new VentanaUsuario(serviceLocator);
+				
+				if (controller.login(lblCorreo.getText(), lblContrasena.getText())) {
+					VentanaUsuario.VPrincipal.setVisible(true);
+				}
 			}
 		});
 		
@@ -117,7 +121,7 @@ public class VentanaLogin {
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				VPrincipal.setVisible(false);
-				new VentanaRegistro(serviceLocator);
+				VentanaRegistro.VPrincipal.setVisible(true);
 			}
 		});
 		

@@ -20,7 +20,9 @@ import javax.swing.JTextField;
 import java.awt.Font;
 import javax.swing.SwingConstants;
 
+import strava.client.controller.RegisterController;
 import strava.client.remote.ServiceLocator;
+import strava.server.data.domain.User;
 
 import java.awt.GridLayout;
 import javax.swing.BoxLayout;
@@ -32,11 +34,11 @@ public class VentanaRegistro {
 	static int x = 500;
 	static int y = 300;
 	
-	private ServiceLocator serviceLocator;
+	private RegisterController controller;
 	
-	public VentanaRegistro(ServiceLocator serviceLocator){
+	public VentanaRegistro(RegisterController register){
 		
-		this.serviceLocator = serviceLocator;
+		this.controller = register;
 		
 		VPrincipal.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		VPrincipal.setSize(new Dimension(750, 500));
@@ -72,14 +74,14 @@ public class VentanaRegistro {
 		PBotones.add(PBotones2,BorderLayout.SOUTH);
 		PBotones.setSize(x, y);
 		VPrincipal.getContentPane().add(PanelGlobal,BorderLayout.CENTER);
-		JTextArea Correo = new JTextArea();
-		Correo.setFont(new Font("Monospaced", Font.PLAIN, 20));
-		Correo.setBounds(37, 179, 663, 31);
-		PanelGlobal.add(Correo);
-		JPasswordField Contrasenna = new JPasswordField();
-		Contrasenna.setFont(new Font("Tahoma", Font.PLAIN, 20));
-		Contrasenna.setBounds(37, 240, 663, 31);
-		PanelGlobal.add(Contrasenna);
+		JTextArea correo = new JTextArea();
+		correo.setFont(new Font("Monospaced", Font.PLAIN, 20));
+		correo.setBounds(37, 179, 663, 31);
+		PanelGlobal.add(correo);
+		JPasswordField contrasena = new JPasswordField();
+		contrasena.setFont(new Font("Tahoma", Font.PLAIN, 20));
+		contrasena.setBounds(37, 240, 663, 31);
+		PanelGlobal.add(contrasena);
 		
 		JLabel lblNombre = new JLabel("Nombre");
 		lblNombre.setFont(new Font("Tahoma", Font.PLAIN, 18));
@@ -117,14 +119,17 @@ public class VentanaRegistro {
 		JLabel lblTitulo = new JLabel("STRAVA");
 		lblTitulo.setFont(new Font("Tahoma", Font.PLAIN, 60));
 		panelSuperior.add(lblTitulo);
-		VPrincipal.setVisible(true);
+		VPrincipal.setVisible(false);
 	
 		BRegistro.addActionListener(new ActionListener() {
 			
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				VPrincipal.setVisible(false);
-				new VentanaRegistro2(serviceLocator);
+				User usuario = new User(nombre.getText(), correo.getText(), fecha.getText(), 0f, 0, 0, 0);
+				VentanaRegistro2.setUsuario(usuario);
+				VentanaRegistro2.setPassword(contrasena.getSelectedText());
+				VentanaRegistro2.VPrincipal.setVisible(true);
 			}
 		});
 	}

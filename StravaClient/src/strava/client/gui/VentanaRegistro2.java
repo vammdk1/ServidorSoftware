@@ -20,7 +20,9 @@ import javax.swing.JTextField;
 import java.awt.Font;
 import javax.swing.SwingConstants;
 
+import strava.client.controller.RegisterController;
 import strava.client.remote.ServiceLocator;
+import strava.server.data.domain.User;
 
 import java.awt.GridLayout;
 import javax.swing.BoxLayout;
@@ -32,11 +34,13 @@ public class VentanaRegistro2 {
 	static int x = 500;
 	static int y = 300;
 	
-	private ServiceLocator serviceLocator;
+	private RegisterController controller;
+	private static User usuario;
+	private static String password;
 	
-	public VentanaRegistro2(ServiceLocator serviceLocator){
+	public VentanaRegistro2(RegisterController register){
 		
-		this.serviceLocator = serviceLocator;
+		this.controller = register;
 		
 		VPrincipal.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		VPrincipal.setSize(new Dimension(750, 500));
@@ -63,10 +67,10 @@ public class VentanaRegistro2 {
 		PBotones.setSize(x, y);
 		VPrincipal.getContentPane().add(PanelGlobal,BorderLayout.CENTER);
 		
-		JTextArea Peso = new JTextArea();
-		Peso.setFont(new Font("Monospaced", Font.PLAIN, 20));
-		Peso.setBounds(120, 70, 500, 31);
-		PanelGlobal.add(Peso);
+		JTextArea peso = new JTextArea("0");
+		peso.setFont(new Font("Monospaced", Font.PLAIN, 20));
+		peso.setBounds(120, 70, 500, 31);
+		PanelGlobal.add(peso);
 		
 		JLabel lblInfo = new JLabel("Esta informacion es opcional, si no quieres a\u00F1adirla pulsa en continuar.");
 		lblInfo.setFont(new Font("Tahoma", Font.PLAIN, 18));
@@ -83,7 +87,7 @@ public class VentanaRegistro2 {
 		lblAltura.setBounds(115, 100, 505, 38);
 		PanelGlobal.add(lblAltura);
 		
-		JTextArea frecMax = new JTextArea();
+		JTextArea frecMax = new JTextArea("0");
 		frecMax.setFont(new Font("Monospaced", Font.PLAIN, 20));
 		frecMax.setBounds(120, 140, 500, 31);
 		PanelGlobal.add(frecMax);
@@ -93,7 +97,7 @@ public class VentanaRegistro2 {
 		lblAltura_1.setBounds(115, 170, 505, 38);
 		PanelGlobal.add(lblAltura_1);
 		
-		JTextArea frecRep = new JTextArea();
+		JTextArea frecRep = new JTextArea("0");
 		frecRep.setFont(new Font("Monospaced", Font.PLAIN, 20));
 		frecRep.setBounds(120, 210, 500, 31);
 		PanelGlobal.add(frecRep);
@@ -103,7 +107,7 @@ public class VentanaRegistro2 {
 		lblAltura_1_1.setBounds(115, 240, 163, 38);
 		PanelGlobal.add(lblAltura_1_1);
 		
-		JTextArea altura = new JTextArea();
+		JTextArea altura = new JTextArea("0");
 		altura.setFont(new Font("Monospaced", Font.PLAIN, 20));
 		altura.setBounds(120, 280, 500, 31);
 		PanelGlobal.add(altura);
@@ -114,15 +118,36 @@ public class VentanaRegistro2 {
 		JLabel lblTitulo = new JLabel("STRAVA");
 		lblTitulo.setFont(new Font("Tahoma", Font.PLAIN, 60));
 		panelSuperior.add(lblTitulo);
-		VPrincipal.setVisible(true);	
+		VPrincipal.setVisible(false);	
 		
 		BRegistro.addActionListener(new ActionListener() {
 			
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				VPrincipal.setVisible(false);
-				new VentanaUsuario(serviceLocator);
+				getUsuario().setPeso(Float.parseFloat(peso.getText()));
+				getUsuario().setAltura(Integer.parseInt(altura.getText()));
+				getUsuario().setPulsoxMinuto(Integer.parseInt(frecMax.getText()));
+				getUsuario().setPulsoReposo(Integer.parseInt(frecRep.getText()));
+				controller.register(getUsuario().getNombre(), getUsuario().getEmail(), getUsuario().getFechaNac(), getUsuario().getPeso(), getUsuario().getAltura(), getUsuario().getPulsoxMinuto(), getUsuario().getPulsoReposo(), getPassword());
+				VentanaLogin.VPrincipal.setVisible(true);
 			}
 		});
+	}
+
+	public static User getUsuario() {
+		return usuario;
+	}
+
+	public static void setUsuario(User usuario) {
+		VentanaRegistro2.usuario = usuario;
+	}
+
+	public static String getPassword() {
+		return password;
+	}
+
+	public static void setPassword(String password) {
+		VentanaRegistro2.password = password;
 	}
 }

@@ -20,6 +20,7 @@ import javax.swing.JTextField;
 import java.awt.Font;
 import javax.swing.SwingConstants;
 
+import strava.client.controller.LoginController;
 import strava.client.remote.ServiceLocator;
 
 import java.awt.GridLayout;
@@ -32,11 +33,11 @@ public class VentanaUsuario {
 	static int x = 500;
 	static int y = 300;
 	
-	private ServiceLocator serviceLocator;
+	private LoginController controller;
 	
-	public VentanaUsuario(ServiceLocator serviceLocator)
+	public VentanaUsuario(LoginController login)
 	{
-		this.serviceLocator = serviceLocator;
+		this.controller = login;
 		
 		VPrincipal.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		VPrincipal.setSize(new Dimension(750, 500));
@@ -67,14 +68,14 @@ public class VentanaUsuario {
 		CerrarSesion.setFont(new Font("Tahoma", Font.PLAIN, 16));
 		CerrarSesion.setBounds(589, 407, 135, 43);
 		VPrincipal.getContentPane().add(CerrarSesion);
-		VPrincipal.setVisible(true);
+		VPrincipal.setVisible(false);
 	
 		CrearSesionEntrenamiento.addActionListener(new ActionListener() {
 			
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				VPrincipal.setVisible(false);
-				new VentanaCrearSesionEntrenamiento(serviceLocator);
+				VentanaCrearSesionEntrenamiento.VPrincipal.setVisible(true);
 			}
 		});
 		
@@ -83,7 +84,7 @@ public class VentanaUsuario {
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				VPrincipal.setVisible(false);
-				new VentanaCrearReto(serviceLocator);
+				VentanaCrearReto.VPrincipal.setVisible(true);
 			}
 		});
 
@@ -92,7 +93,7 @@ public class VentanaUsuario {
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				VPrincipal.setVisible(false);
-				new VentanaRetosAceptados(serviceLocator);
+				VentanaRetosAceptados.VPrincipal.setVisible(true);
 			}
 		});
 
@@ -100,6 +101,7 @@ public class VentanaUsuario {
 	
 			@Override
 			public void actionPerformed(ActionEvent e) {
+				controller.logout();
 				System.exit(0);
 			}
 		});
