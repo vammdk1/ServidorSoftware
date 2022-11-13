@@ -70,7 +70,7 @@ public class RemoteFacade extends UnicastRemoteObject implements IRemoteFacade {
 
 	@Override
 	public synchronized boolean registro (User usuario) throws RemoteException {
-		if(BaseDatos.RegistrarUsuario(usuario)) {
+		if(GeneralAppServices.registrarusuario(usuario)) {
 			System.out.println("RemoteFacade Registro(): " + usuario.getEmail());
 			return true;
 		}else {

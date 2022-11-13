@@ -19,7 +19,7 @@ public class RetoController {
 		Reto reto = new Reto(nombre, fechaInicio, fechaFin, distanciaObjetivo, tiempoObjetivo, deporte);
 		
 		try {
-			return this.serviceLocator.getService().crearReto(reto);
+			return this.serviceLocator.getService().crearReto(usuario,reto);
 		} catch (RemoteException e) {
 			System.out.println("# Error creando una sesión de entrenamiento: " + e);
 			return false;

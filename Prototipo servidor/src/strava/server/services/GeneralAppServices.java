@@ -5,8 +5,17 @@ import java.util.ArrayList;
 import strava.server.data.domain.Reto;
 import strava.server.data.domain.SesionEntrenamiento;
 import strava.server.data.domain.User;
+import strava.server.data.domain.UsuarioNoStrava;
 
 public class GeneralAppServices {
+	
+	public static boolean registrarusuario(User usuario) {
+		if(BaseDatos.RegistrarUsuario(usuario)) {
+			return true;
+		}else {
+			return false;
+		}
+	}
 
 	public ArrayList<Reto> DevolverRetosActivos(){
 		ArrayList<Reto> Lretos = BaseDatos.getRetosActivos();
