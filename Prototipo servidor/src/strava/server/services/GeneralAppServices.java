@@ -9,8 +9,9 @@ import strava.server.data.domain.User;
 public class GeneralAppServices {
 
 	public ArrayList<Reto> DevolverRetosActivos(){
-		 if(BaseDatos.getRetosActivos().size()>0) {
-			 return BaseDatos.getRetosActivos();
+		ArrayList<Reto> Lretos = BaseDatos.getRetosActivos();
+		 if(Lretos.size()>=0) {
+			 return Lretos;
 		}else {
 			return null;
 		}

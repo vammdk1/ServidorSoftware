@@ -19,7 +19,11 @@ public class UsuarioNoStrava extends User{
 		return GoogleFacebook;
 	}
 	public void setGoogleFacebook(boolean googleFacebook) {
-		GoogleFacebook = googleFacebook;
+		this.GoogleFacebook = googleFacebook;
+	}
+	
+	public boolean getGoogleFacebook() {
+		return GoogleFacebook;
 	}
 	
 	//TODO

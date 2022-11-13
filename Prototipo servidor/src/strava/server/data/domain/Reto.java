@@ -16,7 +16,7 @@ public class Reto {
 	 * @param fechaIni
 	 * @param fechaFin
 	 * @param distanciaObj
-	 * @param tiempoObj
+	 * @param tiempoObj esto está pensado en horas
 	 * @param deporte
 	 */
 	public Reto(String nombre, Date fechaIni, Date fechaFin, float distanciaObj, float tiempoObj, String deporte) {

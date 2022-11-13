@@ -9,6 +9,7 @@ public class LoginAppService {
 		
 	public User login(String email, String password) {
 		//TODO: Get User using DAO and check 		
+		System.out.println(email+"||"+password);
 		UsuarioStrava user = new UsuarioStrava("",email,"", 0, 0, 0, 0, password);
 		//Generate the hash of the password
 		String sha1 = org.apache.commons.codec.digest.DigestUtils.sha1Hex(password);	

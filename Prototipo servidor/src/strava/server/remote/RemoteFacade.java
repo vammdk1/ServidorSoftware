@@ -74,7 +74,7 @@ public class RemoteFacade extends UnicastRemoteObject implements IRemoteFacade {
 			System.out.println("RemoteFacade Registro(): " + usuario.getEmail());
 			return true;
 		}else {
-			throw new RemoteException("El correo ingresado ya se encuentra en uso");
+			throw new RemoteException("El correo ingresado:"+usuario.getEmail()+", ya se encuentra en uso");
 		}
 		
 	}
@@ -133,6 +133,7 @@ public class RemoteFacade extends UnicastRemoteObject implements IRemoteFacade {
 
 	@Override
 	public synchronized boolean crearReto(User usuario,Reto reto) throws RemoteException {
+		System.out.println("Creando Reto");
 			if(GeneralAppServices.setReto(usuario,reto)) {
 				return true; //para la pantalla sacar los datos del reto ?
 			}
