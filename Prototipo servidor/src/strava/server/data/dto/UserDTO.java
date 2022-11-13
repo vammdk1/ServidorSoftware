@@ -1,7 +1,11 @@
 package strava.server.data.dto;
 
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.Date;
+
+import strava.server.data.domain.Reto;
+import strava.server.data.domain.SesionEntrenamiento;
 
 public class UserDTO implements Serializable {
 
@@ -16,6 +20,9 @@ public class UserDTO implements Serializable {
 	private int altura;
 	private int frecuenciacardmax;
 	private int frecuenciacardreposo;
+		
+	private ArrayList<Reto> retos = new ArrayList<>();
+	private ArrayList<SesionEntrenamiento> sesiones = new ArrayList<>();
 	
 	public String getNombre() {
 		return nombre;
@@ -71,5 +78,36 @@ public class UserDTO implements Serializable {
 		this.frecuenciacardreposo = frecuenciacardreposo;
 	}
 	
+	public void anadirReto(Reto r) {
+		this.retos.add(r);
+	}
+	
+	
+	public ArrayList<Reto> getRetos() {
+		
+		return retos;
+		
+	}
+	
+	public ArrayList<Reto> getRetosActivos() {
+		ArrayList<Reto> retosActivos = new ArrayList<>();
+		for (Reto r:retos) {
+			if(new Date().compareTo(r.getFechaFin())<0) {
+				retosActivos.add(r);
+			}
+		}
+		return retosActivos;
+		
+	}
+	
+	public void anadirSesion(SesionEntrenamiento s) {
+		this.sesiones.add(s);
+	}
+	
+	public ArrayList<SesionEntrenamiento> getSesiones() {
+		
+		return sesiones;
+		
+	}
 	
 }

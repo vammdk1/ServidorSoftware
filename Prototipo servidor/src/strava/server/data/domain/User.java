@@ -109,11 +109,11 @@ public class User {
 	}
 	
 	public void anadirReto(Reto r) {
-		retos.add(r);
+		this.retos.add(r);
 	}
 	
 	
-public ArrayList<Reto> getRetos() {
+	public ArrayList<Reto> getRetos() {
 		
 		return retos;
 		
@@ -131,7 +131,7 @@ public ArrayList<Reto> getRetos() {
 	}
 	
 	public void anadirSesion(SesionEntrenamiento s) {
-		sesiones.add(s);
+		this.sesiones.add(s);
 	}
 	
 	public ArrayList<SesionEntrenamiento> getSesiones() {
@@ -139,8 +139,4 @@ public ArrayList<Reto> getRetos() {
 		return sesiones;
 		
 	}
-	
-	
-	
-	
 }
