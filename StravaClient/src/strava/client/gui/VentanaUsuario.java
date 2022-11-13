@@ -108,6 +108,8 @@ public class VentanaUsuario {
 			public void actionPerformed(ActionEvent e) {
 				System.out.println("Boton cerrar sesion pulsado");
 				controller.logout();
+				VPrincipal.setVisible(false);
+				VentanaLogin.VPrincipal.setVisible(true);
 				System.exit(0);
 			}
 		});

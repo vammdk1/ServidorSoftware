@@ -114,6 +114,7 @@ public class VentanaLogin {
 				if (controller.login(lblCorreo.getText(), lblContrasena.getText())) {
 					//VentanaUsuario.setUsuario();
 					VentanaUsuario.VPrincipal.setVisible(true);
+					VentanaUsuario.setUsuario(controller.getUser());
 				}
 			}
 		});
