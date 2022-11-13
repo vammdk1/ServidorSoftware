@@ -1,12 +1,17 @@
 package strava.server.data.domain;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class User {	
+public class User implements Serializable {	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	//fecha nac, peso ,altura, frec car 1 , frec car 2,token token
 	private String nombre;
 	private String email;
