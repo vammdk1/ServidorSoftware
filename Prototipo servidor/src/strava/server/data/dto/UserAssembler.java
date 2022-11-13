@@ -15,7 +15,7 @@ public class UserAssembler {
 		return instance;
 	}
 	
-	public UserDTO  userToDTO(User user) {
+	public UserDTO userToDTO(User user) {
 		UserDTO dto = new UserDTO();
 		
 		dto.setEmail(user.getEmail());
