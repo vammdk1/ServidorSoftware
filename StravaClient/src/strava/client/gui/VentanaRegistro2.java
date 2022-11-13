@@ -41,7 +41,6 @@ public class VentanaRegistro2 {
 	public VentanaRegistro2(RegisterController register){
 		
 		this.controller = register;
-		VPrincipal.setVisible(false);
 		
 		VPrincipal.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		VPrincipal.setSize(new Dimension(750, 500));
@@ -68,7 +67,7 @@ public class VentanaRegistro2 {
 		PBotones.setSize(x, y);
 		VPrincipal.getContentPane().add(PanelGlobal,BorderLayout.CENTER);
 		
-		JTextArea peso = new JTextArea();
+		JTextArea peso = new JTextArea("0");
 		peso.setFont(new Font("Monospaced", Font.PLAIN, 20));
 		peso.setBounds(120, 70, 500, 31);
 		PanelGlobal.add(peso);
@@ -88,7 +87,7 @@ public class VentanaRegistro2 {
 		lblAltura.setBounds(115, 100, 505, 38);
 		PanelGlobal.add(lblAltura);
 		
-		JTextArea frecMax = new JTextArea();
+		JTextArea frecMax = new JTextArea("0");
 		frecMax.setFont(new Font("Monospaced", Font.PLAIN, 20));
 		frecMax.setBounds(120, 140, 500, 31);
 		PanelGlobal.add(frecMax);
@@ -98,7 +97,7 @@ public class VentanaRegistro2 {
 		lblAltura_1.setBounds(115, 170, 505, 38);
 		PanelGlobal.add(lblAltura_1);
 		
-		JTextArea frecRep = new JTextArea();
+		JTextArea frecRep = new JTextArea("0");
 		frecRep.setFont(new Font("Monospaced", Font.PLAIN, 20));
 		frecRep.setBounds(120, 210, 500, 31);
 		PanelGlobal.add(frecRep);
@@ -108,7 +107,7 @@ public class VentanaRegistro2 {
 		lblAltura_1_1.setBounds(115, 240, 163, 38);
 		PanelGlobal.add(lblAltura_1_1);
 		
-		JTextArea altura = new JTextArea();
+		JTextArea altura = new JTextArea("0");
 		altura.setFont(new Font("Monospaced", Font.PLAIN, 20));
 		altura.setBounds(120, 280, 500, 31);
 		PanelGlobal.add(altura);
@@ -119,7 +118,7 @@ public class VentanaRegistro2 {
 		JLabel lblTitulo = new JLabel("STRAVA");
 		lblTitulo.setFont(new Font("Tahoma", Font.PLAIN, 60));
 		panelSuperior.add(lblTitulo);
-		VPrincipal.setVisible(true);	
+		VPrincipal.setVisible(false);	
 		
 		BRegistro.addActionListener(new ActionListener() {
 			

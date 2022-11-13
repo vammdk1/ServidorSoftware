@@ -34,7 +34,6 @@ public class VentanaRetosAceptados {
 	
 	public VentanaRetosAceptados()
 	{
-		VPrincipal.setVisible(false);
 		
 		VPrincipal.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		VPrincipal.setSize(new Dimension(750, 500));
@@ -54,7 +53,7 @@ public class VentanaRetosAceptados {
 		btnNewButton.setFont(new Font("Tahoma", Font.PLAIN, 20));
 		btnNewButton.setBounds(10, 401, 107, 49);
 		VPrincipal.getContentPane().add(btnNewButton);
-		VPrincipal.setVisible(true);
+		VPrincipal.setVisible(false);
 		
 		btnNewButton.addActionListener(new ActionListener() {
 			

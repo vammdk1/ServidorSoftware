@@ -50,7 +50,6 @@ public class VentanaCrearSesionEntrenamiento {
 	VentanaCrearSesionEntrenamiento(SesionEntrenamientoController controller)
 	{
 		this.controller = controller;
-		VPrincipal.setVisible(false);
 		
 		VPrincipal.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		VPrincipal.setSize(new Dimension(750, 500));
@@ -155,7 +154,7 @@ public class VentanaCrearSesionEntrenamiento {
 		lblNewLabel_1_3.setFont(new Font("Tahoma", Font.PLAIN, 11));
 		lblNewLabel_1_3.setBounds(129, 298, 139, 51);
 		VPrincipal.getContentPane().add(lblNewLabel_1_3);
-		VPrincipal.setVisible(true);
+		VPrincipal.setVisible(false);
 		
 		volver.addActionListener(new ActionListener() {
 			

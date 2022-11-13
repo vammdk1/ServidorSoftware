@@ -38,7 +38,6 @@ public class VentanaLogin {
 	
 	public VentanaLogin(LoginController login) {
 		this.controller = login;
-		VPrincipal.setVisible(true);
 		
 		VPrincipal.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		VPrincipal.setSize(new Dimension(750, 500));

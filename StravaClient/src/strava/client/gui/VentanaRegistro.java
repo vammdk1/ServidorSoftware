@@ -39,7 +39,6 @@ public class VentanaRegistro {
 	public VentanaRegistro(RegisterController register){
 		
 		this.controller = register;
-		VPrincipal.setVisible(false);
 		
 		VPrincipal.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		VPrincipal.setSize(new Dimension(750, 500));
@@ -120,7 +119,7 @@ public class VentanaRegistro {
 		JLabel lblTitulo = new JLabel("STRAVA");
 		lblTitulo.setFont(new Font("Tahoma", Font.PLAIN, 60));
 		panelSuperior.add(lblTitulo);
-		VPrincipal.setVisible(true);
+		VPrincipal.setVisible(false);
 	
 		BRegistro.addActionListener(new ActionListener() {
 			
@@ -130,6 +129,7 @@ public class VentanaRegistro {
 				User usuario = new User(nombre.getText(), correo.getText(), fecha.getText(), 0f, 0, 0, 0);
 				VentanaRegistro2.setUsuario(usuario);
 				VentanaRegistro2.setPassword(contrasena.getSelectedText());
+				VentanaRegistro2.VPrincipal.setVisible(true);
 			}
 		});
 	}

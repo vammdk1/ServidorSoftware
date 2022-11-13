@@ -40,7 +40,6 @@ public class VentanaRetosActivos {
 	public VentanaRetosActivos(RetoController reto)
 	{
 		this.controller = reto;
-		VPrincipal.setVisible(false);
 		
 		VPrincipal.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		VPrincipal.setSize(new Dimension(750, 500));
@@ -132,7 +131,7 @@ public class VentanaRetosActivos {
 		Aceptar.setFont(new Font("Tahoma", Font.PLAIN, 20));
 		Aceptar.setBounds(617, 401, 107, 49);
 		VPrincipal.getContentPane().add(Aceptar);
-		VPrincipal.setVisible(true);
+		VPrincipal.setVisible(false);
 		
 		volver.addActionListener(new ActionListener() {
 			

@@ -38,7 +38,6 @@ public class VentanaUsuario {
 	public VentanaUsuario(LoginController login)
 	{
 		this.controller = login;
-		VPrincipal.setVisible(false);
 		
 		VPrincipal.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		VPrincipal.setSize(new Dimension(750, 500));
@@ -69,7 +68,7 @@ public class VentanaUsuario {
 		CerrarSesion.setFont(new Font("Tahoma", Font.PLAIN, 16));
 		CerrarSesion.setBounds(589, 407, 135, 43);
 		VPrincipal.getContentPane().add(CerrarSesion);
-		VPrincipal.setVisible(true);
+		VPrincipal.setVisible(false);
 	
 		CrearSesionEntrenamiento.addActionListener(new ActionListener() {
 			

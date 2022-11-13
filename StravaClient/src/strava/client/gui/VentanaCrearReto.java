@@ -40,8 +40,7 @@ public class VentanaCrearReto {
 	public VentanaCrearReto(RetoController reto)
 	{
 		this.controller = reto;
-		VPrincipal.setVisible(false);
-		
+
 		VPrincipal.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		VPrincipal.setSize(new Dimension(750, 500));
 		VPrincipal.getContentPane().setLayout(null);
@@ -162,7 +161,7 @@ public class VentanaCrearReto {
 		tfDeporte.setColumns(10);
 		tfDeporte.setBounds(272, 414, 210, 32);
 		VPrincipal.getContentPane().add(tfDeporte);
-		VPrincipal.setVisible(true);
+		VPrincipal.setVisible(false);
 		
 		volver.addActionListener(new ActionListener() {
 			
