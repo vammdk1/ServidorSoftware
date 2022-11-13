@@ -21,6 +21,8 @@ public interface IRemoteFacade extends Remote {
 	
 	public boolean registro (User usuario) throws RemoteException;
 	
+	public User obtenerUsuario (long token) throws RemoteException;
+	
 	public long inicioGoogle (UsuarioNoStrava usuario) throws RemoteException;
 	
 	public long inicioFacebook (UsuarioNoStrava usuario) throws RemoteException;
