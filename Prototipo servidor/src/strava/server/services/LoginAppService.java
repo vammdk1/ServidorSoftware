@@ -1,8 +1,8 @@
 package strava.server.services;
 
-import strava.data.domain.User;
-import strava.data.domain.UsuarioNoStrava;
-import strava.data.domain.UsuarioStrava;
+import strava.server.data.domain.User;
+import strava.server.data.domain.UsuarioNoStrava;
+import strava.server.data.domain.UsuarioStrava;
 
 //TODO: Implement Singleton Pattern
 public class LoginAppService {

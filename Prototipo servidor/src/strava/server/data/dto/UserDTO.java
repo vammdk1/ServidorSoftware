@@ -1,4 +1,4 @@
-package strava.data.dto;
+package strava.server.data.dto;
 
 import java.io.Serializable;
 import java.util.Date;

@@ -5,11 +5,11 @@ import java.rmi.RemoteException;
 import java.util.ArrayList;
 import java.util.List;
 
-import strava.data.domain.Reto;
-import strava.data.domain.SesionEntrenamiento;
-import strava.data.domain.User;
-import strava.data.domain.UsuarioNoStrava;
-import strava.data.domain.UsuarioStrava;
+import strava.server.data.domain.Reto;
+import strava.server.data.domain.SesionEntrenamiento;
+import strava.server.data.domain.User;
+import strava.server.data.domain.UsuarioNoStrava;
+import strava.server.data.domain.UsuarioStrava;
 
 
 //This interface defines the API of the Server. It represents the Remote Facade pattern

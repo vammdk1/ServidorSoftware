@@ -3,9 +3,9 @@ package strava.server.services;
 import java.rmi.RemoteException;
 import java.util.ArrayList;
 
-import strava.data.domain.Reto;
-import strava.data.domain.SesionEntrenamiento;
-import strava.data.domain.User;
+import strava.server.data.domain.Reto;
+import strava.server.data.domain.SesionEntrenamiento;
+import strava.server.data.domain.User;
 
 public class GeneralAppServices {
 

@@ -1,7 +1,7 @@
-package strava.data.dto;
+package strava.server.data.dto;
 
-import strava.data.domain.Reto;
-import strava.data.domain.SesionEntrenamiento;
+import strava.server.data.domain.Reto;
+import strava.server.data.domain.SesionEntrenamiento;
 
 public class SesionEntrenamientoAssembler {
 	private static SesionEntrenamientoAssembler instance;

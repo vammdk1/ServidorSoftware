@@ -1,6 +1,6 @@
-package strava.data.dto;
+package strava.server.data.dto;
 
-import strava.data.domain.User;
+import strava.server.data.domain.User;
 
 public class UserAssembler {
 	private static UserAssembler instance;

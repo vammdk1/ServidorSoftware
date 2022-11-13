@@ -11,11 +11,11 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 
-import strava.data.domain.Reto;
-import strava.data.domain.SesionEntrenamiento;
-import strava.data.domain.User;
-import strava.data.domain.UsuarioNoStrava;
-import strava.data.domain.UsuarioStrava;
+import strava.server.data.domain.Reto;
+import strava.server.data.domain.SesionEntrenamiento;
+import strava.server.data.domain.User;
+import strava.server.data.domain.UsuarioNoStrava;
+import strava.server.data.domain.UsuarioStrava;
 
 public class BaseDatos {
 	
@@ -48,7 +48,7 @@ public class BaseDatos {
 	/**
 	 * @param NuevoUsuario objeto tipo user (acepta Strava y no Strava)
 	 */
-	public static boolean RegistrarUsuario(strava.data.domain.User NuevoUsuario) {
+	public static boolean RegistrarUsuario(strava.server.data.domain.User NuevoUsuario) {
 		if(!UsuariosRegistrados.containsKey(NuevoUsuario.getEmail())) {
 			UsuariosRegistrados.put(NuevoUsuario.getEmail(), NuevoUsuario);
 			return true;

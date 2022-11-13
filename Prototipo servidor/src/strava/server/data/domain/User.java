@@ -1,4 +1,4 @@
-package strava.data.domain;
+package strava.server.data.domain;
 
 import java.util.ArrayList;
 import java.util.Date;

@@ -1,4 +1,4 @@
-package strava.data.dto;
+package strava.server.data.dto;
 
 import java.util.Date;
 

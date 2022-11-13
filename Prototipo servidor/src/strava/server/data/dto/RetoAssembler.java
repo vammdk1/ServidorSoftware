@@ -1,6 +1,6 @@
-package strava.data.dto;
+package strava.server.data.dto;
 
-import strava.data.domain.Reto;
+import strava.server.data.domain.Reto;
 
 public class RetoAssembler {
 	private static RetoAssembler instance;
