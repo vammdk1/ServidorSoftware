@@ -3,11 +3,14 @@ package strava.server.data.domain;
 import java.io.Serializable;
 import java.util.Date;
 
-public class UsuarioStrava extends User implements Serializable{
+public class UsuarioStrava extends User {
 	/**
 	 * 
 	 */
-	private static final long serialVersionUID = 1L;
+	private static final long serialVersionUID = -6746389110586704136L;
+	/**
+	 * 
+	 */
 	private String contrasenna;
 
 	public UsuarioStrava(String nombre, String email, String fechaNac, float peso, int altura, int pulsoxMinuto,

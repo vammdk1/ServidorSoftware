@@ -17,10 +17,11 @@ public class RegisterController {
 		
 	public void register(String nombre, String email, String fechaNac, float peso, int altura, int pulsoxMinuto, int pulsoReposo, String password) {
 		
-		UsuarioStrava user = new UsuarioStrava(nombre, email, fechaNac, peso, altura, pulsoxMinuto, pulsoReposo, password);
+		//UsuarioStrava user = new UsuarioStrava(nombre, email, fechaNac, peso, altura, pulsoxMinuto, pulsoReposo, password);
 		
 		try {
-			this.serviceLocator.getService().registro(user);
+			//System.out.println(email+"||"+user.getContrasenna());
+			this.serviceLocator.getService().registro(nombre, email, fechaNac, peso, altura, pulsoxMinuto, pulsoReposo, password);
 		} catch (RemoteException e) {
 			// TODO Auto-generated catch block
 			System.out.println("# Error en el registro: " + e);

@@ -3,12 +3,11 @@ package strava.server.data.domain;
 import java.io.Serializable;
 import java.util.Date;
 
-public class UsuarioNoStrava extends User implements Serializable{
+public class UsuarioNoStrava extends User {
 	
 	/**
 	 * 
 	 */
-	private static final long serialVersionUID = 1L;
 	private	boolean GoogleFacebook=true;
 	/**
 	 * @param GoogleFacebookc True para google y False para Facebook

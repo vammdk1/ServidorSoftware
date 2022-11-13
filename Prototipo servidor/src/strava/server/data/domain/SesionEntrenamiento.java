@@ -1,8 +1,10 @@
 package strava.server.data.domain;
 
+import java.io.Serializable;
 import java.util.Date;
 
 public class SesionEntrenamiento {
+	
 	private String titulo;
 	private String deporte;
 	private float distancia;

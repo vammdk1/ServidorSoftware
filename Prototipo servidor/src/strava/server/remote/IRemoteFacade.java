@@ -19,12 +19,6 @@ public interface IRemoteFacade extends Remote {
 	
 	public void logout(long token) throws RemoteException; 
 	
-	public boolean registro (User usuario) throws RemoteException;
-	
-	public long inicioGoogle (UsuarioNoStrava usuario) throws RemoteException;
-	
-	public long inicioFacebook (UsuarioNoStrava usuario) throws RemoteException;
-	
 	public ArrayList<Reto> verRetosActivos () throws RemoteException;
 	
 	public boolean crearReto (User usuario, Reto reto) throws RemoteException;
@@ -32,6 +26,13 @@ public interface IRemoteFacade extends Remote {
 	public boolean crearSesionEntrenamiento (User usuario ,SesionEntrenamiento sesion) throws RemoteException;
 	
 	public ArrayList<Reto> verRetosAceptados (User usuario) throws RemoteException;
+
+	boolean registro(String nombre, String email, String fechaNac, float peso, int altura, int pulsoxMinuto,
+			int pulsoReposo, String password) throws RemoteException;
+
+	long inicioGoogle(String email) throws RemoteException;
+
+	long inicioFacebook(String email) throws RemoteException;
 	
 	
 	

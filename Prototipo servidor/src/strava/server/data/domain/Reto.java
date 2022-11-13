@@ -1,8 +1,12 @@
 package strava.server.data.domain;
 
+import java.io.Serializable;
 import java.util.Date;
 
 public class Reto {
+	/**
+	 * 
+	 */
 	private String nombre;
 	private Date fechaIni;
 	private Date fechaFin;
@@ -19,6 +23,7 @@ public class Reto {
 	 * @param tiempoObj esto está pensado en horas
 	 * @param deporte
 	 */
+	
 	public Reto(String nombre, Date fechaIni, Date fechaFin, float distanciaObj, float tiempoObj, String deporte) {
 		super();
 		this.nombre = nombre;

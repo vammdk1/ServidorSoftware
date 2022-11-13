@@ -31,8 +31,8 @@ public class LocalTest {
 			facade = new RemoteFacade();
 			usuario1 = new UsuarioStrava("victor", "victor@prueba.com", "01/12/1999", 70, 176, 25, 160, "$!9PhNz,");
 			usuario2 = new UsuarioStrava("victor", "victor@prueba.com", "01/12/1999", 70, 176, 25, 160, "$!9PhNz,");
-			google = new UsuarioNoStrava("pepe", "pepe@prieba.com", "01/01/01", 99, 99, 99, 99, "123456789",true);
-			facebook =  new UsuarioNoStrava("luis", "luis@prieba.com", "01/01/01", 99, 99, 99, 99, "123456789",false);
+			//google = new UsuarioNoStrava("pepe", "pepe@prieba.com", "01/01/01", 99, 99, 99, 99, "123456789",true);
+			//facebook =  new UsuarioNoStrava("luis", "luis@prieba.com", "01/01/01", 99, 99, 99, 99, "123456789",false);
 			
 		} catch (Exception e) {			
 			System.out.println("\t# Error: " + e.getMessage());
@@ -41,29 +41,31 @@ public class LocalTest {
 		//registro
 		try {
 			System.out.println("/////////////////////////////////////////////////////////////////////////");
-			facade.registro(usuario1);
+			facade.registro("victor", "victor@prueba.com", "01/12/1999", 70, 176, 25, 160, "$!9PhNz,");
 		} catch (Exception e) {
 			System.out.println("\t# Error: " + e.getMessage());	
 		}
 		try {
 			System.out.println("/////////////////////////////////////////////////////////////////////////");
-			facade.registro(usuario2);
+			facade.registro("victor", "victor@prueba.com", "01/12/1999", 70, 176, 25, 160, "$!9PhNz,");
+		} catch (Exception e) {
+			System.out.println("\t# Error: " + e.getMessage());	
+		}
+		/**
+		try {
+			//TODO cambiar registro por un registro especial para usuarios distintos a strava
+			System.out.println("/////////////////////////////////////////////////////////////////////////");
+			facade.registro("pepe", "pepe@prieba.com", "01/01/01", 99, 99, 99, 99, "123456789");
 		} catch (Exception e) {
 			System.out.println("\t# Error: " + e.getMessage());	
 		}
 		try {
 			System.out.println("/////////////////////////////////////////////////////////////////////////");
-			facade.registro(google);
+			facade.registro("luis", "luis@prieba.com", "01/01/01", 99, 99, 99, 99, "123456789");
 		} catch (Exception e) {
 			System.out.println("\t# Error: " + e.getMessage());	
 		}
-		try {
-			System.out.println("/////////////////////////////////////////////////////////////////////////");
-			facade.registro(facebook);
-		} catch (Exception e) {
-			System.out.println("\t# Error: " + e.getMessage());	
-		}
-	
+	**/
 		//login
 		try {
 			System.out.println("/////////////////////////////////////////////////////////////////////////");
@@ -89,29 +91,29 @@ public class LocalTest {
 		} catch (Exception e) {
 			System.out.println("\t# Error: " + e.getMessage());	
 		}
-		
+		/**
 		//loginNoStrava
 		try {
 			System.out.println("/////////////////////////////////////////////////////////////////////////");
-			token3 = facade.inicioGoogle(google);
+			token3 = facade.inicioGoogle("pepe@prieba.com");
 		} catch (Exception e) {
 			System.out.println("\t# Error: " + e.getMessage());	
 		}
 		
 		try {
 			System.out.println("/////////////////////////////////////////////////////////////////////////");
-			token4 = facade.inicioFacebook(facebook);
+			token4 = facade.inicioFacebook("luis@prieba.com");
 		} catch (Exception e) {
 			System.out.println("\t# Error: " + e.getMessage());	
 		}
-		
+		**/
 		//crearReto
 		try {
 			System.out.println("/////////////////////////////////////////////////////////////////////////");
 			SimpleDateFormat format = new SimpleDateFormat("dd-mm-yyyy");
 			Date fechaInicio = format.parse("01-12-2022");
 			Date fechaFin = format.parse("01-12-2122");
-			facade.crearReto(google, new Reto("prueba", fechaInicio , fechaFin, 1000, 240, "Carrera a pie"));
+			facade.crearReto(usuario1, new Reto("prueba", fechaInicio , fechaFin, 1000, 240, "Carrera a pie"));
 		} catch (Exception e) {
 			System.out.println("\t# Error: " + e.getMessage());	
 		}
@@ -125,7 +127,7 @@ public class LocalTest {
 		//ver retos aceptados por un usuario
 		try {
 			System.out.println("/////////////////////////////////////////////////////////////////////////");
-			System.out.println(facade.verRetosAceptados(google).toString());
+			System.out.println("Retos aceptados:"+facade.verRetosAceptados(usuario1).toString());
 		} catch (Exception e) {
 			System.out.println("\t# Error: " + e.getMessage());	
 		}
@@ -136,18 +138,18 @@ public class LocalTest {
 		} catch (Exception e) {
 			System.out.println("\t# Error: " + e.getMessage());	
 		}**/
-		
+		/**
 		//sesionEntrenamiento
 		try {
 			System.out.println("/////////////////////////////////////////////////////////////////////////");
 			SimpleDateFormat format = new SimpleDateFormat("dd-mm-yyyy");
 			Date fechaInicio = format.parse("01-12-2022");
-			facade.crearSesionEntrenamiento(google,new SesionEntrenamiento("prueba Entrenamiento", "ciclismo", 1000, fechaInicio, 0.5f));
-			System.out.println(google.getSesiones());
+			facade.crearSesionEntrenamiento(usuario1,new SesionEntrenamiento("prueba Entrenamiento", "ciclismo", 1000, fechaInicio, 0.5f));
+			System.out.println(usuario1.getSesiones());
 		} catch (Exception e) {
 			System.out.println("\t# Error: " + e.getMessage());	
-		}
-		
+		}**/
+		/**
 		//logout NoStrava
 		try {
 			System.out.println("/////////////////////////////////////////");
@@ -160,7 +162,7 @@ public class LocalTest {
 			facade.logout(token4);
 		} catch (Exception e) {
 			System.out.println("\t# Error: " + e.getMessage());	
-		}
+		}**/
 
 		//Force exit to stop RMI Server
 		System.exit(0);

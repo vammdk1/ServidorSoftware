@@ -1,5 +1,6 @@
 package strava.client.controller;
 
+
 import java.rmi.RemoteException; 
 import java.util.Date;
 

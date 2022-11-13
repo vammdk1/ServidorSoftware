@@ -110,8 +110,8 @@ public class VentanaLogin {
 			public void actionPerformed(ActionEvent e) {
 				VPrincipal.setVisible(false);
 				System.out.println("boton inicio de sesion pulsado");
-				System.out.println("intentando registrarse con correo: " + lblCorreo.getText() + " y contrasena: " + lblContrasena.getText());
-				if (controller.login(lblCorreo.getText(), lblContrasena.getText())) {
+				System.out.println("intentando Iniciar con correo: " + Correo.getText() + " y contrasena: " + Contrasenna.getText());
+				if (controller.login(Correo.getText(), Contrasenna.getText())) {
 					VentanaUsuario.VPrincipal.setVisible(true);
 				}
 			}

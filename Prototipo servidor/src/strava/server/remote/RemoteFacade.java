@@ -69,7 +69,8 @@ public class RemoteFacade extends UnicastRemoteObject implements IRemoteFacade {
 	}
 
 	@Override
-	public synchronized boolean registro (User usuario) throws RemoteException {
+	public synchronized boolean registro (String nombre,String email,String fechaNac,float peso,int altura,int pulsoxMinuto,int pulsoReposo,String password) throws RemoteException {
+		UsuarioStrava usuario = new UsuarioStrava(nombre, email, fechaNac, peso, altura, pulsoxMinuto, pulsoReposo,password);
 		if(GeneralAppServices.registrarusuario(usuario)) {
 			System.out.println("RemoteFacade Registro(): " + usuario.getEmail());
 			return true;
@@ -80,11 +81,11 @@ public class RemoteFacade extends UnicastRemoteObject implements IRemoteFacade {
 	}
 
 	@Override
-	public synchronized long inicioGoogle(UsuarioNoStrava usuario) throws RemoteException {
+	public synchronized long inicioGoogle(String email) throws RemoteException {
 		System.out.println("RemoteFacade loginGoogle()");
 		
 		//Perform login() using LoginAppService
-		User user = loginService.loginGoogleFacebook(usuario.getEmail(), true);
+		User user = loginService.loginGoogleFacebook(email, true);
 			
 		//If login() success user is stored in the Server State
 		if (user != null) {
@@ -103,10 +104,10 @@ public class RemoteFacade extends UnicastRemoteObject implements IRemoteFacade {
 	}
 
 	@Override
-	public synchronized long inicioFacebook(UsuarioNoStrava usuario) throws RemoteException {
+	public synchronized long inicioFacebook(String email) throws RemoteException {
 		System.out.println("RemoteFacade loginFacebook()");
 		//Perform login() using LoginAppService
-		User user = loginService.loginGoogleFacebook(usuario.getEmail(), false);
+		User user = loginService.loginGoogleFacebook(email, false);
 		//If login() success user is stored in the Server State
 		if (user != null) {
 			//If user is not logged in 

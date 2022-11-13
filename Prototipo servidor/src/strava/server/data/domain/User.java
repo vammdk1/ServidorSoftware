@@ -7,7 +7,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class User implements Serializable {	
+public class User  {	
 	/**
 	 * 
 	 */
@@ -23,8 +23,8 @@ public class User implements Serializable {
 	//private "nose" token;
 	
 	
-	private ArrayList<Reto> retos = new ArrayList<>();
-	private ArrayList<SesionEntrenamiento> sesiones = new ArrayList<>();
+	private transient ArrayList<Reto> retos = new ArrayList<>();
+	private transient ArrayList<SesionEntrenamiento> sesiones = new ArrayList<>();
 	
 	public User(String nombre,String email,String fechaNac,float peso,int altura,int pulsoxMinuto,int pulsoReposo) {
 
@@ -42,7 +42,7 @@ public class User implements Serializable {
 	}
 	
 	public void setNombre(String nickname) {
-		this.nombre = nombre;
+		this.nombre = nickname;
 	}
 	
 	public String getEmail() {
