@@ -1,8 +1,13 @@
 package strava.server.data.dto;
 
+import java.io.Serializable;
 import java.util.Date;
 
-public class SesionEntrenamientoDTO {
+public class SesionEntrenamientoDTO implements Serializable{
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private String titulo;
 	private String deporte;
 	private float distancia;

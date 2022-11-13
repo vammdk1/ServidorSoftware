@@ -112,6 +112,7 @@ public class VentanaLogin {
 				System.out.println("boton inicio de sesion pulsado");
 				System.out.println("intentando registrarse con correo: " + lblCorreo.getText() + " y contrasena: " + lblContrasena.getText());
 				if (controller.login(lblCorreo.getText(), lblContrasena.getText())) {
+					//VentanaUsuario.setUsuario();
 					VentanaUsuario.VPrincipal.setVisible(true);
 				}
 			}
