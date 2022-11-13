@@ -18,18 +18,9 @@ public interface IRemoteFacade extends Remote {
 	public long login(String email, String password) throws RemoteException;
 	
 	public void logout(long token) throws RemoteException; 
-	
-<<<<<<< HEAD
-=======
-	public boolean registro (User usuario) throws RemoteException;
-	
+
 	public User obtenerUsuario (long token) throws RemoteException;
 	
-	public long inicioGoogle (UsuarioNoStrava usuario) throws RemoteException;
-	
-	public long inicioFacebook (UsuarioNoStrava usuario) throws RemoteException;
-	
->>>>>>> branch 'master' of https://github.com/vammdk1/ServidorSoftware.git
 	public ArrayList<Reto> verRetosActivos () throws RemoteException;
 	
 	public boolean crearReto (User usuario, Reto reto) throws RemoteException;

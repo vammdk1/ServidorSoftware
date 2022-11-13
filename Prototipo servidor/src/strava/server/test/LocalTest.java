@@ -79,18 +79,7 @@ public class LocalTest {
 		} catch (Exception e) {
 			System.out.println("\t# Error: " + e.getMessage());	
 		}
-		try {
-			System.out.println("/////////////////////////////////////////");
-			facade.logout(token);
-		} catch (Exception e) {
-			System.out.println("\t# Error: " + e.getMessage());	
-		}
-		try {
-			System.out.println("/////////////////////////////////////////");
-			facade.logout(token2);
-		} catch (Exception e) {
-			System.out.println("\t# Error: " + e.getMessage());	
-		}
+		
 		/**
 		//loginNoStrava
 		try {
@@ -131,6 +120,17 @@ public class LocalTest {
 		} catch (Exception e) {
 			System.out.println("\t# Error: " + e.getMessage());	
 		}
+		try {
+			System.out.println("/////////////////////////////////////////////////////////////////////////");
+			SimpleDateFormat format = new SimpleDateFormat("dd-mm-yyyy");
+			Date fechaInicio = format.parse("01-12-2022");
+			SesionEntrenamiento s1 = new SesionEntrenamiento("prueba Entrenamiento", "ciclismo", 1000, fechaInicio, 0.5f);
+			facade.crearSesionEntrenamiento(usuario1,s1);
+			System.out.println(s1);
+			//recibir una lista/sesion por parte del programa ya que el 
+		} catch (Exception e) {
+			System.out.println("\t# Error: " + e.getMessage());	
+		}
 		/**aceptar reto
 		try {
 			System.out.println("/////////////////////////////////////////////////////////////////////////");
@@ -138,17 +138,9 @@ public class LocalTest {
 		} catch (Exception e) {
 			System.out.println("\t# Error: " + e.getMessage());	
 		}**/
-		/**
+		
 		//sesionEntrenamiento
-		try {
-			System.out.println("/////////////////////////////////////////////////////////////////////////");
-			SimpleDateFormat format = new SimpleDateFormat("dd-mm-yyyy");
-			Date fechaInicio = format.parse("01-12-2022");
-			facade.crearSesionEntrenamiento(usuario1,new SesionEntrenamiento("prueba Entrenamiento", "ciclismo", 1000, fechaInicio, 0.5f));
-			System.out.println(usuario1.getSesiones());
-		} catch (Exception e) {
-			System.out.println("\t# Error: " + e.getMessage());	
-		}**/
+		
 		/**
 		//logout NoStrava
 		try {
@@ -163,6 +155,19 @@ public class LocalTest {
 		} catch (Exception e) {
 			System.out.println("\t# Error: " + e.getMessage());	
 		}**/
+		
+		try {
+			System.out.println("/////////////////////////////////////////");
+			facade.logout(token);
+		} catch (Exception e) {
+			System.out.println("\t# Error: " + e.getMessage());	
+		}
+		try {
+			System.out.println("/////////////////////////////////////////");
+			facade.logout(token2);
+		} catch (Exception e) {
+			System.out.println("\t# Error: " + e.getMessage());	
+		}
 
 		//Force exit to stop RMI Server
 		System.exit(0);

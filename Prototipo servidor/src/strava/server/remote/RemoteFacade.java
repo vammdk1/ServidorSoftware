@@ -144,7 +144,9 @@ public class RemoteFacade extends UnicastRemoteObject implements IRemoteFacade {
 
 	@Override
 	public synchronized boolean crearSesionEntrenamiento(User usuario, SesionEntrenamiento sesion) throws RemoteException {
+		
 		if(GeneralAppServices.setSesion(usuario, sesion)) {
+			
 			return true;
 		}
 		throw new RemoteException("No se puedo la sesion");
