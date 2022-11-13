@@ -35,6 +35,6 @@ public interface IRemoteFacade extends Remote {
 	
 	public ArrayList<Reto> verRetosAceptados (User usuario) throws RemoteException;
 	
-	
+	public void aceptarReto(User usuario, Reto reto)  throws RemoteException;
 	
 }

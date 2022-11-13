@@ -169,10 +169,13 @@ public class RemoteFacade extends UnicastRemoteObject implements IRemoteFacade {
 		}
 		
 	}
-
-
-
-
+	
+	public void aceptarReto(User usuario, Reto reto)  throws RemoteException {
+		if(GeneralAppServices.aceptarReto(usuario,reto)) {
+			return true; //para la pantalla sacar los datos del reto ?
+		}
+		throw new RemoteException("No se puedo aceptar el reto");
+	}
 	
 
 

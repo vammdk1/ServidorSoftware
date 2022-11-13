@@ -49,6 +49,16 @@ public class GeneralAppServices {
 		}
 		return null;
 	}
+	
+	public static boolean aceptarReto(User usuario, Reto reto) {
+		try {
+			usuario.anadirReto(reto);
+			return true;
+		} catch (Exception e) {
+			return false;
+		}
+		
+	}
 
 
 }
