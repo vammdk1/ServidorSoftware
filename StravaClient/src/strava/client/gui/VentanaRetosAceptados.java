@@ -32,11 +32,9 @@ public class VentanaRetosAceptados {
 	static int x = 500;
 	static int y = 300;
 	
-	private ServiceLocator serviceLocator;
-	
-	public VentanaRetosAceptados(ServiceLocator serviceLocator)
+	public VentanaRetosAceptados()
 	{
-		this.serviceLocator = serviceLocator;
+		VPrincipal.setVisible(false);
 		
 		VPrincipal.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		VPrincipal.setSize(new Dimension(750, 500));
@@ -63,7 +61,7 @@ public class VentanaRetosAceptados {
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				VPrincipal.setVisible(false);
-				new VentanaUsuario(serviceLocator);
+				VentanaUsuario.VPrincipal.setVisible(true);
 			}
 		});
 	}

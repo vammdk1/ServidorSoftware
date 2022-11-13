@@ -20,6 +20,7 @@ import javax.swing.JTextField;
 import java.awt.Font;
 import javax.swing.SwingConstants;
 
+import strava.client.controller.RetoController;
 import strava.client.remote.ServiceLocator;
 
 import java.awt.GridLayout;
@@ -34,11 +35,12 @@ public class VentanaRetosActivos {
 	static int x = 500;
 	static int y = 300;
 	
-	private ServiceLocator serviceLocator;
+	private RetoController controller;
 	
-	public VentanaRetosActivos(ServiceLocator serviceLocator)
+	public VentanaRetosActivos(RetoController reto)
 	{
-		this.serviceLocator = serviceLocator;
+		this.controller = reto;
+		VPrincipal.setVisible(false);
 		
 		VPrincipal.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		VPrincipal.setSize(new Dimension(750, 500));
@@ -137,7 +139,7 @@ public class VentanaRetosActivos {
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				VPrincipal.setVisible(false);
-				new VentanaUsuario(serviceLocator);
+				VentanaUsuario.VPrincipal.setVisible(true);
 			}
 		});
 	}

@@ -9,6 +9,9 @@ import java.awt.LayoutManager;
 import java.awt.Toolkit;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 import javax.swing.BorderFactory;
 import javax.swing.JButton;
@@ -22,6 +25,7 @@ import javax.swing.SwingConstants;
 
 import strava.client.controller.SesionEntrenamientoController;
 import strava.client.remote.ServiceLocator;
+import strava.server.data.domain.User;
 
 import java.awt.GridLayout;
 import javax.swing.BoxLayout;
@@ -46,6 +50,7 @@ public class VentanaCrearSesionEntrenamiento {
 	VentanaCrearSesionEntrenamiento(SesionEntrenamientoController controller)
 	{
 		this.controller = controller;
+		VPrincipal.setVisible(false);
 		
 		VPrincipal.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		VPrincipal.setSize(new Dimension(750, 500));
@@ -157,7 +162,7 @@ public class VentanaCrearSesionEntrenamiento {
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				VPrincipal.setVisible(false);
-				new VentanaUsuario(serviceLocator);
+				VentanaUsuario.VPrincipal.setVisible(true);
 			}
 		});
 		
@@ -165,8 +170,16 @@ public class VentanaCrearSesionEntrenamiento {
 			
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				VPrincipal.setVisible(false);
-				new VentanaUsuario(serviceLocator);
+				Date format;
+				try {
+					format = new SimpleDateFormat("dd/MM/yyyy HH:mm").parse(tfFecha.getText() + " " + tfHora.getText());
+					controller.crearSesionEntrenamiento(new User(null, null, null, 0, 0, 0, 0), tfTitulo.getText(), tfDeporte.getText(), Float.parseFloat(tfDistancia.getText()), format, Float.parseFloat(tfDuracion.getText()));
+					VPrincipal.setVisible(false);
+					VentanaUsuario.VPrincipal.setVisible(true);
+				} catch (ParseException e1) {
+					// TODO Auto-generated catch block
+					System.out.println("Formato de fecha y hora erróneos. Utilice el formato 'DD/MM/YYYY HH:MM'");
+				}
 			}
 		});
 	}
