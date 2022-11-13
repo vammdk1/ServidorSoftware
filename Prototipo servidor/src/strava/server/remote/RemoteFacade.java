@@ -159,10 +159,24 @@ public class RemoteFacade extends UnicastRemoteObject implements IRemoteFacade {
 		}
 		throw new RemoteException("No hay retos aceptados");
 	}
-
-
-
-
+	
+	public synchronized User obtenerUsuario(long token) throws RemoteException {
+		if (this.serverState.containsKey(token)) {
+			return this.serverState.get(token);
+		}
+		else {
+			System.out.println("Error: no existe usuario para ese token");
+			return null;
+		}
+		
+	}
+	
+	public void aceptarReto(User usuario, Reto reto)  throws RemoteException {
+		if(GeneralAppServices.aceptarReto(usuario,reto)) {
+			return;  //para la pantalla sacar los datos del reto ?
+		}
+		else throw new RemoteException("No se puedo aceptar el reto");
+	}
 	
 
 

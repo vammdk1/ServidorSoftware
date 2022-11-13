@@ -110,9 +110,16 @@ public class VentanaLogin {
 			public void actionPerformed(ActionEvent e) {
 				VPrincipal.setVisible(false);
 				System.out.println("boton inicio de sesion pulsado");
+<<<<<<< HEAD
 				System.out.println("intentando Iniciar con correo: " + Correo.getText() + " y contrasena: " + Contrasenna.getText());
 				if (controller.login(Correo.getText(), Contrasenna.getText())) {
+=======
+				System.out.println("intentando registrarse con correo: " + lblCorreo.getText() + " y contrasena: " + lblContrasena.getText());
+				if (controller.login(lblCorreo.getText(), lblContrasena.getText())) {
+					//VentanaUsuario.setUsuario();
+>>>>>>> branch 'master' of https://github.com/vammdk1/ServidorSoftware.git
 					VentanaUsuario.VPrincipal.setVisible(true);
+					VentanaUsuario.setUsuario(controller.getUser());
 				}
 			}
 		});

@@ -22,6 +22,7 @@ import javax.swing.SwingConstants;
 
 import strava.client.controller.LoginController;
 import strava.client.remote.ServiceLocator;
+import strava.server.data.domain.User;
 
 import java.awt.GridLayout;
 import javax.swing.BoxLayout;
@@ -34,6 +35,7 @@ public class VentanaUsuario {
 	static int y = 300;
 	
 	private LoginController controller;
+	private static User usuario;
 	
 	public VentanaUsuario(LoginController login)
 	{
@@ -106,8 +108,18 @@ public class VentanaUsuario {
 			public void actionPerformed(ActionEvent e) {
 				System.out.println("Boton cerrar sesion pulsado");
 				controller.logout();
+				VPrincipal.setVisible(false);
+				VentanaLogin.VPrincipal.setVisible(true);
 				System.exit(0);
 			}
 		});
+	}
+
+	public static User getUsuario() {
+		return usuario;
+	}
+
+	public static void setUsuario(User usuario) {
+		VentanaUsuario.usuario = usuario;
 	}
 }
