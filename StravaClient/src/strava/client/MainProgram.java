@@ -1,10 +1,10 @@
-package es.deusto.ingenieria.sd.auctions.client;
+package strava.client;
 
-import java.util.List; 
+import java.util.List;
 
-import es.deusto.ingenieria.sd.auctions.client.controller.LoginController;
-//import es.deusto.ingenieria.sd.auctions.client.gui.LoginDialog;
-import es.deusto.ingenieria.sd.auctions.client.remote.ServiceLocator;
+import strava.client.controller.LoginController;
+import strava.client.gui.VentanaLogin;
+import strava.client.remote.ServiceLocator;
 
 public class MainProgram {
 

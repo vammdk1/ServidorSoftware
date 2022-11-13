@@ -19,19 +19,19 @@ public interface IRemoteFacade extends Remote {
 	
 	public void logout(long token) throws RemoteException; 
 	
-	public boolean Registro (User usuario) throws RemoteException;
+	public boolean registro (User usuario) throws RemoteException;
 	
-	public long InicioGoogle (UsuarioNoStrava usuario) throws RemoteException;
+	public long inicioGoogle (UsuarioNoStrava usuario) throws RemoteException;
 	
-	public long InicioFacebook (UsuarioNoStrava usuario) throws RemoteException;
+	public long inicioFacebook (UsuarioNoStrava usuario) throws RemoteException;
 	
-	public ArrayList<Reto> VerRetosActivos () throws RemoteException;
+	public ArrayList<Reto> verRetosActivos () throws RemoteException;
 	
-	public boolean CrearReto (Reto reto) throws RemoteException;
+	public boolean crearReto (Reto reto) throws RemoteException;
 	
-	public boolean CrearSesionEntrenamiento (User usuario ,SesionEntrenamiento sesion) throws RemoteException;
+	public boolean crearSesionEntrenamiento (User usuario ,SesionEntrenamiento sesion) throws RemoteException;
 	
-	public ArrayList<Reto> VerRetosAceptados (User usuario) throws RemoteException;
+	public ArrayList<Reto> verRetosAceptados (User usuario) throws RemoteException;
 	
 	
 	

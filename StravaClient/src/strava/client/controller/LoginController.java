@@ -1,8 +1,8 @@
-package es.deusto.ingenieria.sd.auctions.client.controller;
+package strava.client.controller;
 
 import java.rmi.RemoteException;
 
-import es.deusto.ingenieria.sd.auctions.client.remote.ServiceLocator;
+import strava.client.remote.ServiceLocator;
 
 //This class implements Controller pattern.
 public class LoginController {	

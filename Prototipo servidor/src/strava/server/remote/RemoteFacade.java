@@ -69,7 +69,7 @@ public class RemoteFacade extends UnicastRemoteObject implements IRemoteFacade {
 	}
 
 	@Override
-	public synchronized boolean Registro (User usuario) throws RemoteException {
+	public synchronized boolean registro (User usuario) throws RemoteException {
 		if(BaseDatos.RegistrarUsuario(usuario)) {
 			System.out.println("RemoteFacade Registro(): " + usuario.getEmail());
 			return true;
@@ -80,7 +80,7 @@ public class RemoteFacade extends UnicastRemoteObject implements IRemoteFacade {
 	}
 
 	@Override
-	public synchronized long InicioGoogle(UsuarioNoStrava usuario) throws RemoteException {
+	public synchronized long inicioGoogle(UsuarioNoStrava usuario) throws RemoteException {
 		System.out.println("RemoteFacade loginGoogle()");
 		
 		//Perform login() using LoginAppService
@@ -103,7 +103,7 @@ public class RemoteFacade extends UnicastRemoteObject implements IRemoteFacade {
 	}
 
 	@Override
-	public synchronized long InicioFacebook(UsuarioNoStrava usuario) throws RemoteException {
+	public synchronized long inicioFacebook(UsuarioNoStrava usuario) throws RemoteException {
 		System.out.println("RemoteFacade loginFacebook()");
 		//Perform login() using LoginAppService
 		User user = loginService.loginGoogleFacebook(usuario.getEmail(), false);
@@ -123,7 +123,7 @@ public class RemoteFacade extends UnicastRemoteObject implements IRemoteFacade {
 	}
 
 	@Override
-	public synchronized ArrayList<Reto> VerRetosActivos() throws RemoteException {
+	public synchronized ArrayList<Reto> verRetosActivos() throws RemoteException {
 		ArrayList<Reto> retosActivos = appServices.DevolverRetosActivos();
 		if(retosActivos!=null) {
 			return retosActivos;
@@ -132,7 +132,7 @@ public class RemoteFacade extends UnicastRemoteObject implements IRemoteFacade {
 	}
 
 	@Override
-	public synchronized boolean CrearReto(Reto reto) throws RemoteException {
+	public synchronized boolean crearReto(Reto reto) throws RemoteException {
 		//hace falta el token para crear el reto ?/ como evitar retos duplicados (usar el nombre)
 			if(GeneralAppServices.setReto(reto)) {
 				return true; //para la pantalla sacar los datos del reto ?
@@ -142,7 +142,7 @@ public class RemoteFacade extends UnicastRemoteObject implements IRemoteFacade {
 	}
 
 	@Override
-	public synchronized boolean CrearSesionEntrenamiento(User usuario, SesionEntrenamiento sesion) throws RemoteException {
+	public synchronized boolean crearSesionEntrenamiento(User usuario, SesionEntrenamiento sesion) throws RemoteException {
 		if(GeneralAppServices.setSesion(usuario, sesion)) {
 			return true;
 		}
@@ -151,7 +151,7 @@ public class RemoteFacade extends UnicastRemoteObject implements IRemoteFacade {
 	}
 
 	@Override
-	public synchronized ArrayList<Reto> VerRetosAceptados(User usuario) throws RemoteException {
+	public synchronized ArrayList<Reto> verRetosAceptados(User usuario) throws RemoteException {
 		ArrayList<Reto> retosAceptados = appServices.DevolverRetosAceptados(usuario);
 		if(retosAceptados!=null) {
 			return retosAceptados;

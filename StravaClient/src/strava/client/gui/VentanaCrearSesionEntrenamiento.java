@@ -1,4 +1,4 @@
-package es.deusto.ingenieria.sd.auctions.client;
+package strava.client.gui;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
@@ -20,7 +20,8 @@ import javax.swing.JTextField;
 import java.awt.Font;
 import javax.swing.SwingConstants;
 
-import es.deusto.ingenieria.sd.auctions.client.remote.ServiceLocator;
+import strava.client.controller.SesionEntrenamientoController;
+import strava.client.remote.ServiceLocator;
 
 import java.awt.GridLayout;
 import javax.swing.BoxLayout;
@@ -40,11 +41,11 @@ public class VentanaCrearSesionEntrenamiento {
 	private JTextField tfDeporte;
 	private JTextField tfDuracion;
 	
-	private ServiceLocator serviceLocator;
+	private SesionEntrenamientoController controller;
 	
-	VentanaCrearSesionEntrenamiento(ServiceLocator serviceLocator)
+	VentanaCrearSesionEntrenamiento(SesionEntrenamientoController controller)
 	{
-		this.serviceLocator = serviceLocator;
+		this.controller = controller;
 		
 		VPrincipal.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		VPrincipal.setSize(new Dimension(750, 500));

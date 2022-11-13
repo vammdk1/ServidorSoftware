@@ -1,4 +1,4 @@
-package es.deusto.ingenieria.sd.auctions.client;
+package strava.client.gui;
 
 
 import java.awt.Dimension;
@@ -11,7 +11,8 @@ import javax.swing.JTextField;
 import java.awt.Font;
 import javax.swing.SwingConstants;
 
-import es.deusto.ingenieria.sd.auctions.client.remote.ServiceLocator;
+import strava.client.remote.ServiceLocator;
+
 import javax.swing.DefaultComboBoxModel;
 import javax.swing.JLabel;
 import javax.swing.JComboBox;

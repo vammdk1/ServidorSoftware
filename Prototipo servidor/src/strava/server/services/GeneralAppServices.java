@@ -1,6 +1,5 @@
 package strava.server.services;
 
-import java.rmi.RemoteException;
 import java.util.ArrayList;
 
 import strava.server.data.domain.Reto;
@@ -22,6 +21,7 @@ public class GeneralAppServices {
 		BaseDatos.RegistrarReto(reto);
 		return false;
 	}
+	
 	public static boolean setSesion(User usuario,SesionEntrenamiento sesion) {
 		if(BaseDatos.agregarEntrenamiento(usuario, sesion)) {
 			return true;
