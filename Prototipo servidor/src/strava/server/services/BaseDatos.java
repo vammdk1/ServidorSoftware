@@ -30,17 +30,21 @@ public class BaseDatos {
 	public static User comprobarCuenta(User usuario) {
 		if(UsuariosRegistrados.containsKey(usuario.getEmail())) {
 			if(UsuarioNoStrava.class.isInstance(UsuariosRegistrados.get(usuario.getEmail()))) {
-					//TODO comprobar contra algo 
+					System.out.println("Es un usuario NoStrava:"+((UsuarioNoStrava) usuario).getEmail()+"||"+((UsuarioNoStrava)usuario).getGoogleFacebook());
 					return UsuariosRegistrados.get(usuario.getEmail());
 				}else {
-					String sha1 = org.apache.commons.codec.digest.DigestUtils.sha1Hex(((UsuarioStrava) usuario).getContrasenna());
-					if(((UsuarioStrava) UsuariosRegistrados.get(usuario.getEmail())).getContrasenna().equals(sha1)) {
+					String sha1 = org.apache.commons.codec.digest.DigestUtils.sha1Hex(((UsuarioStrava) UsuariosRegistrados.get(usuario.getEmail())).getContrasenna());
+					System.out.println("Es un usuario Strava:"+((UsuarioStrava) usuario).getContrasenna()+"||"+sha1);
+					
+					if(sha1.equals(((UsuarioStrava) usuario).getContrasenna())) {
+						System.out.println("* RemoteFacade Login(): correcto");
 						return UsuariosRegistrados.get(usuario.getEmail());
 					}else {
 						return null;
 					}
 				}
 		}else {
+			System.out.println("No se encuentra la cuenta:"+usuario.getEmail());
 			return null;
 		}
 	}
@@ -48,11 +52,10 @@ public class BaseDatos {
 	/**
 	 * @param NuevoUsuario objeto tipo user (acepta Strava y no Strava)
 	 */
-	public static boolean RegistrarUsuario(strava.server.data.domain.User NuevoUsuario) {
+	public static boolean RegistrarUsuario(User NuevoUsuario) {
 		if(!UsuariosRegistrados.containsKey(NuevoUsuario.getEmail())) {
 			UsuariosRegistrados.put(NuevoUsuario.getEmail(), NuevoUsuario);
 			return true;
-			//TODO String sha1 = org.apache.commons.codec.digest.DigestUtils.sha1Hex(password);	donde se almacenen los usuarios
 		}else {
 			return false;
 		}
@@ -60,30 +63,34 @@ public class BaseDatos {
 	}
 	
 	public static boolean RegistrarReto(User usuario,Reto reto) {
-		Date in = new Date(0);
-		LocalDateTime ldt = LocalDateTime.ofInstant(in.toInstant(), ZoneId.systemDefault());
-		Date out = (Date) Date.from(ldt.atZone(ZoneId.systemDefault()).toInstant());
+		java.util.Date out = new java.util.Date();
 		if(reto.getFechaFin().compareTo(out)>0) {
-			RetosActivos.add(reto);
-			UsuariosRegistrados.get(usuario).anadirReto(reto);
-			return true;
+			if(UsuariosRegistrados.get(usuario.getEmail())!=null) {
+				UsuariosRegistrados.get(usuario.getEmail()).anadirReto(reto);
+				RetosActivos.add(reto);
+				//System.out.println(RetosActivos);
+				return true;
+			}else {
+				return false;
+			}
+			
 		}else {
+			System.out.println("la fecha de fin es inferior a la de inicio");
 			return false;
 		}
 	}
 	
 	public static ArrayList<Reto> getRetosActivos(){
 		ArrayList<Reto> listaCompleta = new ArrayList<>();
+		java.util.Date out = new java.util.Date();
 		if(RetosActivos.size()>=0) {
-			for (int i = 0; i < RetosActivos.size(); i++) {
-				Date in = new Date(0);
-				LocalDateTime ldt = LocalDateTime.ofInstant(in.toInstant(), ZoneId.systemDefault());
-				Date out = (Date) Date.from(ldt.atZone(ZoneId.systemDefault()).toInstant());
-				if(RetosActivos.get(i).getFechaFin().compareTo(out)<0) {
+			for (int i = 0; i <= RetosActivos.size()-1; i++) {
+				if(RetosActivos.get(i).getFechaFin().compareTo(out)>0) {
 					listaCompleta.add(RetosActivos.get(i));
 				}	
 			}
 			RetosActivos=listaCompleta;
+			System.out.println(listaCompleta);
 			return listaCompleta; 
 		}else {
 			return null;
@@ -99,7 +106,7 @@ public class BaseDatos {
 	public static ArrayList<Reto> getRetosAceptados(User usuario) {
 		ArrayList<Reto> listaCompleta = new ArrayList<>();
 		listaCompleta=UsuariosRegistrados.get(usuario.getEmail()).getRetos();
-		if(listaCompleta.size()<0) {
+		if(listaCompleta.size()>0) {
 			return listaCompleta;
 		}else {
 			return null;
