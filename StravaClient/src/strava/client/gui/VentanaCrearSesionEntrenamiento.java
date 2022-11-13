@@ -160,6 +160,7 @@ public class VentanaCrearSesionEntrenamiento {
 			
 			@Override
 			public void actionPerformed(ActionEvent e) {
+				System.out.println("boton volver pulsado");
 				VPrincipal.setVisible(false);
 				VentanaUsuario.VPrincipal.setVisible(true);
 			}
@@ -170,8 +171,10 @@ public class VentanaCrearSesionEntrenamiento {
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				Date format;
+				System.out.println("boton crear sesion pulsado");
 				try {
 					format = new SimpleDateFormat("dd/MM/yyyy HH:mm").parse(tfFecha.getText() + " " + tfHora.getText());
+					System.out.println("intentando crear sesion con titulo: " + tfTitulo.getText() + " deporte " + tfDeporte.getText() + " distancia: " + Float.parseFloat(tfDistancia.getText())+ " hora: " + format.toString() + " duracion " + Float.parseFloat(tfDuracion.getText()));
 					controller.crearSesionEntrenamiento(new User(null, null, null, 0, 0, 0, 0), tfTitulo.getText(), tfDeporte.getText(), Float.parseFloat(tfDistancia.getText()), format, Float.parseFloat(tfDuracion.getText()));
 					VPrincipal.setVisible(false);
 					VentanaUsuario.VPrincipal.setVisible(true);
