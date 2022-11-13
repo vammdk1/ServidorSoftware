@@ -167,6 +167,7 @@ public class VentanaCrearReto {
 			
 			@Override
 			public void actionPerformed(ActionEvent e) {
+				System.out.println("boton volver pulsado");
 				VPrincipal.setVisible(false);
 				VentanaUsuario.VPrincipal.setVisible(true);
 			}
@@ -176,10 +177,12 @@ public class VentanaCrearReto {
 			
 			@Override
 			public void actionPerformed(ActionEvent e) {
+				System.out.println("boton crear reto pulsado");
 				SimpleDateFormat format = new SimpleDateFormat("dd-mm-yyyy");
 				try {
 					Date fechaInicio = format.parse(tfInicioDia.getText() + "-" + tfInicioMes.getText() + "-" + tfInicioAno.getText());
 					Date fechaFin = format.parse(tfFinDia.getText() + "-" + tfFinMes.getText() + "-" + tfFinAno.getText());
+					System.out.println("intentando crear reto con titulo: "+ titulo.getText() + " deporte: " +tfDeporte.getText() + " fechaini: " + fechaInicio + " fecha fin: " + fechaFin);
 					controller.crearReto(null, titulo.getText(), tfDeporte.getText(), fechaInicio, fechaFin, y, x);
 					VPrincipal.setVisible(false);
 					VentanaUsuario.VPrincipal.setVisible(true);
