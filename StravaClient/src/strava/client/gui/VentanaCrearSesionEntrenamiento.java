@@ -47,7 +47,7 @@ public class VentanaCrearSesionEntrenamiento {
 	
 	private SesionEntrenamientoController controller;
 	
-	VentanaCrearSesionEntrenamiento(SesionEntrenamientoController controller)
+	public VentanaCrearSesionEntrenamiento(SesionEntrenamientoController controller)
 	{
 		this.controller = controller;
 		
