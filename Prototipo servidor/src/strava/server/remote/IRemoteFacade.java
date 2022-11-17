@@ -10,6 +10,8 @@ import strava.server.data.domain.SesionEntrenamiento;
 import strava.server.data.domain.User;
 import strava.server.data.domain.UsuarioNoStrava;
 import strava.server.data.domain.UsuarioStrava;
+import strava.server.data.dto.RetoDTO;
+import strava.server.data.dto.SesionEntrenamientoDTO;
 
 
 //This interface defines the API of the Server. It represents the Remote Facade pattern
@@ -23,11 +25,11 @@ public interface IRemoteFacade extends Remote {
 	
 	public ArrayList<Reto> verRetosActivos () throws RemoteException;
 	
-	public boolean crearReto (User usuario, Reto reto) throws RemoteException;
+	public boolean crearReto (long token, RetoDTO reto) throws RemoteException;
 	
-	public boolean crearSesionEntrenamiento (User usuario ,SesionEntrenamiento sesion) throws RemoteException;
+	public boolean crearSesionEntrenamiento (long token ,SesionEntrenamientoDTO sesion) throws RemoteException;
 	
-	public ArrayList<Reto> verRetosAceptados (User usuario) throws RemoteException;
+	public ArrayList<Reto> verRetosAceptados (long token) throws RemoteException;
 
 	boolean registro(String nombre, String email, String fechaNac, float peso, int altura, int pulsoxMinuto,
 			int pulsoReposo, String password) throws RemoteException;
@@ -36,6 +38,6 @@ public interface IRemoteFacade extends Remote {
 
 	long inicioFacebook(String email) throws RemoteException;
 	
-	public void aceptarReto(User usuario, Reto reto)  throws RemoteException;
+	public void aceptarReto(long token, RetoDTO reto)  throws RemoteException;
 	
 }

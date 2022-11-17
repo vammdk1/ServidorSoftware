@@ -13,6 +13,8 @@ import strava.server.data.domain.SesionEntrenamiento;
 import strava.server.data.domain.User;
 import strava.server.data.domain.UsuarioNoStrava;
 import strava.server.data.domain.UsuarioStrava;
+import strava.server.data.dto.RetoDTO;
+import strava.server.data.dto.SesionEntrenamientoDTO;
 import strava.server.services.BaseDatos;
 import strava.server.services.GeneralAppServices;
 import strava.server.services.LoginAppService;
@@ -133,9 +135,9 @@ public class RemoteFacade extends UnicastRemoteObject implements IRemoteFacade {
 	}
 
 	@Override
-	public synchronized boolean crearReto(User usuario,Reto reto) throws RemoteException {
+	public synchronized boolean crearReto(long token,RetoDTO reto) throws RemoteException {
 		System.out.println("Creando Reto");
-			if(GeneralAppServices.setReto(usuario,reto)) {
+			if(GeneralAppServices.setReto(serverState.get(token),reto)) {
 				return true; //para la pantalla sacar los datos del reto ?
 			}
 			throw new RemoteException("No se puedo crear el reto");
@@ -143,9 +145,9 @@ public class RemoteFacade extends UnicastRemoteObject implements IRemoteFacade {
 	}
 
 	@Override
-	public synchronized boolean crearSesionEntrenamiento(User usuario, SesionEntrenamiento sesion) throws RemoteException {
+	public synchronized boolean crearSesionEntrenamiento(long token, SesionEntrenamientoDTO sesion) throws RemoteException {
 		
-		if(GeneralAppServices.setSesion(usuario, sesion)) {
+		if(GeneralAppServices.setSesion(serverState.get(token), sesion)) {
 			
 			return true;
 		}
@@ -154,8 +156,8 @@ public class RemoteFacade extends UnicastRemoteObject implements IRemoteFacade {
 	}
 
 	@Override
-	public synchronized ArrayList<Reto> verRetosAceptados(User usuario) throws RemoteException {
-		ArrayList<Reto> retosAceptados = appServices.DevolverRetosAceptados(usuario);
+	public synchronized ArrayList<Reto> verRetosAceptados(long token) throws RemoteException {
+		ArrayList<Reto> retosAceptados = appServices.DevolverRetosAceptados(serverState.get(token));
 		if(retosAceptados!=null) {
 			return retosAceptados;
 		}
@@ -173,8 +175,8 @@ public class RemoteFacade extends UnicastRemoteObject implements IRemoteFacade {
 		
 	}
 	
-	public void aceptarReto(User usuario, Reto reto)  throws RemoteException {
-		if(GeneralAppServices.aceptarReto(usuario,reto)) {
+	public void aceptarReto(long token, RetoDTO reto)  throws RemoteException {
+		if(GeneralAppServices.aceptarReto(serverState.get(token),reto)) {
 			return;  //para la pantalla sacar los datos del reto ?
 		}
 		else throw new RemoteException("No se puedo aceptar el reto");
