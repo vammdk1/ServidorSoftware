@@ -15,12 +15,12 @@ public class RetoController {
 		this.serviceLocator = serviceLocator;
 	}
 	
-	public boolean crearReto(User usuario, String nombre, String deporte, Date fechaInicio, Date fechaFin, float distanciaObjetivo, float tiempoObjetivo) 
+	public boolean crearReto(long token, String nombre, String deporte, Date fechaInicio, Date fechaFin, float distanciaObjetivo, float tiempoObjetivo) 
 	{
 		Reto reto = new Reto(nombre, fechaInicio, fechaFin, distanciaObjetivo, tiempoObjetivo, deporte);
 		
 		try {
-			return this.serviceLocator.getService().crearReto(usuario,reto);
+			return this.serviceLocator.getService().crearReto(token,reto);
 		} catch (RemoteException e) {
 			System.out.println("# Error creando una sesión de entrenamiento: " + e);
 			return false;

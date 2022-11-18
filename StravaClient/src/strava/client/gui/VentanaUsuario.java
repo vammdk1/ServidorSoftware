@@ -39,6 +39,10 @@ public class VentanaUsuario {
 	private LoginController controller;
 	private static User usuario;
 	private JTable table;
+	private static JTable tabla;
+	
+	private static long token;
+	
 	
 	public VentanaUsuario(LoginController login)
 	{
@@ -75,18 +79,31 @@ public class VentanaUsuario {
 		VPrincipal.getContentPane().add(CerrarSesion);
 		
 		JPanel panel = new JPanel();
-		panel.setBounds(0, 131, 345, 330);
+		panel.setBounds(0, 131, 385, 330);
 		VPrincipal.getContentPane().add(panel);
 		
 		table = new JTable();
 		table.setModel(new DefaultTableModel(
-			new Object[][] {
-				{null, null, null, null, null},
+			new String[][] {
+				{"Titulo", "Deporte", "Distancia", "Duracion", "Fecha inicio"},
 			},
 			new String[] {
 				"Titulo", "Deporte", "Distancia", "Duracion", "Fecha inicio"
 			}
-		));
+		) {
+			Class[] columnTypes = new Class[] {
+				String.class, String.class, String.class, String.class, String.class
+			};
+			public Class getColumnClass(int columnIndex) {
+				return columnTypes[columnIndex];
+			}
+			boolean[] columnEditables = new boolean[] {
+				false, false, false, false, false
+			};
+			public boolean isCellEditable(int row, int column) {
+				return columnEditables[column];
+			}
+		});
 		panel.add(table);
 		VPrincipal.setVisible(false);
 	
@@ -139,5 +156,9 @@ public class VentanaUsuario {
 
 	public static void setUsuario(User usuario) {
 		VentanaUsuario.usuario = usuario;
+	}
+	
+	public static long getToken() {
+		return token;
 	}
 }

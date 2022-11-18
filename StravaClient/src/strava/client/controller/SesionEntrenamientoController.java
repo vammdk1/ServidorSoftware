@@ -14,12 +14,12 @@ public class SesionEntrenamientoController {
 		this.serviceLocator = serviceLocator;
 	}
 	
-	public boolean crearSesionEntrenamiento(User usuario, String titulo, String deporte, float distancia, Date fechaHoraInicio, float duracion) 
+	public boolean crearSesionEntrenamiento(long token, String titulo, String deporte, float distancia, Date fechaHoraInicio, float duracion) 
 	{
 		SesionEntrenamiento sesion = new SesionEntrenamiento(titulo, deporte, distancia, fechaHoraInicio, duracion);
 		
 		try {
-			return this.serviceLocator.getService().crearSesionEntrenamiento(usuario, sesion);
+			return this.serviceLocator.getService().crearSesionEntrenamiento(token, sesion);
 		} catch (RemoteException e) {
 			System.out.println("# Error creando una sesión de entrenamiento: " + e);
 			return false;

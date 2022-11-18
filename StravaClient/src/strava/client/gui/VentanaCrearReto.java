@@ -183,7 +183,7 @@ public class VentanaCrearReto {
 					Date fechaInicio = format.parse(tfInicioDia.getText() + "-" + tfInicioMes.getText() + "-" + tfInicioAno.getText());
 					Date fechaFin = format.parse(tfFinDia.getText() + "-" + tfFinMes.getText() + "-" + tfFinAno.getText());
 					System.out.println("intentando crear reto con titulo: "+ titulo.getText() + " deporte: " +tfDeporte.getText() + " fechaini: " + fechaInicio + " fecha fin: " + fechaFin);
-					controller.crearReto(VentanaUsuario.getUsuario(), titulo.getText(), tfDeporte.getText(), fechaInicio, fechaFin, y, x);
+					controller.crearReto(VentanaUsuario.getToken(), titulo.getText(), tfDeporte.getText(), fechaInicio, fechaFin, y, x);
 					VPrincipal.setVisible(false);
 					VentanaUsuario.VPrincipal.setVisible(true);
 				} catch (ParseException e1) {

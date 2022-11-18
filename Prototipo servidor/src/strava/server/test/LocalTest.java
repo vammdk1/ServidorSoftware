@@ -102,7 +102,7 @@ public class LocalTest {
 			SimpleDateFormat format = new SimpleDateFormat("dd-mm-yyyy");
 			Date fechaInicio = format.parse("01-12-2022");
 			Date fechaFin = format.parse("01-12-2122");
-			facade.crearReto(usuario1, new Reto("prueba", fechaInicio , fechaFin, 1000, 240, "Carrera a pie"));
+			//facade.crearReto(usuario1, new Reto("prueba", fechaInicio , fechaFin, 1000, 240, "Carrera a pie"));
 		} catch (Exception e) {
 			System.out.println("\t# Error: " + e.getMessage());	
 		}
@@ -116,7 +116,8 @@ public class LocalTest {
 		//ver retos aceptados por un usuario
 		try {
 			System.out.println("/////////////////////////////////////////////////////////////////////////");
-			System.out.println("Retos aceptados:"+facade.verRetosAceptados(usuario1).toString());
+			
+			//System.out.println("Retos aceptados:"+facade.verRetosAceptados(usuario1).toString());
 		} catch (Exception e) {
 			System.out.println("\t# Error: " + e.getMessage());	
 		}
@@ -125,7 +126,7 @@ public class LocalTest {
 			SimpleDateFormat format = new SimpleDateFormat("dd-mm-yyyy");
 			Date fechaInicio = format.parse("01-12-2022");
 			SesionEntrenamiento s1 = new SesionEntrenamiento("prueba Entrenamiento", "ciclismo", 1000, fechaInicio, 0.5f);
-			facade.crearSesionEntrenamiento(usuario1,s1);
+			//facade.crearSesionEntrenamiento(usuario1,s1);
 			System.out.println(s1);
 			//recibir una lista/sesion por parte del programa ya que el 
 		} catch (Exception e) {
