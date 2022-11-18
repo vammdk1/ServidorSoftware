@@ -5,6 +5,8 @@ import java.util.List;
 import strava.client.controller.LoginController;
 import strava.client.controller.RegisterController;
 import strava.client.controller.RetoController;
+import strava.client.controller.RetosAceptadosController;
+import strava.client.controller.RetosActivosController;
 import strava.client.controller.SesionEntrenamientoController;
 import strava.client.gui.VentanaCrearReto;
 import strava.client.gui.VentanaCrearSesionEntrenamiento;
@@ -43,8 +45,12 @@ public class MainProgram {
 		SesionEntrenamientoController sesionEntrenamientoController = new SesionEntrenamientoController(serviceLocator);
 		VentanaCrearSesionEntrenamiento ventanaCrearSesionEntrenamiento = new VentanaCrearSesionEntrenamiento(sesionEntrenamientoController);
 		
-		VentanaRetosAceptados ventanaRetosAceptados = new VentanaRetosAceptados();
-		VentanaRetosActivos ventanaRetosActivos = new VentanaRetosActivos(retoController);
+		
+		RetosAceptadosController retosAceptadosController = new RetosAceptadosController(serviceLocator);
+		VentanaRetosAceptados ventanaRetosAceptados = new VentanaRetosAceptados(retosAceptadosController);
+		
+		RetosActivosController retosActivosController = new RetosActivosController(serviceLocator);
+		VentanaRetosActivos ventanaRetosActivos = new VentanaRetosActivos(retosActivosController);
 		
 		//LoginDialog loginDialog = new LoginDialog(loginController);		
 		

@@ -1,5 +1,8 @@
 package strava.server.data.dto;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import strava.server.data.domain.Reto;
 
 public class RetoAssembler {
@@ -26,5 +29,15 @@ public class RetoAssembler {
 		dto.setDeporte(reto.getDeporte());
 		
 		return dto;
+	}
+	
+	public List<RetoDTO> retoToDTO(List<Reto> retos) {
+		List<RetoDTO> dtos = new ArrayList<>();
+		
+		for (Reto reto : retos) {
+			dtos.add(retoToDTO(reto));
+		}
+		
+		return dtos;
 	}
 }

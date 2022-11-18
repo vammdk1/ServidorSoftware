@@ -13,6 +13,7 @@ import strava.server.data.domain.SesionEntrenamiento;
 import strava.server.data.domain.User;
 import strava.server.data.domain.UsuarioNoStrava;
 import strava.server.data.domain.UsuarioStrava;
+import strava.server.data.dto.RetoAssembler;
 import strava.server.data.dto.RetoDTO;
 import strava.server.data.dto.SesionEntrenamientoDTO;
 import strava.server.services.BaseDatos;
@@ -126,10 +127,10 @@ public class RemoteFacade extends UnicastRemoteObject implements IRemoteFacade {
 	}
 
 	@Override
-	public synchronized ArrayList<Reto> verRetosActivos() throws RemoteException {
+	public synchronized List<RetoDTO> verRetosActivos() throws RemoteException {
 		ArrayList<Reto> retosActivos = appServices.DevolverRetosActivos();
 		if(retosActivos!=null) {
-			return retosActivos;
+			return RetoAssembler.getInstance().retoToDTO(retosActivos);
 		}
 		throw new RemoteException("No hay retos activos");
 	}
@@ -156,10 +157,11 @@ public class RemoteFacade extends UnicastRemoteObject implements IRemoteFacade {
 	}
 
 	@Override
-	public synchronized ArrayList<Reto> verRetosAceptados(long token) throws RemoteException {
-		ArrayList<Reto> retosAceptados = appServices.DevolverRetosAceptados(serverState.get(token));
+	public synchronized List<RetoDTO> verRetosAceptados(long token) throws RemoteException {
+		List<Reto> retosAceptados = appServices.DevolverRetosAceptados(serverState.get(token));
+		
 		if(retosAceptados!=null) {
-			return retosAceptados;
+			return RetoAssembler.getInstance().retoToDTO(retosAceptados);
 		}
 		throw new RemoteException("No hay retos aceptados");
 	}

@@ -23,13 +23,13 @@ public interface IRemoteFacade extends Remote {
 
 	public User obtenerUsuario (long token) throws RemoteException;
 	
-	public ArrayList<Reto> verRetosActivos () throws RemoteException;
+	public List<RetoDTO> verRetosActivos () throws RemoteException;
 	
 	public boolean crearReto (long token, Reto reto) throws RemoteException;
 	
 	public boolean crearSesionEntrenamiento (long token ,SesionEntrenamiento sesion) throws RemoteException;
 	
-	public ArrayList<Reto> verRetosAceptados (long token) throws RemoteException;
+	public List<RetoDTO> verRetosAceptados (long token) throws RemoteException;
 
 	boolean registro(String nombre, String email, String fechaNac, float peso, int altura, int pulsoxMinuto,
 			int pulsoReposo, String password) throws RemoteException;

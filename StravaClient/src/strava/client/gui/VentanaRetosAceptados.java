@@ -9,6 +9,7 @@ import java.awt.LayoutManager;
 import java.awt.Toolkit;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.List;
 
 import javax.swing.BorderFactory;
 import javax.swing.JButton;
@@ -20,7 +21,9 @@ import javax.swing.JTextField;
 import java.awt.Font;
 import javax.swing.SwingConstants;
 
+import strava.client.controller.RetosAceptadosController;
 import strava.client.remote.ServiceLocator;
+import strava.server.data.dto.RetoDTO;
 
 import java.awt.GridLayout;
 import javax.swing.BoxLayout;
@@ -33,8 +36,11 @@ public class VentanaRetosAceptados {
 	static int x = 500;
 	static int y = 300;
 	
-	public VentanaRetosAceptados()
+	private RetosAceptadosController controller;
+	
+	public VentanaRetosAceptados(RetosAceptadosController reto)
 	{
+		this.controller = reto;
 		
 		VPrincipal.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		VPrincipal.setSize(new Dimension(750, 500));
@@ -126,5 +132,22 @@ public class VentanaRetosAceptados {
 				VentanaUsuario.VPrincipal.setVisible(true);
 			}
 		});
+	}
+	
+	public List<RetoDTO> getRetosAceptados() {
+		System.out.println("Obteniendo retos . . .");
+		
+		List<RetoDTO> retos = this.controller.getRetos();
+		
+		for (RetoDTO reto : retos) {
+			System.out.println(reto.getNombre() + " " +
+					reto.getDeporte() + " " +
+					reto.getDistanciaObjetivo() + " " +
+					reto.getTiempoObjetivo() + " " +
+					reto.getFechaIni() + " " +
+					reto.getFechaFin());
+		}
+
+		return retos;
 	}
 }
