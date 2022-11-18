@@ -8,6 +8,6 @@
 	<classpathentry exported="true" kind="lib" path="lib/commons-codec-1.15.jar"/>
 	<classpathentry kind="lib" path="lib/Strava.jar"/>
 	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="src" path="/Prototipo servidor"/>
+	<classpathentry kind="src" path="/StravaServidor"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
