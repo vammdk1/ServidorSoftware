@@ -28,6 +28,8 @@ import java.awt.GridLayout;
 import javax.swing.BoxLayout;
 import javax.swing.JLabel;
 import java.awt.FlowLayout;
+import javax.swing.JTable;
+import javax.swing.table.DefaultTableModel;
 
 public class VentanaUsuario {
 	static JFrame VPrincipal = new JFrame("STRAVA");
@@ -36,6 +38,7 @@ public class VentanaUsuario {
 	
 	private LoginController controller;
 	private static User usuario;
+	private JTable table;
 	
 	public VentanaUsuario(LoginController login)
 	{
@@ -53,23 +56,38 @@ public class VentanaUsuario {
 		
 		JButton CrearSesionEntrenamiento = new JButton("Crear sesion de entrenamiento");
 		CrearSesionEntrenamiento.setFont(new Font("Tahoma", Font.PLAIN, 18));
-		CrearSesionEntrenamiento.setBounds(214, 119, 295, 51);
+		CrearSesionEntrenamiento.setBounds(416, 119, 295, 51);
 		VPrincipal.getContentPane().add(CrearSesionEntrenamiento);
 		
 		JButton CrearReto = new JButton("Crear un reto");
 		CrearReto.setFont(new Font("Tahoma", Font.PLAIN, 18));
-		CrearReto.setBounds(270, 204, 178, 51);
+		CrearReto.setBounds(473, 211, 178, 51);
 		VPrincipal.getContentPane().add(CrearReto);
 		
 		JButton ConsultarReto = new JButton("Consultar un reto");
 		ConsultarReto.setFont(new Font("Tahoma", Font.PLAIN, 18));	
-		ConsultarReto.setBounds(270, 293, 178, 51);
+		ConsultarReto.setBounds(473, 294, 178, 51);
 		VPrincipal.getContentPane().add(ConsultarReto);
 		
 		JButton CerrarSesion = new JButton("Cerrar sesion");
 		CerrarSesion.setFont(new Font("Tahoma", Font.PLAIN, 16));
 		CerrarSesion.setBounds(589, 407, 135, 43);
 		VPrincipal.getContentPane().add(CerrarSesion);
+		
+		JPanel panel = new JPanel();
+		panel.setBounds(0, 131, 345, 330);
+		VPrincipal.getContentPane().add(panel);
+		
+		table = new JTable();
+		table.setModel(new DefaultTableModel(
+			new Object[][] {
+				{null, null, null, null, null},
+			},
+			new String[] {
+				"Titulo", "Deporte", "Distancia", "Duracion", "Fecha inicio"
+			}
+		));
+		panel.add(table);
 		VPrincipal.setVisible(false);
 	
 		CrearSesionEntrenamiento.addActionListener(new ActionListener() {
