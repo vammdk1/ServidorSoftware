@@ -17,6 +17,7 @@ import javax.swing.SwingConstants;
 import strava.client.controller.RetoController;
 import strava.client.remote.ServiceLocator;
 import strava.server.data.domain.Deportes;
+import strava.server.data.domain.Proveedor;
 
 import javax.swing.DefaultComboBoxModel;
 import javax.swing.JLabel;
@@ -34,7 +35,7 @@ public class VentanaCrearReto {
 	private JTextField tfInicioAno;
 	private JTextField tfFinAno;
 	private JTextField tfObjetivo;
-	
+	public static Deportes tDeportes;
 	private RetoController controller;
 	
 	public VentanaCrearReto(RetoController reto)
@@ -157,7 +158,7 @@ public class VentanaCrearReto {
 		VPrincipal.getContentPane().add(tfObjetivo);
 		
 		JComboBox CbDeporte = new JComboBox();
-		CbDeporte.setModel(new DefaultComboBoxModel(Deportes.values()));
+		CbDeporte.setModel(new DefaultComboBoxModel(tDeportes.values()));
 		CbDeporte.setFont(new Font("Tahoma", Font.PLAIN, 20));
 		CbDeporte.setBounds(317, 412, 119, 40);
 		VPrincipal.getContentPane().add(CbDeporte);
@@ -188,9 +189,9 @@ public class VentanaCrearReto {
 					Date fechaFin = format.parse(tfFinDia.getText() + "-" + tfFinMes.getText() + "-" + tfFinAno.getText());
 					System.out.println("intentando crear reto con titulo: "+ titulo.getText() + " deporte: " +CbDeporte.getSelectedItem() + " fechaini: " + fechaInicio + " fecha fin: " + fechaFin);
 					if (comboBox.getSelectedIndex()==0) {
-						controller.crearReto(VentanaUsuario.getToken(), titulo.getText(), (Deportes)CbDeporte.getSelectedItem(), fechaInicio, fechaFin, Float.parseFloat(tfObjetivo.getText()) , 0f);
+						controller.crearReto(VentanaUsuario.getToken(), titulo.getText(), tDeportes.CICLISMO, fechaInicio, fechaFin, Float.parseFloat(tfObjetivo.getText()) , 0f);
 					}else {
-						controller.crearReto(VentanaUsuario.getToken(), titulo.getText(), (Deportes)CbDeporte.getSelectedItem(), fechaInicio, fechaFin, 0f, Float.parseFloat(tfObjetivo.getText()));
+						controller.crearReto(VentanaUsuario.getToken(), titulo.getText(), tDeportes.RUNNING, fechaInicio, fechaFin, 0f, Float.parseFloat(tfObjetivo.getText()));
 					}
 					//controller.crearReto(VentanaUsuario.getToken(), titulo.getText(), tfDeporte.getText(), fechaInicio, fechaFin, y, x);
 					VPrincipal.setVisible(false);

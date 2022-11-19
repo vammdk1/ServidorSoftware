@@ -1,3 +1,4 @@
+
 package strava.client.gui;
 
 import java.awt.BorderLayout;
@@ -23,6 +24,7 @@ import javax.swing.SwingConstants;
 import strava.client.controller.LoginController;
 import strava.client.controller.RegisterController;
 import strava.client.remote.ServiceLocator;
+import strava.server.data.domain.Proveedor;
 
 import java.awt.GridLayout;
 import javax.swing.BoxLayout;

@@ -7,7 +7,6 @@ import strava.server.data.domain.Reto;
 import strava.server.data.domain.SesionEntrenamiento;
 import strava.server.data.domain.User;
 import strava.server.data.domain.UsuarioStrava;
-import strava.server.data.dto.RetoDTO;
 import strava.server.data.dto.UserDTO;
 
 public class GeneralAppServices {
@@ -30,7 +29,7 @@ public class GeneralAppServices {
 		}
 	}
 	
-	public static boolean setReto(User usuario,RetoDTO reto) { //puede que tenga que justarla como el de abajo
+	public static boolean setReto(User usuario,Reto reto) { //puede que tenga que justarla como el de abajo
 		// TODO Auto-generated method stub
 		if(BaseDatos.RegistrarReto(usuario, reto)) {
 			return true;

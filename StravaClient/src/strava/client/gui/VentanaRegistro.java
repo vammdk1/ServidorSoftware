@@ -22,6 +22,7 @@ import javax.swing.SwingConstants;
 
 import strava.client.controller.RegisterController;
 import strava.client.remote.ServiceLocator;
+import strava.server.data.domain.Deportes;
 import strava.server.data.domain.Proveedor;
 import strava.server.data.domain.User;
 
@@ -34,6 +35,7 @@ public class VentanaRegistro {
 	static JFrame VPrincipal = new JFrame("STRAVA");
 	static int x = 500;
 	static int y = 300;
+	public static Proveedor p;
 	
 	private RegisterController controller;
 	
@@ -128,7 +130,7 @@ public class VentanaRegistro {
 			public void actionPerformed(ActionEvent e) {
 				VPrincipal.setVisible(false);
 				System.out.println("boton registro pulsado");
-				User usuario = new User(nombre.getText(), correo.getText(), fecha.getText(), 0f, 0, 0, 0, null);
+				User usuario = new User(nombre.getText(), correo.getText(), fecha.getText(), 0f, 0, 0, 0, p.LOCAL);
 				System.out.println("creando usuario: " + usuario);
 				VentanaRegistro2.setUsuario(usuario);
 				VentanaRegistro2.setPassword(new String(contrasena.getPassword()));

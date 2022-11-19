@@ -10,6 +10,7 @@ import strava.server.data.domain.User;
 
 public class SesionEntrenamientoController {
 	private ServiceLocator serviceLocator;
+	public Deportes tDeportes ;
 	
 	public SesionEntrenamientoController(ServiceLocator serviceLocator) {
 		this.serviceLocator = serviceLocator;

@@ -2,7 +2,6 @@ package strava.server.data.dto;
 
 import java.io.Serializable;
 import java.util.Date;
-
 import strava.server.data.domain.Deportes;
 
 public class SesionEntrenamientoDTO implements Serializable{
