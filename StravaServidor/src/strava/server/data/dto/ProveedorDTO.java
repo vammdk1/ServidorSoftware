@@ -1,13 +1,13 @@
-package strava.server.data.domain;
+package strava.server.data.dto;
 
-public enum Proveedor {
+public enum ProveedorDTO {
 	GOOGLE(0),
 	FACEBOOK(1),
 	LOCAL(2);
 	
 	private int index;
 	 
-    private Proveedor(int index) {
+    private ProveedorDTO(int index) {
         this.index = index;
     }
  

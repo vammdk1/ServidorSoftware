@@ -25,8 +25,8 @@ public class RegisterController {
 		user.setFechancto(fechaNac);
 		user.setPeso(peso);
 		user.setAltura(altura);
-		user.setFrecuenciacardmax(pulsoxMinuto);
-		user.setFrecuenciacardreposo(pulsoReposo);
+		user.setPulsoxMinuto(pulsoxMinuto);
+		user.setPulsoReposo(pulsoReposo);
 		try {
 			//System.out.println(email+"||"+user.getContrasenna());
 			this.serviceLocator.getService().registro(user, password);

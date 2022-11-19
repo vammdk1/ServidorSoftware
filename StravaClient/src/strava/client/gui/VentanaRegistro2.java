@@ -23,6 +23,7 @@ import javax.swing.SwingConstants;
 import strava.client.controller.RegisterController;
 import strava.client.remote.ServiceLocator;
 import strava.server.data.domain.User;
+import strava.server.data.dto.UserDTO;
 
 import java.awt.GridLayout;
 import javax.swing.BoxLayout;
@@ -35,7 +36,7 @@ public class VentanaRegistro2 {
 	static int y = 300;
 	
 	private RegisterController controller;
-	private static User usuario;
+	private static UserDTO usuario;
 	private static String password;
 	
 	public VentanaRegistro2(RegisterController register){
@@ -132,7 +133,7 @@ public class VentanaRegistro2 {
 					getUsuario().setPulsoxMinuto(Integer.parseInt(frecMax.getText()));
 					getUsuario().setPulsoReposo(Integer.parseInt(frecRep.getText()));
 					System.out.println("intentando anadir al usuario el peso: " + Float.parseFloat(peso.getText()) + " la altura: " + Integer.parseInt(altura.getText()) + " el pulso max: " +  Integer.parseInt(frecMax.getText()) + " el pulso rep: " + Integer.parseInt(frecRep.getText()));
-					controller.register(getUsuario().getNombre(), getUsuario().getEmail(), getUsuario().getFechaNac(), getUsuario().getPeso(), getUsuario().getAltura(), getUsuario().getPulsoxMinuto(), getUsuario().getPulsoReposo(), getPassword());
+					controller.register(getUsuario().getNombre(), getUsuario().getEmail(), getUsuario().getFechancto(), getUsuario().getPeso(), getUsuario().getAltura(), getUsuario().getPulsoxMinuto(), getUsuario().getPulsoReposo(), getPassword());
 				} catch (Exception e2) {
 					System.out.println("# Error en el registro "+ e2);
 				}
@@ -141,12 +142,12 @@ public class VentanaRegistro2 {
 		});
 	}
 
-	public static User getUsuario() {
+	public static UserDTO getUsuario() {
 		return usuario;
 	}
 
-	public static void setUsuario(User usuario) {
-		VentanaRegistro2.usuario = usuario;
+	public static void setUsuario(UserDTO usuario2) {
+		VentanaRegistro2.usuario = usuario2;
 	}
 
 	public static String getPassword() {

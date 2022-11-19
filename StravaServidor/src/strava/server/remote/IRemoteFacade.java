@@ -25,9 +25,9 @@ public interface IRemoteFacade extends Remote {
 	
 	public List<RetoDTO> verRetosActivos () throws RemoteException;
 	
-	public boolean crearReto (long token, Reto reto) throws RemoteException;
+	public boolean crearReto (long token, RetoDTO reto) throws RemoteException;
 	
-	public boolean crearSesionEntrenamiento (long token ,SesionEntrenamiento sesion) throws RemoteException;
+	public boolean crearSesionEntrenamiento (long token ,SesionEntrenamientoDTO sesion) throws RemoteException;
 	
 	public List<RetoDTO> verRetosAceptados (long token) throws RemoteException;
 
@@ -37,6 +37,6 @@ public interface IRemoteFacade extends Remote {
 
 	long inicioFacebook(String email) throws RemoteException;
 	
-	public void aceptarReto(long token, Reto reto)  throws RemoteException;
+	public void aceptarReto(long token, RetoDTO reto)  throws RemoteException;
 	
 }

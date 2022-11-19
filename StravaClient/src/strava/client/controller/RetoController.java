@@ -5,8 +5,8 @@ import java.rmi.RemoteException;
 import java.util.Date;
 
 import strava.client.remote.ServiceLocator;
-import strava.server.data.domain.Deportes;
-import strava.server.data.domain.Reto;
+import strava.server.data.dto.DeportesDTO;
+import strava.server.data.dto.RetoDTO;
 
 public class RetoController {
 	private ServiceLocator serviceLocator;
@@ -15,9 +15,15 @@ public class RetoController {
 		this.serviceLocator = serviceLocator;
 	}
 
-	public boolean crearReto(long token, String nombre, Deportes deporte, Date fechaInicio, Date fechaFin, float distanciaObjetivo, float tiempoObjetivo) 
+	public boolean crearReto(long token, String nombre, DeportesDTO deporte, Date fechaInicio, Date fechaFin, float distanciaObjetivo, float tiempoObjetivo) 
 	{
-		Reto reto = new Reto(nombre, fechaInicio, fechaFin, distanciaObjetivo, tiempoObjetivo, deporte);
+		RetoDTO reto = new RetoDTO();
+		reto.setDeporte(deporte);
+		reto.setDistanciaObjetivo(distanciaObjetivo);
+		reto.setFechaFin(fechaFin);
+		reto.setFechaIni(fechaInicio);
+		reto.setNombre(nombre);
+		reto.setTiempoObjetivo(tiempoObjetivo);
 		
 		try {
 			return this.serviceLocator.getService().crearReto(token,reto);

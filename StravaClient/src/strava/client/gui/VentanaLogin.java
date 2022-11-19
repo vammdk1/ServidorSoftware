@@ -24,7 +24,6 @@ import javax.swing.SwingConstants;
 import strava.client.controller.LoginController;
 import strava.client.controller.RegisterController;
 import strava.client.remote.ServiceLocator;
-import strava.server.data.domain.Proveedor;
 
 import java.awt.GridLayout;
 import javax.swing.BoxLayout;
@@ -118,7 +117,7 @@ public class VentanaLogin {
 					//VentanaUsuario.setUsuario();
 					VentanaUsuario.VPrincipal.setVisible(true);
 					System.out.println("iniciando sesion");
-					VentanaUsuario.setUsuario(controller.getUser());
+					VentanaUsuario.setToken(controller.getToken());
 				}
 			}
 		});

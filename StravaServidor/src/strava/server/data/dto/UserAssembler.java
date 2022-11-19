@@ -23,8 +23,8 @@ public class UserAssembler {
 		dto.setFechancto(user.getFechaNac());
 		dto.setPeso(user.getPeso());
 		dto.setAltura(user.getAltura());
-		dto.setFrecuenciacardmax(user.getPulsoxMinuto());
-		dto.setFrecuenciacardreposo(user.getPulsoReposo());
+		dto.setPulsoxMinuto(user.getPulsoxMinuto());
+		dto.setPulsoReposo(user.getPulsoReposo());
 		
 		return dto;
 	}

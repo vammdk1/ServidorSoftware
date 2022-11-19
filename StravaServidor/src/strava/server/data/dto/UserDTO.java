@@ -4,6 +4,7 @@ import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Date;
 
+import strava.server.data.domain.Proveedor;
 import strava.server.data.domain.Reto;
 import strava.server.data.domain.SesionEntrenamiento;
 
@@ -18,8 +19,9 @@ public class UserDTO implements Serializable {
 	private String fechancto;
 	private  float peso;
 	private int altura;
-	private int frecuenciacardmax;
-	private int frecuenciacardreposo;
+	private int pulsoxMinuto;
+	private int pulsoReposo;
+	private Proveedor proveedor;
 		
 	private ArrayList<Reto> retos = new ArrayList<>();
 	private ArrayList<SesionEntrenamiento> sesiones = new ArrayList<>();
@@ -62,22 +64,30 @@ public class UserDTO implements Serializable {
 		this.altura = altura;
 	}
 	
-	public int getFrecuenciacardmax() {
-		return frecuenciacardmax;
+	public int getPulsoxMinuto() {
+		return pulsoxMinuto;
 	}
-	
-	public void setFrecuenciacardmax(int frecuenciacardmax) {
-		this.frecuenciacardmax = frecuenciacardmax;
+
+	public void setPulsoxMinuto(int pulsoxMinuto) {
+		this.pulsoxMinuto = pulsoxMinuto;
 	}
-	
-	public int getFrecuenciacardreposo() {
-		return frecuenciacardreposo;
+
+	public int getPulsoReposo() {
+		return pulsoReposo;
 	}
-	
-	public void setFrecuenciacardreposo(int frecuenciacardreposo) {
-		this.frecuenciacardreposo = frecuenciacardreposo;
+
+	public void setPulsoReposo(int pulsoReposo) {
+		this.pulsoReposo = pulsoReposo;
 	}
-	
+
+	public Proveedor getProveedor() {
+		return proveedor;
+	}
+
+	public void setProveedor(Proveedor proveedor) {
+		this.proveedor = proveedor;
+	}
+
 	public void anadirReto(Reto r) {
 		this.retos.add(r);
 	}

@@ -1,5 +1,6 @@
 package strava.server.data.dto;
 
+import strava.server.data.domain.Deportes;
 import strava.server.data.domain.Reto;
 import strava.server.data.domain.SesionEntrenamiento;
 
@@ -20,7 +21,8 @@ public class SesionEntrenamientoAssembler {
 		SesionEntrenamientoDTO dto = new SesionEntrenamientoDTO();
 		
 		dto.setTitulo(sesion.getTitulo());
-		dto.setDeporte(sesion.getDeporte());
+		DeportesDTO[] d = DeportesDTO.values();
+		dto.setDeporte(d[sesion.getDeporte().getIndex()]);
 		dto.setDistancia(sesion.getDistancia());
 		dto.setFechaHoraInicio(sesion.getFechaHoraIni());
 		dto.setDuracion(sesion.getDuracion());

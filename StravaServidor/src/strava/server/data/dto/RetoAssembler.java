@@ -26,7 +26,8 @@ public class RetoAssembler {
 		dto.setFechaFin(reto.getFechaFin());
 		dto.setDistanciaObjetivo(reto.getDistanciaObj());
 		dto.setTiempoObjetivo(reto.getTiempoObj());
-		dto.setDeporte(reto.getDeporte());
+		DeportesDTO[] d = DeportesDTO.values();
+		dto.setDeporte(d[reto.getDeporte().getIndex()]);
 		
 		return dto;
 	}

@@ -16,8 +16,7 @@ import javax.swing.SwingConstants;
 
 import strava.client.controller.RetoController;
 import strava.client.remote.ServiceLocator;
-import strava.server.data.domain.Deportes;
-import strava.server.data.domain.Proveedor;
+import strava.server.data.dto.DeportesDTO;
 
 import javax.swing.DefaultComboBoxModel;
 import javax.swing.JLabel;
@@ -35,7 +34,7 @@ public class VentanaCrearReto {
 	private JTextField tfInicioAno;
 	private JTextField tfFinAno;
 	private JTextField tfObjetivo;
-	public static Deportes tDeportes;
+	public static DeportesDTO tDeportes;
 	private RetoController controller;
 	
 	public VentanaCrearReto(RetoController reto)
@@ -164,7 +163,7 @@ public class VentanaCrearReto {
 		VPrincipal.getContentPane().add(CbDeporte);
 		VPrincipal.setVisible(false);
 		
-		for (Deportes d : Deportes.values()) {
+		for (DeportesDTO d : DeportesDTO.values()) {
 			CbDeporte.addItem(d);
 		}
 		

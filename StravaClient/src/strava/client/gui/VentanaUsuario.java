@@ -22,7 +22,6 @@ import javax.swing.SwingConstants;
 
 import strava.client.controller.LoginController;
 import strava.client.remote.ServiceLocator;
-import strava.server.data.domain.User;
 
 import java.awt.GridLayout;
 import javax.swing.BoxLayout;
@@ -37,7 +36,6 @@ public class VentanaUsuario {
 	static int y = 300;
 	
 	private LoginController controller;
-	private static User usuario;
 	private JTable table;
 	private static JTable tabla;
 	
@@ -150,15 +148,15 @@ public class VentanaUsuario {
 		});
 	}
 
-	public static User getUsuario() {
-		return usuario;
-	}
 
-	public static void setUsuario(User usuario) {
-		VentanaUsuario.usuario = usuario;
-	}
-	
 	public static long getToken() {
 		return token;
 	}
+
+
+	public static void setToken(long token) {
+		VentanaUsuario.token = token;
+	}
+	
+	
 }

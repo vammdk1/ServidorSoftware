@@ -10,7 +10,7 @@ public class SesionEntrenamientoDTO implements Serializable{
 	 */
 	private static final long serialVersionUID = 1L;
 	private String titulo;
-	private Deportes deporte;
+	private DeportesDTO deporte;
 	private float distancia;
 	private Date fechaHoraInicio;
 	private float duracion;
@@ -23,11 +23,11 @@ public class SesionEntrenamientoDTO implements Serializable{
 		this.titulo = titulo;
 	}
 
-	public Deportes getDeporte() {
+	public DeportesDTO getDeporte() {
 		return deporte;
 	}
 
-	public void setDeporte(Deportes deporte) {
+	public void setDeporte(DeportesDTO deporte) {
 		this.deporte = deporte;
 	}
 

@@ -137,7 +137,7 @@ public class RemoteFacade extends UnicastRemoteObject implements IRemoteFacade {
 	}
 
 	@Override
-	public synchronized boolean crearReto(long token,Reto reto) throws RemoteException {
+	public synchronized boolean crearReto(long token,RetoDTO reto) throws RemoteException {
 		System.out.println("Creando Reto");
 			if(GeneralAppServices.setReto(serverState.get(token),reto)) {
 				return true; //para la pantalla sacar los datos del reto ?
@@ -147,7 +147,7 @@ public class RemoteFacade extends UnicastRemoteObject implements IRemoteFacade {
 	}
 
 	@Override
-	public synchronized boolean crearSesionEntrenamiento(long token, SesionEntrenamiento sesion) throws RemoteException {
+	public synchronized boolean crearSesionEntrenamiento(long token, SesionEntrenamientoDTO sesion) throws RemoteException {
 		
 		if(GeneralAppServices.setSesion(serverState.get(token), sesion)) {
 			
@@ -178,7 +178,7 @@ public class RemoteFacade extends UnicastRemoteObject implements IRemoteFacade {
 		
 	}
 	
-	public void aceptarReto(long token, Reto reto)  throws RemoteException {
+	public void aceptarReto(long token, RetoDTO reto)  throws RemoteException {
 		if(GeneralAppServices.aceptarReto(serverState.get(token),reto)) {
 			return;  //para la pantalla sacar los datos del reto ?
 		}

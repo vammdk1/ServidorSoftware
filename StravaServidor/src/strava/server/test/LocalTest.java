@@ -17,7 +17,8 @@ import strava.server.services.BaseDatos;
 
 public class LocalTest {
 
-	public static void main(String[] args) {		
+	public static void main(String[] args) {	
+		/*
 		RemoteFacade facade = null;
 		ArrayList<Reto> lr1 = null;
 		ArrayList<SesionEntrenamiento> ls1= null;
@@ -54,7 +55,7 @@ public class LocalTest {
 			System.out.println("\t# Error: " + e.getMessage());	
 		}
 		
-		
+		*/
 	
 		//login
 		/**

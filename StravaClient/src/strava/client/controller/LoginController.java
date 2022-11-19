@@ -4,7 +4,6 @@ import java.rmi.RemoteException;
 
 import strava.client.gui.VentanaUsuario;
 import strava.client.remote.ServiceLocator;
-import strava.server.data.domain.User;
 
 //This class implements Controller pattern.
 public class LoginController {	
@@ -33,7 +32,7 @@ public class LoginController {
 		try {
 			this.serviceLocator.getService().logout(this.token);
 			this.token = -1;
-			VentanaUsuario.setUsuario(null);
+			//VentanaUsuario.setUsuario(null);
 		} catch (RemoteException e) {
 			System.out.println("# Error during logout: " + e);
 		}
@@ -41,15 +40,5 @@ public class LoginController {
 
 	public long getToken() {
 		return token;
-	}
-	
-	public User getUser() {
-		System.out.println("Getuser:"+token);
-		try {
-			return this.serviceLocator.getService().obtenerUsuario(token);
-		} catch (RemoteException e) {
-			System.out.println("# Error en la obtencion de usuario: " + e);
-			return null;
-		}
 	}
 }
