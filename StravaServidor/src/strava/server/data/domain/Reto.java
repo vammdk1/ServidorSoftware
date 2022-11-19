@@ -12,7 +12,7 @@ public class Reto {
 	private Date fechaFin;
 	private float distanciaObj;
 	private float tiempoObj;
-	private String deporte;
+	private Deportes deporte;
 	
 	/**
 	 * 
@@ -24,7 +24,7 @@ public class Reto {
 	 * @param deporte
 	 */
 	
-	public Reto(String nombre, Date fechaIni, Date fechaFin, float distanciaObj, float tiempoObj, String deporte) {
+	public Reto(String nombre, Date fechaIni, Date fechaFin, float distanciaObj, float tiempoObj, Deportes deporte) {
 		super();
 		this.nombre = nombre;
 		this.fechaIni = fechaIni;
@@ -63,10 +63,10 @@ public class Reto {
 	public void setTiempoObj(float tiempoObj) {
 		this.tiempoObj = tiempoObj;
 	}
-	public String getDeporte() {
+	public Deportes getDeporte() {
 		return deporte;
 	}
-	public void setDeporte(String deporte) {
+	public void setDeporte(Deportes deporte) {
 		this.deporte = deporte;
 	}
 	@Override

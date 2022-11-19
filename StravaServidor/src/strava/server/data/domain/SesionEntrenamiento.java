@@ -5,8 +5,8 @@ import java.util.Date;
 
 public class SesionEntrenamiento {
 	
+	private Deportes deporte;
 	private String titulo;
-	private String deporte;
 	private float distancia;
 	private Date fechaHoraIni;
 	private float duracion;
@@ -19,7 +19,7 @@ public class SesionEntrenamiento {
 	 * @param fechaIni
 	 * @param duracion
 	 */
-	public SesionEntrenamiento(String titulo, String deporte, float distancia, Date fechaIni,
+	public SesionEntrenamiento(String titulo, Deportes deporte, float distancia, Date fechaIni,
 			float duracion) {
 		super();
 		this.titulo = titulo;
@@ -37,11 +37,11 @@ public class SesionEntrenamiento {
 		this.titulo = titulo;
 	}
 
-	public String getDeporte() {
+	public Deportes getDeporte() {
 		return deporte;
 	}
 
-	public void setDeporte(String deporte) {
+	public void setDeporte(Deportes deporte) {
 		this.deporte = deporte;
 	}
 
