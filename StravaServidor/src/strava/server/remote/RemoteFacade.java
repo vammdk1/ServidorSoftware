@@ -16,6 +16,7 @@ import strava.server.data.domain.UsuarioStrava;
 import strava.server.data.dto.RetoAssembler;
 import strava.server.data.dto.RetoDTO;
 import strava.server.data.dto.SesionEntrenamientoDTO;
+import strava.server.data.dto.UserDTO;
 import strava.server.services.BaseDatos;
 import strava.server.services.GeneralAppServices;
 import strava.server.services.LoginAppService;
@@ -72,13 +73,13 @@ public class RemoteFacade extends UnicastRemoteObject implements IRemoteFacade {
 	}
 
 	@Override
-	public synchronized boolean registro (String nombre,String email,String fechaNac,float peso,int altura,int pulsoxMinuto,int pulsoReposo,String password) throws RemoteException {
-		UsuarioStrava usuario = new UsuarioStrava(nombre, email, fechaNac, peso, altura, pulsoxMinuto, pulsoReposo,password);
-		if(GeneralAppServices.registrarusuario(usuario)) {
-			System.out.println("RemoteFacade Registro(): " + usuario.getEmail());
+	public synchronized boolean registro (UserDTO usuarioDTO, String password) throws RemoteException {
+		//User usuario = usuariodto;
+		if(GeneralAppServices.registrarusuario(usuarioDTO,password)) {
+			System.out.println("RemoteFacade Registro(): " + usuarioDTO.getEmail());
 			return true;
 		}else {
-			throw new RemoteException("El correo ingresado:"+usuario.getEmail()+", ya se encuentra en uso");
+			throw new RemoteException("El correo ingresado:"+usuarioDTO.getEmail()+", ya se encuentra en uso");
 		}
 		
 	}

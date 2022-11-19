@@ -4,6 +4,8 @@ import java.rmi.RemoteException;
 
 import strava.client.remote.ServiceLocator;
 import strava.server.data.domain.UsuarioStrava;
+import strava.server.data.dto.UserAssembler;
+import strava.server.data.dto.UserDTO;
 
 public class RegisterController {
 	//Reference to the Service Locator
@@ -17,11 +19,17 @@ public class RegisterController {
 		
 	public void register(String nombre, String email, String fechaNac, float peso, int altura, int pulsoxMinuto, int pulsoReposo, String password) {
 		
-		//UsuarioStrava user = new UsuarioStrava(nombre, email, fechaNac, peso, altura, pulsoxMinuto, pulsoReposo, password);
-		
+		UserDTO user = new UserDTO();
+		user.setNombre(nombre);
+		user.setEmail(email);
+		user.setFechancto(fechaNac);
+		user.setPeso(peso);
+		user.setAltura(altura);
+		user.setFrecuenciacardmax(pulsoxMinuto);
+		user.setFrecuenciacardreposo(pulsoReposo);
 		try {
 			//System.out.println(email+"||"+user.getContrasenna());
-			this.serviceLocator.getService().registro(nombre, email, fechaNac, peso, altura, pulsoxMinuto, pulsoReposo, password);
+			this.serviceLocator.getService().registro(user, password);
 		} catch (RemoteException e) {
 			// TODO Auto-generated catch block
 			System.out.println("# Error en el registro: " + e);

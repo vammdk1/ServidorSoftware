@@ -37,7 +37,7 @@ public class LocalTest {
 		} catch (Exception e) {			
 			System.out.println("\t# Error: " + e.getMessage());
 		} 
-
+/**
 		//registro
 		try {
 			System.out.println("/////////////////////////////////////////////////////////////////////////");
