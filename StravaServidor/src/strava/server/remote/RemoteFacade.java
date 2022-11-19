@@ -11,7 +11,6 @@ import java.util.Map;
 import strava.server.data.domain.Reto;
 import strava.server.data.domain.SesionEntrenamiento;
 import strava.server.data.domain.User;
-import strava.server.data.domain.UsuarioNoStrava;
 import strava.server.data.domain.UsuarioStrava;
 import strava.server.data.dto.RetoAssembler;
 import strava.server.data.dto.RetoDTO;
@@ -153,7 +152,7 @@ public class RemoteFacade extends UnicastRemoteObject implements IRemoteFacade {
 			
 			return true;
 		}
-		throw new RemoteException("No se puedo la sesion");
+		throw new RemoteException("No se puedo crear la sesion de entrenamiento");
 		
 	}
 

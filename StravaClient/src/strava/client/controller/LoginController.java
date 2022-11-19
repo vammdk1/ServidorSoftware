@@ -44,6 +44,7 @@ public class LoginController {
 	}
 	
 	public User getUser() {
+		System.out.println("Getuser:"+token);
 		try {
 			return this.serviceLocator.getService().obtenerUsuario(token);
 		} catch (RemoteException e) {

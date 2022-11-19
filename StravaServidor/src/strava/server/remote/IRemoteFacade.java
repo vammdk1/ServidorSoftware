@@ -8,7 +8,6 @@ import java.util.List;
 import strava.server.data.domain.Reto;
 import strava.server.data.domain.SesionEntrenamiento;
 import strava.server.data.domain.User;
-import strava.server.data.domain.UsuarioNoStrava;
 import strava.server.data.domain.UsuarioStrava;
 import strava.server.data.dto.RetoDTO;
 import strava.server.data.dto.SesionEntrenamientoDTO;
