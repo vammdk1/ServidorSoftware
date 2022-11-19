@@ -16,6 +16,7 @@ import javax.swing.SwingConstants;
 
 import strava.client.controller.RetoController;
 import strava.client.remote.ServiceLocator;
+import strava.server.data.domain.Deportes;
 
 import javax.swing.DefaultComboBoxModel;
 import javax.swing.JLabel;
@@ -33,7 +34,6 @@ public class VentanaCrearReto {
 	private JTextField tfInicioAno;
 	private JTextField tfFinAno;
 	private JTextField tfObjetivo;
-	private JTextField tfDeporte;
 	
 	private RetoController controller;
 	
@@ -156,12 +156,16 @@ public class VentanaCrearReto {
 		tfObjetivo.setBounds(272, 352, 210, 32);
 		VPrincipal.getContentPane().add(tfObjetivo);
 		
-		tfDeporte = new JTextField();
-		tfDeporte.setFont(new Font("Tahoma", Font.PLAIN, 20));
-		tfDeporte.setColumns(10);
-		tfDeporte.setBounds(272, 414, 210, 32);
-		VPrincipal.getContentPane().add(tfDeporte);
+		JComboBox CbDeporte = new JComboBox();
+		CbDeporte.setModel(new DefaultComboBoxModel(Deportes.values()));
+		CbDeporte.setFont(new Font("Tahoma", Font.PLAIN, 20));
+		CbDeporte.setBounds(317, 412, 119, 40);
+		VPrincipal.getContentPane().add(CbDeporte);
 		VPrincipal.setVisible(false);
+		
+		for (Deportes d : Deportes.values()) {
+			CbDeporte.addItem(d);
+		}
 		
 		volver.addActionListener(new ActionListener() {
 			
@@ -182,8 +186,13 @@ public class VentanaCrearReto {
 				try {
 					Date fechaInicio = format.parse(tfInicioDia.getText() + "-" + tfInicioMes.getText() + "-" + tfInicioAno.getText());
 					Date fechaFin = format.parse(tfFinDia.getText() + "-" + tfFinMes.getText() + "-" + tfFinAno.getText());
-					System.out.println("intentando crear reto con titulo: "+ titulo.getText() + " deporte: " +tfDeporte.getText() + " fechaini: " + fechaInicio + " fecha fin: " + fechaFin);
-					controller.crearReto(VentanaUsuario.getToken(), titulo.getText(), tfDeporte.getText(), fechaInicio, fechaFin, y, x);
+					System.out.println("intentando crear reto con titulo: "+ titulo.getText() + " deporte: " +CbDeporte.getSelectedItem() + " fechaini: " + fechaInicio + " fecha fin: " + fechaFin);
+					if (comboBox.getSelectedIndex()==0) {
+						controller.crearReto(VentanaUsuario.getToken(), titulo.getText(), (Deportes)CbDeporte.getSelectedItem(), fechaInicio, fechaFin, Float.parseFloat(tfObjetivo.getText()) , 0f);
+					}else {
+						controller.crearReto(VentanaUsuario.getToken(), titulo.getText(), (Deportes)CbDeporte.getSelectedItem(), fechaInicio, fechaFin, 0f, Float.parseFloat(tfObjetivo.getText()));
+					}
+					//controller.crearReto(VentanaUsuario.getToken(), titulo.getText(), tfDeporte.getText(), fechaInicio, fechaFin, y, x);
 					VPrincipal.setVisible(false);
 					VentanaUsuario.VPrincipal.setVisible(true);
 				} catch (ParseException e1) {
