@@ -12,6 +12,7 @@ import strava.server.data.domain.Reto;
 import strava.server.data.domain.SesionEntrenamiento;
 import strava.server.data.domain.User;
 import strava.server.data.domain.UsuarioStrava;
+import strava.server.data.dto.RetoDTO;
 
 public class BaseDatos {
 	
@@ -58,12 +59,13 @@ public class BaseDatos {
 		
 	}
 	
-	public static boolean RegistrarReto(User usuario,Reto reto) {
+	public static boolean RegistrarReto(User usuario,RetoDTO reto) {
+		Reto Nreto=new Reto(reto.getNombre(), reto.getFechaIni(), reto.getFechaFin(),reto.getDistanciaObjetivo(), reto.getTiempoObjetivo(), reto.getDeporte()); 
 		java.util.Date out = new java.util.Date();
 		if(reto.getFechaFin().compareTo(out)>0) {
 			if(UsuariosRegistrados.get(usuario.getEmail())!=null) {
-				UsuariosRegistrados.get(usuario.getEmail()).anadirReto(reto);
-				RetosActivos.add(reto);
+				UsuariosRegistrados.get(usuario.getEmail()).anadirReto(Nreto);
+				RetosActivos.add(Nreto);
 				//System.out.println(RetosActivos);
 				return true;
 			}else {

@@ -137,7 +137,7 @@ public class RemoteFacade extends UnicastRemoteObject implements IRemoteFacade {
 	}
 
 	@Override
-	public synchronized boolean crearReto(long token,Reto reto) throws RemoteException {
+	public synchronized boolean crearReto(long token,RetoDTO reto) throws RemoteException {
 		System.out.println("Creando Reto");
 			if(GeneralAppServices.setReto(serverState.get(token),reto)) {
 				return true; //para la pantalla sacar los datos del reto ?

@@ -8,6 +8,7 @@ import strava.client.remote.ServiceLocator;
 import strava.server.data.domain.Deportes;
 import strava.server.data.domain.Reto;
 import strava.server.data.domain.User;
+import strava.server.data.dto.RetoDTO;
 
 public class RetoController {
 	private ServiceLocator serviceLocator;
@@ -15,20 +16,17 @@ public class RetoController {
 	public RetoController(ServiceLocator serviceLocator) {
 		this.serviceLocator = serviceLocator;
 	}
-	/**
-	 * 
-	 * @param token
-	 * @param nombre
-	 * @param deporte
-	 * @param fechaInicio
-	 * @param fechaFin
-	 * @param distanciaObjetivo
-	 * @param tiempoObjetivo
-	 * @return
-	 */
+
 	public boolean crearReto(long token, String nombre, Deportes deporte, Date fechaInicio, Date fechaFin, float distanciaObjetivo, float tiempoObjetivo) 
 	{
-		Reto reto = new Reto(nombre, fechaInicio, fechaFin, distanciaObjetivo, tiempoObjetivo, deporte);
+		RetoDTO reto = new RetoDTO();
+		//(nombre, fechaInicio, fechaFin, distanciaObjetivo, tiempoObjetivo, deporte);
+		reto.setNombre(nombre);
+		reto.setFechaFin(fechaFin);
+		reto.setFechaIni(fechaFin);
+		reto.setDistanciaObjetivo(distanciaObjetivo);
+		reto.setTiempoObjetivo(tiempoObjetivo);
+		reto.setDeporte(deporte);
 		
 		try {
 			return this.serviceLocator.getService().crearReto(token,reto);

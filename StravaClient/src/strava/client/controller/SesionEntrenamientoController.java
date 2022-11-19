@@ -4,6 +4,7 @@ import java.rmi.RemoteException;
 import java.util.Date;
 
 import strava.client.remote.ServiceLocator;
+import strava.server.data.domain.Deportes;
 import strava.server.data.domain.SesionEntrenamiento;
 import strava.server.data.domain.User;
 
@@ -14,7 +15,7 @@ public class SesionEntrenamientoController {
 		this.serviceLocator = serviceLocator;
 	}
 	
-	public boolean crearSesionEntrenamiento(long token, String titulo, String deporte, float distancia, Date fechaHoraInicio, float duracion) 
+	public boolean crearSesionEntrenamiento(long token, String titulo, Deportes deporte, float distancia, Date fechaHoraInicio, float duracion) 
 	{
 		SesionEntrenamiento sesion = new SesionEntrenamiento(titulo, deporte, distancia, fechaHoraInicio, duracion);
 		
