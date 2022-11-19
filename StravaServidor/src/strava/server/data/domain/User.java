@@ -20,13 +20,14 @@ public class User  {
 	private int altura;
 	private int pulsoxMinuto;
 	private int pulsoReposo;
+	private Proveedor proveedor;
 	//private "nose" token;
 	
 	
 	private transient ArrayList<Reto> retos = new ArrayList<>();
 	private transient ArrayList<SesionEntrenamiento> sesiones = new ArrayList<>();
 	
-	public User(String nombre,String email,String fechaNac,float peso,int altura,int pulsoxMinuto,int pulsoReposo) {
+	public User(String nombre,String email,String fechaNac,float peso,int altura,int pulsoxMinuto,int pulsoReposo, Proveedor proveedor) {
 
 		this.nombre=nombre;
 		this.email=email;
@@ -35,6 +36,7 @@ public class User  {
 		this.altura=altura;
 		this.pulsoxMinuto=pulsoxMinuto;
 		this.pulsoReposo=pulsoReposo;
+		this.proveedor = proveedor;
 	}
 		
 	public String getNombre() {
@@ -143,5 +145,13 @@ public class User  {
 		
 		return sesiones;
 		
+	}
+
+	public Proveedor getProveedor() {
+		return proveedor;
+	}
+
+	public void setProveedor(Proveedor proveedor) {
+		this.proveedor = proveedor;
 	}
 }

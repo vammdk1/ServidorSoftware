@@ -1,14 +1,15 @@
 package strava.server.test;
 
-import java.text.SimpleDateFormat;
+import java.text.SimpleDateFormat; 
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
+import strava.server.data.domain.Deportes;
+import strava.server.data.domain.Proveedor;
 import strava.server.data.domain.Reto;
 import strava.server.data.domain.SesionEntrenamiento;
 import strava.server.data.domain.User;
-import strava.server.data.domain.UsuarioNoStrava;
 import strava.server.data.domain.UsuarioStrava;
 import strava.server.remote.RemoteFacade;
 
@@ -20,8 +21,8 @@ public class LocalTest {
 		ArrayList<SesionEntrenamiento> ls1= null;
 		UsuarioStrava usuario1 = null;
 		UsuarioStrava usuario2 = null;
-		UsuarioNoStrava google = null;
-		UsuarioNoStrava facebook = null;
+		User google = null;
+		User facebook = null;
 		long token = 0l;
 		long token2 = 02;
 		long token3 = 03;
@@ -29,8 +30,8 @@ public class LocalTest {
 		
 		try {
 			facade = new RemoteFacade();
-			usuario1 = new UsuarioStrava("victor", "victor@prueba.com", "01/12/1999", 70, 176, 25, 160, "$!9PhNz,");
-			usuario2 = new UsuarioStrava("victor", "victor@prueba.com", "01/12/1999", 70, 176, 25, 160, "$!9PhNz,");
+			usuario1 = new UsuarioStrava("victor", "victor@prueba.com", "01/12/1999", 70, 176, 25, 160, Proveedor.LOCAL, "$!9PhNz,");
+			usuario2 = new UsuarioStrava("victor", "victor@prueba.com", "01/12/1999", 70, 176, 25, 160, Proveedor.LOCAL, "$!9PhNz,");
 			//google = new UsuarioNoStrava("pepe", "pepe@prieba.com", "01/01/01", 99, 99, 99, 99, "123456789",true);
 			//facebook =  new UsuarioNoStrava("luis", "luis@prieba.com", "01/01/01", 99, 99, 99, 99, "123456789",false);
 			
@@ -125,7 +126,7 @@ public class LocalTest {
 			System.out.println("/////////////////////////////////////////////////////////////////////////");
 			SimpleDateFormat format = new SimpleDateFormat("dd-mm-yyyy");
 			Date fechaInicio = format.parse("01-12-2022");
-			SesionEntrenamiento s1 = new SesionEntrenamiento("prueba Entrenamiento", "ciclismo", 1000, fechaInicio, 0.5f);
+			SesionEntrenamiento s1 = new SesionEntrenamiento("prueba Entrenamiento", Deportes.CICLISMO, 1000, fechaInicio, 0.5f);
 			//facade.crearSesionEntrenamiento(usuario1,s1);
 			System.out.println(s1);
 			//recibir una lista/sesion por parte del programa ya que el 

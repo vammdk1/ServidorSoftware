@@ -14,8 +14,8 @@ public class UsuarioStrava extends User {
 	private String contrasenna;
 
 	public UsuarioStrava(String nombre, String email, String fechaNac, float peso, int altura, int pulsoxMinuto,
-			int pulsoReposo,String contrasenna) {
-		super(nombre, email, fechaNac, peso, altura, pulsoxMinuto, pulsoReposo);
+			int pulsoReposo, Proveedor proveedor, String contrasenna) {
+		super(nombre, email, fechaNac, peso, altura, pulsoxMinuto, pulsoReposo, proveedor);
 		this.contrasenna=contrasenna;
 	}
 

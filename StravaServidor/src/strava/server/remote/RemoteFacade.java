@@ -1,6 +1,6 @@
 package strava.server.remote;
 
-import java.rmi.RemoteException;
+import java.rmi.RemoteException; 
 import java.rmi.server.UnicastRemoteObject;
 import java.util.ArrayList;
 import java.util.Calendar;
@@ -8,10 +8,10 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import strava.server.data.domain.Proveedor;
 import strava.server.data.domain.Reto;
 import strava.server.data.domain.SesionEntrenamiento;
 import strava.server.data.domain.User;
-import strava.server.data.domain.UsuarioNoStrava;
 import strava.server.data.domain.UsuarioStrava;
 import strava.server.data.dto.RetoAssembler;
 import strava.server.data.dto.RetoDTO;
@@ -89,7 +89,7 @@ public class RemoteFacade extends UnicastRemoteObject implements IRemoteFacade {
 		System.out.println("RemoteFacade loginGoogle()");
 		
 		//Perform login() using LoginAppService
-		User user = loginService.loginGoogleFacebook(email, true);
+		User user = loginService.loginGoogleFacebook(email, Proveedor.GOOGLE);
 			
 		//If login() success user is stored in the Server State
 		if (user != null) {
@@ -111,7 +111,7 @@ public class RemoteFacade extends UnicastRemoteObject implements IRemoteFacade {
 	public synchronized long inicioFacebook(String email) throws RemoteException {
 		System.out.println("RemoteFacade loginFacebook()");
 		//Perform login() using LoginAppService
-		User user = loginService.loginGoogleFacebook(email, false);
+		User user = loginService.loginGoogleFacebook(email, Proveedor.FACEBOOK);
 		//If login() success user is stored in the Server State
 		if (user != null) {
 			//If user is not logged in 

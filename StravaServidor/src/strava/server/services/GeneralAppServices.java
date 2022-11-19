@@ -2,17 +2,17 @@ package strava.server.services;
 
 import java.util.ArrayList;
 
+import strava.server.data.domain.Proveedor;
 import strava.server.data.domain.Reto;
 import strava.server.data.domain.SesionEntrenamiento;
 import strava.server.data.domain.User;
-import strava.server.data.domain.UsuarioNoStrava;
 import strava.server.data.domain.UsuarioStrava;
 import strava.server.data.dto.UserDTO;
 
 public class GeneralAppServices {
 	
 	public static boolean registrarusuario(UserDTO usuarioDTO,String password) {
-		UsuarioStrava usuario = new UsuarioStrava(usuarioDTO.getNombre(), usuarioDTO.getEmail(), usuarioDTO.getFechancto(), usuarioDTO.getPeso(), usuarioDTO.getAltura(), usuarioDTO.getFrecuenciacardmax(),usuarioDTO.getFrecuenciacardreposo(),password);
+		UsuarioStrava usuario = new UsuarioStrava(usuarioDTO.getNombre(), usuarioDTO.getEmail(), usuarioDTO.getFechancto(), usuarioDTO.getPeso(), usuarioDTO.getAltura(), usuarioDTO.getFrecuenciacardmax(),usuarioDTO.getFrecuenciacardreposo(),Proveedor.LOCAL, password);
 		if(BaseDatos.RegistrarUsuario(usuario)) {
 			return true;
 		}else {

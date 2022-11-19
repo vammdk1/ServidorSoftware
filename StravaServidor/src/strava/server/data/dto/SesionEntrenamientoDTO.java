@@ -3,13 +3,15 @@ package strava.server.data.dto;
 import java.io.Serializable;
 import java.util.Date;
 
+import strava.server.data.domain.Deportes;
+
 public class SesionEntrenamientoDTO implements Serializable{
 	/**
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
 	private String titulo;
-	private String deporte;
+	private Deportes deporte;
 	private float distancia;
 	private Date fechaHoraInicio;
 	private float duracion;
@@ -22,11 +24,11 @@ public class SesionEntrenamientoDTO implements Serializable{
 		this.titulo = titulo;
 	}
 
-	public String getDeporte() {
+	public Deportes getDeporte() {
 		return deporte;
 	}
 
-	public void setDeporte(String deporte) {
+	public void setDeporte(Deportes deporte) {
 		this.deporte = deporte;
 	}
 

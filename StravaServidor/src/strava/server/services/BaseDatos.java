@@ -1,16 +1,16 @@
 package strava.server.services;
 
 
-import java.util.ArrayList;
+import java.util.ArrayList; 
 import java.util.Calendar;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 
+import strava.server.data.domain.Proveedor;
 import strava.server.data.domain.Reto;
 import strava.server.data.domain.SesionEntrenamiento;
 import strava.server.data.domain.User;
-import strava.server.data.domain.UsuarioNoStrava;
 import strava.server.data.domain.UsuarioStrava;
 
 public class BaseDatos {
@@ -25,8 +25,8 @@ public class BaseDatos {
 	 */
 	public static User comprobarCuenta(User usuario) {
 		if(UsuariosRegistrados.containsKey(usuario.getEmail())) {
-			if(UsuarioNoStrava.class.isInstance(UsuariosRegistrados.get(usuario.getEmail()))) {
-					System.out.println("Es un usuario NoStrava:"+((UsuarioNoStrava) usuario).getEmail()+"||"+((UsuarioNoStrava)usuario).getGoogleFacebook());
+			if(UsuariosRegistrados.get(usuario.getEmail()).getProveedor() != Proveedor.LOCAL) {
+					System.out.println("Es un usuario NoStrava:"+ usuario.getEmail()+ "||" + usuario.getProveedor());
 					return UsuariosRegistrados.get(usuario.getEmail());
 				}else {
 					String sha1 = org.apache.commons.codec.digest.DigestUtils.sha1Hex(((UsuarioStrava) UsuariosRegistrados.get(usuario.getEmail())).getContrasenna());

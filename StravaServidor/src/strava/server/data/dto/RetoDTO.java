@@ -3,6 +3,8 @@ package strava.server.data.dto;
 import java.io.Serializable;
 import java.util.Date;
 
+import strava.server.data.domain.Deportes;
+
 public class RetoDTO implements Serializable {
 	/**
 	 * 
@@ -13,7 +15,7 @@ public class RetoDTO implements Serializable {
 	private Date fechaFin;
 	private float distanciaObjetivo;
 	private float tiempoObjetivo;
-	private String deporte;
+	private Deportes deporte;
 	
 	public String getNombre() {
 		return nombre;
@@ -47,12 +49,12 @@ public class RetoDTO implements Serializable {
 		this.fechaFin = fechaFin;
 	}
 
-	public String getDeporte() {
+	public Deportes getDeporte() {
 		return deporte;
 	}
 
-	public void setDeporte(String deporte) {
-		this.deporte = deporte;
+	public void setDeporte(Deportes deportes) {
+		this.deporte = deportes;
 	}
 
 	public float getTiempoObjetivo() {
