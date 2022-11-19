@@ -13,6 +13,7 @@ public class Reto {
 	private float distanciaObj;
 	private float tiempoObj;
 	private Deportes deporte;
+	private float porcentaje;
 	
 	/**
 	 * 
@@ -32,6 +33,16 @@ public class Reto {
 		this.distanciaObj = distanciaObj;
 		this.tiempoObj = tiempoObj;
 		this.deporte = deporte;
+		this.porcentaje = 0;
+	}
+	public float getPorcentaje() {
+		return porcentaje;
+	}
+	public void setPorcentaje(float porcentaje) {
+		this.porcentaje = porcentaje;
+	}
+	public void anadirPorcentaje(float porcentaje) {
+		this.porcentaje += porcentaje*100;
 	}
 	public String getNombre() {
 		return nombre;

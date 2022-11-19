@@ -139,6 +139,20 @@ public class User  {
 	
 	public void anadirSesion(SesionEntrenamiento s) {
 		this.sesiones.add(s);
+		for (Reto r : retos) {
+			if (r.getDeporte()==s.getDeporte()) {
+				if (r.getFechaIni().compareTo(s.getFechaHoraIni())<=0) {
+					if (r.getFechaFin().compareTo(s.getFechaHoraIni())>=0) {
+						if (r.getDistanciaObj()!=0) {
+							r.anadirPorcentaje(s.getDistancia()/r.getDistanciaObj());
+						}else {
+							r.anadirPorcentaje(s.getDuracion()/r.getTiempoObj());
+						}
+					}
+				}
+			}
+			
+		}
 	}
 	
 	public ArrayList<SesionEntrenamiento> getSesiones() {
