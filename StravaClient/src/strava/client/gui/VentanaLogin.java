@@ -115,6 +115,7 @@ public class VentanaLogin {
 				if (controller.login(Correo.getText(), Contrasenna.getText())) {
 					//VentanaUsuario.setUsuario();
 					VentanaUsuario.VPrincipal.setVisible(true);
+					System.out.println("iniciando sesion");
 					VentanaUsuario.setUsuario(controller.getUser());
 				}
 			}

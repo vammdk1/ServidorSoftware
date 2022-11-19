@@ -153,7 +153,7 @@ public class RemoteFacade extends UnicastRemoteObject implements IRemoteFacade {
 			
 			return true;
 		}
-		throw new RemoteException("No se puedo la sesion");
+		throw new RemoteException("No se puedo crear la sesion de entrenamiento");
 		
 	}
 
