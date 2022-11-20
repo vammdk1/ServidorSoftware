@@ -39,7 +39,8 @@ public class VentanaRetosActivos {
 	static int x = 500;
 	static int y = 300;
 	
-	private RetosActivosController controller;
+	private static RetosActivosController controller;
+	private static JComboBox SelectorDeRetos;
 	
 	public VentanaRetosActivos(RetosActivosController reto)
 	{
@@ -54,12 +55,13 @@ public class VentanaRetosActivos {
 		VPrincipal.getContentPane().add(Retos);
 		Retos.setLayout(null);
 		
-		JComboBox SelectorDeRetos = new JComboBox();
+		SelectorDeRetos = new JComboBox();
 		SelectorDeRetos.setFont(new Font("Tahoma", Font.PLAIN, 15));
 		SelectorDeRetos.setBounds(286, 11, 239, 31);
 		//TODO tiene que poder mostrar un estring
-		getRetosActivos( SelectorDeRetos);//Actualiza la lista de retos 
+		hazAlgo();//Actualiza la lista de retos 
 		//TODO Retos.add(SelectorDeRetos);
+		Retos.add(SelectorDeRetos);
 		
 		JLabel lbl = new JLabel("Fecha Inicio");
 		lbl.setHorizontalAlignment(SwingConstants.RIGHT);
@@ -144,7 +146,6 @@ public class VentanaRetosActivos {
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				//TODO
-				getRetosActivos(SelectorDeRetos);
 				System.out.println("Boton volver pulsado");
 				VPrincipal.setVisible(false);
 				VentanaUsuario.VPrincipal.setVisible(true);
@@ -154,9 +155,10 @@ public class VentanaRetosActivos {
 		VentanaRetosActivos.VPrincipal.repaint();
 	}
 	
-	public void getRetosActivos(JComboBox listaRetos) {
+	public static void hazAlgo() {
 		System.out.println("Obteniendo retos . . .");
-		List<RetoDTO> retos = this.controller.getRetos();
+		List<RetoDTO> retos = controller.getRetos();
+		SelectorDeRetos.removeAllItems();
 		for (RetoDTO reto : retos) {
 			System.out.println("prueba . . .");
 			
@@ -166,7 +168,7 @@ public class VentanaRetosActivos {
 					reto.getTiempoObjetivo() + " " +
 					reto.getFechaIni() + " " +
 					reto.getFechaFin());
-			listaRetos.addItem(reto.toString());
+			SelectorDeRetos.addItem(reto.toString());
 		}
 
 		

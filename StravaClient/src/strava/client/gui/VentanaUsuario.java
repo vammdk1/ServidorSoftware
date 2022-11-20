@@ -135,6 +135,7 @@ public class VentanaUsuario {
 				//TODO solicitar retos y mandarlos a la ventana ?
 				VPrincipal.setVisible(false);
 				//VentanaRetosActivos.VPrincipal.();
+				VentanaRetosActivos.hazAlgo();
 				VentanaRetosActivos.VPrincipal.setVisible(true);
 			}
 		});
