@@ -22,7 +22,6 @@ import javax.swing.SwingConstants;
 
 import strava.client.controller.RegisterController;
 import strava.client.remote.ServiceLocator;
-import strava.server.data.domain.User;
 import strava.server.data.dto.UserDTO;
 
 import java.awt.GridLayout;

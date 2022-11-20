@@ -21,7 +21,7 @@ public class UserDTO implements Serializable {
 	private int altura;
 	private int pulsoxMinuto;
 	private int pulsoReposo;
-	private Proveedor proveedor;
+	private ProveedorDTO proveedor;
 		
 	private ArrayList<Reto> retos = new ArrayList<>();
 	private ArrayList<SesionEntrenamiento> sesiones = new ArrayList<>();
@@ -80,11 +80,11 @@ public class UserDTO implements Serializable {
 		this.pulsoReposo = pulsoReposo;
 	}
 
-	public Proveedor getProveedor() {
+	public ProveedorDTO getProveedor() {
 		return proveedor;
 	}
 
-	public void setProveedor(Proveedor proveedor) {
+	public void setProveedor(ProveedorDTO proveedor) {
 		this.proveedor = proveedor;
 	}
 

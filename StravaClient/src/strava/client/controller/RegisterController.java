@@ -3,7 +3,7 @@ package strava.client.controller;
 import java.rmi.RemoteException;
 
 import strava.client.remote.ServiceLocator;
-import strava.server.data.domain.UsuarioStrava;
+import strava.server.data.dto.ProveedorDTO;
 import strava.server.data.dto.UserAssembler;
 import strava.server.data.dto.UserDTO;
 
@@ -27,6 +27,7 @@ public class RegisterController {
 		user.setAltura(altura);
 		user.setPulsoxMinuto(pulsoxMinuto);
 		user.setPulsoReposo(pulsoReposo);
+		user.setProveedor(ProveedorDTO.LOCAL);
 		try {
 			//System.out.println(email+"||"+user.getContrasenna());
 			this.serviceLocator.getService().registro(user, password);
