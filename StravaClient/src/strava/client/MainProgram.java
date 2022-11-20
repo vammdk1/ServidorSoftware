@@ -17,11 +17,14 @@ import strava.client.gui.VentanaRetosAceptados;
 import strava.client.gui.VentanaRetosActivos;
 import strava.client.gui.VentanaUsuario;
 import strava.client.remote.ServiceLocator;
+import strava.server.data.domain.UsuarioStrava;
 
 public class MainProgram {
 
 	public static void main(String[] args) {	
 		ServiceLocator serviceLocator = new ServiceLocator();
+		//UsuarioStrava user = new UsuarioStrava("prueba", "prueba@gmail.com", "01-01-0001", 0, 0, 0, 0, null, "prueba");
+		
 		
 		//args[0] = RMIRegistry IP
 		//args[1] = RMIRegistry Port
@@ -37,7 +40,7 @@ public class MainProgram {
 		
 		VentanaUsuario ventanaUsuario = new VentanaUsuario(loginController);
 		
-		
+		registerController.register("prueba", "prueba@gmail.com", "01-01-0001", 0, 0, 0, 0, "prueba");
 		
 		RetoController retoController = new RetoController(serviceLocator);
 		VentanaCrearReto ventanaCrearReto = new VentanaCrearReto(retoController);

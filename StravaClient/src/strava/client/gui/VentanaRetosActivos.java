@@ -165,8 +165,6 @@ public class VentanaRetosActivos {
 				
 				FechaIni.setText(sdf.format(retos.get(i).getFechaIni()));
 				FechaFin.setText(sdf.format(retos.get(i).getFechaFin()));
-				//FechaIni.setText(retos.get(i).getFechaIni().toString());
-				//FechaFin.setText(retos.get(i).getFechaFin().toString());
 				DistObj.setText(retos.get(i).getDistanciaObjetivo()+"");
 				TiObj.setText(retos.get(i).getTiempoObjetivo()+"");
 				Deporte.setText(retos.get(i).getDeporte().toString());
