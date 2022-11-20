@@ -120,6 +120,7 @@ public class VentanaLogin {
 						VentanaUsuario.setToken(controller.getToken());
 					}
 					VPrincipal.setVisible(false);
+					VentanaUsuario.actualizaSesiones();
 				} catch (Exception e2) {
 					// TODO: handle exception
 				}

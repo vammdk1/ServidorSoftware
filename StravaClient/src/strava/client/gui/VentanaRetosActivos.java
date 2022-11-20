@@ -150,6 +150,7 @@ public class VentanaRetosActivos {
 				System.out.println("Boton volver pulsado");
 				VPrincipal.setVisible(false);
 				VentanaUsuario.VPrincipal.setVisible(true);
+				VentanaUsuario.actualizaSesiones();
 			}
 		});
 		

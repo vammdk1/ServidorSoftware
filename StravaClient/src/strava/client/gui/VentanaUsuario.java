@@ -9,6 +9,7 @@ import java.awt.LayoutManager;
 import java.awt.Toolkit;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.List;
 
 import javax.swing.BorderFactory;
 import javax.swing.JButton;
@@ -22,7 +23,9 @@ import javax.swing.SwingConstants;
 
 import strava.client.controller.LoginController;
 import strava.client.controller.RetoController;
+import strava.client.controller.SesionEntrenamientoController;
 import strava.client.remote.ServiceLocator;
+import strava.server.data.dto.SesionEntrenamientoDTO;
 
 import java.awt.GridLayout;
 import javax.swing.BoxLayout;
@@ -37,15 +40,18 @@ public class VentanaUsuario {
 	static int y = 300;
 	
 	private LoginController controller;
+	private static SesionEntrenamientoController sController;
 	private JTable table;
 	private static JTable tabla;
 	
 	private static long token;
 	
+	private static DefaultTableModel model;
 	
-	public VentanaUsuario(LoginController login)
+	public VentanaUsuario(LoginController login, SesionEntrenamientoController ses)
 	{
 		this.controller = login;
+		this.sController = ses;
 		
 		VPrincipal.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		VPrincipal.setSize(new Dimension(750, 500));
@@ -90,21 +96,9 @@ public class VentanaUsuario {
 			new String[] {
 				"Titulo", "Deporte", "Distancia", "Duracion", "Fecha inicio"
 			}
-		) {
-			Class[] columnTypes = new Class[] {
-				String.class, String.class, String.class, String.class, String.class
-			};
-			public Class getColumnClass(int columnIndex) {
-				return columnTypes[columnIndex];
-			}
-			boolean[] columnEditables = new boolean[] {
-				false, false, false, false, false
-			};
-			public boolean isCellEditable(int row, int column) {
-				return columnEditables[column];
-			}
-		});
+		));
 		panel.add(table);
+		model = (DefaultTableModel) table.getModel();
 		VPrincipal.setVisible(false);
 	
 		CrearSesionEntrenamiento.addActionListener(new ActionListener() {
@@ -163,5 +157,14 @@ public class VentanaUsuario {
 		VentanaUsuario.token = token;
 	}
 	
+	public static void actualizaSesiones() {
+		
+		List<SesionEntrenamientoDTO> sesiones = sController.getSesiones(token);
+		model.setNumRows(1);
+		for (SesionEntrenamientoDTO sesion : sesiones) {
+			//"Titulo", "Deporte", "Distancia", "Duracion", "Fecha inicio"
+			model.addRow(new String[]{sesion.getTitulo(), sesion.getDeporte()+"", sesion.getDistancia()+"", sesion.getDuracion()+"", sesion.getFechaHoraInicio()+""});
+		}
+	}
 	
 }

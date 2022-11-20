@@ -163,6 +163,7 @@ public class VentanaCrearSesionEntrenamiento {
 				System.out.println("boton volver pulsado");
 				VPrincipal.setVisible(false);
 				VentanaUsuario.VPrincipal.setVisible(true);
+				VentanaUsuario.actualizaSesiones();
 			}
 		});
 		

@@ -38,14 +38,16 @@ public class MainProgram {
 		VentanaRegistro ventanaRegistro = new VentanaRegistro(registerController);
 		VentanaRegistro2 ventanaRegistro2 = new VentanaRegistro2(registerController);
 		
-		VentanaUsuario ventanaUsuario = new VentanaUsuario(loginController);
+		SesionEntrenamientoController sesionEntrenamientoController = new SesionEntrenamientoController(serviceLocator);
+		
+		VentanaUsuario ventanaUsuario = new VentanaUsuario(loginController, sesionEntrenamientoController);
 		
 		registerController.register("prueba", "prueba@gmail.com", "01-01-0001", 0, 0, 0, 0, "prueba");
 		
 		RetoController retoController = new RetoController(serviceLocator);
 		VentanaCrearReto ventanaCrearReto = new VentanaCrearReto(retoController);
 		
-		SesionEntrenamientoController sesionEntrenamientoController = new SesionEntrenamientoController(serviceLocator);
+		
 		VentanaCrearSesionEntrenamiento ventanaCrearSesionEntrenamiento = new VentanaCrearSesionEntrenamiento(sesionEntrenamientoController);
 		
 		

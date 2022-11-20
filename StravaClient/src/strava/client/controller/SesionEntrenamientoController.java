@@ -1,9 +1,12 @@
 package strava.client.controller;
 
 import java.rmi.RemoteException;
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 import strava.client.remote.ServiceLocator;
+import strava.server.data.domain.SesionEntrenamiento;
 import strava.server.data.dto.DeportesDTO;
 import strava.server.data.dto.SesionEntrenamientoDTO;
 
@@ -30,5 +33,15 @@ public class SesionEntrenamientoController {
 			System.out.println("# Error creando una sesión de entrenamiento: " + e);
 			return false;
 		}
+	}
+	
+	public List<SesionEntrenamientoDTO> getSesiones(long token){
+		try {
+			return this.serviceLocator.getService().verSesionesEntrenamiento(token);
+		} catch (RemoteException e) {
+			System.out.println("#Error al conseguir sesiones:  " + e);
+			return null;
+		}
+		
 	}
 }
