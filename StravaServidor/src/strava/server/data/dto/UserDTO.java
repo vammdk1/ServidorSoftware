@@ -119,5 +119,12 @@ public class UserDTO implements Serializable {
 		return sesiones;
 		
 	}
+
+	@Override
+	public String toString() {
+		return "UserDTO [nombre=" + nombre + "]";
+	}
+	
+	
 	
 }

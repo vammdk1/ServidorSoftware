@@ -64,4 +64,11 @@ public class RetoDTO implements Serializable {
 	public void setTiempoObjetivo(float tiempoObjetivo) {
 		this.tiempoObjetivo = tiempoObjetivo;
 	}
+
+	@Override
+	public String toString() {
+		return nombre;
+	}
+	
+	
 }

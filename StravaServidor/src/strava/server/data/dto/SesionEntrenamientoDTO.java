@@ -54,4 +54,11 @@ public class SesionEntrenamientoDTO implements Serializable{
 	public void setDuracion(float duracion) {
 		this.duracion = duracion;
 	}
+
+	@Override
+	public String toString() {
+		return "SesionEntrenamientoDTO [titulo=" + titulo + "]";
+	}
+	
+	
 }
