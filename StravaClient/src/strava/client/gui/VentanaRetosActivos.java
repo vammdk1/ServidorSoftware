@@ -9,6 +9,7 @@ import java.awt.LayoutManager;
 import java.awt.Toolkit;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.text.SimpleDateFormat;
 import java.util.List;
 
 import javax.swing.BorderFactory;
@@ -149,6 +150,26 @@ public class VentanaRetosActivos {
 				System.out.println("Boton volver pulsado");
 				VPrincipal.setVisible(false);
 				VentanaUsuario.VPrincipal.setVisible(true);
+			}
+		});
+		
+		SelectorDeRetos.addActionListener(new ActionListener() {
+			
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				SimpleDateFormat sdf = new SimpleDateFormat("DD/MM/YYYY");
+				//TODO el mes lo pilla mal pero no se porque
+				
+				int i = SelectorDeRetos.getSelectedIndex();
+				List<RetoDTO> retos = controller.getRetos();
+				
+				FechaIni.setText(sdf.format(retos.get(i).getFechaIni()));
+				FechaFin.setText(sdf.format(retos.get(i).getFechaFin()));
+				//FechaIni.setText(retos.get(i).getFechaIni().toString());
+				//FechaFin.setText(retos.get(i).getFechaFin().toString());
+				DistObj.setText(retos.get(i).getDistanciaObjetivo()+"");
+				TiObj.setText(retos.get(i).getTiempoObjetivo()+"");
+				Deporte.setText(retos.get(i).getDeporte().toString());
 			}
 		});
 		

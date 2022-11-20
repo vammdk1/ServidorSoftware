@@ -109,15 +109,19 @@ public class VentanaLogin {
 			
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				VPrincipal.setVisible(false);
-				System.out.println("boton inicio de sesion pulsado");
+				try {
+					System.out.println("boton inicio de sesion pulsado");
 
-				System.out.println("intentando Iniciar con correo: " + Correo.getText() + " y contrasena: " + Contrasenna.getText());
-				if (controller.login(Correo.getText(), Contrasenna.getText())) {
-					//VentanaUsuario.setUsuario();
-					VentanaUsuario.VPrincipal.setVisible(true);
-					System.out.println("iniciando sesion");
-					VentanaUsuario.setToken(controller.getToken());
+					System.out.println("intentando Iniciar con correo: " + Correo.getText() + " y contrasena: " + Contrasenna.getText());
+					if (controller.login(Correo.getText(), Contrasenna.getText())) {
+						//VentanaUsuario.setUsuario();
+						VentanaUsuario.VPrincipal.setVisible(true);
+						System.out.println("iniciando sesion");
+						VentanaUsuario.setToken(controller.getToken());
+					}
+					VPrincipal.setVisible(false);
+				} catch (Exception e2) {
+					// TODO: handle exception
 				}
 			}
 		});
