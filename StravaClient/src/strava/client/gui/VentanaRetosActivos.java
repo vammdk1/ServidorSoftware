@@ -57,9 +57,9 @@ public class VentanaRetosActivos {
 		JComboBox SelectorDeRetos = new JComboBox();
 		SelectorDeRetos.setFont(new Font("Tahoma", Font.PLAIN, 15));
 		SelectorDeRetos.setBounds(286, 11, 239, 31);
-		System.out.println("Prueba");
-		getRetosActivos( SelectorDeRetos);
-		Retos.add(SelectorDeRetos);
+		//TODO tiene que poder mostrar un estring
+		getRetosActivos( SelectorDeRetos);//Actualiza la lista de retos 
+		//TODO Retos.add(SelectorDeRetos);
 		
 		JLabel lbl = new JLabel("Fecha Inicio");
 		lbl.setHorizontalAlignment(SwingConstants.RIGHT);
@@ -143,6 +143,7 @@ public class VentanaRetosActivos {
 			
 			@Override
 			public void actionPerformed(ActionEvent e) {
+				//TODO
 				getRetosActivos(SelectorDeRetos);
 				System.out.println("Boton volver pulsado");
 				VPrincipal.setVisible(false);
@@ -165,7 +166,7 @@ public class VentanaRetosActivos {
 					reto.getTiempoObjetivo() + " " +
 					reto.getFechaIni() + " " +
 					reto.getFechaFin());
-			listaRetos.addItem(reto);
+			listaRetos.addItem(reto.toString());
 		}
 
 		

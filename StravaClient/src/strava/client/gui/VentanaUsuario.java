@@ -132,8 +132,9 @@ public class VentanaUsuario {
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				System.out.println("Boton consultar reto pulsado");
+				//TODO solicitar retos y mandarlos a la ventana ?
 				VPrincipal.setVisible(false);
-				VentanaRetosActivos.VPrincipal.repaint();
+				//VentanaRetosActivos.VPrincipal.();
 				VentanaRetosActivos.VPrincipal.setVisible(true);
 			}
 		});
