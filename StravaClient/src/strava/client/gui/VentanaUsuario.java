@@ -9,6 +9,7 @@ import java.awt.LayoutManager;
 import java.awt.Toolkit;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.text.SimpleDateFormat;
 import java.util.List;
 
 import javax.swing.BorderFactory;
@@ -163,8 +164,9 @@ public class VentanaUsuario {
 		model.setNumRows(1);
 		for (SesionEntrenamientoDTO sesion : sesiones) {
 			//"Titulo", "Deporte", "Distancia", "Duracion", "Fecha inicio"
-			model.addRow(new String[]{sesion.getTitulo(), sesion.getDeporte()+"", sesion.getDistancia()+"", sesion.getDuracion()+"", sesion.getFechaHoraInicio()+""});
+			SimpleDateFormat sdf = new SimpleDateFormat("DD/MM/YYYY");
+			//No funciona bien el día
+			model.addRow(new String[]{sesion.getTitulo(), sesion.getDeporte()+"", sesion.getDistancia()+"", sesion.getDuracion()+"", sdf.format(sesion.getFechaHoraInicio())});
+			}
 		}
-	}
-	
 }

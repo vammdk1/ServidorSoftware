@@ -26,6 +26,7 @@ import javax.swing.SwingConstants;
 import strava.client.controller.SesionEntrenamientoController;
 import strava.client.remote.ServiceLocator;
 import strava.server.data.domain.User;
+import strava.server.data.dto.DeportesDTO;
 
 import java.awt.GridLayout;
 import javax.swing.BoxLayout;
@@ -44,6 +45,7 @@ public class VentanaCrearSesionEntrenamiento {
 	private JTextField tfDistancia;
 	private JTextField tfDeporte;
 	private JTextField tfDuracion;
+	public static DeportesDTO tDeportes;
 	
 	private SesionEntrenamientoController controller;
 	
@@ -105,7 +107,7 @@ public class VentanaCrearSesionEntrenamiento {
 		tfFecha = new JTextField();
 		tfFecha.setFont(new Font("Tahoma", Font.PLAIN, 20));
 		tfFecha.setColumns(10);
-		tfFecha.setBounds(292, 286, 86, 32);
+		tfFecha.setBounds(292, 286, 114, 32);
 		VPrincipal.getContentPane().add(tfFecha);
 		
 		tfHora = new JTextField();
@@ -120,11 +122,12 @@ public class VentanaCrearSesionEntrenamiento {
 		tfDistancia.setBounds(292, 221, 210, 32);
 		VPrincipal.getContentPane().add(tfDistancia);
 		
-		tfDeporte = new JTextField();
-		tfDeporte.setFont(new Font("Tahoma", Font.PLAIN, 20));
-		tfDeporte.setColumns(10);
-		tfDeporte.setBounds(292, 159, 210, 32);
-		VPrincipal.getContentPane().add(tfDeporte);
+		
+		JComboBox CbDeporte = new JComboBox();
+		CbDeporte.setModel(new DefaultComboBoxModel(tDeportes.values()));
+		CbDeporte.setFont(new Font("Tahoma", Font.PLAIN, 20));
+		CbDeporte.setBounds(292, 159, 210, 32);
+		VPrincipal.getContentPane().add(CbDeporte);
 		
 		JButton crear = new JButton("Crear");
 		crear.setFont(new Font("Tahoma", Font.PLAIN, 20));
@@ -149,12 +152,14 @@ public class VentanaCrearSesionEntrenamiento {
 		tfDuracion.setBounds(291, 345, 210, 32);
 		VPrincipal.getContentPane().add(tfDuracion);
 		
-		JLabel lblNewLabel_1_3 = new JLabel("(dd/mm)   (hh:mm)");
+		JLabel lblNewLabel_1_3 = new JLabel("(dd/mm/yyyy)   (hh:mm)");
 		lblNewLabel_1_3.setHorizontalAlignment(SwingConstants.RIGHT);
 		lblNewLabel_1_3.setFont(new Font("Tahoma", Font.PLAIN, 11));
 		lblNewLabel_1_3.setBounds(129, 298, 139, 51);
 		VPrincipal.getContentPane().add(lblNewLabel_1_3);
 		VPrincipal.setVisible(false);
+		
+		
 		
 		volver.addActionListener(new ActionListener() {
 			
@@ -175,10 +180,18 @@ public class VentanaCrearSesionEntrenamiento {
 				System.out.println("boton crear sesion pulsado");
 				try {
 					format = new SimpleDateFormat("dd/MM/yyyy HH:mm").parse(tfFecha.getText() + " " + tfHora.getText());
-					System.out.println("intentando crear sesion con titulo: " + tfTitulo.getText() + " deporte " + tfDeporte.getText() + " distancia: " + Float.parseFloat(tfDistancia.getText())+ " hora: " + format.toString() + " duracion " + Float.parseFloat(tfDuracion.getText()));
-					//controller.crearSesionEntrenamiento(VentanaUsuario.getToken(), tfTitulo.getText(), tfDeporte.getText(), Float.parseFloat(tfDistancia.getText()), format, Float.parseFloat(tfDuracion.getText()));
+					System.out.println("intentando crear sesion con titulo: " + tfTitulo.getText() + " deporte " + " distancia: " + Float.parseFloat(tfDistancia.getText())+ " hora: " + format.toString() + " duracion " + Float.parseFloat(tfDuracion.getText()));
+					
+					if (CbDeporte.getSelectedIndex()==0) {
+					controller.crearSesionEntrenamiento(VentanaUsuario.getToken(), tfTitulo.getText(), tDeportes.CICLISMO, Float.parseFloat(tfDistancia.getText()), format, Float.parseFloat(tfDuracion.getText()));
+					System.out.println(format.toString());
+					} else {
+						controller.crearSesionEntrenamiento(VentanaUsuario.getToken(), tfTitulo.getText(), tDeportes.RUNNING, Float.parseFloat(tfDistancia.getText()), format, Float.parseFloat(tfDuracion.getText()));
+						System.out.println(format.toString());
+					}
 					VPrincipal.setVisible(false);
 					VentanaUsuario.VPrincipal.setVisible(true);
+					VentanaUsuario.actualizaSesiones();
 				} catch (ParseException e1) {
 					// TODO Auto-generated catch block
 					System.out.println("Formato de fecha y hora erróneos. Utilice el formato 'DD/MM/YYYY HH:MM'");
