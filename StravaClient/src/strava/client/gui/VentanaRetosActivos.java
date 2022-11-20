@@ -35,7 +35,7 @@ import javax.swing.JComboBox;
 import javax.swing.DefaultComboBoxModel;
 
 public class VentanaRetosActivos {
-	static JFrame VPrincipal = new JFrame("STRAVA");
+	static JFrame VPrincipal = new JFrame("STRAVA/RetosActivos");
 	static int x = 500;
 	static int y = 300;
 	
@@ -57,6 +57,8 @@ public class VentanaRetosActivos {
 		JComboBox SelectorDeRetos = new JComboBox();
 		SelectorDeRetos.setFont(new Font("Tahoma", Font.PLAIN, 15));
 		SelectorDeRetos.setBounds(286, 11, 239, 31);
+		System.out.println("Prueba");
+		getRetosActivos( SelectorDeRetos);
 		Retos.add(SelectorDeRetos);
 		
 		JLabel lbl = new JLabel("Fecha Inicio");
@@ -141,28 +143,32 @@ public class VentanaRetosActivos {
 			
 			@Override
 			public void actionPerformed(ActionEvent e) {
+				getRetosActivos(SelectorDeRetos);
 				System.out.println("Boton volver pulsado");
 				VPrincipal.setVisible(false);
 				VentanaUsuario.VPrincipal.setVisible(true);
 			}
 		});
+		
+		VentanaRetosActivos.VPrincipal.repaint();
 	}
 	
-	public List<RetoDTO> getRetosActivos() {
+	public void getRetosActivos(JComboBox listaRetos) {
 		System.out.println("Obteniendo retos . . .");
-		
 		List<RetoDTO> retos = this.controller.getRetos();
-		
 		for (RetoDTO reto : retos) {
+			System.out.println("prueba . . .");
+			
 			System.out.println(reto.getNombre() + " " +
 					reto.getDeporte() + " " +
 					reto.getDistanciaObjetivo() + " " +
 					reto.getTiempoObjetivo() + " " +
 					reto.getFechaIni() + " " +
 					reto.getFechaFin());
+			listaRetos.addItem(reto);
 		}
 
-		return retos;
+		
 	}
 	
 

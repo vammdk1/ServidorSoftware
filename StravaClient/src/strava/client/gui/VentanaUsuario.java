@@ -21,6 +21,7 @@ import java.awt.Font;
 import javax.swing.SwingConstants;
 
 import strava.client.controller.LoginController;
+import strava.client.controller.RetoController;
 import strava.client.remote.ServiceLocator;
 
 import java.awt.GridLayout;
@@ -80,6 +81,7 @@ public class VentanaUsuario {
 		panel.setBounds(0, 131, 385, 330);
 		VPrincipal.getContentPane().add(panel);
 		
+		//Area de entrenamientos
 		table = new JTable();
 		table.setModel(new DefaultTableModel(
 			new String[][] {
@@ -131,7 +133,8 @@ public class VentanaUsuario {
 			public void actionPerformed(ActionEvent e) {
 				System.out.println("Boton consultar reto pulsado");
 				VPrincipal.setVisible(false);
-				VentanaRetosAceptados.VPrincipal.setVisible(true);
+				VentanaRetosActivos.VPrincipal.repaint();
+				VentanaRetosActivos.VPrincipal.setVisible(true);
 			}
 		});
 

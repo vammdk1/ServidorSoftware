@@ -163,9 +163,7 @@ public class VentanaCrearReto {
 		VPrincipal.getContentPane().add(CbDeporte);
 		VPrincipal.setVisible(false);
 		
-		for (DeportesDTO d : DeportesDTO.values()) {
-			CbDeporte.addItem(d);
-		}
+	
 		
 		volver.addActionListener(new ActionListener() {
 			
