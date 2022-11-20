@@ -15,6 +15,7 @@ import strava.server.data.domain.User;
 import strava.server.data.domain.UsuarioStrava;
 import strava.server.data.dto.RetoAssembler;
 import strava.server.data.dto.RetoDTO;
+import strava.server.data.dto.SesionEntrenamientoAssembler;
 import strava.server.data.dto.SesionEntrenamientoDTO;
 import strava.server.data.dto.UserDTO;
 import strava.server.services.BaseDatos;
@@ -183,6 +184,18 @@ public class RemoteFacade extends UnicastRemoteObject implements IRemoteFacade {
 			return;  //para la pantalla sacar los datos del reto ?
 		}
 		else throw new RemoteException("No se puedo aceptar el reto");
+	}
+
+	@Override
+	public List<SesionEntrenamientoDTO> verSesionesEntrenamiento(long token) throws RemoteException {
+		List<SesionEntrenamiento> sesiones = appServices.DevolverSesionesEntrenamiento(serverState.get(token));
+
+		if (sesiones != null) {
+			return SesionEntrenamientoAssembler.getInstance().sesionEntrenamientoToDTO(sesiones);
+		}
+		
+		System.out.println("No hay sesiones de entrenamiento creadas.");
+		return null;
 	}
 	
 

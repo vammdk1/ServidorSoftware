@@ -1,5 +1,8 @@
 package strava.server.data.dto;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import strava.server.data.domain.Deportes;
 import strava.server.data.domain.Reto;
 import strava.server.data.domain.SesionEntrenamiento;
@@ -28,5 +31,15 @@ public class SesionEntrenamientoAssembler {
 		dto.setDuracion(sesion.getDuracion());
 		
 		return dto;
+	}
+
+	public List<SesionEntrenamientoDTO> sesionEntrenamientoToDTO(List<SesionEntrenamiento> sesiones) {
+		List<SesionEntrenamientoDTO> dtos = new ArrayList<>();
+		
+		for (SesionEntrenamiento sesion : sesiones) {
+			dtos.add(sesionEntrenamientoToDTO(sesion));
+		}
+		
+		return dtos;
 	}
 }

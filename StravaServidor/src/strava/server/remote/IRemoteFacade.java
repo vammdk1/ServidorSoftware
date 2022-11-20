@@ -29,6 +29,8 @@ public interface IRemoteFacade extends Remote {
 	
 	public boolean crearSesionEntrenamiento (long token ,SesionEntrenamientoDTO sesion) throws RemoteException;
 	
+	public List<SesionEntrenamientoDTO> verSesionesEntrenamiento (long token) throws RemoteException;
+	
 	public List<RetoDTO> verRetosAceptados (long token) throws RemoteException;
 
 	boolean registro(UserDTO usuarioDTO, String password) throws RemoteException;

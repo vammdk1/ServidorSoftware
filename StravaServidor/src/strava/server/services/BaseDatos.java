@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.HashMap;
 import java.util.Iterator;
+import java.util.List;
 import java.util.Map;
 
 import strava.server.data.domain.Proveedor;
@@ -17,6 +18,7 @@ public class BaseDatos {
 	
 	private static Map<String, User> UsuariosRegistrados = new HashMap<>();
 	private static ArrayList<Reto> RetosActivos = new ArrayList<>();
+	private static ArrayList<SesionEntrenamiento> SesionesEntrenamiento = new ArrayList<>();
 
 	/**
 	 * 
@@ -114,5 +116,16 @@ public class BaseDatos {
 		    System.out.println(entry.getKey() + "/" + entry.getValue());
 		}
 	}
+
+	public static List<SesionEntrenamiento> getSesionesEntrenamiento(User user) {
+		ArrayList<SesionEntrenamiento> listaCompleta = new ArrayList<>();
+		listaCompleta = UsuariosRegistrados.get(user.getEmail()).getSesiones();
+		if(listaCompleta.size()>0) {
+			return listaCompleta;
+		}else {
+			return null;
+		}
+	}
+
 	
 }

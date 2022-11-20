@@ -1,6 +1,7 @@
 package strava.server.services;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import strava.server.data.domain.Deportes;
 import strava.server.data.domain.Proveedor;
@@ -71,6 +72,13 @@ public class GeneralAppServices {
 			return false;
 		}
 		
+	}
+
+	public List<SesionEntrenamiento> DevolverSesionesEntrenamiento(User user) {
+		if (BaseDatos.getSesionesEntrenamiento(user) != null) {
+			return BaseDatos.getSesionesEntrenamiento(user);
+		}
+		return null;
 	}
 
 
