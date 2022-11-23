@@ -9,7 +9,9 @@ import java.awt.LayoutManager;
 import java.awt.Toolkit;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.text.SimpleDateFormat;
 import java.util.List;
+import java.util.Map;
 
 import javax.swing.BorderFactory;
 import javax.swing.JButton;
@@ -36,8 +38,8 @@ public class VentanaRetosAceptados {
 	static int x = 500;
 	static int y = 300;
 	
-	private RetosAceptadosController controller;
-	
+	private static RetosAceptadosController controller;
+	static JComboBox SelectorDeRetos;
 	public VentanaRetosAceptados(RetosAceptadosController reto)
 	{
 		this.controller = reto;
@@ -62,7 +64,7 @@ public class VentanaRetosAceptados {
 		Retos.setBounds(29, 72, 684, 318);
 		VPrincipal.getContentPane().add(Retos);
 		
-		JComboBox SelectorDeRetos = new JComboBox();
+		SelectorDeRetos = new JComboBox();
 		SelectorDeRetos.setFont(new Font("Tahoma", Font.PLAIN, 15));
 		SelectorDeRetos.setBounds(211, 11, 239, 31);
 		Retos.add(SelectorDeRetos);
@@ -92,35 +94,46 @@ public class VentanaRetosAceptados {
 		JLabel lbl_2 = new JLabel("Distancia Objetivo");
 		lbl_2.setHorizontalAlignment(SwingConstants.RIGHT);
 		lbl_2.setFont(new Font("Tahoma", Font.PLAIN, 20));
-		lbl_2.setBounds(26, 176, 208, 31);
+		lbl_2.setBounds(-66, 176, 208, 31);
 		Retos.add(lbl_2);
 		
 		JLabel DistObj = new JLabel("0");
 		DistObj.setFont(new Font("Tahoma", Font.PLAIN, 20));
-		DistObj.setBounds(318, 176, 277, 31);
+		DistObj.setBounds(226, 176, 119, 31);
 		Retos.add(DistObj);
 		
 		JLabel lbl_3 = new JLabel("Tiempo Objetivo");
 		lbl_3.setHorizontalAlignment(SwingConstants.RIGHT);
 		lbl_3.setFont(new Font("Tahoma", Font.PLAIN, 20));
-		lbl_3.setBounds(50, 227, 184, 31);
+		lbl_3.setBounds(-42, 227, 184, 31);
 		Retos.add(lbl_3);
 		
 		JLabel TiObj = new JLabel("0");
 		TiObj.setFont(new Font("Tahoma", Font.PLAIN, 20));
-		TiObj.setBounds(318, 227, 277, 31);
+		TiObj.setBounds(226, 227, 119, 31);
 		Retos.add(TiObj);
 		
 		JLabel lbl_4 = new JLabel("Deporte");
 		lbl_4.setHorizontalAlignment(SwingConstants.RIGHT);
 		lbl_4.setFont(new Font("Tahoma", Font.PLAIN, 20));
-		lbl_4.setBounds(98, 276, 136, 31);
+		lbl_4.setBounds(303, 165, 136, 31);
 		Retos.add(lbl_4);
 		
 		JLabel Deporte = new JLabel("Null");
 		Deporte.setFont(new Font("Tahoma", Font.PLAIN, 20));
-		Deporte.setBounds(318, 276, 277, 31);
+		Deporte.setBounds(523, 165, 151, 31);
 		Retos.add(Deporte);
+		
+		JLabel lbl_4_1 = new JLabel("Porcentaje");
+		lbl_4_1.setHorizontalAlignment(SwingConstants.RIGHT);
+		lbl_4_1.setFont(new Font("Tahoma", Font.PLAIN, 20));
+		lbl_4_1.setBounds(303, 227, 136, 31);
+		Retos.add(lbl_4_1);
+		
+		JLabel Porcentaje = new JLabel("0");
+		Porcentaje.setFont(new Font("Tahoma", Font.PLAIN, 20));
+		Porcentaje.setBounds(523, 227, 151, 31);
+		Retos.add(Porcentaje);
 		VPrincipal.setVisible(false);
 		
 		btnNewButton.addActionListener(new ActionListener() {
@@ -132,22 +145,43 @@ public class VentanaRetosAceptados {
 				VentanaUsuario.VPrincipal.setVisible(true);
 			}
 		});
+		
+		SelectorDeRetos.addActionListener(new ActionListener() {
+			
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				SimpleDateFormat sdf = new SimpleDateFormat("DD/MM/YYYY");
+				//TODO el mes lo pilla mal pero no se porque
+				
+				int i = SelectorDeRetos.getSelectedIndex();
+				Map<RetoDTO,Float> todosRetos = controller.getRetos();
+				List<RetoDTO> retos = (List<RetoDTO>) todosRetos.keySet();
+				
+				FechaIni.setText(sdf.format(retos.get(i).getFechaIni()));
+				FechaFin.setText(sdf.format(retos.get(i).getFechaFin()));
+				DistObj.setText(retos.get(i).getDistanciaObjetivo()+"");
+				TiObj.setText(retos.get(i).getTiempoObjetivo()+"");
+				Deporte.setText(retos.get(i).getDeporte().toString());
+				Porcentaje.setText(todosRetos.get(retos.get(i))+"");
+			}
+		});
 	}
 	
-	public List<RetoDTO> getRetosAceptados() {
+	
+	public static void ActualizaReto() {
 		System.out.println("Obteniendo retos . . .");
-		
-		List<RetoDTO> retos = this.controller.getRetos();
-		
-		for (RetoDTO reto : retos) {
+		Map<RetoDTO, Float> retos = controller.getRetos();
+		SelectorDeRetos.removeAllItems();
+		for (RetoDTO reto : retos.keySet()) {
+			System.out.println("prueba . . .");
+			
 			System.out.println(reto.getNombre() + " " +
 					reto.getDeporte() + " " +
 					reto.getDistanciaObjetivo() + " " +
 					reto.getTiempoObjetivo() + " " +
 					reto.getFechaIni() + " " +
 					reto.getFechaFin());
+			SelectorDeRetos.addItem(reto.toString());
 		}
-
-		return retos;
 	}
 }

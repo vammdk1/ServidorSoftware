@@ -2,6 +2,7 @@ package strava.server.services;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 import strava.server.data.domain.Deportes;
 import strava.server.data.domain.Proveedor;
@@ -55,7 +56,7 @@ public class GeneralAppServices {
 		}
 	}
 
-	public ArrayList<Reto> DevolverRetosAceptados(User usuario) {
+	public Map<Reto, Float> DevolverRetosAceptados(User usuario) {
 		if(BaseDatos.getRetosAceptados(usuario)!=null) {
 			return BaseDatos.getRetosAceptados(usuario);
 		}

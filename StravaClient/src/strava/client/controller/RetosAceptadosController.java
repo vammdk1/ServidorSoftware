@@ -1,12 +1,10 @@
 package strava.client.controller;
 
 import java.rmi.RemoteException;
-import java.util.ArrayList;
-import java.util.List;
+import java.util.Map;
 
 import strava.client.gui.VentanaUsuario;
 import strava.client.remote.ServiceLocator;
-import strava.server.data.domain.Reto;
 import strava.server.data.dto.RetoDTO;
 
 public class RetosAceptadosController {
@@ -17,7 +15,7 @@ public class RetosAceptadosController {
 		this.serviceLocator = serviceLocator;
 	}
 	
-	public List<RetoDTO> getRetos() {
+	public Map<RetoDTO, Float> getRetos() {
 		try {
 			return this.serviceLocator.getService().verRetosAceptados(VentanaUsuario.getToken());
 		} catch (RemoteException e) {

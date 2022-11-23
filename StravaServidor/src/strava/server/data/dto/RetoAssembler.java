@@ -1,7 +1,9 @@
 package strava.server.data.dto;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import strava.server.data.domain.Reto;
 
@@ -37,6 +39,16 @@ public class RetoAssembler {
 		
 		for (Reto reto : retos) {
 			dtos.add(retoToDTO(reto));
+		}
+		
+		return dtos;
+	}
+	
+	public Map<RetoDTO, Float> retoToDTO(Map<Reto, Float> retos) {
+		Map<RetoDTO, Float> dtos = new HashMap<>();
+		
+		for (Reto reto : retos.keySet()) {
+			dtos.put(retoToDTO(reto), retos.get(reto));
 		}
 		
 		return dtos;

@@ -159,8 +159,8 @@ public class RemoteFacade extends UnicastRemoteObject implements IRemoteFacade {
 	}
 
 	@Override
-	public synchronized List<RetoDTO> verRetosAceptados(long token) throws RemoteException {
-		List<Reto> retosAceptados = appServices.DevolverRetosAceptados(serverState.get(token));
+	public synchronized Map<RetoDTO, Float> verRetosAceptados(long token) throws RemoteException {
+		Map<Reto, Float> retosAceptados = appServices.DevolverRetosAceptados(serverState.get(token));
 		
 		if(retosAceptados!=null) {
 			return RetoAssembler.getInstance().retoToDTO(retosAceptados);

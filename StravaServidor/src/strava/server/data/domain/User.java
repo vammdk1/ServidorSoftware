@@ -24,7 +24,8 @@ public class User  {
 	//private "nose" token;
 	
 	
-	private transient ArrayList<Reto> retos = new ArrayList<>();
+	//private transient ArrayList<Reto> retos = new ArrayList<>();
+	private Map<Reto, Float> retos = new HashMap<>();
 	private transient ArrayList<SesionEntrenamiento> sesiones = new ArrayList<>();
 	
 	public User(String nombre,String email,String fechaNac,float peso,int altura,int pulsoxMinuto,int pulsoReposo, Proveedor proveedor) {
@@ -116,21 +117,21 @@ public class User  {
 	}
 	
 	public void anadirReto(Reto r) {
-		this.retos.add(r);
+		this.retos.put(r, 0f);
 	}
 	
 	
-	public ArrayList<Reto> getRetos() {
+	public Map<Reto, Float> getRetos() {
 		
 		return retos;
 		
 	}
 	
-	public ArrayList<Reto> getRetosActivos() {
-		ArrayList<Reto> retosActivos = new ArrayList<>();
-		for (Reto r:retos) {
+	public Map<Reto, Float> getRetosActivos() {
+		Map<Reto, Float> retosActivos = new HashMap<>();
+		for (Reto r:retos.keySet()) {
 			if(new Date().compareTo(r.getFechaFin())<0) {
-				retosActivos.add(r);
+				retosActivos.put(r, retos.get(r));
 			}
 		}
 		return retosActivos;
@@ -139,20 +140,25 @@ public class User  {
 	
 	public void anadirSesion(SesionEntrenamiento s) {
 		this.sesiones.add(s);
-		for (Reto r : retos) {
+		for (Reto r : retos.keySet()) {
 			if (r.getDeporte()==s.getDeporte()) {
 				if (r.getFechaIni().compareTo(s.getFechaHoraIni())<=0) {
 					if (r.getFechaFin().compareTo(s.getFechaHoraIni())>=0) {
 						if (r.getDistanciaObj()!=0) {
-							r.anadirPorcentaje(s.getDistancia()/r.getDistanciaObj());
+							retos.put(r,anadirPorcentaje(s.getDistancia()/r.getDistanciaObj(), r));
 						}else {
-							r.anadirPorcentaje(s.getDuracion()/r.getTiempoObj());
+							retos.put(r,anadirPorcentaje(s.getDuracion()/r.getTiempoObj(), r));
 						}
 					}
 				}
 			}
 			
 		}
+	}
+	
+	public float anadirPorcentaje(float i, Reto r) {
+		float a = retos.get(r);
+		return a + i;
 	}
 	
 	public ArrayList<SesionEntrenamiento> getSesiones() {

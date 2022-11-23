@@ -101,8 +101,8 @@ public class BaseDatos {
 		return true;
 	}
 
-	public static ArrayList<Reto> getRetosAceptados(User usuario) {
-		ArrayList<Reto> listaCompleta = new ArrayList<>();
+	public static Map<Reto, Float> getRetosAceptados(User usuario) {
+		Map<Reto, Float> listaCompleta = new HashMap<>();
 		listaCompleta=UsuariosRegistrados.get(usuario.getEmail()).getRetos();
 		if(listaCompleta.size()>0) {
 			return listaCompleta;

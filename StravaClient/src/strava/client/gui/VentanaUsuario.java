@@ -71,12 +71,12 @@ public class VentanaUsuario {
 		
 		JButton CrearReto = new JButton("Crear un reto");
 		CrearReto.setFont(new Font("Tahoma", Font.PLAIN, 18));
-		CrearReto.setBounds(473, 211, 178, 51);
+		CrearReto.setBounds(473, 191, 178, 51);
 		VPrincipal.getContentPane().add(CrearReto);
 		
-		JButton ConsultarReto = new JButton("Consultar un reto");
+		JButton ConsultarReto = new JButton("Todos los retos");
 		ConsultarReto.setFont(new Font("Tahoma", Font.PLAIN, 18));	
-		ConsultarReto.setBounds(473, 294, 178, 51);
+		ConsultarReto.setBounds(473, 268, 178, 51);
 		VPrincipal.getContentPane().add(ConsultarReto);
 		
 		JButton CerrarSesion = new JButton("Cerrar sesion");
@@ -99,6 +99,11 @@ public class VentanaUsuario {
 			}
 		));
 		panel.add(table);
+		
+		JButton MisRetos = new JButton("MisRetos");
+		MisRetos.setFont(new Font("Tahoma", Font.PLAIN, 18));
+		MisRetos.setBounds(473, 345, 178, 51);
+		VPrincipal.getContentPane().add(MisRetos);
 		model = (DefaultTableModel) table.getModel();
 		VPrincipal.setVisible(false);
 	
@@ -130,8 +135,21 @@ public class VentanaUsuario {
 				//TODO solicitar retos y mandarlos a la ventana ?
 				VPrincipal.setVisible(false);
 				//VentanaRetosActivos.VPrincipal.();
-				VentanaRetosActivos.hazAlgo();
+				VentanaRetosActivos.ActualizaReto();
 				VentanaRetosActivos.VPrincipal.setVisible(true);
+			}
+		});
+		
+		MisRetos.addActionListener(new ActionListener() {
+			
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				System.out.println("Boton mirar mis retos pulsado");
+				//TODO solicitar retos y mandarlos a la ventana ?
+				VPrincipal.setVisible(false);
+				//VentanaRetosActivos.VPrincipal.();
+				VentanaRetosAceptados.ActualizaReto();
+				VentanaRetosAceptados.VPrincipal.setVisible(true);
 			}
 		});
 

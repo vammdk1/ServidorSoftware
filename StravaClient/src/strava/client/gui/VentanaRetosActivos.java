@@ -60,7 +60,7 @@ public class VentanaRetosActivos {
 		SelectorDeRetos.setFont(new Font("Tahoma", Font.PLAIN, 15));
 		SelectorDeRetos.setBounds(286, 11, 239, 31);
 		//TODO tiene que poder mostrar un estring
-		hazAlgo();//Actualiza la lista de retos 
+		ActualizaReto();//Actualiza la lista de retos 
 		//TODO Retos.add(SelectorDeRetos);
 		Retos.add(SelectorDeRetos);
 		
@@ -175,7 +175,7 @@ public class VentanaRetosActivos {
 		VentanaRetosActivos.VPrincipal.repaint();
 	}
 	
-	public static void hazAlgo() {
+	public static void ActualizaReto() {
 		System.out.println("Obteniendo retos . . .");
 		List<RetoDTO> retos = controller.getRetos();
 		SelectorDeRetos.removeAllItems();

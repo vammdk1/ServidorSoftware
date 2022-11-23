@@ -4,6 +4,7 @@ import java.rmi.Remote;
 import java.rmi.RemoteException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 import strava.server.data.domain.Reto;
 import strava.server.data.domain.SesionEntrenamiento;
@@ -31,7 +32,7 @@ public interface IRemoteFacade extends Remote {
 	
 	public List<SesionEntrenamientoDTO> verSesionesEntrenamiento (long token) throws RemoteException;
 	
-	public List<RetoDTO> verRetosAceptados (long token) throws RemoteException;
+	public Map<RetoDTO, Float> verRetosAceptados (long token) throws RemoteException;
 
 	boolean registro(UserDTO usuarioDTO, String password) throws RemoteException;
 
