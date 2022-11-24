@@ -152,7 +152,22 @@ public class VentanaRetosAceptados {
 			public void actionPerformed(ActionEvent e) {
 				SimpleDateFormat sdf = new SimpleDateFormat("DD/MM/YYYY");
 				//TODO el mes lo pilla mal pero no se porque
-				
+				String a = (String) SelectorDeRetos.getSelectedItem();
+				Map<RetoDTO,Float> todosRetos = controller.getRetos();
+				RetoDTO ret = new RetoDTO();
+				for (RetoDTO reto : todosRetos.keySet()) {
+					if (reto.getNombre().equals(a)) {
+						ret = reto;
+						break;
+					}
+				}
+				FechaIni.setText(sdf.format(ret.getFechaIni()));
+				FechaFin.setText(sdf.format(ret.getFechaFin()));
+				DistObj.setText(ret.getDistanciaObjetivo()+"");
+				TiObj.setText(ret.getTiempoObjetivo()+"");
+				Deporte.setText(ret.getDeporte().toString());
+				Porcentaje.setText(todosRetos.get(ret)*100+"");
+				/*
 				int i = SelectorDeRetos.getSelectedIndex();
 				Map<RetoDTO,Float> todosRetos = controller.getRetos();
 				List<RetoDTO> retos = (List<RetoDTO>) todosRetos.keySet();
@@ -163,25 +178,32 @@ public class VentanaRetosAceptados {
 				TiObj.setText(retos.get(i).getTiempoObjetivo()+"");
 				Deporte.setText(retos.get(i).getDeporte().toString());
 				Porcentaje.setText(todosRetos.get(retos.get(i))+"");
+				*/
 			}
 		});
 	}
 	
 	
 	public static void ActualizaReto() {
-		System.out.println("Obteniendo retos . . .");
-		Map<RetoDTO, Float> retos = controller.getRetos();
-		SelectorDeRetos.removeAllItems();
-		for (RetoDTO reto : retos.keySet()) {
-			System.out.println("prueba . . .");
-			
-			System.out.println(reto.getNombre() + " " +
-					reto.getDeporte() + " " +
-					reto.getDistanciaObjetivo() + " " +
-					reto.getTiempoObjetivo() + " " +
-					reto.getFechaIni() + " " +
-					reto.getFechaFin());
-			SelectorDeRetos.addItem(reto.toString());
+		try {
+			System.out.println("Obteniendo retos . . .");
+			Map<RetoDTO, Float> retos = controller.getRetos();
+			SelectorDeRetos.removeAllItems();
+			System.out.println("aaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
+			for (RetoDTO reto : retos.keySet()) {
+				System.out.println("prueba . . .");
+				
+				System.out.println(reto.getNombre() + " " +
+						reto.getDeporte() + " " +
+						reto.getDistanciaObjetivo() + " " +
+						reto.getTiempoObjetivo() + " " +
+						reto.getFechaIni() + " " +
+						reto.getFechaFin());
+				SelectorDeRetos.addItem(reto.getNombre());
+			}
+		} catch (Exception e) {
+			System.out.println("Error actualizando");
 		}
+		
 	}
 }

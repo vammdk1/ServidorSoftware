@@ -149,6 +149,7 @@ public class VentanaUsuario {
 				VPrincipal.setVisible(false);
 				//VentanaRetosActivos.VPrincipal.();
 				VentanaRetosAceptados.ActualizaReto();
+				System.out.println("bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb");
 				VentanaRetosAceptados.VPrincipal.setVisible(true);
 			}
 		});

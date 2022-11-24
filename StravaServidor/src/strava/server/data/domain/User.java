@@ -149,6 +149,10 @@ public class User  {
 						}else {
 							retos.put(r,anadirPorcentaje(s.getDuracion()/r.getTiempoObj(), r));
 						}
+						if(retos.get(r)>=1) {
+							retos.put(r, 1f);
+						}
+						
 					}
 				}
 			}
