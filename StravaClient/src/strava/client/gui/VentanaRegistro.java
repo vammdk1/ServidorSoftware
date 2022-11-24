@@ -15,7 +15,7 @@ import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.JPasswordField;
-import javax.swing.JTextArea;
+import javax.swing.JTextField;
 import javax.swing.JTextField;
 import java.awt.Font;
 import javax.swing.SwingConstants;
@@ -58,6 +58,9 @@ public class VentanaRegistro {
 		JPanel PBotones = new JPanel();
 		panelInferior.add(PBotones);
 		JPanel PBotones1 = new JPanel();
+		JButton BAceptar = new JButton();
+		BAceptar.setFont(new Font("Tahoma", Font.PLAIN, 18));
+		BAceptar.setText("Aceptar");
 		JButton BRegistro = new JButton();
 		BRegistro.setFont(new Font("Tahoma", Font.PLAIN, 18));
 		BRegistro.setText("Registrarme");
@@ -76,7 +79,7 @@ public class VentanaRegistro {
 		PBotones.add(PBotones2,BorderLayout.SOUTH);
 		PBotones.setSize(x, y);
 		VPrincipal.getContentPane().add(PanelGlobal,BorderLayout.CENTER);
-		JTextArea correo = new JTextArea();
+		JTextField correo = new JTextField();
 		correo.setFont(new Font("Monospaced", Font.PLAIN, 20));
 		correo.setBounds(37, 179, 663, 31);
 		PanelGlobal.add(correo);
@@ -90,20 +93,20 @@ public class VentanaRegistro {
 		lblNombre.setBounds(37, 11, 289, 38);
 		PanelGlobal.add(lblNombre);
 		
-		JTextArea nombre = new JTextArea();
-		nombre.setFont(new Font("Monospaced", Font.PLAIN, 20));
-		nombre.setBounds(37, 122, 663, 31);
-		PanelGlobal.add(nombre);
+		JTextField fecha = new JTextField();
+		fecha.setFont(new Font("Monospaced", Font.PLAIN, 20));
+		fecha.setBounds(37, 122, 663, 31);
+		PanelGlobal.add(fecha);
 		
 		JLabel lblFechaDeNacimiento = new JLabel("Fecha de nacimiento");
 		lblFechaDeNacimiento.setFont(new Font("Tahoma", Font.PLAIN, 18));
 		lblFechaDeNacimiento.setBounds(37, 83, 289, 37);
 		PanelGlobal.add(lblFechaDeNacimiento);
 		
-		JTextArea fecha = new JTextArea();
-		fecha.setFont(new Font("Monospaced", Font.PLAIN, 20));
-		fecha.setBounds(37, 53, 663, 31);
-		PanelGlobal.add(fecha);
+		JTextField nombre = new JTextField();
+		nombre.setFont(new Font("Monospaced", Font.PLAIN, 20));
+		nombre.setBounds(37, 53, 663, 31);
+		PanelGlobal.add(nombre);
 		
 		JLabel lblCorreo = new JLabel("Correo electonico");
 		lblCorreo.setFont(new Font("Tahoma", Font.PLAIN, 18));
@@ -131,9 +134,70 @@ public class VentanaRegistro {
 				System.out.println("boton registro pulsado");
 				UserDTO usuario = new UserDTO();
 				//nombre.getText(), correo.getText(), fecha.getText(), 0f, 0, 0, 0, p.LOCAL
-				usuario.setNombre(nombre.getText());
+				usuario.setNombre(fecha.getText());
 				usuario.setEmail(correo.getText());
-				usuario.setFechancto(fecha.getText());
+				usuario.setFechancto(nombre.getText());
+				System.out.println("creando usuario: " + usuario);
+				VentanaRegistro2.setUsuario(usuario);
+				VentanaRegistro2.setPassword(new String(contrasena.getPassword()));
+				VentanaRegistro2.VPrincipal.setVisible(true);
+			}
+		});
+		
+		BGoogle.addActionListener(new ActionListener() {
+			
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				p = ProveedorDTO.GOOGLE;
+				fecha.setVisible(false);
+				nombre.setVisible(false);
+				lblFechaDeNacimiento.setVisible(false);
+				lblNombre.setVisible(false);
+				correo.setBounds(37, 80, 663, 43);
+				lblCorreo.setBounds(37, 24, 289, 50);
+				contrasena.setBounds(37, 195, 663, 55);
+				lblContrasena.setBounds(37, 134, 163, 50);
+				BGoogle.setVisible(false);
+				BFacebook.setVisible(false);
+				BRegistro.setVisible(false);
+				
+				PBotones2.add(BAceptar);
+				
+			}
+		});
+		
+		BFacebook.addActionListener(new ActionListener() {
+			
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				p = ProveedorDTO.FACEBOOK;
+				fecha.setVisible(false);
+				nombre.setVisible(false);
+				lblFechaDeNacimiento.setVisible(false);
+				lblNombre.setVisible(false);
+				correo.setBounds(37, 80, 663, 43);
+				lblCorreo.setBounds(37, 24, 289, 50);
+				contrasena.setBounds(37, 195, 663, 55);
+				lblContrasena.setBounds(37, 134, 163, 50);
+				BGoogle.setVisible(false);
+				BFacebook.setVisible(false);
+				BRegistro.setVisible(false);
+				
+				PBotones2.add(BAceptar);
+				
+			}
+		});
+		
+		BAceptar.addActionListener(new ActionListener() {
+			
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				VPrincipal.setVisible(false);
+				UserDTO usuario = new UserDTO();
+				usuario.setProveedor(p);
+				usuario.setNombre(null);
+				usuario.setEmail(correo.getText());
+				usuario.setFechancto(null);
 				System.out.println("creando usuario: " + usuario);
 				VentanaRegistro2.setUsuario(usuario);
 				VentanaRegistro2.setPassword(new String(contrasena.getPassword()));

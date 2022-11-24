@@ -15,7 +15,7 @@ import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.JPasswordField;
-import javax.swing.JTextArea;
+import javax.swing.JTextField;
 import javax.swing.JTextField;
 import java.awt.Font;
 import javax.swing.SwingConstants;
@@ -67,7 +67,7 @@ public class VentanaRegistro2 {
 		PBotones.setSize(x, y);
 		VPrincipal.getContentPane().add(PanelGlobal,BorderLayout.CENTER);
 		
-		JTextArea peso = new JTextArea("0");
+		JTextField peso = new JTextField("0");
 		peso.setFont(new Font("Monospaced", Font.PLAIN, 20));
 		peso.setBounds(120, 70, 500, 31);
 		PanelGlobal.add(peso);
@@ -87,7 +87,7 @@ public class VentanaRegistro2 {
 		lblAltura.setBounds(115, 100, 505, 38);
 		PanelGlobal.add(lblAltura);
 		
-		JTextArea frecMax = new JTextArea("0");
+		JTextField frecMax = new JTextField("0");
 		frecMax.setFont(new Font("Monospaced", Font.PLAIN, 20));
 		frecMax.setBounds(120, 140, 500, 31);
 		PanelGlobal.add(frecMax);
@@ -97,7 +97,7 @@ public class VentanaRegistro2 {
 		lblAltura_1.setBounds(115, 170, 505, 38);
 		PanelGlobal.add(lblAltura_1);
 		
-		JTextArea frecRep = new JTextArea("0");
+		JTextField frecRep = new JTextField("0");
 		frecRep.setFont(new Font("Monospaced", Font.PLAIN, 20));
 		frecRep.setBounds(120, 210, 500, 31);
 		PanelGlobal.add(frecRep);
@@ -107,7 +107,7 @@ public class VentanaRegistro2 {
 		lblAltura_1_1.setBounds(115, 240, 163, 38);
 		PanelGlobal.add(lblAltura_1_1);
 		
-		JTextArea altura = new JTextArea("0");
+		JTextField altura = new JTextField("0");
 		altura.setFont(new Font("Monospaced", Font.PLAIN, 20));
 		altura.setBounds(120, 280, 500, 31);
 		PanelGlobal.add(altura);

@@ -16,7 +16,7 @@ import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.JPasswordField;
-import javax.swing.JTextArea;
+import javax.swing.JTextField;
 import javax.swing.JTextField;
 import java.awt.Font;
 import javax.swing.SwingConstants;
@@ -28,6 +28,8 @@ import strava.client.remote.ServiceLocator;
 import java.awt.GridLayout;
 import javax.swing.BoxLayout;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
+
 import java.awt.FlowLayout;
 
 public class VentanaLogin {
@@ -78,7 +80,7 @@ public class VentanaLogin {
 		PBotones.add(PBotones2,BorderLayout.SOUTH);
 		PBotones.setSize(x, y);
 		VPrincipal.getContentPane().add(PanelGlobal,BorderLayout.CENTER);
-		JTextArea Correo = new JTextArea();
+		JTextField Correo = new JTextField();
 		Correo.setFont(new Font("Monospaced", Font.PLAIN, 20));
 		Correo.setBounds(37, 80, 663, 43);
 		PanelGlobal.add(Correo);
@@ -118,11 +120,61 @@ public class VentanaLogin {
 						VentanaUsuario.VPrincipal.setVisible(true);
 						System.out.println("iniciando sesion");
 						VentanaUsuario.setToken(controller.getToken());
+						VPrincipal.setVisible(false);
+						VentanaUsuario.actualizaSesiones();
+					} else {
+						JOptionPane.showMessageDialog(null, "Correo o contraseña erroneos", "Inicio de sesion - Error", JOptionPane.INFORMATION_MESSAGE);	
 					}
-					VPrincipal.setVisible(false);
-					VentanaUsuario.actualizaSesiones();
 				} catch (Exception e2) {
 					// TODO: handle exception
+				}
+			}
+		});
+		
+		BFacebook.addActionListener(new ActionListener() {
+			
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				try {
+					System.out.println("boton inicio de sesion pulsado");
+
+					System.out.println("intentando Iniciar con correo: " + Correo.getText() + " y contrasena: " + Contrasenna.getText());
+					if (controller.loginFacebook(Correo.getText(), Contrasenna.getText())) {
+						//VentanaUsuario.setUsuario();
+						VentanaUsuario.VPrincipal.setVisible(true);
+						System.out.println("iniciando sesion");
+						VentanaUsuario.setToken(controller.getToken());
+						VPrincipal.setVisible(false);
+						VentanaUsuario.actualizaSesiones();
+					} else {
+						JOptionPane.showMessageDialog(null, "Correo o contraseña erroneos", "Inicio de sesion - Error", JOptionPane.INFORMATION_MESSAGE);	
+					}
+				} catch (Exception e2) {
+							
+				}
+			}
+		});
+		
+		BGoogle.addActionListener(new ActionListener() {
+			
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				try {
+					System.out.println("boton inicio de sesion pulsado");
+
+					System.out.println("intentando Iniciar con correo: " + Correo.getText() + " y contrasena: " + Contrasenna.getText());
+					if (controller.loginGoogle(Correo.getText(), Contrasenna.getText())) {
+						//VentanaUsuario.setUsuario();
+						VentanaUsuario.VPrincipal.setVisible(true);
+						System.out.println("iniciando sesion");
+						VentanaUsuario.setToken(controller.getToken());
+						VPrincipal.setVisible(false);
+						VentanaUsuario.actualizaSesiones();
+					} else {
+						JOptionPane.showMessageDialog(null, "Correo o contraseña erroneos", "Inicio de sesion - Error", JOptionPane.INFORMATION_MESSAGE);	
+					}
+				} catch (Exception e2) {
+							
 				}
 			}
 		});

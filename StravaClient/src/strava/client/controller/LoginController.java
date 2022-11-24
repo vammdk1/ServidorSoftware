@@ -28,6 +28,14 @@ public class LoginController {
 		}
 	}
 	
+	public boolean loginFacebook(String email, String password) {
+		return false;
+	}
+	
+	public boolean loginGoogle(String email, String password) {
+		return false;
+	}
+	
 	public void logout() {
 		try {
 			this.serviceLocator.getService().logout(this.token);
