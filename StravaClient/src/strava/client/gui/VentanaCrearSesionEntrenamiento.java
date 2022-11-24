@@ -181,14 +181,9 @@ public class VentanaCrearSesionEntrenamiento {
 				try {
 					format = new SimpleDateFormat("dd/MM/yyyy HH:mm").parse(tfFecha.getText() + " " + tfHora.getText());
 					System.out.println("intentando crear sesion con titulo: " + tfTitulo.getText() + " deporte " + " distancia: " + Float.parseFloat(tfDistancia.getText())+ " hora: " + format.toString() + " duracion " + Float.parseFloat(tfDuracion.getText()));
-					
-					if (CbDeporte.getSelectedIndex()==0) {
-					controller.crearSesionEntrenamiento(VentanaUsuario.getToken(), tfTitulo.getText(), tDeportes.CICLISMO, Float.parseFloat(tfDistancia.getText()), format, Float.parseFloat(tfDuracion.getText()));
+					DeportesDTO[] a = DeportesDTO.values();
+					controller.crearSesionEntrenamiento(VentanaUsuario.getToken(), tfTitulo.getText(), a[CbDeporte.getSelectedIndex()], Float.parseFloat(tfDistancia.getText()), format, Float.parseFloat(tfDuracion.getText()));
 					System.out.println(format.toString());
-					} else {
-						controller.crearSesionEntrenamiento(VentanaUsuario.getToken(), tfTitulo.getText(), tDeportes.RUNNING, Float.parseFloat(tfDistancia.getText()), format, Float.parseFloat(tfDuracion.getText()));
-						System.out.println(format.toString());
-					}
 					VPrincipal.setVisible(false);
 					VentanaUsuario.VPrincipal.setVisible(true);
 					VentanaUsuario.actualizaSesiones();

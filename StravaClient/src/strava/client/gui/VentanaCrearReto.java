@@ -186,11 +186,8 @@ public class VentanaCrearReto {
 					Date fechaInicio = format.parse(tfInicioDia.getText() + "-" + tfInicioMes.getText() + "-" + tfInicioAno.getText());
 					Date fechaFin = format.parse(tfFinDia.getText() + "-" + tfFinMes.getText() + "-" + tfFinAno.getText());
 					System.out.println("intentando crear reto con titulo: "+ titulo.getText() + " deporte: " +CbDeporte.getSelectedItem() + " fechaini: " + fechaInicio + " fecha fin: " + fechaFin);
-					if (comboBox.getSelectedIndex()==0) {
-						controller.crearReto(VentanaUsuario.getToken(), titulo.getText(), tDeportes.CICLISMO, fechaInicio, fechaFin, Float.parseFloat(tfObjetivo.getText()) , 0f);
-					}else {
-						controller.crearReto(VentanaUsuario.getToken(), titulo.getText(), tDeportes.RUNNING, fechaInicio, fechaFin, 0f, Float.parseFloat(tfObjetivo.getText()));
-					}
+					DeportesDTO[] a = DeportesDTO.values();					
+					controller.crearReto(VentanaUsuario.getToken(), titulo.getText(), a[comboBox.getSelectedIndex()], fechaInicio, fechaFin, Float.parseFloat(tfObjetivo.getText()) , 0f);
 					//controller.crearReto(VentanaUsuario.getToken(), titulo.getText(), tfDeporte.getText(), fechaInicio, fechaFin, y, x);
 					VPrincipal.setVisible(false);
 					VentanaUsuario.VPrincipal.setVisible(true);
