@@ -52,7 +52,12 @@ public class BaseDatos {
 	 */
 	public static boolean RegistrarUsuario(User NuevoUsuario) {
 		if(!UsuariosRegistrados.containsKey(NuevoUsuario.getEmail())) {
-			UsuariosRegistrados.put(NuevoUsuario.getEmail(), NuevoUsuario);
+			if (NuevoUsuario.getProveedor()==Proveedor.LOCAL) {
+				UsuariosRegistrados.put(NuevoUsuario.getEmail(), NuevoUsuario);
+			}else {
+				//se conecta con facebook
+			}
+			
 			return true;
 		}else {
 			return false;
