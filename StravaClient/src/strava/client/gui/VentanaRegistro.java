@@ -28,6 +28,8 @@ import strava.server.data.dto.UserDTO;
 import java.awt.GridLayout;
 import javax.swing.BoxLayout;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
+
 import java.awt.FlowLayout;
 
 public class VentanaRegistro {
@@ -130,17 +132,22 @@ public class VentanaRegistro {
 			
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				VPrincipal.setVisible(false);
-				System.out.println("boton registro pulsado");
-				UserDTO usuario = new UserDTO();
-				//nombre.getText(), correo.getText(), fecha.getText(), 0f, 0, 0, 0, p.LOCAL
-				usuario.setNombre(fecha.getText());
-				usuario.setEmail(correo.getText());
-				usuario.setFechancto(nombre.getText());
-				System.out.println("creando usuario: " + usuario);
-				VentanaRegistro2.setUsuario(usuario);
-				VentanaRegistro2.setPassword(new String(contrasena.getPassword()));
-				VentanaRegistro2.VPrincipal.setVisible(true);
+				if (correo.getText().isEmpty()|| contrasena.getText().isEmpty()|| nombre.getText().isEmpty()|| fecha.getText().isEmpty()) {
+					JOptionPane.showMessageDialog(null, "Debes rellenar todos los campos", "Registro - Error", JOptionPane.INFORMATION_MESSAGE);	
+				} else {
+					System.out.println(correo.getText());
+					VPrincipal.setVisible(false);
+					System.out.println("boton registro pulsado");
+					UserDTO usuario = new UserDTO();
+					//nombre.getText(), correo.getText(), fecha.getText(), 0f, 0, 0, 0, p.LOCAL
+					usuario.setNombre(fecha.getText());
+					usuario.setEmail(correo.getText());
+					usuario.setFechancto(nombre.getText());
+					System.out.println("creando usuario: " + usuario);
+					VentanaRegistro2.setUsuario(usuario);
+					VentanaRegistro2.setPassword(new String(contrasena.getPassword()));
+					VentanaRegistro2.VPrincipal.setVisible(true);
+				}
 			}
 		});
 		
@@ -192,6 +199,9 @@ public class VentanaRegistro {
 			
 			@Override
 			public void actionPerformed(ActionEvent e) {
+				if (correo.getText().isEmpty()|| contrasena.getText().isEmpty()) {
+					JOptionPane.showMessageDialog(null, "Debes rellenar todos los campos", "Registro - Error", JOptionPane.INFORMATION_MESSAGE);	
+				} else {
 				VPrincipal.setVisible(false);
 				UserDTO usuario = new UserDTO();
 				usuario.setProveedor(p);
@@ -202,6 +212,7 @@ public class VentanaRegistro {
 				VentanaRegistro2.setUsuario(usuario);
 				VentanaRegistro2.setPassword(new String(contrasena.getPassword()));
 				VentanaRegistro2.VPrincipal.setVisible(true);
+				}
 			}
 		});
 	}

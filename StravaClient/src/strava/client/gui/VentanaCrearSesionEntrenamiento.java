@@ -34,6 +34,7 @@ import javax.swing.DefaultComboBoxModel;
 import javax.swing.JLabel;
 import java.awt.FlowLayout;
 import javax.swing.JComboBox;
+import javax.swing.JOptionPane;
 
 public class VentanaCrearSesionEntrenamiento {
 	static JFrame VPrincipal = new JFrame("STRAVA");
@@ -188,7 +189,7 @@ public class VentanaCrearSesionEntrenamiento {
 					VentanaUsuario.VPrincipal.setVisible(true);
 					VentanaUsuario.actualizaSesiones();
 				} catch (ParseException e1) {
-					// TODO Auto-generated catch block
+					JOptionPane.showMessageDialog(null, "Hay un dato incorrecto o incompleto", "Crear sesion de entrenamiento - Error", JOptionPane.INFORMATION_MESSAGE);	
 					System.out.println("Formato de fecha y hora erróneos. Utilice el formato 'DD/MM/YYYY HH:MM'");
 				}
 			}

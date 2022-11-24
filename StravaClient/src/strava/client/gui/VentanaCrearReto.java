@@ -21,6 +21,7 @@ import strava.server.data.dto.DeportesDTO;
 import javax.swing.DefaultComboBoxModel;
 import javax.swing.JLabel;
 import javax.swing.JComboBox;
+import javax.swing.JOptionPane;
 
 public class VentanaCrearReto {
 	static JFrame VPrincipal = new JFrame("STRAVA");
@@ -192,8 +193,7 @@ public class VentanaCrearReto {
 					VPrincipal.setVisible(false);
 					VentanaUsuario.VPrincipal.setVisible(true);
 				} catch (ParseException e1) {
-					// TODO Auto-generated catch block
-					System.out.println("Formato de fecha incorrecto " + e);
+					JOptionPane.showMessageDialog(null, "Hay un dato incorrecto o incompleto", "Crear un reto - Error", JOptionPane.INFORMATION_MESSAGE);	
 				}
 			}
 		});
