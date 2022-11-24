@@ -61,7 +61,7 @@ public class VentanaUsuario {
 		JLabel lblPanelDeUsuario = new JLabel("Panel de usuario");
 		lblPanelDeUsuario.setHorizontalAlignment(SwingConstants.CENTER);
 		lblPanelDeUsuario.setFont(new Font("Tahoma", Font.PLAIN, 42));
-		lblPanelDeUsuario.setBounds(214, 10, 306, 51);
+		lblPanelDeUsuario.setBounds(175, 10, 397, 51);
 		VPrincipal.getContentPane().add(lblPanelDeUsuario);
 		
 		JButton CrearSesionEntrenamiento = new JButton("Crear sesion de entrenamiento");
