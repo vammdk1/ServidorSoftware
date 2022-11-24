@@ -18,11 +18,16 @@ public class LoginAppService {
 		return BaseDatos.comprobarCuenta(user);
 	}
 	
-	public User loginGoogleFacebook(String email,Proveedor GoogleOFacebook) {
-		//TODO: Get User using DAO and check 		
+	public boolean loginGoogleFacebook(String email,Proveedor GoogleOFacebook) {
 		User user = new User("",email, "", 0, 0, 0, 0, GoogleOFacebook);
-		//Generate the hash of the password
-		
-		return BaseDatos.comprobarCuenta(user);
+		if(GoogleOFacebook.equals(Proveedor.GOOGLE )) {
+			//TODO mandar a google
+			
+		}else {
+			//TODO mandar a facebook
+		}
+	
+		//TODO
+		return false;
 	}
 }

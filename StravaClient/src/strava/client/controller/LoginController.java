@@ -18,6 +18,7 @@ public class LoginController {
 	}
 	
 	public boolean login(String email, String password) {
+		//TODO cambiar el tipo de login para poder acceder usando google o facebook
 		try {
 			this.token = this.serviceLocator.getService().login(email, password);			
 			return true;
