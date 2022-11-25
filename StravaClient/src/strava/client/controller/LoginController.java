@@ -8,13 +8,14 @@ import strava.client.remote.ServiceLocator;
 //This class implements Controller pattern.
 public class LoginController {	
 	
+	private static LoginController instance = new LoginController();
 	//Reference to the Service Locator
 	private ServiceLocator serviceLocator;
 	//This attibute stores the token when login success
 	private long token = -1; //-1 = login has not been done or fails
 
-	public LoginController(ServiceLocator serviceLocator) {
-		this.serviceLocator = serviceLocator;
+	private LoginController() {
+		this.serviceLocator = ServiceLocator.getInstance();
 	}
 	
 	public boolean login(String email, String password) {
@@ -48,5 +49,9 @@ public class LoginController {
 
 	public long getToken() {
 		return token;
+	}
+
+	public static LoginController getInstance() {
+		return instance;
 	}
 }

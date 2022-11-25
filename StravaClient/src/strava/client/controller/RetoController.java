@@ -11,8 +11,10 @@ import strava.server.data.dto.RetoDTO;
 public class RetoController {
 	private ServiceLocator serviceLocator;
 	
-	public RetoController(ServiceLocator serviceLocator) {
-		this.serviceLocator = serviceLocator;
+	private static RetoController instance;
+	
+	private RetoController() {
+		this.serviceLocator = ServiceLocator.getInstance();
 	}
 
 	public boolean crearReto(long token, String nombre, DeportesDTO deporte, Date fechaInicio, Date fechaFin, float distanciaObjetivo, float tiempoObjetivo) 
@@ -32,4 +34,15 @@ public class RetoController {
 			return false;
 		}
 	}
+
+	public static RetoController getInstance() {
+		synchronized(RetoController.class) {
+		if (instance == null) {
+			instance = new RetoController();
+			}
+		}
+		return instance;
+	}
+	
+	
 }
