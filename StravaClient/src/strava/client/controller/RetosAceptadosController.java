@@ -11,8 +11,10 @@ public class RetosAceptadosController {
 	
 	private ServiceLocator serviceLocator;
 	
-	public RetosAceptadosController(ServiceLocator serviceLocator) {
-		this.serviceLocator = serviceLocator;
+	private static RetosAceptadosController instance = new RetosAceptadosController();
+	
+	private RetosAceptadosController() {
+		this.serviceLocator = ServiceLocator.getInstance();
 	}
 	
 	public Map<RetoDTO, Float> getRetos() {
@@ -24,4 +26,10 @@ public class RetosAceptadosController {
 		}
 		
 	}
+
+	public static RetosAceptadosController getInstance() {
+		return instance;
+	}
+	
+	
 }

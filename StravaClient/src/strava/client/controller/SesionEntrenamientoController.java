@@ -14,8 +14,10 @@ public class SesionEntrenamientoController {
 	private ServiceLocator serviceLocator;
 	public DeportesDTO tDeportes ;
 	
-	public SesionEntrenamientoController(ServiceLocator serviceLocator) {
-		this.serviceLocator = serviceLocator;
+	private static SesionEntrenamientoController instance = new SesionEntrenamientoController();
+	
+	private SesionEntrenamientoController() {
+		this.serviceLocator = ServiceLocator.getInstance();
 	}
 	
 	public boolean crearSesionEntrenamiento(long token, String titulo, DeportesDTO deporte, float distancia, Date fechaHoraInicio, float duracion) 
@@ -43,5 +45,9 @@ public class SesionEntrenamientoController {
 			return null;
 		}
 		
+	}
+
+	public static SesionEntrenamientoController getInstance() {
+		return instance;
 	}
 }

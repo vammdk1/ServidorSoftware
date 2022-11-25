@@ -7,8 +7,13 @@ import strava.server.remote.IRemoteFacade;
 //This class implements Service Locator pattern
 public class ServiceLocator {
 	
+	private static ServiceLocator instance = new ServiceLocator();
 	//Remote Facade reference
 	private IRemoteFacade service;
+	
+	private ServiceLocator() {
+		
+	}
 
 	public void setService(String ip, String port, String serviceName) {
 		//Activate Security Manager. It is needed for RMI.
@@ -27,5 +32,9 @@ public class ServiceLocator {
 
 	public IRemoteFacade getService() {
 		return this.service;
+	}
+
+	public static ServiceLocator getInstance() {
+		return instance;
 	}
 }

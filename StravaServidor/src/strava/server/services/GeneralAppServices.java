@@ -18,12 +18,9 @@ import strava.server.data.dto.UserDTO;
 public class GeneralAppServices {
 	
 	public static boolean registrarusuario(UserDTO usuarioDTO,String password) {
-		UsuarioStrava usuario = new UsuarioStrava(usuarioDTO.getNombre(), usuarioDTO.getEmail(), usuarioDTO.getFechancto(), usuarioDTO.getPeso(), usuarioDTO.getAltura(), usuarioDTO.getPulsoxMinuto(),usuarioDTO.getPulsoReposo(),Proveedor.LOCAL, password);
-		if(BaseDatos.RegistrarUsuario(usuario)) {
-			return true;
-		}else {
-			return false;
-		}
+		Proveedor[] a = Proveedor.values();
+		UsuarioStrava usuario = new UsuarioStrava(usuarioDTO.getNombre(), usuarioDTO.getEmail(), usuarioDTO.getFechancto(), usuarioDTO.getPeso(), usuarioDTO.getAltura(), usuarioDTO.getPulsoxMinuto(),usuarioDTO.getPulsoReposo(),a[usuarioDTO.getProveedor().getIndex()], password);
+		return BaseDatos.RegistrarUsuario(usuario);
 	}
 
 	public ArrayList<Reto> DevolverRetosActivos(){

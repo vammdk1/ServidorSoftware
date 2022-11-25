@@ -10,9 +10,11 @@ import strava.server.data.dto.RetoDTO;
 public class RetosActivosController {
 	
 private ServiceLocator serviceLocator;
+
+private static RetosActivosController instance;
 	
-	public RetosActivosController(ServiceLocator serviceLocator) {
-		this.serviceLocator = serviceLocator;
+	private RetosActivosController() {
+		this.serviceLocator = ServiceLocator.getInstance();
 	}
 	
 	public List<RetoDTO> getRetos() {
@@ -23,5 +25,14 @@ private ServiceLocator serviceLocator;
 			return null;
 		}
 		
+	}
+
+	public static RetosActivosController getInstance() {
+		synchronized(RetosActivosController.class) {
+			if (instance == null) {
+				instance = new RetosActivosController();
+			}
+		}
+		return instance;
 	}
 }

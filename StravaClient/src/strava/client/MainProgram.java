@@ -22,40 +22,32 @@ import strava.server.data.domain.UsuarioStrava;
 public class MainProgram {
 
 	public static void main(String[] args) {	
-		ServiceLocator serviceLocator = new ServiceLocator();
 		//UsuarioStrava user = new UsuarioStrava("prueba", "prueba@gmail.com", "01-01-0001", 0, 0, 0, 0, null, "prueba");
 		
 		
 		//args[0] = RMIRegistry IP
 		//args[1] = RMIRegistry Port
 		//args[2] = Service Name
-		serviceLocator.setService(args[0], args[1], args[2]);
+		ServiceLocator.getInstance().setService(args[0], args[1], args[2]);
 		
-		LoginController loginController = new LoginController(serviceLocator);
-		VentanaLogin ventanaLogin = new VentanaLogin(loginController);
+		VentanaLogin ventanaLogin = new VentanaLogin(LoginController.getInstance());
 		
-		RegisterController registerController = new RegisterController(serviceLocator);
-		VentanaRegistro ventanaRegistro = new VentanaRegistro(registerController);
-		VentanaRegistro2 ventanaRegistro2 = new VentanaRegistro2(registerController);
+		VentanaRegistro ventanaRegistro = new VentanaRegistro(RegisterController.getInstance());
+		VentanaRegistro2 ventanaRegistro2 = new VentanaRegistro2(RegisterController.getInstance());
 		
-		SesionEntrenamientoController sesionEntrenamientoController = new SesionEntrenamientoController(serviceLocator);
+		VentanaUsuario ventanaUsuario = new VentanaUsuario(LoginController.getInstance(), SesionEntrenamientoController.getInstance());
 		
-		VentanaUsuario ventanaUsuario = new VentanaUsuario(loginController, sesionEntrenamientoController);
+		RegisterController.getInstance().register("prueba", "prueba@gmail.com", "01-01-0001", 0, 0, 0, 0, "prueba");
 		
-		registerController.register("prueba", "prueba@gmail.com", "01-01-0001", 0, 0, 0, 0, "prueba");
-		
-		RetoController retoController = new RetoController(serviceLocator);
-		VentanaCrearReto ventanaCrearReto = new VentanaCrearReto(retoController);
+		VentanaCrearReto ventanaCrearReto = new VentanaCrearReto(RetoController.getInstance());
 		
 		
-		VentanaCrearSesionEntrenamiento ventanaCrearSesionEntrenamiento = new VentanaCrearSesionEntrenamiento(sesionEntrenamientoController);
+		VentanaCrearSesionEntrenamiento ventanaCrearSesionEntrenamiento = new VentanaCrearSesionEntrenamiento(SesionEntrenamientoController.getInstance());
 		
 		
-		RetosAceptadosController retosAceptadosController = new RetosAceptadosController(serviceLocator);
-		VentanaRetosAceptados ventanaRetosAceptados = new VentanaRetosAceptados(retosAceptadosController);
+		VentanaRetosAceptados ventanaRetosAceptados = new VentanaRetosAceptados(RetosAceptadosController.getInstance());
 		
-		RetosActivosController retosActivosController = new RetosActivosController(serviceLocator);
-		VentanaRetosActivos ventanaRetosActivos = new VentanaRetosActivos(retosActivosController);
+		VentanaRetosActivos ventanaRetosActivos = new VentanaRetosActivos(RetosActivosController.getInstance());
 		
 		//LoginDialog loginDialog = new LoginDialog(loginController);		
 		

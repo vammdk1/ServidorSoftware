@@ -13,8 +13,10 @@ public class RegisterController {
 	//This attibute stores the token when login success
 	private long token = -1; //-1 = login has not been done or fails
 
-	public RegisterController(ServiceLocator serviceLocator) {
-		this.serviceLocator = serviceLocator;
+	private static RegisterController instance;
+	
+	private RegisterController() {
+		this.serviceLocator = ServiceLocator.getInstance();
 	}
 		
 	public void register(String nombre, String email, String fechaNac, float peso, int altura, int pulsoxMinuto, int pulsoReposo, String password) {
@@ -35,5 +37,14 @@ public class RegisterController {
 			// TODO Auto-generated catch block
 			System.out.println("# Error en el registro: " + e);
 		}
+	}
+
+	public static RegisterController getInstance() {
+		synchronized(RegisterController.class) {
+			if (instance == null) {
+				instance = new RegisterController();
+			}
+		}
+		return instance;
 	}	
 }
