@@ -7,7 +7,7 @@ import java.net.Socket;
 
 public class EchoStrava {
 //TODO EL OTRO SERVIDOR SE HACE CON RMI
-	public static void main(String args[]) {
+	public static boolean main(String args[]) {
 		
 		if (args.length < 4) {
 			System.err.println(" # Usage: TCPSocketStrava [SERVER IP] [PORT] [EMAIL] [CONTRASENNA]");
@@ -42,22 +42,33 @@ public class EchoStrava {
 			
 			//Read response (a String) from the server
 			String data = EmailR.readUTF();			
-			System.out.println("Recepcion de correo confirmada" + tcpSocket.getInetAddress().getHostAddress() + ":" + tcpSocket.getPort() + "' -> '" + data + "'");
-			try {
-				 DataInputStream PassR = new DataInputStream(tcpSocket.getInputStream());
-				 DataOutputStream PassS = new DataOutputStream(tcpSocket.getOutputStream());
-				PassS.writeUTF(mail);
-				System.out.println("Enviando correo'" + tcpSocket.getInetAddress().getHostAddress() + ":" + tcpSocket.getPort() + "' -> '" + mail + "'");
-				
-				//Read response (a String) from the server
-				data = PassR.readUTF();			
-				System.out.println("- EchoClient: Received data from '" + tcpSocket.getInetAddress().getHostAddress() + ":" + tcpSocket.getPort() + "' -> '" + data + "'");
-							
-			} catch (Exception e) {
-				// TODO: handle exception
+			System.out.println("Recepcion de correo confirmada " + tcpSocket.getInetAddress().getHostAddress() + ":" + tcpSocket.getPort() + "' -> '" + data + "'");
+			if(data.equals("correo confirmado")) {
+				data = "";
+				try {
+					 DataInputStream PassR = new DataInputStream(tcpSocket.getInputStream());
+					 DataOutputStream PassS = new DataOutputStream(tcpSocket.getOutputStream());
+					PassS.writeUTF(mail);
+					System.out.println("Enviando correo'" + tcpSocket.getInetAddress().getHostAddress() + ":" + tcpSocket.getPort() + "' -> '" + mail + "'");
+					
+					//Read response (a String) from the server
+					data = PassR.readUTF();			
+					System.out.println("recepcion de contrasenna confirmada: " + tcpSocket.getInetAddress().getHostAddress() + ":" + tcpSocket.getPort() + "' -> '" + data + "'");
+					if(data.equals("password confirmada"))	{
+						return true;
+					}else {
+						return false;
+					}
+				} catch (Exception e) {
+					System.out.println("# error de contrasenna: Error: " + e.getMessage());
+				}
+			}else {
+				return false;
 			}
+			
 		} catch (Exception e) {
-			System.out.println("# EchoClient: Error: " + e.getMessage());
+			System.out.println("# error correo : Error: " + e.getMessage());
 		}
+		return false;
 	}
 }

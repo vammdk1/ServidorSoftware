@@ -86,15 +86,16 @@ public class RemoteFacade extends UnicastRemoteObject implements IRemoteFacade {
 	}
 
 	@Override
-	public synchronized long inicioGoogle(String email) throws RemoteException {
+	public synchronized long inicioGoogle(String email, String password) throws RemoteException {
 		System.out.println("RemoteFacade loginGoogle()");
 		
 		//Perform login() using LoginAppService
 		User user = new User(null, email, null, 0, 0, 0, 0, Proveedor.GOOGLE);
 			
 		//If login() success user is stored in the Server State
-		if (loginService.loginGoogleFacebook(email, Proveedor.GOOGLE)) {
+		if (loginService.loginGoogleFacebook(email, password, Proveedor.GOOGLE)) {
 			//If user is not logged in 
+			//System.out.println("usuario google funcionando");
 			if (!this.serverState.values().contains(user)) {
 				Long token = Calendar.getInstance().getTimeInMillis();		
 				this.serverState.put(token, user);		
@@ -109,12 +110,12 @@ public class RemoteFacade extends UnicastRemoteObject implements IRemoteFacade {
 	}
 
 	@Override
-	public synchronized long inicioFacebook(String email) throws RemoteException {
+	public synchronized long inicioFacebook(String email, String password) throws RemoteException {
 		System.out.println("RemoteFacade loginFacebook()");
 		//Perform login() using LoginAppService
 		User user = new User(null, email, null, 0, 0, 0, 0, Proveedor.GOOGLE);
 		//If login() success user is stored in the Server State
-		if (loginService.loginGoogleFacebook(email, Proveedor.FACEBOOK)) {
+		if (loginService.loginGoogleFacebook(email, password, Proveedor.FACEBOOK)) {
 			//If user is not logged in 
 			if (!this.serverState.values().contains(user)) {
 				Long token = Calendar.getInstance().getTimeInMillis();		

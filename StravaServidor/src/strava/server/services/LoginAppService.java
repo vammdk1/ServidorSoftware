@@ -3,6 +3,7 @@ package strava.server.services;
 import strava.server.data.domain.Proveedor; 
 import strava.server.data.domain.User;
 import strava.server.data.domain.UsuarioStrava;
+import strava.server.sockets.EchoStrava;
 
 //TODO: Implement Singleton Pattern
 public class LoginAppService {
@@ -18,16 +19,18 @@ public class LoginAppService {
 		return BaseDatos.comprobarCuenta(user);
 	}
 	
-	public boolean loginGoogleFacebook(String email,Proveedor GoogleOFacebook) {
+	public boolean loginGoogleFacebook(String email,String password,Proveedor GoogleOFacebook) {
+		//TODO comprobar en la base de datos que el usuario esté registrado
 		User user = new User("",email, "", 0, 0, 0, 0, GoogleOFacebook);
 		if(GoogleOFacebook.equals(Proveedor.GOOGLE )) {
-			//TODO mandar a google
+			String[] args = {"127.0.0.2","8001",email,password};
+			return EchoStrava.main(args);			
 			
 		}else {
 			//TODO mandar a facebook
+			return false;
 		}
 	
-		//TODO
-		return false;
+
 	}
 }
