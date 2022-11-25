@@ -9,6 +9,9 @@
 	<property name="rmiregistry.IP" value="127.0.0.1"/> 
 	<property name="rmiregistry.port" value="1099"/> 
 	<property name="server.name" value="EstravaS"/>
+	<property name="Google.IP" value="127.0.0.2"/> 
+	<property name="Google.port" value="8001"/> 
+	<property name="message" value="prueba"/>	
 
 	<path id="classpath">
         <fileset dir="${lib.dir}">
@@ -43,4 +46,12 @@
 			<arg value="${server.name}"/> 
         </java>
     </target>
+	
+	<!--target name="5.Conectar con google" depends="1.build" description="Conectar con google">
+		<java classname="strava.server.sockets.EchoStrava" classpathref="classpath" fork="true">
+		        	<arg value="${Google.IP}"/> 
+			 		<arg value="${Google.port}"/> 
+					<arg value="${message}"/> 
+		</java>
+	</target-->
 </project>
