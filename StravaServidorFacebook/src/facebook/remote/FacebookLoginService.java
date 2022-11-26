@@ -12,7 +12,7 @@ public class FacebookLoginService extends UnicastRemoteObject implements IFacebo
 	
 	protected FacebookLoginService() throws RemoteException {
 		super();
-		facebookLogin(null, null);
+		facebookUsers.putIfAbsent("Prueba", "Prueba");
 	}
 	
 	public static FacebookLoginService getInstance() {
@@ -29,7 +29,9 @@ public class FacebookLoginService extends UnicastRemoteObject implements IFacebo
 	
 	public boolean facebookLogin(String user, String password) throws RemoteException {
 		if (facebookUsers.containsKey(user)) {
+			System.out.println("El usuario " + user + " existe");
 			if (facebookUsers.get(user).equals(password)) {
+				System.out.println("La contrasena para usuario " + user + " es correcta");
 				return true;
 			}
 			else {

@@ -2,6 +2,7 @@ package strava.server;
 
 import java.rmi.Naming;
 
+import strava.server.gateway.FacebookServiceGateway;
 import strava.server.remote.IRemoteFacade;
 import strava.server.remote.RemoteFacade;
 
