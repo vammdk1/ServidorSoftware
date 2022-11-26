@@ -182,7 +182,7 @@ public class VentanaCrearReto {
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				System.out.println("boton crear reto pulsado");
-				SimpleDateFormat format = new SimpleDateFormat("dd-mm-yyyy");
+				SimpleDateFormat format = new SimpleDateFormat("dd-MM-yyyy");
 				try {
 					Date fechaInicio = format.parse(tfInicioDia.getText() + "-" + tfInicioMes.getText() + "-" + tfInicioAno.getText());
 					Date fechaFin = format.parse(tfFinDia.getText() + "-" + tfFinMes.getText() + "-" + tfFinAno.getText());

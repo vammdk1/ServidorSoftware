@@ -149,7 +149,6 @@ public class VentanaUsuario {
 				VPrincipal.setVisible(false);
 				//VentanaRetosActivos.VPrincipal.();
 				VentanaRetosAceptados.ActualizaReto();
-				System.out.println("bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb");
 				VentanaRetosAceptados.VPrincipal.setVisible(true);
 			}
 		});
@@ -183,7 +182,7 @@ public class VentanaUsuario {
 		model.setNumRows(1);
 		for (SesionEntrenamientoDTO sesion : sesiones) {
 			//"Titulo", "Deporte", "Distancia", "Duracion", "Fecha inicio"
-			SimpleDateFormat sdf = new SimpleDateFormat("DD/MM/YYYY");
+			SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
 			//No funciona bien el día
 			model.addRow(new String[]{sesion.getTitulo(), sesion.getDeporte()+"", sesion.getDistancia()+"", sesion.getDuracion()+"", sdf.format(sesion.getFechaHoraInicio())});
 			}

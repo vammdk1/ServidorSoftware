@@ -150,8 +150,7 @@ public class VentanaRetosAceptados {
 			
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				SimpleDateFormat sdf = new SimpleDateFormat("DD/MM/YYYY");
-				//TODO el mes lo pilla mal pero no se porque
+				SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
 				String a = (String) SelectorDeRetos.getSelectedItem();
 				Map<RetoDTO,Float> todosRetos = controller.getRetos();
 				RetoDTO ret = new RetoDTO();
