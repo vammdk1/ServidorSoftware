@@ -48,8 +48,8 @@ public class EchoStrava {
 				try {
 					 DataInputStream PassR = new DataInputStream(tcpSocket.getInputStream());
 					 DataOutputStream PassS = new DataOutputStream(tcpSocket.getOutputStream());
-					PassS.writeUTF(mail);
-					System.out.println("Enviando correo'" + tcpSocket.getInetAddress().getHostAddress() + ":" + tcpSocket.getPort() + "' -> '" + mail + "'");
+					PassS.writeUTF(password);
+					System.out.println("Enviando contrasenna'" + tcpSocket.getInetAddress().getHostAddress() + ":" + tcpSocket.getPort() + "' -> '" + password + "'");
 					
 					//Read response (a String) from the server
 					data = PassR.readUTF();			

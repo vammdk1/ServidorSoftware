@@ -27,10 +27,10 @@ public class BaseDatos {
 	 */
 	public static User comprobarCuenta(User usuario) {
 		if(UsuariosRegistrados.containsKey(usuario.getEmail())) {
-			if(UsuariosRegistrados.get(usuario.getEmail()).getProveedor() != Proveedor.LOCAL) {
+			if(!UsuariosRegistrados.get(usuario.getEmail()).getProveedor().equals("LOCAL")) {
 					System.out.println("Es un usuario NoStrava:"+ usuario.getEmail()+ "||" + usuario.getProveedor());
 					return UsuariosRegistrados.get(usuario.getEmail());
-				}else {
+			}else {
 					String sha1 = org.apache.commons.codec.digest.DigestUtils.sha1Hex(((UsuarioStrava) UsuariosRegistrados.get(usuario.getEmail())).getContrasenna());
 					System.out.println("Es un usuario Strava:"+((UsuarioStrava) usuario).getContrasenna()+"||"+sha1);
 					
@@ -52,11 +52,12 @@ public class BaseDatos {
 	 */
 	public static boolean RegistrarUsuario(User NuevoUsuario) {
 		if(!UsuariosRegistrados.containsKey(NuevoUsuario.getEmail())) {
-			if (NuevoUsuario.getProveedor()==Proveedor.LOCAL) {
+			//if (NuevoUsuario.getProveedor()==Proveedor.LOCAL) {
+				//TODO donde guardar los datos, de momento todos van a estar aquí
 				UsuariosRegistrados.put(NuevoUsuario.getEmail(), NuevoUsuario);
-			}else {
+			//}else {
 				//se conecta con facebook
-			}
+			//}
 			
 			return true;
 		}else {

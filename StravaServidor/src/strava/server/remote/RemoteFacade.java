@@ -86,13 +86,12 @@ public class RemoteFacade extends UnicastRemoteObject implements IRemoteFacade {
 	}
 
 	@Override
-	public synchronized long inicioGoogle(String email, String password) throws RemoteException {
+	public synchronized long InicioExterno(String email, String password) throws RemoteException {
 		System.out.println("RemoteFacade loginGoogle()");
 		
-		User user = new User(null, email, null, 0, 0, 0, 0, Proveedor.GOOGLE);
+		User user = loginService.loginGoogleFacebook(email, password);
 			
-		if (loginService.loginGoogleFacebook(email, password)) {
-			//System.out.println("usuario google funcionando");
+		if (user!=null) {
 			if (!this.serverState.values().contains(user)) {
 				Long token = Calendar.getInstance().getTimeInMillis();		
 				this.serverState.put(token, user);		
@@ -105,7 +104,7 @@ public class RemoteFacade extends UnicastRemoteObject implements IRemoteFacade {
 		}
 		
 	}
-
+/**
 	@Override
 	public synchronized long inicioFacebook(String email, String password) throws RemoteException {
 		System.out.println("RemoteFacade loginFacebook()");
@@ -125,7 +124,7 @@ public class RemoteFacade extends UnicastRemoteObject implements IRemoteFacade {
 			throw new RemoteException("Login fails!");
 		}	
 	}
-
+**/
 	@Override
 	public synchronized List<RetoDTO> verRetosActivos() throws RemoteException {
 		ArrayList<Reto> retosActivos = appServices.DevolverRetosActivos();

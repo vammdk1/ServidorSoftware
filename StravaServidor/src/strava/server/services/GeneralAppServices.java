@@ -19,8 +19,16 @@ public class GeneralAppServices {
 	
 	public static boolean registrarusuario(UserDTO usuarioDTO,String password) {
 		Proveedor[] a = Proveedor.values();
-		UsuarioStrava usuario = new UsuarioStrava(usuarioDTO.getNombre(), usuarioDTO.getEmail(), usuarioDTO.getFechancto(), usuarioDTO.getPeso(), usuarioDTO.getAltura(), usuarioDTO.getPulsoxMinuto(),usuarioDTO.getPulsoReposo(),a[usuarioDTO.getProveedor().getIndex()], password);
-		return BaseDatos.RegistrarUsuario(usuario);
+		if (usuarioDTO.getProveedor().equals("LOCAL")) {
+			UsuarioStrava usuario = new UsuarioStrava(usuarioDTO.getNombre(), usuarioDTO.getEmail(), usuarioDTO.getFechancto(), usuarioDTO.getPeso(), usuarioDTO.getAltura(), usuarioDTO.getPulsoxMinuto(),usuarioDTO.getPulsoReposo(),a[usuarioDTO.getProveedor().getIndex()], password);
+			return BaseDatos.RegistrarUsuario(usuario);
+		}else {
+			System.out.println("registrando usuario googleFacebook");
+			User usuario = new User(usuarioDTO.getNombre(), usuarioDTO.getEmail(), usuarioDTO.getFechancto(), usuarioDTO.getPeso(), usuarioDTO.getAltura(), usuarioDTO.getPulsoxMinuto(),usuarioDTO.getPulsoReposo(),a[usuarioDTO.getProveedor().getIndex()]);
+			//TODO revisar si hay que almacenar los usuarios externos en sus respectivos servidores (como lo hace albaro)
+			return BaseDatos.RegistrarUsuario(usuario);
+		}
+		
 	}
 
 	public ArrayList<Reto> DevolverRetosActivos(){

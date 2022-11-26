@@ -27,7 +27,7 @@ public class LocalTest {
 		facade = new RemoteFacade();
 		System.out.println("/////////////////////////////////////////////////////////////////////////");
 		usuario1.setEmail("a@prueba.com");
-		usuario1.setProveedor(ProveedorDTO.LOCAL);
+		usuario1.setProveedor(ProveedorDTO.GOOGLE);
 		facade.registro(usuario1, "123456789");
 	} catch (Exception e) {
 		System.out.println("\t# Error: " + e.getMessage());	
@@ -35,7 +35,7 @@ public class LocalTest {
 	
 	try {
 		System.out.println("/////////////////////////////////////////////////////////////////////////");
-		token=facade.inicioGoogle("a@prueba.com","123456");
+		token=facade.InicioExterno("a@prueba.com","123456");
 		System.out.println(token);
 	} catch (Exception e) {
 		System.out.println("\t# Error: " + e.getMessage());	
