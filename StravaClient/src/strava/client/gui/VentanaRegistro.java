@@ -1,47 +1,34 @@
 package strava.client.gui;
 
 import java.awt.BorderLayout;
-import java.awt.Color;
-import java.awt.Component;
-import java.awt.Container;
 import java.awt.Dimension;
-import java.awt.LayoutManager;
-import java.awt.Toolkit;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-import javax.swing.BorderFactory;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.JPasswordField;
 import javax.swing.JTextField;
-import javax.swing.JTextField;
 import java.awt.Font;
-import javax.swing.SwingConstants;
 
 import strava.client.controller.RegisterController;
-import strava.client.remote.ServiceLocator;
 import strava.server.data.dto.ProveedorDTO;
 import strava.server.data.dto.UserDTO;
 
-import java.awt.GridLayout;
-import javax.swing.BoxLayout;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
-
-import java.awt.FlowLayout;
 
 public class VentanaRegistro {
 	static JFrame VPrincipal = new JFrame("STRAVA");
 	static int x = 500;
 	static int y = 300;
-	public static ProveedorDTO p;
+	public static ProveedorDTO p = ProveedorDTO.LOCAL;
 	
 	private RegisterController controller;
-	
-	public VentanaRegistro(RegisterController register){
 		
+	public VentanaRegistro(RegisterController register){
+				
 		this.controller = register;
 		
 		VPrincipal.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -53,7 +40,6 @@ public class VentanaRegistro {
 		VPrincipal.getContentPane().setLayout((new BorderLayout()));
 		
 		JPanel panelInferior = new JPanel();
-		FlowLayout flowLayout = (FlowLayout) panelInferior.getLayout();
 		VPrincipal.getContentPane().add(panelInferior, BorderLayout.SOUTH);
 		
 		//botones
@@ -132,7 +118,7 @@ public class VentanaRegistro {
 			
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				if (correo.getText().isEmpty()|| contrasena.getText().isEmpty()|| nombre.getText().isEmpty()|| fecha.getText().isEmpty()) {
+				if (correo.getText().isEmpty()|| contrasena.getPassword().length == 0|| nombre.getText().isEmpty()|| fecha.getText().isEmpty()) {
 					JOptionPane.showMessageDialog(null, "Debes rellenar todos los campos", "Registro - Error", JOptionPane.INFORMATION_MESSAGE);	
 				} else {
 					System.out.println(correo.getText());
@@ -143,6 +129,7 @@ public class VentanaRegistro {
 					usuario.setNombre(fecha.getText());
 					usuario.setEmail(correo.getText());
 					usuario.setFechancto(nombre.getText());
+					usuario.setProveedor(p);
 					System.out.println("creando usuario: " + usuario);
 					VentanaRegistro2.setUsuario(usuario);
 					VentanaRegistro2.setPassword(new String(contrasena.getPassword()));
@@ -199,7 +186,7 @@ public class VentanaRegistro {
 			
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				if (correo.getText().isEmpty()|| contrasena.getText().isEmpty()) {
+				if (correo.getText().isEmpty()|| contrasena.getPassword().length == 0) {
 					JOptionPane.showMessageDialog(null, "Debes rellenar todos los campos", "Registro - Error", JOptionPane.INFORMATION_MESSAGE);	
 				} else {
 				VPrincipal.setVisible(false);
@@ -212,6 +199,20 @@ public class VentanaRegistro {
 				VentanaRegistro2.setUsuario(usuario);
 				VentanaRegistro2.setPassword(new String(contrasena.getPassword()));
 				VentanaRegistro2.VPrincipal.setVisible(true);
+				
+				p = ProveedorDTO.LOCAL;
+				fecha.setVisible(true);
+				nombre.setVisible(true);
+				lblFechaDeNacimiento.setVisible(true);
+				lblNombre.setVisible(true);
+				BGoogle.setVisible(true);
+				BFacebook.setVisible(true);
+				BRegistro.setVisible(true);
+				PBotones2.remove(BAceptar);
+				correo.setBounds(37, 179, 663, 31);
+				contrasena.setBounds(37, 240, 663, 31);
+				lblCorreo.setBounds(37, 150, 289, 31);
+				lblContrasena.setBounds(37, 208, 163, 31);
 				}
 			}
 		});

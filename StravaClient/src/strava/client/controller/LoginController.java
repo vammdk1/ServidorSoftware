@@ -2,7 +2,6 @@ package strava.client.controller;
 
 import java.rmi.RemoteException;
 
-import strava.client.gui.VentanaUsuario;
 import strava.client.remote.ServiceLocator;
 
 //This class implements Controller pattern.
@@ -30,12 +29,16 @@ public class LoginController {
 		}
 	}
 	
-	public boolean loginFacebook(String email, String password) {
-		return false;
-	}
-	
-	public boolean loginGoogle(String email, String password) {
-		return false;
+	public boolean loginExterno(String email, String password) {
+		//TODO cambiar el tipo de login para poder acceder usando google o facebook
+		try {
+			this.token = this.serviceLocator.getService().InicioExterno(email, password);			
+			return true;
+		} catch (RemoteException e) {
+			System.out.println("# Error during login: " + e);
+			this.token = -1;
+			return false;
+			}
 	}
 	
 	public void logout() {

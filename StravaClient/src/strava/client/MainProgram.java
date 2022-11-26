@@ -18,6 +18,7 @@ import strava.client.gui.VentanaRetosActivos;
 import strava.client.gui.VentanaUsuario;
 import strava.client.remote.ServiceLocator;
 import strava.server.data.domain.UsuarioStrava;
+import strava.server.data.dto.ProveedorDTO;
 
 public class MainProgram {
 
@@ -37,7 +38,7 @@ public class MainProgram {
 		
 		VentanaUsuario ventanaUsuario = new VentanaUsuario(LoginController.getInstance(), SesionEntrenamientoController.getInstance());
 		
-		RegisterController.getInstance().register("prueba", "prueba@gmail.com", "01-01-0001", 0, 0, 0, 0, "prueba");
+		RegisterController.getInstance().register("prueba", "prueba@gmail.com", "01-01-0001", 0, 0, 0, 0, "prueba", ProveedorDTO.LOCAL);
 		
 		VentanaCrearReto ventanaCrearReto = new VentanaCrearReto(RetoController.getInstance());
 		

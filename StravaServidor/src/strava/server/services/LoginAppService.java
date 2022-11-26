@@ -17,7 +17,12 @@ public class LoginAppService {
 		String sha1 = org.apache.commons.codec.digest.DigestUtils.sha1Hex(password);	
 		user.setContrasenna(sha1);
 		
-		return BaseDatos.comprobarCuenta(user);
+		User user2 = BaseDatos.comprobarCuenta(user);
+		if (user2.getProveedor().equals(Proveedor.LOCAL)) {
+			return BaseDatos.comprobarCuenta(user);
+		} else {
+			return null;
+		}
 	}
 	
 	public User loginGoogleFacebook(String email,String password) {

@@ -2,35 +2,21 @@
 package strava.client.gui;
 
 import java.awt.BorderLayout;
-import java.awt.Color;
-import java.awt.Component;
-import java.awt.Container;
 import java.awt.Dimension;
-import java.awt.LayoutManager;
-import java.awt.Toolkit;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-import javax.swing.BorderFactory;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.JPasswordField;
 import javax.swing.JTextField;
-import javax.swing.JTextField;
 import java.awt.Font;
-import javax.swing.SwingConstants;
 
 import strava.client.controller.LoginController;
-import strava.client.controller.RegisterController;
-import strava.client.remote.ServiceLocator;
 
-import java.awt.GridLayout;
-import javax.swing.BoxLayout;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
-
-import java.awt.FlowLayout;
 
 public class VentanaLogin {
 	static JFrame VPrincipal = new JFrame("STRAVA");
@@ -51,7 +37,6 @@ public class VentanaLogin {
 		VPrincipal.getContentPane().setLayout((new BorderLayout()));
 		
 		JPanel panelInferior = new JPanel();
-		FlowLayout flowLayout = (FlowLayout) panelInferior.getLayout();
 		VPrincipal.getContentPane().add(panelInferior, BorderLayout.SOUTH);
 		
 		//botones
@@ -114,8 +99,8 @@ public class VentanaLogin {
 				try {
 					System.out.println("boton inicio de sesion pulsado");
 
-					System.out.println("intentando Iniciar con correo: " + Correo.getText() + " y contrasena: " + Contrasenna.getText());
-					if (controller.login(Correo.getText(), Contrasenna.getText())) {
+					System.out.println("intentando Iniciar con correo: " + Correo.getText() + " y contrasena: " + new String(Contrasenna.getPassword()));
+					if (controller.login(Correo.getText(), new String(Contrasenna.getPassword()))) {
 						//VentanaUsuario.setUsuario();
 						VentanaUsuario.VPrincipal.setVisible(true);
 						System.out.println("iniciando sesion");
@@ -138,8 +123,8 @@ public class VentanaLogin {
 				try {
 					System.out.println("boton inicio de sesion pulsado");
 
-					System.out.println("intentando Iniciar con correo: " + Correo.getText() + " y contrasena: " + Contrasenna.getText());
-					if (controller.loginFacebook(Correo.getText(), Contrasenna.getText())) {
+					System.out.println("intentando Iniciar con correo: " + Correo.getText() + " y contrasena: " + new String(Contrasenna.getPassword()));
+					if (controller.loginExterno(Correo.getText(), new String(Contrasenna.getPassword()))) {
 						//VentanaUsuario.setUsuario();
 						VentanaUsuario.VPrincipal.setVisible(true);
 						System.out.println("iniciando sesion");
@@ -162,8 +147,8 @@ public class VentanaLogin {
 				try {
 					System.out.println("boton inicio de sesion pulsado");
 
-					System.out.println("intentando Iniciar con correo: " + Correo.getText() + " y contrasena: " + Contrasenna.getText());
-					if (controller.loginGoogle(Correo.getText(), Contrasenna.getText())) {
+					System.out.println("intentando Iniciar con correo: " + Correo.getText() + " y contrasena: " + new String(Contrasenna.getPassword()));
+					if (controller.loginExterno(Correo.getText(), new String(Contrasenna.getPassword()))) {
 						//VentanaUsuario.setUsuario();
 						VentanaUsuario.VPrincipal.setVisible(true);
 						System.out.println("iniciando sesion");

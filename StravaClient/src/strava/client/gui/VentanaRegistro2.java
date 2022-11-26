@@ -1,33 +1,21 @@
 package strava.client.gui;
 
 import java.awt.BorderLayout;
-import java.awt.Color;
-import java.awt.Component;
-import java.awt.Container;
 import java.awt.Dimension;
-import java.awt.LayoutManager;
-import java.awt.Toolkit;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-import javax.swing.BorderFactory;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
-import javax.swing.JPasswordField;
-import javax.swing.JTextField;
 import javax.swing.JTextField;
 import java.awt.Font;
-import javax.swing.SwingConstants;
 
 import strava.client.controller.RegisterController;
-import strava.client.remote.ServiceLocator;
 import strava.server.data.dto.UserDTO;
 
-import java.awt.GridLayout;
-import javax.swing.BoxLayout;
 import javax.swing.JLabel;
-import java.awt.FlowLayout;
+
 
 public class VentanaRegistro2 {
 	static JFrame VPrincipal = new JFrame("STRAVA");
@@ -51,7 +39,6 @@ public class VentanaRegistro2 {
 		VPrincipal.getContentPane().setLayout((new BorderLayout()));
 		
 		JPanel panelInferior = new JPanel();
-		FlowLayout flowLayout = (FlowLayout) panelInferior.getLayout();
 		VPrincipal.getContentPane().add(panelInferior, BorderLayout.SOUTH);
 		
 		//botones
@@ -124,6 +111,7 @@ public class VentanaRegistro2 {
 			
 			@Override
 			public void actionPerformed(ActionEvent e) {
+				System.out.println(getUsuario().getProveedor());
 				System.out.println("Boton registro pulsado");
 				VPrincipal.setVisible(false);
 				try {
@@ -132,7 +120,7 @@ public class VentanaRegistro2 {
 					getUsuario().setPulsoxMinuto(Integer.parseInt(frecMax.getText()));
 					getUsuario().setPulsoReposo(Integer.parseInt(frecRep.getText()));
 					System.out.println("intentando anadir al usuario el peso: " + Float.parseFloat(peso.getText()) + " la altura: " + Integer.parseInt(altura.getText()) + " el pulso max: " +  Integer.parseInt(frecMax.getText()) + " el pulso rep: " + Integer.parseInt(frecRep.getText()));
-					controller.register(getUsuario().getNombre(), getUsuario().getEmail(), getUsuario().getFechancto(), getUsuario().getPeso(), getUsuario().getAltura(), getUsuario().getPulsoxMinuto(), getUsuario().getPulsoReposo(), getPassword());
+					controller.register(getUsuario().getNombre(), getUsuario().getEmail(), getUsuario().getFechancto(), getUsuario().getPeso(), getUsuario().getAltura(), getUsuario().getPulsoxMinuto(), getUsuario().getPulsoReposo(), getPassword(), getUsuario().getProveedor());
 				} catch (Exception e2) {
 					System.out.println("# Error en el registro "+ e2);
 				}

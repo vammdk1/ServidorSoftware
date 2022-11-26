@@ -8,17 +8,14 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import strava.server.data.domain.Proveedor;
 import strava.server.data.domain.Reto;
 import strava.server.data.domain.SesionEntrenamiento;
 import strava.server.data.domain.User;
-import strava.server.data.domain.UsuarioStrava;
 import strava.server.data.dto.RetoAssembler;
 import strava.server.data.dto.RetoDTO;
 import strava.server.data.dto.SesionEntrenamientoAssembler;
 import strava.server.data.dto.SesionEntrenamientoDTO;
 import strava.server.data.dto.UserDTO;
-import strava.server.services.BaseDatos;
 import strava.server.services.GeneralAppServices;
 import strava.server.services.LoginAppService;
 

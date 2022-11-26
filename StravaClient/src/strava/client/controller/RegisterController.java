@@ -19,7 +19,7 @@ public class RegisterController {
 		this.serviceLocator = ServiceLocator.getInstance();
 	}
 		
-	public void register(String nombre, String email, String fechaNac, float peso, int altura, int pulsoxMinuto, int pulsoReposo, String password) {
+	public void register(String nombre, String email, String fechaNac, float peso, int altura, int pulsoxMinuto, int pulsoReposo, String password, ProveedorDTO prov) {
 		
 		UserDTO user = new UserDTO();
 		user.setNombre(nombre);
@@ -29,7 +29,7 @@ public class RegisterController {
 		user.setAltura(altura);
 		user.setPulsoxMinuto(pulsoxMinuto);
 		user.setPulsoReposo(pulsoReposo);
-		user.setProveedor(ProveedorDTO.LOCAL);
+		user.setProveedor(prov);
 		try {
 			//System.out.println(email+"||"+user.getContrasenna());
 			this.serviceLocator.getService().registro(user, password);
