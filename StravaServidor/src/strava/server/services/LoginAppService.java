@@ -3,6 +3,7 @@ package strava.server.services;
 import strava.server.data.domain.Proveedor; 
 import strava.server.data.domain.User;
 import strava.server.data.domain.UsuarioStrava;
+import strava.server.gateway.FacebookServiceGateway;
 import strava.server.sockets.EchoStrava;
 
 //TODO: Implement Singleton Pattern
@@ -37,8 +38,11 @@ public class LoginAppService {
 				 
 				
 			}else if(UserRegistrado.getProveedor().equals(Proveedor.FACEBOOK )){
-				//TODO mandar a facebook
-				return null;
+				if (FacebookServiceGateway.getInstance().facebookLogin(email, password)) {
+				return BaseDatos.comprobarCuenta(user);
+				} else {
+					return null;
+				}
 			}else {
 				System.out.println("EL usuario "+UserRegistrado.getEmail() +" no pertenece a google ni a facebook");
 				return null;
