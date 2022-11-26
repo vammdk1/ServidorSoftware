@@ -19,18 +19,28 @@ public class LoginAppService {
 		return BaseDatos.comprobarCuenta(user);
 	}
 	
-	public boolean loginGoogleFacebook(String email,String password,Proveedor GoogleOFacebook) {
+	public boolean loginGoogleFacebook(String email,String password) {
 		//TODO comprobar en la base de datos que el usuario esté registrado
-		User user = new User("",email, "", 0, 0, 0, 0, GoogleOFacebook);
-		if(GoogleOFacebook.equals(Proveedor.GOOGLE )) {
-			String[] args = {"127.0.0.2","8001",email,password};
-			return EchoStrava.main(args);			
-			
+	
+		User user = new User("",email, "", 0, 0, 0, 0, null);
+		System.out.println("Entrado a comprobador googleFace");
+		User UserRegistrado = BaseDatos.comprobarCuenta(user);
+		if(UserRegistrado!=null) {
+			if(UserRegistrado.getProveedor().equals(Proveedor.GOOGLE )) {
+				String[] args = {"127.0.0.2","8001",email,password};
+				return EchoStrava.main(args);			
+				
+			}else if(UserRegistrado.getProveedor().equals(Proveedor.FACEBOOK )){
+				//TODO mandar a facebook
+				return false;
+			}else {
+				System.out.println("EL usuario "+UserRegistrado.getEmail() +" no pertenece a google ni a facebook");
+				return false;
+			}
 		}else {
-			//TODO mandar a facebook
 			return false;
 		}
-	
+		
 
 	}
 }

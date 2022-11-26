@@ -27,7 +27,7 @@ public class LocalTest {
 		facade = new RemoteFacade();
 		System.out.println("/////////////////////////////////////////////////////////////////////////");
 		usuario1.setEmail("a@prueba.com");
-		usuario1.setProveedor(ProveedorDTO.GOOGLE);
+		usuario1.setProveedor(ProveedorDTO.LOCAL);
 		facade.registro(usuario1, "123456789");
 	} catch (Exception e) {
 		System.out.println("\t# Error: " + e.getMessage());	
