@@ -2,6 +2,8 @@ package strava.server;
 
 import java.rmi.Naming;
 
+import strava.server.data.domain.Proveedor;
+import strava.server.factory.ExternalAccountFactory;
 import strava.server.gateway.FacebookServiceGateway;
 import strava.server.remote.IRemoteFacade;
 import strava.server.remote.RemoteFacade;
@@ -28,6 +30,9 @@ public class MainProgram {
 			System.err.println(" # Strava Server Exception: " + ex.getMessage());
 			ex.printStackTrace();
 		}
+		
+		ExternalAccountFactory.getInstance().createExternalAccount(Proveedor.FACEBOOK, "Prueba", "Prueba");
+		ExternalAccountFactory.getInstance().createExternalAccount(Proveedor.FACEBOOK, "Prueba2", "Prueba2");
 	}
 
 }

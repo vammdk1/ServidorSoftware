@@ -27,6 +27,15 @@ public class FacebookLoginService extends UnicastRemoteObject implements IFacebo
 		return instance;
 	}
 	
+	public void facebookRegister(String user, String password) throws RemoteException {
+		if (!facebookUsers.containsKey(user)) {
+			facebookUsers.putIfAbsent(user, password);
+			System.out.println(facebookUsers.toString());
+		} else {
+			System.out.println("El usuario " + user + " ya se encuentra en el servidor de Facebook");
+		}
+	}
+	
 	public boolean facebookLogin(String user, String password) throws RemoteException {
 		if (facebookUsers.containsKey(user)) {
 			System.out.println("El usuario " + user + " existe");

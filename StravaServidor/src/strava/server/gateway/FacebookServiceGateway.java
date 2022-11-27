@@ -36,4 +36,12 @@ public class FacebookServiceGateway {
 			return false;
 		}
 	}
+
+	public void facebookRegister(String user, String password) {
+		try {
+			this.facebookLoginService.facebookRegister(user, password); 
+		} catch (Exception ex) {
+			System.out.println("   $ Error creating user: " + ex.getMessage());
+		}
+	}
 }
