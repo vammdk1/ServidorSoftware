@@ -21,12 +21,12 @@ public class GeneralAppServices {
 		Proveedor[] a = Proveedor.values();
 		if (usuarioDTO.getProveedor().equals("LOCAL")) {
 			UsuarioStrava usuario = new UsuarioStrava(usuarioDTO.getNombre(), usuarioDTO.getEmail(), usuarioDTO.getFechancto(), usuarioDTO.getPeso(), usuarioDTO.getAltura(), usuarioDTO.getPulsoxMinuto(),usuarioDTO.getPulsoReposo(),a[usuarioDTO.getProveedor().getIndex()], password);
-			return BaseDatos.RegistrarUsuario(usuario);
+			return BaseDatos.RegistrarUsuario(usuario, password);
 		}else {
 			System.out.println("registrando usuario googleFacebook");
 			User usuario = new User(usuarioDTO.getNombre(), usuarioDTO.getEmail(), usuarioDTO.getFechancto(), usuarioDTO.getPeso(), usuarioDTO.getAltura(), usuarioDTO.getPulsoxMinuto(),usuarioDTO.getPulsoReposo(),a[usuarioDTO.getProveedor().getIndex()]);
 			//TODO revisar si hay que almacenar los usuarios externos en sus respectivos servidores (como lo hace albaro)
-			return BaseDatos.RegistrarUsuario(usuario);
+			return BaseDatos.RegistrarUsuario(usuario, password);
 		}
 		
 	}

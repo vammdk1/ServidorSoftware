@@ -13,6 +13,7 @@ import strava.server.data.domain.Reto;
 import strava.server.data.domain.SesionEntrenamiento;
 import strava.server.data.domain.User;
 import strava.server.data.domain.UsuarioStrava;
+import strava.server.gateway.FacebookServiceGateway;
 
 public class BaseDatos {
 	
@@ -50,14 +51,21 @@ public class BaseDatos {
 	/**
 	 * @param NuevoUsuario objeto tipo user (acepta Strava y no Strava)
 	 */
-	public static boolean RegistrarUsuario(User NuevoUsuario) {
+	public static boolean RegistrarUsuario(User NuevoUsuario, String password) {
 		if(!UsuariosRegistrados.containsKey(NuevoUsuario.getEmail())) {
-			//if (NuevoUsuario.getProveedor()==Proveedor.LOCAL) {
+			if (NuevoUsuario.getProveedor()==Proveedor.LOCAL) {
 				//TODO donde guardar los datos, de momento todos van a estar aquí
 				UsuariosRegistrados.put(NuevoUsuario.getEmail(), NuevoUsuario);
-			//}else {
+			}else if (NuevoUsuario.getProveedor() == Proveedor.FACEBOOK){
+				if (FacebookServiceGateway.getInstance().facebookLogin(NuevoUsuario.getEmail(), password)) {
 				//se conecta con facebook
-			//}
+					UsuariosRegistrados.put(NuevoUsuario.getEmail(), NuevoUsuario);
+				}
+				else {
+					System.out.println("No existe el usuario de Facebook introducido");
+					return false;
+				}
+			}
 			
 			return true;
 		}else {
