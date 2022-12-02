@@ -9,7 +9,7 @@ public class FacebookServiceGateway {
 	private static FacebookServiceGateway instance;
 	private IFacebookLogin facebookLoginService;
 	
-	private FacebookServiceGateway() {
+	private FacebookServiceGateway() { //Implementar la interfaz en lugar de guardarla 
 		try {		
 			String URL = "//127.0.0.1:1099/FacebookLogin";
 			this.facebookLoginService = (IFacebookLogin) Naming.lookup(URL);

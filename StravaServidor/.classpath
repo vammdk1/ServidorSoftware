@@ -12,6 +12,7 @@
 	</classpathentry>
 	<classpathentry exported="true" kind="lib" path="lib/commons-codec-1.15.jar"/>
 	<classpathentry kind="lib" path="lib/FacebookLogin.jar"/>
+	<classpathentry kind="lib" path="lib/GoogleLogin.jar"/>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

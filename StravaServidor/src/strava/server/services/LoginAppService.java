@@ -26,7 +26,7 @@ public class LoginAppService {
 	}
 	
 	public User loginGoogleFacebook(String email,String password) {
-		//TODO comprobar en la base de datos que el usuario esté registrado
+		//TODO cambiar la direccion de los datos
 	
 		User user = new User("",email, "", 0, 0, 0, 0, null);
 		System.out.println("Entrado a comprobador googleFace");

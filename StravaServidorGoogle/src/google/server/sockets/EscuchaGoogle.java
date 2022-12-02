@@ -34,7 +34,7 @@ public class EscuchaGoogle {
 			while (true) {
 				//When a connection from a client is received, a new EchoService is created. The "accept()" method returns the socket to
 				//communicate with the client.
-				new EchoService(tcpEchoServerSocket.accept());
+				new GoogleService(tcpEchoServerSocket.accept());
 				System.out.println(" - GoogleServer: New client connection accepted. Client Number: " + numClients++);
 			}
 		} catch (Exception e) {
