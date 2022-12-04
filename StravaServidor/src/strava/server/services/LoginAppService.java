@@ -4,7 +4,7 @@ import strava.server.data.domain.Proveedor;
 import strava.server.data.domain.User;
 import strava.server.data.domain.UsuarioStrava;
 import strava.server.gateway.FacebookServiceGateway;
-import strava.server.sockets.EchoStrava;
+import strava.server.gateway.GoogleServiceGateway;
 
 //TODO: Implement Singleton Pattern
 public class LoginAppService {
@@ -25,36 +25,29 @@ public class LoginAppService {
 		}
 	}
 	
-	public User loginGoogleFacebook(String email,String password) {
+	public User loginGoogleFacebook(String email,String password,String proveedor) {
 		//TODO cambiar la direccion de los datos
 	
 		User user = new User("",email, "", 0, 0, 0, 0, null);
-		System.out.println("Entrado a comprobador googleFace");
-		User UserRegistrado = BaseDatos.comprobarCuenta(user);
-		//se recibe el usuario relacionado al email
-		if(UserRegistrado!=null) {
-			if(UserRegistrado.getProveedor().equals(Proveedor.GOOGLE )) {
-				String[] args = {"127.0.0.2","8001",email,password};
-				 if(EchoStrava.main(args)) {
+			
+		if(proveedor.equals("GOOGLE")) {
+				 if(GoogleServiceGateway.getInstance().GoogleLogin(email, password)) {
 					 return BaseDatos.comprobarCuenta(user);
 				 }else {
 					 return null;
 				 }
 				 
 				
-			}else if(UserRegistrado.getProveedor().equals(Proveedor.FACEBOOK )){
+			}else if(proveedor.equals(Proveedor.FACEBOOK )){
 				if (FacebookServiceGateway.getInstance().facebookLogin(email, password)) {
 				return BaseDatos.comprobarCuenta(user);
 				} else {
 					return null;
 				}
 			}else {
-				System.out.println("EL usuario "+UserRegistrado.getEmail() +" no pertenece a google ni a facebook");
+				System.out.println("EL usuario "+ email +" no pertenece a google ni a facebook");
 				return null;
 			}
-		}else {
-			return null;
-		}
 		
 
 	}

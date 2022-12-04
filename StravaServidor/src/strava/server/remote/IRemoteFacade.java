@@ -35,10 +35,10 @@ public interface IRemoteFacade extends Remote {
 	public Map<RetoDTO, Float> verRetosAceptados (long token) throws RemoteException;
 
 	boolean registro(UserDTO usuarioDTO, String password) throws RemoteException;
+	
+	boolean registroExterno(UserDTO usuarioDTO, String password,String proveedor) throws RemoteException;
 
-	long InicioExterno(String email, String password) throws RemoteException;
-
-	//long inicioFacebook(String email, String password) throws RemoteException;
+	long InicioExterno(String email, String password, String proveedor) throws RemoteException;
 	
 	public void aceptarReto(long token, RetoDTO reto)  throws RemoteException;
 	

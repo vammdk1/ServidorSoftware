@@ -16,7 +16,7 @@ public class GoogleService extends Thread {
 	private DataOutputStream passOut;
 	private Socket tcpSocket;
 	
-	private static HashMap<String, String> usuariosGoogle; 
+	private static HashMap<String, String> usuariosGoogle = new HashMap<>(); 
 	
 	protected GoogleService() throws RemoteException {
 		usuariosGoogle.putIfAbsent("PruebaG", "PruebaG");
@@ -26,14 +26,14 @@ public class GoogleService extends Thread {
 	public GoogleService(Socket socket) {
 		try {
 			this.tcpSocket = socket;
-		  
-			this.start();
+			usuariosGoogle.put("PruebaG", "123");
+			this.Log();
 		} catch (Exception e) {
 			System.out.println("# EchoService - TCPConnection IO error:" + e.getMessage());
 		}
 	}
-
-	public void run() {
+	
+	public void Log() {
 		//Echo server
 		try {
 			this.mailIn = new DataInputStream(this.tcpSocket.getInputStream());
@@ -45,7 +45,7 @@ public class GoogleService extends Thread {
 			if(usuariosGoogle.containsKey(data)) {
 				this.mailOut.writeUTF("correo confirmado");
 				String dataCP = data;
-				System.out.println("   Enviando confirmacion " + tcpSocket.getInetAddress().getHostAddress() + ":" + tcpSocket.getPort() + "' -> '" + data.toUpperCase() + "'");
+				System.out.println("   Enviando confirmacion de correo " + tcpSocket.getInetAddress().getHostAddress() + ":" + tcpSocket.getPort() + "' -> '" + data.toUpperCase() + "'");
 				data ="";
 				try {
 					this.passIn = new DataInputStream(this.tcpSocket.getInputStream());
@@ -56,7 +56,7 @@ public class GoogleService extends Thread {
 						//Send response to the client
 						if(usuariosGoogle.get(dataCP).equals(data)) {
 							this.mailOut.writeUTF("password confirmada");			
-							System.out.println("   Enviando confirmacion " + tcpSocket.getInetAddress().getHostAddress() + ":" + tcpSocket.getPort() + "' -> '" + data + "'");
+							System.out.println("   Enviando confirmacion password " + tcpSocket.getInetAddress().getHostAddress() + ":" + tcpSocket.getPort() + "' -> '" + data.toUpperCase() + "'");
 						}else {
 							this.mailOut.writeUTF("password erronea");
 						}

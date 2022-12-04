@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<project basedir="." name="Google_Server">    
+<project basedir="." default="3.Google server" name="Google_Server">    
 	<property environment="env"/>
 	<property name="src.dir" location="src"/>
    	<property name="bin.dir" location="bin"/>
@@ -8,13 +8,12 @@
 	<property name="server.port" value="8001"/>
 	<property name="dist.dir" location="dist"/>
 	<property name="export.file" value="GoogleLogin.jar"/>
-	
-	
+		
 	<path id="classpath">
 	        <fileset dir="${lib.dir}">
 	            <include name="**/*.jar"/>
 	        </fileset>
-	        <pathelement location="${bin.dir}"/>
+	        <pathelement location="${bin.dir}"/>    	
 	    </path>
 	
 	<target name="1.build" description="Builds the project">
@@ -29,10 +28,12 @@
 				<jar destfile="${dist.dir}/${export.file}" basedir="${bin.dir}" includes="**/remote/I**.class"/>
 		</target>
 
-	<target name="3.Google server" description="Runs the Server Socket">
-		<java classname="google.server.sockets.EscuchaGoogle" classpath="${classpath}" fork="true">
-	 		<arg value="${server.port}"/> 
-			<arg value="${server.ip}"/> 
-        </java>
+	<target name="3.Google server" depends="1.build" description="Runs the Server Socket">
+		<java classname="google.server.sockets.EscuchaGoogle" classpathref="classpath" fork="true">
+					<arg value="${server.port}"/> 
+					<arg value="${server.ip}"/> 
+		        </java>
     </target>
+	
+	
 </project>

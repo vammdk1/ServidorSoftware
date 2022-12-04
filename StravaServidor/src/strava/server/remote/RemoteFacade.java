@@ -81,12 +81,24 @@ public class RemoteFacade extends UnicastRemoteObject implements IRemoteFacade {
 		}
 		
 	}
+	
+	@Override
+	public synchronized boolean registroExterno (UserDTO usuarioDTO, String password, String provedor) throws RemoteException {
+		//User usuario = usuariodto;
+		if(GeneralAppServices.registrarusuario(usuarioDTO,password)) {
+			System.out.println("RemoteFacade Registro(): " + usuarioDTO.getEmail());
+			return true;
+		}else {
+			throw new RemoteException("El correo ingresado:"+usuarioDTO.getEmail()+", ya se encuentra en uso");
+		}
+		
+	}
 
 	@Override
-	public synchronized long InicioExterno(String email, String password) throws RemoteException {
+	public synchronized long InicioExterno(String email, String password,String proveedor) throws RemoteException {
 		System.out.println("RemoteFacade loginGoogle()");
 		
-		User user = loginService.loginGoogleFacebook(email, password);
+		User user = loginService.loginGoogleFacebook(email, password,proveedor);
 			
 		if (user!=null) {
 			if (!this.serverState.values().contains(user)) {

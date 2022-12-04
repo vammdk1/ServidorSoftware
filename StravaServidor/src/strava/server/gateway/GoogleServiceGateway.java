@@ -4,11 +4,12 @@ import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.net.Socket;
 import java.rmi.Naming;
+import java.rmi.RemoteException;
 
 import facebook.remote.IFacebookLogin;
-import remote.IGoogleLogin;
+import remote.IGoogleServices;
 
-public class GoogleServiceGateway implements IGoogleLogin {
+public class GoogleServiceGateway implements IGoogleServices {
 	static String serverIP;
 	static int serverPort;
 	
@@ -67,9 +68,11 @@ public class GoogleServiceGateway implements IGoogleLogin {
 			}
 			return false;
 		}
-	
 
-	public void GoogleRegister(String user, String password) {
-	//a
+	@Override
+	public void GoogleRegister(String arg0, String arg1) throws RemoteException {
+		// TODO Auto-generated method stub
+		
 	}
+	
 }

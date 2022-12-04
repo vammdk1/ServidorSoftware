@@ -26,6 +26,7 @@ public class GeneralAppServices {
 			System.out.println("registrando usuario googleFacebook");
 			User usuario = new User(usuarioDTO.getNombre(), usuarioDTO.getEmail(), usuarioDTO.getFechancto(), usuarioDTO.getPeso(), usuarioDTO.getAltura(), usuarioDTO.getPulsoxMinuto(),usuarioDTO.getPulsoReposo(),a[usuarioDTO.getProveedor().getIndex()]);
 			//TODO revisar si hay que almacenar los usuarios externos en sus respectivos servidores (como lo hace albaro)
+			
 			return BaseDatos.RegistrarUsuario(usuario, password);
 		}
 		

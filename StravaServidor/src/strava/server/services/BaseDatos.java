@@ -14,6 +14,7 @@ import strava.server.data.domain.SesionEntrenamiento;
 import strava.server.data.domain.User;
 import strava.server.data.domain.UsuarioStrava;
 import strava.server.gateway.FacebookServiceGateway;
+import strava.server.gateway.GoogleServiceGateway;
 
 public class BaseDatos {
 	
@@ -43,7 +44,7 @@ public class BaseDatos {
 					}
 				}
 		}else {
-			System.out.println("No se encuentra la cuenta:"+usuario.getEmail());
+			System.out.println("No se encuentra registrada la cuenta:"+usuario.getEmail());
 			return null;
 		}
 	}
@@ -54,7 +55,6 @@ public class BaseDatos {
 	public static boolean RegistrarUsuario(User NuevoUsuario, String password) {
 		if(!UsuariosRegistrados.containsKey(NuevoUsuario.getEmail())) {
 			if (NuevoUsuario.getProveedor()==Proveedor.LOCAL) {
-				//TODO donde guardar los datos, de momento todos van a estar aquí
 				UsuariosRegistrados.put(NuevoUsuario.getEmail(), NuevoUsuario);
 			}else if (NuevoUsuario.getProveedor() == Proveedor.FACEBOOK){
 				if (FacebookServiceGateway.getInstance().facebookLogin(NuevoUsuario.getEmail(), password)) {
@@ -62,7 +62,17 @@ public class BaseDatos {
 					UsuariosRegistrados.put(NuevoUsuario.getEmail(), NuevoUsuario);
 				}
 				else {
+					//TODO registrar usuaios de google
 					System.out.println("No existe el usuario de Facebook introducido");
+					return false;
+				}
+			}else if(NuevoUsuario.getProveedor()==Proveedor.GOOGLE) {
+				if(GoogleServiceGateway.getInstance().GoogleLogin(NuevoUsuario.getEmail(), password)) {
+					UsuariosRegistrados.put(NuevoUsuario.getEmail(), NuevoUsuario);
+				}
+				else {
+					//TODO registrar usuaios de google
+					System.out.println("No existe el usuario de google introducido");
 					return false;
 				}
 			}
