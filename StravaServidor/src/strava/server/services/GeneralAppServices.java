@@ -1,5 +1,6 @@
 package strava.server.services;
 
+import java.rmi.RemoteException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -17,9 +18,10 @@ import strava.server.data.dto.UserDTO;
 
 public class GeneralAppServices {
 	
-	public static boolean registrarusuario(UserDTO usuarioDTO,String password) {
+	public static boolean registrarusuario(UserDTO usuarioDTO,String password) throws RemoteException {
 		Proveedor[] a = Proveedor.values();
 		if (usuarioDTO.getProveedor().equals("LOCAL")) {
+			System.out.println("Creando usuario local");
 			UsuarioStrava usuario = new UsuarioStrava(usuarioDTO.getNombre(), usuarioDTO.getEmail(), usuarioDTO.getFechancto(), usuarioDTO.getPeso(), usuarioDTO.getAltura(), usuarioDTO.getPulsoxMinuto(),usuarioDTO.getPulsoReposo(),a[usuarioDTO.getProveedor().getIndex()], password);
 			return BaseDatos.RegistrarUsuario(usuario, password);
 		}else {

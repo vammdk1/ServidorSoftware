@@ -1,6 +1,6 @@
 package strava.client.controller;
 
-import java.rmi.RemoteException;
+import java.rmi.RemoteException; 
 
 import strava.client.remote.ServiceLocator;
 
@@ -29,10 +29,10 @@ public class LoginController {
 		}
 	}
 	
-	public boolean loginExterno(String email, String password) {
+	public boolean loginExterno(String email, String password, String proveedor) {
 		//TODO cambiar el tipo de login para poder acceder usando google o facebook
 		try {
-			this.token = this.serviceLocator.getService().InicioExterno(email, password);			
+			this.token = this.serviceLocator.getService().InicioExterno(email, password, proveedor);			
 			return true;
 		} catch (RemoteException e) {
 			System.out.println("# Error during login: " + e);

@@ -4,7 +4,7 @@ import java.rmi.Naming;
 
 import facebook.remote.IFacebookLogin;
 
-public class FacebookServiceGateway {
+public class FacebookServiceGateway implements IServerGateway {
 	
 	private static FacebookServiceGateway instance;
 	private IFacebookLogin facebookLoginService;
@@ -26,7 +26,11 @@ public class FacebookServiceGateway {
 		return instance;
 	}
 	
-	public boolean facebookLogin(String user, String password) {
+	public boolean iniciarSesion(String user, String password) {
+		return FacebookLogin(user, password);
+	}
+	
+	public boolean FacebookLogin(String user, String password) {
 		System.out.println("   - Validating user from Facebook Service Gateway");
 		
 		try {

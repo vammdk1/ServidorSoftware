@@ -12,7 +12,6 @@ public class FacebookLoginService extends UnicastRemoteObject implements IFacebo
 	
 	protected FacebookLoginService() throws RemoteException {
 		super();
-		facebookUsers.putIfAbsent("Prueba", "Prueba");
 	}
 	
 	public static FacebookLoginService getInstance() {

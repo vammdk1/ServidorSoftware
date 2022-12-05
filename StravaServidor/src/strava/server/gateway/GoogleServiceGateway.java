@@ -9,7 +9,7 @@ import java.rmi.RemoteException;
 import facebook.remote.IFacebookLogin;
 import remote.IGoogleServices;
 
-public class GoogleServiceGateway implements IGoogleServices {
+public class GoogleServiceGateway implements IGoogleServices, IServerGateway {
 	static String serverIP;
 	static int serverPort;
 	
@@ -25,6 +25,10 @@ public class GoogleServiceGateway implements IGoogleServices {
 		}
 		
 		return instance;
+	}
+	
+	public boolean iniciarSesion(String email, String password) {
+		return GoogleLogin(email, password);
 	}
 	
 	public boolean GoogleLogin(String email, String password) {
@@ -74,5 +78,4 @@ public class GoogleServiceGateway implements IGoogleServices {
 		// TODO Auto-generated method stub
 		
 	}
-	
 }

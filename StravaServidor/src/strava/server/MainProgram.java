@@ -3,7 +3,7 @@ package strava.server;
 import java.rmi.Naming;
 
 import strava.server.data.domain.Proveedor;
-import strava.server.factory.ExternalAccountFactory;
+import strava.server.factory.GatewayFactory;
 import strava.server.gateway.FacebookServiceGateway;
 import strava.server.remote.IRemoteFacade;
 import strava.server.remote.RemoteFacade;
@@ -31,8 +31,7 @@ public class MainProgram {
 			ex.printStackTrace();
 		}
 		
-		ExternalAccountFactory.getInstance().createExternalAccount(Proveedor.FACEBOOK, "Prueba", "Prueba");
-		ExternalAccountFactory.getInstance().createExternalAccount(Proveedor.FACEBOOK, "Prueba2", "Prueba2");
+		GatewayFactory.getInstance().createExternalAccount("FACEBOOK", "Prueba1", "Prueba1");
 	}
 
 }

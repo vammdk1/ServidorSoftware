@@ -1,6 +1,7 @@
 package strava.server.services;
 
 
+import java.rmi.RemoteException;
 import java.util.ArrayList; 
 import java.util.Calendar;
 import java.util.HashMap;
@@ -51,13 +52,14 @@ public class BaseDatos {
 	
 	/**
 	 * @param NuevoUsuario objeto tipo user (acepta Strava y no Strava)
+	 * @throws RemoteException 
 	 */
-	public static boolean RegistrarUsuario(User NuevoUsuario, String password) {
+	public static boolean RegistrarUsuario(User NuevoUsuario, String password) throws RemoteException {
 		if(!UsuariosRegistrados.containsKey(NuevoUsuario.getEmail())) {
 			if (NuevoUsuario.getProveedor()==Proveedor.LOCAL) {
 				UsuariosRegistrados.put(NuevoUsuario.getEmail(), NuevoUsuario);
 			}else if (NuevoUsuario.getProveedor() == Proveedor.FACEBOOK){
-				if (FacebookServiceGateway.getInstance().facebookLogin(NuevoUsuario.getEmail(), password)) {
+				if (FacebookServiceGateway.getInstance().iniciarSesion(NuevoUsuario.getEmail(), password)) {
 				//se conecta con facebook
 					UsuariosRegistrados.put(NuevoUsuario.getEmail(), NuevoUsuario);
 				}

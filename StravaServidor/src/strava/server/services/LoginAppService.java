@@ -1,8 +1,11 @@
 package strava.server.services;
 
+import java.rmi.RemoteException;
+
 import strava.server.data.domain.Proveedor; 
 import strava.server.data.domain.User;
 import strava.server.data.domain.UsuarioStrava;
+import strava.server.factory.GatewayFactory;
 import strava.server.gateway.FacebookServiceGateway;
 import strava.server.gateway.GoogleServiceGateway;
 
@@ -25,21 +28,21 @@ public class LoginAppService {
 		}
 	}
 	
-	public User loginGoogleFacebook(String email,String password,String proveedor) {
+	public User loginGoogleFacebook(String email,String password,String proveedor) throws RemoteException {
 		//TODO cambiar la direccion de los datos
 	
 		User user = new User("",email, "", 0, 0, 0, 0, null);
 			
 		if(proveedor.equals("GOOGLE")) {
-				 if(GoogleServiceGateway.getInstance().GoogleLogin(email, password)) {
+				 if (GatewayFactory.getInstance().loginExterno(email, password, "GOOGLE")) {
 					 return BaseDatos.comprobarCuenta(user);
 				 }else {
 					 return null;
 				 }
 				 
 				
-			}else if(proveedor.equals(Proveedor.FACEBOOK )){
-				if (FacebookServiceGateway.getInstance().facebookLogin(email, password)) {
+			}else if(proveedor.equals("FACEBOOK")){
+				if (GatewayFactory.getInstance().loginExterno(email, password, "FACEBOOK")) {
 				return BaseDatos.comprobarCuenta(user);
 				} else {
 					return null;

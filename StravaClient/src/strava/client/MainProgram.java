@@ -49,7 +49,6 @@ public class MainProgram {
 		VentanaRetosAceptados ventanaRetosAceptados = new VentanaRetosAceptados(RetosAceptadosController.getInstance());
 		
 		VentanaRetosActivos ventanaRetosActivos = new VentanaRetosActivos(RetosActivosController.getInstance());
-		
 		//LoginDialog loginDialog = new LoginDialog(loginController);		
 		
 		//Login

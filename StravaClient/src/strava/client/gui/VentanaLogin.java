@@ -108,7 +108,7 @@ public class VentanaLogin {
 						VPrincipal.setVisible(false);
 						VentanaUsuario.actualizaSesiones();
 					} else {
-						JOptionPane.showMessageDialog(null, "Correo o contraseña erroneos", "Inicio de sesion - Error", JOptionPane.INFORMATION_MESSAGE);	
+						JOptionPane.showMessageDialog(null, "Correo o contraseï¿½a erroneos", "Inicio de sesion - Error", JOptionPane.INFORMATION_MESSAGE);	
 					}
 				} catch (Exception e2) {
 					// TODO: handle exception
@@ -124,7 +124,7 @@ public class VentanaLogin {
 					System.out.println("boton inicio de sesion pulsado");
 
 					System.out.println("intentando Iniciar con correo: " + Correo.getText() + " y contrasena: " + new String(Contrasenna.getPassword()));
-					if (controller.loginExterno(Correo.getText(), new String(Contrasenna.getPassword()))) {
+					if (controller.loginExterno(Correo.getText(), new String(Contrasenna.getPassword()), "FACEBOOK")) {
 						//VentanaUsuario.setUsuario();
 						VentanaUsuario.VPrincipal.setVisible(true);
 						System.out.println("iniciando sesion");
@@ -132,7 +132,7 @@ public class VentanaLogin {
 						VPrincipal.setVisible(false);
 						VentanaUsuario.actualizaSesiones();
 					} else {
-						JOptionPane.showMessageDialog(null, "Correo o contraseña erroneos", "Inicio de sesion - Error", JOptionPane.INFORMATION_MESSAGE);	
+						JOptionPane.showMessageDialog(null, "Correo o contraseï¿½a erroneos", "Inicio de sesion - Error", JOptionPane.INFORMATION_MESSAGE);	
 					}
 				} catch (Exception e2) {
 							
@@ -148,7 +148,7 @@ public class VentanaLogin {
 					System.out.println("boton inicio de sesion pulsado");
 
 					System.out.println("intentando Iniciar con correo: " + Correo.getText() + " y contrasena: " + new String(Contrasenna.getPassword()));
-					if (controller.loginExterno(Correo.getText(), new String(Contrasenna.getPassword()))) {
+					if (controller.loginExterno(Correo.getText(), new String(Contrasenna.getPassword()), "GOOGLE")) {
 						//VentanaUsuario.setUsuario();
 						VentanaUsuario.VPrincipal.setVisible(true);
 						System.out.println("iniciando sesion");
@@ -156,7 +156,7 @@ public class VentanaLogin {
 						VPrincipal.setVisible(false);
 						VentanaUsuario.actualizaSesiones();
 					} else {
-						JOptionPane.showMessageDialog(null, "Correo o contraseña erroneos", "Inicio de sesion - Error", JOptionPane.INFORMATION_MESSAGE);	
+						JOptionPane.showMessageDialog(null, "Correo o contraseï¿½a erroneos", "Inicio de sesion - Error", JOptionPane.INFORMATION_MESSAGE);	
 					}
 				} catch (Exception e2) {
 							
