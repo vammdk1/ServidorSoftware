@@ -12,6 +12,7 @@
 	<property name="Google.IP" value="127.0.0.2"/> 
 	<property name="Google.port" value="8001"/> 
 	<property name="message" value="prueba"/>	
+	<property name="resources.dir" location="resources"/>
 
 	<path id="classpath">
         <fileset dir="${lib.dir}">
@@ -29,7 +30,7 @@
 	<target name="2.enhance-classes" depends="1.build" description="Adds JDO code to the persisten compiled classes">
     	<taskdef name="enhancer" classpathref="classpath" classname="org.datanucleus.enhancer.EnhancerTask"/>
    		<enhancer classpathref="classpath" failonerror="true">
-            <sysproperty key="log4j.configuration" value="${resources.dir}/log4j.properties"/>
+            <sysproperty key="log4j.configuration" value="file:${resources.dir}/log4j.properties"/>
             <fileset dir="${bin.dir}">
                 <include name="**/domain/*.class"/>
             </fileset>
@@ -45,7 +46,7 @@
 	<target name="4.create-db-schema" depends="2.enhance-classes" description="Creates DB Schema on the DB Server">
 	        <taskdef name="schematool" classpathref="classpath" classname="org.datanucleus.store.schema.SchemaToolTask"/>
 	    	<schematool mode="create" classpathref="classpath" props="${resources.dir}/datanucleus.properties" failonerror="true">
-	            <sysproperty key="log4j.configuration" value="${resources.dir}/log4j.properties"/>
+	            <sysproperty key="log4j.configuration" value="file:${resources.dir}/log4j.properties"/>
 	            <fileset dir="${bin.dir}">
 	                <include name="**/*.class"/>
 	            </fileset>
@@ -55,7 +56,7 @@
 		<target name="5.delete-db-schema" depends="2.enhance-classes" description="Drops DB sechema from the DB Server">
 			<taskdef name="schematool" classpathref="classpath" classname="org.datanucleus.store.schema.SchemaToolTask"/>
 	    	<schematool mode="delete" classpathref="classpath" props="${resources.dir}/datanucleus.properties" failonerror="true">            
-	    	   	<sysproperty key="log4j.configuration" value="${resources.dir}/log4j.properties"/>
+	    	   	<sysproperty key="log4j.configuration" value="file:${resources.dir}/log4j.properties"/>
 	    	 	<fileset dir="${bin.dir}">
 	           		<include name="**/*.class"/>
 	            </fileset>

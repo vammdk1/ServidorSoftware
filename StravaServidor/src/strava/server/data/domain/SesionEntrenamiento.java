@@ -6,12 +6,12 @@ import java.util.Date;
 import javax.jdo.annotations.PersistenceCapable;
 import javax.jdo.annotations.PrimaryKey;
 
-@PersistenceCapable
+
 public class SesionEntrenamiento {
 	
 	private Deportes deporte;
 	
-	@PrimaryKey
+
 	private String titulo;
 	private float distancia;
 	private Date fechaHoraIni;

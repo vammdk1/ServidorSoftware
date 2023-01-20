@@ -10,7 +10,7 @@ import java.util.Map;
 import javax.jdo.annotations.PersistenceCapable;
 import javax.jdo.annotations.PrimaryKey;
 
-@PersistenceCapable
+
 public class User  {	
 	/**
 	 * 
@@ -18,7 +18,7 @@ public class User  {
 	private static final long serialVersionUID = 1L;
 	//fecha nac, peso ,altura, frec car 1 , frec car 2,token token
 	
-	@PrimaryKey
+
 	private String nombre;
 	private String email;
 	private String fechaNac;

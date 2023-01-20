@@ -1,0 +1,605 @@
+18:09:15,373 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.core.resources.natures" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+18:09:15,374 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.core.resources.builders" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+18:09:15,374 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.core.runtime.preferences" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+18:09:15,374 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.ui.console.consolePatternMatchListeners" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+18:09:15,374 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.ui.preferencePages" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+18:09:15,374 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.ui.propertyPages" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+18:09:15,374 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.ui.popupMenus" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+18:09:16,256 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.core.resources.natures" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+18:09:16,257 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.core.resources.builders" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+18:09:16,257 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.core.runtime.preferences" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+18:09:16,257 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.ui.console.consolePatternMatchListeners" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+18:09:16,258 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.ui.preferencePages" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+18:09:16,258 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.ui.propertyPages" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+18:09:16,258 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.ui.popupMenus" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+18:09:16,729 (main) WARN  [DataNucleus.Datastore] - Not loading RDBMS support for Oracle JGeometry since not present
+18:09:16,729 (main) WARN  [DataNucleus.Datastore] - Not loading RDBMS support for Vividsolutions JTS types since not present
+18:09:16,730 (main) WARN  [DataNucleus.Datastore] - Not loading RDBMS support for PostGIS types since not present
+18:09:17,080 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `RETO`.`NOMBRE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+18:09:17,080 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `RETO`.`DEPORTE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+18:09:17,092 (main) ERROR [DataNucleus.Datastore] - Un error estaba tirado con CREATE TABLE `RETO`
+(
+    `NOMBRE` TINYTEXT NOT NULL,
+    `DEPORTE` TINYTEXT NULL,
+    `DISTANCIAOBJ` FLOAT NOT NULL,
+    `FECHAFIN` TIMESTAMP NULL,
+    `FECHAINI` TIMESTAMP NULL,
+    `TIEMPOOBJ` FLOAT NOT NULL,
+    CONSTRAINT `RETO_PK` PRIMARY KEY (`NOMBRE`)
+) ENGINE=INNODB : BLOB/TEXT column 'NOMBRE' used in key specification without a key length
+java.sql.SQLSyntaxErrorException: BLOB/TEXT column 'NOMBRE' used in key specification without a key length
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:763)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:648)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.DelegatingStatement.execute(DelegatingStatement.java:194)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.DelegatingStatement.execute(DelegatingStatement.java:194)
+	at org.datanucleus.store.rdbms.table.AbstractTable.executeDdlStatement(AbstractTable.java:799)
+	at org.datanucleus.store.rdbms.table.AbstractTable.executeDdlStatementList(AbstractTable.java:749)
+	at org.datanucleus.store.rdbms.table.AbstractTable.create(AbstractTable.java:497)
+	at org.datanucleus.store.rdbms.table.AbstractTable.exists(AbstractTable.java:544)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.performTablesValidation(RDBMSStoreManager.java:3497)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.run(RDBMSStoreManager.java:3024)
+	at org.datanucleus.store.rdbms.AbstractSchemaTransaction.execute(AbstractSchemaTransaction.java:118)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.createSchemaForClasses(RDBMSStoreManager.java:3866)
+	at org.datanucleus.store.schema.SchemaTool.createSchemaForClasses(SchemaTool.java:507)
+	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:423)
+
+18:09:17,093 (main) ERROR [DataNucleus.Datastore.Schema] - Una excepcion estaba tirada durante la addicion/validacion de algunas class(es) : BLOB/TEXT column 'NOMBRE' used in key specification without a key length
+java.sql.SQLSyntaxErrorException: BLOB/TEXT column 'NOMBRE' used in key specification without a key length
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:763)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:648)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.DelegatingStatement.execute(DelegatingStatement.java:194)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.DelegatingStatement.execute(DelegatingStatement.java:194)
+	at org.datanucleus.store.rdbms.table.AbstractTable.executeDdlStatement(AbstractTable.java:799)
+	at org.datanucleus.store.rdbms.table.AbstractTable.executeDdlStatementList(AbstractTable.java:749)
+	at org.datanucleus.store.rdbms.table.AbstractTable.create(AbstractTable.java:497)
+	at org.datanucleus.store.rdbms.table.AbstractTable.exists(AbstractTable.java:544)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.performTablesValidation(RDBMSStoreManager.java:3497)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.run(RDBMSStoreManager.java:3024)
+	at org.datanucleus.store.rdbms.AbstractSchemaTransaction.execute(AbstractSchemaTransaction.java:118)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.createSchemaForClasses(RDBMSStoreManager.java:3866)
+	at org.datanucleus.store.schema.SchemaTool.createSchemaForClasses(SchemaTool.java:507)
+	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:423)
+
+18:09:17,095 (main) ERROR [DataNucleus.SchemaTool] - DataNucleus SchemaTool ha lanzado una excepción. Por favor consulte el Log para ver más detalles: Una excepcion estaba tirada durante la addicion/validacion de algunas class(es) : BLOB/TEXT column 'NOMBRE' used in key specification without a key length
+java.sql.SQLSyntaxErrorException: BLOB/TEXT column 'NOMBRE' used in key specification without a key length
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:763)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:648)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.DelegatingStatement.execute(DelegatingStatement.java:194)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.DelegatingStatement.execute(DelegatingStatement.java:194)
+	at org.datanucleus.store.rdbms.table.AbstractTable.executeDdlStatement(AbstractTable.java:799)
+	at org.datanucleus.store.rdbms.table.AbstractTable.executeDdlStatementList(AbstractTable.java:749)
+	at org.datanucleus.store.rdbms.table.AbstractTable.create(AbstractTable.java:497)
+	at org.datanucleus.store.rdbms.table.AbstractTable.exists(AbstractTable.java:544)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.performTablesValidation(RDBMSStoreManager.java:3497)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.run(RDBMSStoreManager.java:3024)
+	at org.datanucleus.store.rdbms.AbstractSchemaTransaction.execute(AbstractSchemaTransaction.java:118)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.createSchemaForClasses(RDBMSStoreManager.java:3866)
+	at org.datanucleus.store.schema.SchemaTool.createSchemaForClasses(SchemaTool.java:507)
+	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:423)
+
+Una excepcion estaba tirada durante la addicion/validacion de algunas class(es) : BLOB/TEXT column 'NOMBRE' used in key specification without a key length
+java.sql.SQLSyntaxErrorException: BLOB/TEXT column 'NOMBRE' used in key specification without a key length
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:763)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:648)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.DelegatingStatement.execute(DelegatingStatement.java:194)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.DelegatingStatement.execute(DelegatingStatement.java:194)
+	at org.datanucleus.store.rdbms.table.AbstractTable.executeDdlStatement(AbstractTable.java:799)
+	at org.datanucleus.store.rdbms.table.AbstractTable.executeDdlStatementList(AbstractTable.java:749)
+	at org.datanucleus.store.rdbms.table.AbstractTable.create(AbstractTable.java:497)
+	at org.datanucleus.store.rdbms.table.AbstractTable.exists(AbstractTable.java:544)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.performTablesValidation(RDBMSStoreManager.java:3497)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.run(RDBMSStoreManager.java:3024)
+	at org.datanucleus.store.rdbms.AbstractSchemaTransaction.execute(AbstractSchemaTransaction.java:118)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.createSchemaForClasses(RDBMSStoreManager.java:3866)
+	at org.datanucleus.store.schema.SchemaTool.createSchemaForClasses(SchemaTool.java:507)
+	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:423)
+
+org.datanucleus.exceptions.NucleusDataStoreException: Una excepcion estaba tirada durante la addicion/validacion de algunas class(es) : BLOB/TEXT column 'NOMBRE' used in key specification without a key length
+java.sql.SQLSyntaxErrorException: BLOB/TEXT column 'NOMBRE' used in key specification without a key length
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:763)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:648)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.DelegatingStatement.execute(DelegatingStatement.java:194)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.DelegatingStatement.execute(DelegatingStatement.java:194)
+	at org.datanucleus.store.rdbms.table.AbstractTable.executeDdlStatement(AbstractTable.java:799)
+	at org.datanucleus.store.rdbms.table.AbstractTable.executeDdlStatementList(AbstractTable.java:749)
+	at org.datanucleus.store.rdbms.table.AbstractTable.create(AbstractTable.java:497)
+	at org.datanucleus.store.rdbms.table.AbstractTable.exists(AbstractTable.java:544)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.performTablesValidation(RDBMSStoreManager.java:3497)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.run(RDBMSStoreManager.java:3024)
+	at org.datanucleus.store.rdbms.AbstractSchemaTransaction.execute(AbstractSchemaTransaction.java:118)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.createSchemaForClasses(RDBMSStoreManager.java:3866)
+	at org.datanucleus.store.schema.SchemaTool.createSchemaForClasses(SchemaTool.java:507)
+	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:423)
+
+	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.run(RDBMSStoreManager.java:3065)
+	at org.datanucleus.store.rdbms.AbstractSchemaTransaction.execute(AbstractSchemaTransaction.java:118)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.createSchemaForClasses(RDBMSStoreManager.java:3866)
+	at org.datanucleus.store.schema.SchemaTool.createSchemaForClasses(SchemaTool.java:507)
+	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:423)
+Caused by: java.sql.SQLSyntaxErrorException: BLOB/TEXT column 'NOMBRE' used in key specification without a key length
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:763)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:648)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.DelegatingStatement.execute(DelegatingStatement.java:194)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.DelegatingStatement.execute(DelegatingStatement.java:194)
+	at org.datanucleus.store.rdbms.table.AbstractTable.executeDdlStatement(AbstractTable.java:799)
+	at org.datanucleus.store.rdbms.table.AbstractTable.executeDdlStatementList(AbstractTable.java:749)
+	at org.datanucleus.store.rdbms.table.AbstractTable.create(AbstractTable.java:497)
+	at org.datanucleus.store.rdbms.table.AbstractTable.exists(AbstractTable.java:544)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.performTablesValidation(RDBMSStoreManager.java:3497)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.run(RDBMSStoreManager.java:3024)
+	... 4 more
+Nested Throwables StackTrace:
+java.sql.SQLSyntaxErrorException: BLOB/TEXT column 'NOMBRE' used in key specification without a key length
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:763)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:648)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.DelegatingStatement.execute(DelegatingStatement.java:194)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.DelegatingStatement.execute(DelegatingStatement.java:194)
+	at org.datanucleus.store.rdbms.table.AbstractTable.executeDdlStatement(AbstractTable.java:799)
+	at org.datanucleus.store.rdbms.table.AbstractTable.executeDdlStatementList(AbstractTable.java:749)
+	at org.datanucleus.store.rdbms.table.AbstractTable.create(AbstractTable.java:497)
+	at org.datanucleus.store.rdbms.table.AbstractTable.exists(AbstractTable.java:544)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.performTablesValidation(RDBMSStoreManager.java:3497)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.run(RDBMSStoreManager.java:3024)
+	at org.datanucleus.store.rdbms.AbstractSchemaTransaction.execute(AbstractSchemaTransaction.java:118)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.createSchemaForClasses(RDBMSStoreManager.java:3866)
+	at org.datanucleus.store.schema.SchemaTool.createSchemaForClasses(SchemaTool.java:507)
+	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:423)
+18:10:30,689 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.core.resources.natures" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+18:10:30,690 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.core.resources.builders" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+18:10:30,690 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.core.runtime.preferences" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+18:10:30,690 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.ui.console.consolePatternMatchListeners" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+18:10:30,690 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.ui.preferencePages" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+18:10:30,690 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.ui.propertyPages" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+18:10:30,690 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.ui.popupMenus" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+18:10:31,476 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.core.resources.natures" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+18:10:31,477 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.core.resources.builders" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+18:10:31,477 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.core.runtime.preferences" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+18:10:31,477 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.ui.console.consolePatternMatchListeners" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+18:10:31,477 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.ui.preferencePages" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+18:10:31,477 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.ui.propertyPages" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+18:10:31,477 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.ui.popupMenus" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+18:10:31,872 (main) WARN  [DataNucleus.Datastore] - Not loading RDBMS support for Oracle JGeometry since not present
+18:10:31,872 (main) WARN  [DataNucleus.Datastore] - Not loading RDBMS support for Vividsolutions JTS types since not present
+18:10:31,872 (main) WARN  [DataNucleus.Datastore] - Not loading RDBMS support for PostGIS types since not present
+18:10:32,215 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `RETO`.`NOMBRE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+18:10:32,215 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `RETO`.`DEPORTE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+18:10:32,228 (main) ERROR [DataNucleus.Datastore] - Un error estaba tirado con CREATE TABLE `RETO`
+(
+    `NOMBRE` TINYTEXT NOT NULL,
+    `DEPORTE` TINYTEXT NULL,
+    `DISTANCIAOBJ` FLOAT NOT NULL,
+    `FECHAFIN` TIMESTAMP NULL,
+    `FECHAINI` TIMESTAMP NULL,
+    `TIEMPOOBJ` FLOAT NOT NULL,
+    CONSTRAINT `RETO_PK` PRIMARY KEY (`NOMBRE`)
+) ENGINE=INNODB : BLOB/TEXT column 'NOMBRE' used in key specification without a key length
+java.sql.SQLSyntaxErrorException: BLOB/TEXT column 'NOMBRE' used in key specification without a key length
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:763)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:648)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.DelegatingStatement.execute(DelegatingStatement.java:194)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.DelegatingStatement.execute(DelegatingStatement.java:194)
+	at org.datanucleus.store.rdbms.table.AbstractTable.executeDdlStatement(AbstractTable.java:799)
+	at org.datanucleus.store.rdbms.table.AbstractTable.executeDdlStatementList(AbstractTable.java:749)
+	at org.datanucleus.store.rdbms.table.AbstractTable.create(AbstractTable.java:497)
+	at org.datanucleus.store.rdbms.table.AbstractTable.exists(AbstractTable.java:544)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.performTablesValidation(RDBMSStoreManager.java:3497)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.run(RDBMSStoreManager.java:3024)
+	at org.datanucleus.store.rdbms.AbstractSchemaTransaction.execute(AbstractSchemaTransaction.java:118)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.createSchemaForClasses(RDBMSStoreManager.java:3866)
+	at org.datanucleus.store.schema.SchemaTool.createSchemaForClasses(SchemaTool.java:507)
+	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:423)
+
+18:10:32,229 (main) ERROR [DataNucleus.Datastore.Schema] - Una excepcion estaba tirada durante la addicion/validacion de algunas class(es) : BLOB/TEXT column 'NOMBRE' used in key specification without a key length
+java.sql.SQLSyntaxErrorException: BLOB/TEXT column 'NOMBRE' used in key specification without a key length
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:763)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:648)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.DelegatingStatement.execute(DelegatingStatement.java:194)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.DelegatingStatement.execute(DelegatingStatement.java:194)
+	at org.datanucleus.store.rdbms.table.AbstractTable.executeDdlStatement(AbstractTable.java:799)
+	at org.datanucleus.store.rdbms.table.AbstractTable.executeDdlStatementList(AbstractTable.java:749)
+	at org.datanucleus.store.rdbms.table.AbstractTable.create(AbstractTable.java:497)
+	at org.datanucleus.store.rdbms.table.AbstractTable.exists(AbstractTable.java:544)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.performTablesValidation(RDBMSStoreManager.java:3497)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.run(RDBMSStoreManager.java:3024)
+	at org.datanucleus.store.rdbms.AbstractSchemaTransaction.execute(AbstractSchemaTransaction.java:118)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.createSchemaForClasses(RDBMSStoreManager.java:3866)
+	at org.datanucleus.store.schema.SchemaTool.createSchemaForClasses(SchemaTool.java:507)
+	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:423)
+
+18:10:32,231 (main) ERROR [DataNucleus.SchemaTool] - DataNucleus SchemaTool ha lanzado una excepción. Por favor consulte el Log para ver más detalles: Una excepcion estaba tirada durante la addicion/validacion de algunas class(es) : BLOB/TEXT column 'NOMBRE' used in key specification without a key length
+java.sql.SQLSyntaxErrorException: BLOB/TEXT column 'NOMBRE' used in key specification without a key length
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:763)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:648)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.DelegatingStatement.execute(DelegatingStatement.java:194)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.DelegatingStatement.execute(DelegatingStatement.java:194)
+	at org.datanucleus.store.rdbms.table.AbstractTable.executeDdlStatement(AbstractTable.java:799)
+	at org.datanucleus.store.rdbms.table.AbstractTable.executeDdlStatementList(AbstractTable.java:749)
+	at org.datanucleus.store.rdbms.table.AbstractTable.create(AbstractTable.java:497)
+	at org.datanucleus.store.rdbms.table.AbstractTable.exists(AbstractTable.java:544)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.performTablesValidation(RDBMSStoreManager.java:3497)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.run(RDBMSStoreManager.java:3024)
+	at org.datanucleus.store.rdbms.AbstractSchemaTransaction.execute(AbstractSchemaTransaction.java:118)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.createSchemaForClasses(RDBMSStoreManager.java:3866)
+	at org.datanucleus.store.schema.SchemaTool.createSchemaForClasses(SchemaTool.java:507)
+	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:423)
+
+Una excepcion estaba tirada durante la addicion/validacion de algunas class(es) : BLOB/TEXT column 'NOMBRE' used in key specification without a key length
+java.sql.SQLSyntaxErrorException: BLOB/TEXT column 'NOMBRE' used in key specification without a key length
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:763)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:648)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.DelegatingStatement.execute(DelegatingStatement.java:194)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.DelegatingStatement.execute(DelegatingStatement.java:194)
+	at org.datanucleus.store.rdbms.table.AbstractTable.executeDdlStatement(AbstractTable.java:799)
+	at org.datanucleus.store.rdbms.table.AbstractTable.executeDdlStatementList(AbstractTable.java:749)
+	at org.datanucleus.store.rdbms.table.AbstractTable.create(AbstractTable.java:497)
+	at org.datanucleus.store.rdbms.table.AbstractTable.exists(AbstractTable.java:544)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.performTablesValidation(RDBMSStoreManager.java:3497)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.run(RDBMSStoreManager.java:3024)
+	at org.datanucleus.store.rdbms.AbstractSchemaTransaction.execute(AbstractSchemaTransaction.java:118)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.createSchemaForClasses(RDBMSStoreManager.java:3866)
+	at org.datanucleus.store.schema.SchemaTool.createSchemaForClasses(SchemaTool.java:507)
+	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:423)
+
+org.datanucleus.exceptions.NucleusDataStoreException: Una excepcion estaba tirada durante la addicion/validacion de algunas class(es) : BLOB/TEXT column 'NOMBRE' used in key specification without a key length
+java.sql.SQLSyntaxErrorException: BLOB/TEXT column 'NOMBRE' used in key specification without a key length
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:763)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:648)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.DelegatingStatement.execute(DelegatingStatement.java:194)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.DelegatingStatement.execute(DelegatingStatement.java:194)
+	at org.datanucleus.store.rdbms.table.AbstractTable.executeDdlStatement(AbstractTable.java:799)
+	at org.datanucleus.store.rdbms.table.AbstractTable.executeDdlStatementList(AbstractTable.java:749)
+	at org.datanucleus.store.rdbms.table.AbstractTable.create(AbstractTable.java:497)
+	at org.datanucleus.store.rdbms.table.AbstractTable.exists(AbstractTable.java:544)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.performTablesValidation(RDBMSStoreManager.java:3497)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.run(RDBMSStoreManager.java:3024)
+	at org.datanucleus.store.rdbms.AbstractSchemaTransaction.execute(AbstractSchemaTransaction.java:118)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.createSchemaForClasses(RDBMSStoreManager.java:3866)
+	at org.datanucleus.store.schema.SchemaTool.createSchemaForClasses(SchemaTool.java:507)
+	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:423)
+
+	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.run(RDBMSStoreManager.java:3065)
+	at org.datanucleus.store.rdbms.AbstractSchemaTransaction.execute(AbstractSchemaTransaction.java:118)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.createSchemaForClasses(RDBMSStoreManager.java:3866)
+	at org.datanucleus.store.schema.SchemaTool.createSchemaForClasses(SchemaTool.java:507)
+	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:423)
+Caused by: java.sql.SQLSyntaxErrorException: BLOB/TEXT column 'NOMBRE' used in key specification without a key length
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:763)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:648)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.DelegatingStatement.execute(DelegatingStatement.java:194)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.DelegatingStatement.execute(DelegatingStatement.java:194)
+	at org.datanucleus.store.rdbms.table.AbstractTable.executeDdlStatement(AbstractTable.java:799)
+	at org.datanucleus.store.rdbms.table.AbstractTable.executeDdlStatementList(AbstractTable.java:749)
+	at org.datanucleus.store.rdbms.table.AbstractTable.create(AbstractTable.java:497)
+	at org.datanucleus.store.rdbms.table.AbstractTable.exists(AbstractTable.java:544)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.performTablesValidation(RDBMSStoreManager.java:3497)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.run(RDBMSStoreManager.java:3024)
+	... 4 more
+Nested Throwables StackTrace:
+java.sql.SQLSyntaxErrorException: BLOB/TEXT column 'NOMBRE' used in key specification without a key length
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:763)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:648)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.DelegatingStatement.execute(DelegatingStatement.java:194)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.DelegatingStatement.execute(DelegatingStatement.java:194)
+	at org.datanucleus.store.rdbms.table.AbstractTable.executeDdlStatement(AbstractTable.java:799)
+	at org.datanucleus.store.rdbms.table.AbstractTable.executeDdlStatementList(AbstractTable.java:749)
+	at org.datanucleus.store.rdbms.table.AbstractTable.create(AbstractTable.java:497)
+	at org.datanucleus.store.rdbms.table.AbstractTable.exists(AbstractTable.java:544)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.performTablesValidation(RDBMSStoreManager.java:3497)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.run(RDBMSStoreManager.java:3024)
+	at org.datanucleus.store.rdbms.AbstractSchemaTransaction.execute(AbstractSchemaTransaction.java:118)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.createSchemaForClasses(RDBMSStoreManager.java:3866)
+	at org.datanucleus.store.schema.SchemaTool.createSchemaForClasses(SchemaTool.java:507)
+	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:423)
+18:10:43,706 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.core.resources.natures" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+18:10:43,707 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.core.resources.builders" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+18:10:43,707 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.core.runtime.preferences" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+18:10:43,707 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.ui.console.consolePatternMatchListeners" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+18:10:43,707 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.ui.preferencePages" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+18:10:43,707 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.ui.propertyPages" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+18:10:43,707 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.ui.popupMenus" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+18:10:44,498 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.core.resources.natures" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+18:10:44,499 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.core.resources.builders" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+18:10:44,499 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.core.runtime.preferences" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+18:10:44,499 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.ui.console.consolePatternMatchListeners" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+18:10:44,499 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.ui.preferencePages" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+18:10:44,499 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.ui.propertyPages" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+18:10:44,499 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.ui.popupMenus" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+18:10:44,906 (main) WARN  [DataNucleus.Datastore] - Not loading RDBMS support for Oracle JGeometry since not present
+18:10:44,906 (main) WARN  [DataNucleus.Datastore] - Not loading RDBMS support for Vividsolutions JTS types since not present
+18:10:44,906 (main) WARN  [DataNucleus.Datastore] - Not loading RDBMS support for PostGIS types since not present
+18:10:45,260 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `RETO`.`DEPORTE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+18:10:45,260 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `RETO`.`NOMBRE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+18:12:16,605 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.core.resources.natures" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+18:12:16,606 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.core.resources.builders" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+18:12:16,606 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.core.runtime.preferences" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+18:12:16,606 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.ui.console.consolePatternMatchListeners" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+18:12:16,606 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.ui.preferencePages" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+18:12:16,606 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.ui.propertyPages" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+18:12:16,606 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.ui.popupMenus" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+18:12:17,467 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.core.resources.natures" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+18:12:17,468 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.core.resources.builders" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+18:12:17,468 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.core.runtime.preferences" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+18:12:17,468 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.ui.console.consolePatternMatchListeners" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+18:12:17,468 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.ui.preferencePages" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+18:12:17,468 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.ui.propertyPages" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+18:12:17,469 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.ui.popupMenus" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+18:12:17,921 (main) WARN  [DataNucleus.Datastore] - Not loading RDBMS support for Oracle JGeometry since not present
+18:12:17,921 (main) WARN  [DataNucleus.Datastore] - Not loading RDBMS support for Vividsolutions JTS types since not present
+18:12:17,922 (main) WARN  [DataNucleus.Datastore] - Not loading RDBMS support for PostGIS types since not present
+18:12:51,859 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.core.resources.natures" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+18:12:51,860 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.core.resources.builders" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+18:12:51,860 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.core.runtime.preferences" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+18:12:51,860 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.ui.console.consolePatternMatchListeners" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+18:12:51,861 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.ui.preferencePages" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+18:12:51,861 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.ui.propertyPages" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+18:12:51,861 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.ui.popupMenus" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+18:12:52,769 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.core.resources.natures" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+18:12:52,770 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.core.resources.builders" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+18:12:52,771 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.core.runtime.preferences" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+18:12:52,771 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.ui.console.consolePatternMatchListeners" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+18:12:52,771 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.ui.preferencePages" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+18:12:52,771 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.ui.propertyPages" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+18:12:52,771 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.ui.popupMenus" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+18:12:53,216 (main) WARN  [DataNucleus.Datastore] - Not loading RDBMS support for Oracle JGeometry since not present
+18:12:53,217 (main) WARN  [DataNucleus.Datastore] - Not loading RDBMS support for Vividsolutions JTS types since not present
+18:12:53,217 (main) WARN  [DataNucleus.Datastore] - Not loading RDBMS support for PostGIS types since not present
+18:13:05,109 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.core.resources.natures" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+18:13:05,110 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.core.resources.builders" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+18:13:05,110 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.core.runtime.preferences" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+18:13:05,110 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.ui.console.consolePatternMatchListeners" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+18:13:05,110 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.ui.preferencePages" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+18:13:05,110 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.ui.propertyPages" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+18:13:05,110 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.ui.popupMenus" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+18:13:06,010 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.core.resources.natures" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+18:13:06,011 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.core.resources.builders" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+18:13:06,011 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.core.runtime.preferences" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+18:13:06,011 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.ui.console.consolePatternMatchListeners" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+18:13:06,011 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.ui.preferencePages" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+18:13:06,011 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.ui.propertyPages" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+18:13:06,011 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.ui.popupMenus" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+18:13:06,440 (main) WARN  [DataNucleus.Datastore] - Not loading RDBMS support for Oracle JGeometry since not present
+18:13:06,440 (main) WARN  [DataNucleus.Datastore] - Not loading RDBMS support for Vividsolutions JTS types since not present
+18:13:06,441 (main) WARN  [DataNucleus.Datastore] - Not loading RDBMS support for PostGIS types since not present
+18:13:06,801 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `RETO`.`NOMBRE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+18:13:06,801 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `RETO`.`DEPORTE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+18:13:06,810 (main) ERROR [DataNucleus.Datastore] - Un error estaba tirado con CREATE TABLE `RETO`
+(
+    `NOMBRE` TINYTEXT NOT NULL,
+    `DEPORTE` TINYTEXT NULL,
+    `DISTANCIAOBJ` FLOAT NOT NULL,
+    `FECHAFIN` TIMESTAMP NULL,
+    `FECHAINI` TIMESTAMP NULL,
+    `TIEMPOOBJ` FLOAT NOT NULL,
+    CONSTRAINT `RETO_PK` PRIMARY KEY (`NOMBRE`)
+) ENGINE=INNODB : BLOB/TEXT column 'NOMBRE' used in key specification without a key length
+java.sql.SQLSyntaxErrorException: BLOB/TEXT column 'NOMBRE' used in key specification without a key length
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:763)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:648)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.DelegatingStatement.execute(DelegatingStatement.java:194)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.DelegatingStatement.execute(DelegatingStatement.java:194)
+	at org.datanucleus.store.rdbms.table.AbstractTable.executeDdlStatement(AbstractTable.java:799)
+	at org.datanucleus.store.rdbms.table.AbstractTable.executeDdlStatementList(AbstractTable.java:749)
+	at org.datanucleus.store.rdbms.table.AbstractTable.create(AbstractTable.java:497)
+	at org.datanucleus.store.rdbms.table.AbstractTable.exists(AbstractTable.java:544)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.performTablesValidation(RDBMSStoreManager.java:3497)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.run(RDBMSStoreManager.java:3024)
+	at org.datanucleus.store.rdbms.AbstractSchemaTransaction.execute(AbstractSchemaTransaction.java:118)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.createSchemaForClasses(RDBMSStoreManager.java:3866)
+	at org.datanucleus.store.schema.SchemaTool.createSchemaForClasses(SchemaTool.java:507)
+	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:423)
+
+18:13:06,812 (main) ERROR [DataNucleus.Datastore.Schema] - Una excepcion estaba tirada durante la addicion/validacion de algunas class(es) : BLOB/TEXT column 'NOMBRE' used in key specification without a key length
+java.sql.SQLSyntaxErrorException: BLOB/TEXT column 'NOMBRE' used in key specification without a key length
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:763)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:648)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.DelegatingStatement.execute(DelegatingStatement.java:194)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.DelegatingStatement.execute(DelegatingStatement.java:194)
+	at org.datanucleus.store.rdbms.table.AbstractTable.executeDdlStatement(AbstractTable.java:799)
+	at org.datanucleus.store.rdbms.table.AbstractTable.executeDdlStatementList(AbstractTable.java:749)
+	at org.datanucleus.store.rdbms.table.AbstractTable.create(AbstractTable.java:497)
+	at org.datanucleus.store.rdbms.table.AbstractTable.exists(AbstractTable.java:544)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.performTablesValidation(RDBMSStoreManager.java:3497)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.run(RDBMSStoreManager.java:3024)
+	at org.datanucleus.store.rdbms.AbstractSchemaTransaction.execute(AbstractSchemaTransaction.java:118)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.createSchemaForClasses(RDBMSStoreManager.java:3866)
+	at org.datanucleus.store.schema.SchemaTool.createSchemaForClasses(SchemaTool.java:507)
+	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:423)
+
+18:13:06,814 (main) ERROR [DataNucleus.SchemaTool] - DataNucleus SchemaTool ha lanzado una excepción. Por favor consulte el Log para ver más detalles: Una excepcion estaba tirada durante la addicion/validacion de algunas class(es) : BLOB/TEXT column 'NOMBRE' used in key specification without a key length
+java.sql.SQLSyntaxErrorException: BLOB/TEXT column 'NOMBRE' used in key specification without a key length
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:763)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:648)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.DelegatingStatement.execute(DelegatingStatement.java:194)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.DelegatingStatement.execute(DelegatingStatement.java:194)
+	at org.datanucleus.store.rdbms.table.AbstractTable.executeDdlStatement(AbstractTable.java:799)
+	at org.datanucleus.store.rdbms.table.AbstractTable.executeDdlStatementList(AbstractTable.java:749)
+	at org.datanucleus.store.rdbms.table.AbstractTable.create(AbstractTable.java:497)
+	at org.datanucleus.store.rdbms.table.AbstractTable.exists(AbstractTable.java:544)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.performTablesValidation(RDBMSStoreManager.java:3497)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.run(RDBMSStoreManager.java:3024)
+	at org.datanucleus.store.rdbms.AbstractSchemaTransaction.execute(AbstractSchemaTransaction.java:118)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.createSchemaForClasses(RDBMSStoreManager.java:3866)
+	at org.datanucleus.store.schema.SchemaTool.createSchemaForClasses(SchemaTool.java:507)
+	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:423)
+
+Una excepcion estaba tirada durante la addicion/validacion de algunas class(es) : BLOB/TEXT column 'NOMBRE' used in key specification without a key length
+java.sql.SQLSyntaxErrorException: BLOB/TEXT column 'NOMBRE' used in key specification without a key length
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:763)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:648)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.DelegatingStatement.execute(DelegatingStatement.java:194)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.DelegatingStatement.execute(DelegatingStatement.java:194)
+	at org.datanucleus.store.rdbms.table.AbstractTable.executeDdlStatement(AbstractTable.java:799)
+	at org.datanucleus.store.rdbms.table.AbstractTable.executeDdlStatementList(AbstractTable.java:749)
+	at org.datanucleus.store.rdbms.table.AbstractTable.create(AbstractTable.java:497)
+	at org.datanucleus.store.rdbms.table.AbstractTable.exists(AbstractTable.java:544)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.performTablesValidation(RDBMSStoreManager.java:3497)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.run(RDBMSStoreManager.java:3024)
+	at org.datanucleus.store.rdbms.AbstractSchemaTransaction.execute(AbstractSchemaTransaction.java:118)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.createSchemaForClasses(RDBMSStoreManager.java:3866)
+	at org.datanucleus.store.schema.SchemaTool.createSchemaForClasses(SchemaTool.java:507)
+	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:423)
+
+org.datanucleus.exceptions.NucleusDataStoreException: Una excepcion estaba tirada durante la addicion/validacion de algunas class(es) : BLOB/TEXT column 'NOMBRE' used in key specification without a key length
+java.sql.SQLSyntaxErrorException: BLOB/TEXT column 'NOMBRE' used in key specification without a key length
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:763)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:648)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.DelegatingStatement.execute(DelegatingStatement.java:194)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.DelegatingStatement.execute(DelegatingStatement.java:194)
+	at org.datanucleus.store.rdbms.table.AbstractTable.executeDdlStatement(AbstractTable.java:799)
+	at org.datanucleus.store.rdbms.table.AbstractTable.executeDdlStatementList(AbstractTable.java:749)
+	at org.datanucleus.store.rdbms.table.AbstractTable.create(AbstractTable.java:497)
+	at org.datanucleus.store.rdbms.table.AbstractTable.exists(AbstractTable.java:544)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.performTablesValidation(RDBMSStoreManager.java:3497)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.run(RDBMSStoreManager.java:3024)
+	at org.datanucleus.store.rdbms.AbstractSchemaTransaction.execute(AbstractSchemaTransaction.java:118)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.createSchemaForClasses(RDBMSStoreManager.java:3866)
+	at org.datanucleus.store.schema.SchemaTool.createSchemaForClasses(SchemaTool.java:507)
+	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:423)
+
+	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.run(RDBMSStoreManager.java:3065)
+	at org.datanucleus.store.rdbms.AbstractSchemaTransaction.execute(AbstractSchemaTransaction.java:118)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.createSchemaForClasses(RDBMSStoreManager.java:3866)
+	at org.datanucleus.store.schema.SchemaTool.createSchemaForClasses(SchemaTool.java:507)
+	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:423)
+Caused by: java.sql.SQLSyntaxErrorException: BLOB/TEXT column 'NOMBRE' used in key specification without a key length
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:763)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:648)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.DelegatingStatement.execute(DelegatingStatement.java:194)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.DelegatingStatement.execute(DelegatingStatement.java:194)
+	at org.datanucleus.store.rdbms.table.AbstractTable.executeDdlStatement(AbstractTable.java:799)
+	at org.datanucleus.store.rdbms.table.AbstractTable.executeDdlStatementList(AbstractTable.java:749)
+	at org.datanucleus.store.rdbms.table.AbstractTable.create(AbstractTable.java:497)
+	at org.datanucleus.store.rdbms.table.AbstractTable.exists(AbstractTable.java:544)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.performTablesValidation(RDBMSStoreManager.java:3497)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.run(RDBMSStoreManager.java:3024)
+	... 4 more
+Nested Throwables StackTrace:
+java.sql.SQLSyntaxErrorException: BLOB/TEXT column 'NOMBRE' used in key specification without a key length
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:763)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:648)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.DelegatingStatement.execute(DelegatingStatement.java:194)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.DelegatingStatement.execute(DelegatingStatement.java:194)
+	at org.datanucleus.store.rdbms.table.AbstractTable.executeDdlStatement(AbstractTable.java:799)
+	at org.datanucleus.store.rdbms.table.AbstractTable.executeDdlStatementList(AbstractTable.java:749)
+	at org.datanucleus.store.rdbms.table.AbstractTable.create(AbstractTable.java:497)
+	at org.datanucleus.store.rdbms.table.AbstractTable.exists(AbstractTable.java:544)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.performTablesValidation(RDBMSStoreManager.java:3497)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.run(RDBMSStoreManager.java:3024)
+	at org.datanucleus.store.rdbms.AbstractSchemaTransaction.execute(AbstractSchemaTransaction.java:118)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.createSchemaForClasses(RDBMSStoreManager.java:3866)
+	at org.datanucleus.store.schema.SchemaTool.createSchemaForClasses(SchemaTool.java:507)
+	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:423)
+18:13:49,876 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.core.resources.natures" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+18:13:49,876 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.core.resources.builders" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+18:13:49,877 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.core.runtime.preferences" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+18:13:49,877 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.ui.console.consolePatternMatchListeners" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+18:13:49,877 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.ui.preferencePages" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+18:13:49,877 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.ui.propertyPages" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+18:13:49,877 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.ui.popupMenus" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+18:13:50,683 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.core.resources.natures" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+18:13:50,684 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.core.resources.builders" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+18:13:50,684 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.core.runtime.preferences" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+18:13:50,684 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.ui.console.consolePatternMatchListeners" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+18:13:50,684 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.ui.preferencePages" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+18:13:50,684 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.ui.propertyPages" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+18:13:50,685 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.ui.popupMenus" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+18:13:51,106 (main) WARN  [DataNucleus.Datastore] - Not loading RDBMS support for Oracle JGeometry since not present
+18:13:51,106 (main) WARN  [DataNucleus.Datastore] - Not loading RDBMS support for Vividsolutions JTS types since not present
+18:13:51,106 (main) WARN  [DataNucleus.Datastore] - Not loading RDBMS support for PostGIS types since not present
+18:13:51,456 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `RETO`.`DEPORTE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+18:13:51,457 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `RETO`.`NOMBRE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+18:15:41,228 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.core.resources.natures" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+18:15:41,229 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.core.resources.builders" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+18:15:41,229 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.core.runtime.preferences" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+18:15:41,229 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.ui.console.consolePatternMatchListeners" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+18:15:41,229 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.ui.preferencePages" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+18:15:41,229 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.ui.propertyPages" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+18:15:41,229 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.ui.popupMenus" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+18:15:42,083 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.core.resources.natures" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+18:15:42,085 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.core.resources.builders" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+18:15:42,085 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.core.runtime.preferences" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+18:15:42,085 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.ui.console.consolePatternMatchListeners" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+18:15:42,085 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.ui.preferencePages" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+18:15:42,086 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.ui.propertyPages" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+18:15:42,086 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.ui.popupMenus" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+18:15:42,516 (main) WARN  [DataNucleus.Datastore] - Not loading RDBMS support for Oracle JGeometry since not present
+18:15:42,517 (main) WARN  [DataNucleus.Datastore] - Not loading RDBMS support for Vividsolutions JTS types since not present
+18:15:42,517 (main) WARN  [DataNucleus.Datastore] - Not loading RDBMS support for PostGIS types since not present
+18:15:55,057 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.core.resources.natures" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+18:15:55,057 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.core.resources.builders" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+18:15:55,058 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.core.runtime.preferences" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+18:15:55,058 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.ui.console.consolePatternMatchListeners" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+18:15:55,058 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.ui.preferencePages" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+18:15:55,058 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.ui.propertyPages" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+18:15:55,058 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.ui.popupMenus" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+18:15:55,995 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.core.resources.natures" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+18:15:55,996 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.core.resources.builders" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+18:15:55,996 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.core.runtime.preferences" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+18:15:55,996 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.ui.console.consolePatternMatchListeners" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+18:15:55,996 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.ui.preferencePages" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+18:15:55,996 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.ui.propertyPages" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+18:15:55,996 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.ui.popupMenus" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+18:15:56,416 (main) WARN  [DataNucleus.Datastore] - Not loading RDBMS support for Oracle JGeometry since not present
+18:15:56,417 (main) WARN  [DataNucleus.Datastore] - Not loading RDBMS support for Vividsolutions JTS types since not present
+18:15:56,417 (main) WARN  [DataNucleus.Datastore] - Not loading RDBMS support for PostGIS types since not present
+18:16:00,172 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.core.resources.natures" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+18:16:00,172 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.core.resources.builders" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+18:16:00,172 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.core.runtime.preferences" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+18:16:00,172 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.ui.console.consolePatternMatchListeners" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+18:16:00,173 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.ui.preferencePages" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+18:16:00,173 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.ui.propertyPages" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+18:16:00,173 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.ui.popupMenus" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+18:16:01,031 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.core.resources.natures" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+18:16:01,032 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.core.resources.builders" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+18:16:01,032 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.core.runtime.preferences" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+18:16:01,032 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.ui.console.consolePatternMatchListeners" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+18:16:01,032 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.ui.preferencePages" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+18:16:01,032 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.ui.propertyPages" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+18:16:01,032 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.ui.popupMenus" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/ServidorSoftware/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+18:16:01,442 (main) WARN  [DataNucleus.Datastore] - Not loading RDBMS support for Oracle JGeometry since not present
+18:16:01,442 (main) WARN  [DataNucleus.Datastore] - Not loading RDBMS support for Vividsolutions JTS types since not present
+18:16:01,442 (main) WARN  [DataNucleus.Datastore] - Not loading RDBMS support for PostGIS types since not present
+18:16:01,798 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `RETO`.`DEPORTE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+18:16:01,798 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `RETO`.`NOMBRE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.

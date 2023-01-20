@@ -6,18 +6,17 @@ import java.util.Date;
 import javax.jdo.annotations.PersistenceCapable;
 import javax.jdo.annotations.PrimaryKey;
 
-@PersistenceCapable
+@PersistenceCapable(detachable="true")
 public class Reto {
 	/**
 	 * 
 	 */
-	@PrimaryKey
-	private String nombre;
-	private Date fechaIni;
-	private Date fechaFin;
-	private float distanciaObj;
-	private float tiempoObj;
-	private Deportes deporte;
+	private String nombre = null;
+	private Date fechaIni = null;
+	private Date fechaFin = null;
+	private float distanciaObj = 0;
+	private float tiempoObj = 0;
+	private Deportes deporte = null;
 	/**
 	 * 
 	 * @param nombre

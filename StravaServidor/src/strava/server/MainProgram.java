@@ -2,6 +2,8 @@ package strava.server;
 
 import java.rmi.Naming;
 
+import org.apache.log4j.BasicConfigurator;
+
 import strava.server.data.domain.Proveedor;
 import strava.server.factory.GatewayFactory;
 import strava.server.gateway.FacebookServiceGateway;
@@ -19,7 +21,9 @@ public class MainProgram {
 		//args[0] = RMIRegistry IP
 		//args[1] = RMIRegistry Port
 		//args[2] = Service Name
-		String name = "//" + args[0] + ":" + args[1] + "/" + args[2];		
+		String name = "//" + args[0] + ":" + args[1] + "/" + args[2];
+		
+		BasicConfigurator.configure();
 		
 		//Bind remote facade instance to a sirvice name using RMIRegistry
 		try {
