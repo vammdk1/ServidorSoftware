@@ -1,12 +1,17 @@
 package strava.server.data.domain;
 
-import java.io.Serializable;
+import java.io.Serializable; 
 import java.util.Date;
 
+import javax.jdo.annotations.PersistenceCapable;
+import javax.jdo.annotations.PrimaryKey;
+
+@PersistenceCapable
 public class Reto {
 	/**
 	 * 
 	 */
+	@PrimaryKey
 	private String nombre;
 	private Date fechaIni;
 	private Date fechaFin;

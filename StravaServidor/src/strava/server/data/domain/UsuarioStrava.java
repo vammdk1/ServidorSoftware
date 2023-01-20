@@ -3,6 +3,9 @@ package strava.server.data.domain;
 import java.io.Serializable;
 import java.util.Date;
 
+import javax.jdo.annotations.PersistenceCapable;
+
+@PersistenceCapable
 public class UsuarioStrava extends User {
 	/**
 	 * 
