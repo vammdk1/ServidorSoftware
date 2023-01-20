@@ -39,6 +39,7 @@
 	<classpathentry kind="lib" path="main/resources/datanucleus.properties"/>
 	<classpathentry kind="lib" path="resources/datanucleus.properties"/>
 	<classpathentry kind="lib" path="lib/mysql-connector-j-8.0.31.jar"/>
+	<classpathentry kind="lib" path="lib/ehcache-core-2.2.0.jar"/>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

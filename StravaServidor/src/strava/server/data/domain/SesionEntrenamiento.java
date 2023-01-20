@@ -1,10 +1,8 @@
 package strava.server.data.domain;
 
-import java.io.Serializable;
 import java.util.Date;
 
 import javax.jdo.annotations.PersistenceCapable;
-import javax.jdo.annotations.PrimaryKey;
 
 @PersistenceCapable(detachable="true")
 public class SesionEntrenamiento {
