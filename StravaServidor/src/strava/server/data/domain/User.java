@@ -7,10 +7,12 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import javax.jdo.annotations.Join;
 import javax.jdo.annotations.PersistenceCapable;
+import javax.jdo.annotations.Persistent;
 import javax.jdo.annotations.PrimaryKey;
 
-
+@PersistenceCapable(detachable="true")
 public class User  {	
 	/**
 	 * 
@@ -31,7 +33,11 @@ public class User  {
 	
 	
 	//private transient ArrayList<Reto> retos = new ArrayList<>();
+	@Join
+	@Persistent(mappedBy="nombre", dependentElement="true", defaultFetchGroup="true")
 	private Map<Reto, Float> retos = new HashMap<>();
+	@Join
+	@Persistent(mappedBy="titulo", dependentElement="true", defaultFetchGroup="true")
 	private transient ArrayList<SesionEntrenamiento> sesiones = new ArrayList<>();
 	
 	public User(String nombre,String email,String fechaNac,float peso,int altura,int pulsoxMinuto,int pulsoReposo, Proveedor proveedor) {
