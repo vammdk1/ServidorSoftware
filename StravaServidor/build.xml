@@ -73,6 +73,7 @@
 		<java classname="strava.server.MainProgram" classpathref="classpath" fork="true">
         	<jvmarg value="-Djava.rmi.server.codebase=file:${bin.dir}/"/>
 			<jvmarg value="-Djava.security.policy=${policy.file}"/>
+			<jvmarg value="-Dlog4j.configuration=log4j.properties"/>
         	<arg value="${rmiregistry.IP}"/> 
 	 		<arg value="${rmiregistry.port}"/> 
 			<arg value="${server.name}"/> 
