@@ -65,14 +65,14 @@ private static UserDAO instance;
 		pm.setDetachAllOnCommit(true);
 		Transaction tx = pm.currentTransaction();
 		
-		SesionEntrenamiento result = null; 
+		User result = null; 
 
 		try {
 			tx.begin();
 						
-			Query<?> query = pm.newQuery("SELECT FROM " + Reto.class.getName() + " WHERE name == '" + param + "'");
+			Query<?> query = pm.newQuery("SELECT FROM " + User.class.getName() + " WHERE nombre == '" + param + "'");
 			query.setUnique(true);
-			result = (SesionEntrenamiento) query.execute();
+			result = (User) query.execute();
 			
 			tx.commit();
 		} catch (Exception ex) {
@@ -88,9 +88,9 @@ private static UserDAO instance;
 		return result;
 	}
 
-	public static SesionEntrenamientoDAO getInstance() {
+	public static UserDAO getInstance() {
 		if (instance == null) {
-			instance = new SesionEntrenamientoDAO();
+			instance = new UserDAO();
 		}
 		
 		return instance;

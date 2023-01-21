@@ -4,9 +4,7 @@ import java.rmi.Naming;
 
 import org.apache.log4j.BasicConfigurator;
 
-import strava.server.data.domain.Proveedor;
 import strava.server.factory.GatewayFactory;
-import strava.server.gateway.FacebookServiceGateway;
 import strava.server.remote.IRemoteFacade;
 import strava.server.remote.RemoteFacade;
 
@@ -17,7 +15,7 @@ public class MainProgram {
 		if (System.getSecurityManager() == null) {
 			System.setSecurityManager(new SecurityManager());
 		}
-
+		
 		//args[0] = RMIRegistry IP
 		//args[1] = RMIRegistry Port
 		//args[2] = Service Name

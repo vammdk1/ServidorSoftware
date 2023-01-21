@@ -4,7 +4,7 @@ import java.util.Date;
 
 import javax.jdo.annotations.PersistenceCapable;
 
-@PersistenceCapable(detachable="true")
+@PersistenceCapable()
 public class SesionEntrenamiento {
 	
 	private Deportes deporte;

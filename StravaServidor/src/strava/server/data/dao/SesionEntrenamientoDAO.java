@@ -69,7 +69,7 @@ public class SesionEntrenamientoDAO extends DataAccessObjectBase implements IDat
 		try {
 			tx.begin();
 						
-			Query<?> query = pm.newQuery("SELECT FROM " + Reto.class.getName() + " WHERE name == '" + param + "'");
+			Query<?> query = pm.newQuery("SELECT S.* FROM USER_SESIONES US, SESION S, USER U \" + \" WHERE S.TITULO == '\" + param + \"' AND S.SESIONENTRENAMIENTO_ID == US.SESIONENTRENAMIENTO_ID_EID AND US.USER_ID_OID == U.USER_ID");
 			query.setUnique(true);
 			result = (SesionEntrenamiento) query.execute();
 			
