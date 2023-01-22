@@ -77,8 +77,10 @@ public class LocalTest {
 	
 	Reto retoDAO = new Reto("Correr un poco", new Date(), new Date(), 10, 0, Deportes.RUNNING);
 	SesionEntrenamiento sesionEntrenamientoDAO = new SesionEntrenamiento("Cumbia mientras corro", Deportes.RUNNING, 10, new Date(), 60);
+	SesionEntrenamiento sesionEntrenamientoDAO2 = new SesionEntrenamiento("Cumbia mientras corro 2", Deportes.RUNNING, 10, new Date(), 60);
 	RetoDAO.getInstance().save(retoDAO);
 	SesionEntrenamientoDAO.getInstance().save(sesionEntrenamientoDAO);
+	SesionEntrenamientoDAO.getInstance().save(sesionEntrenamientoDAO2);
 	
 	usuarioDAO.anadirReto(retoDAO);
 	usuarioDAO.anadirSesion(sesionEntrenamientoDAO);
@@ -137,7 +139,10 @@ public class LocalTest {
 		
 
 	System.out.println(products.get(0).getSesiones().toString());
-
+	SesionEntrenamientoDAO.getInstance().find("Cumbia mientras corro");
+	System.out.println("SEDAO" + SesionEntrenamientoDAO.getInstance().findFromUser(usuarioDAO.getNombre(), "Cumbia mientras corro"));
+	System.out.println("SEDAO" + SesionEntrenamientoDAO.getInstance().findFromUser(usuarioDAO.getNombre(), "Cumbia mientras corro 2"));
+	System.out.println(RetoDAO.getInstance().getAll());
 	
 	
 	//UserDAO.getInstance().save(usuarioDAO);
