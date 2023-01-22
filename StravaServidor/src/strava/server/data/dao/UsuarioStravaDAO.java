@@ -95,4 +95,9 @@ public class UsuarioStravaDAO extends DataAccessObjectBase implements IDataAcces
 		return instance;
 	}
 
+	@Override
+	public UsuarioStrava findFromUser(String user, String param) {
+		return UsuarioStravaDAO.getInstance().find(param);
+	}
+
 }

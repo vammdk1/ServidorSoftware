@@ -95,4 +95,9 @@ public class UserDAO extends DataAccessObjectBase implements IDataAccessObject<U
 		
 		return instance;
 	}
+
+	@Override
+	public User findFromUser(String user, String param) {
+		return UserDAO.getInstance().find(param);
+	}
 }
