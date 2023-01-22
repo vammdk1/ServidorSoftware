@@ -19,7 +19,7 @@ public class GatewayFactory {
 		} 
 		
 		else if (proveedor.equals("GOOGLE")) {
-			
+			//TODO que pasa con esto ?
 		} else {
 			System.out.println("Esta intentando crear una cuenta en un proveedor no externo. Por favor, pruebe con otro proveedor.");
 		}

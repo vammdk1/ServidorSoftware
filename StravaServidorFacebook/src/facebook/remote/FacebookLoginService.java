@@ -15,9 +15,13 @@ public class FacebookLoginService extends UnicastRemoteObject implements IFacebo
 	}
 	
 	public static FacebookLoginService getInstance() {
+		facebookUsers.putIfAbsent("taco", "123");
+		System.out.println("a");
 		if (instance == null) {
 			try {
+				
 				instance = new FacebookLoginService();
+				
 			} catch(Exception e) {
 				System.err.println("  # Error initializing service(): " + e.getMessage());
 			}

@@ -9,6 +9,11 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
+import javax.jdo.JDOHelper;
+import javax.jdo.PersistenceManager;
+import javax.jdo.PersistenceManagerFactory;
+import javax.jdo.Transaction;
+
 import strava.server.data.dao.RetoDAO;
 import strava.server.data.dao.UserDAO;
 import strava.server.data.domain.Proveedor;
@@ -23,6 +28,9 @@ public class BaseDatos {
 	
 	//private static ArrayList<Reto> RetosActivos = new ArrayList<>();
 	private static ArrayList<SesionEntrenamiento> SesionesEntrenamiento = new ArrayList<>();
+	private static PersistenceManagerFactory pmf;
+	private static PersistenceManager pm ;
+	private static Transaction tx;
 
 	/**
 	 * 
@@ -93,13 +101,52 @@ public class BaseDatos {
 	}
 	
 	public static boolean RegistrarReto(User usuario,Reto reto) {
+		System.out.println("registrando reto");
+		pmf = JDOHelper.getPersistenceManagerFactory("datanucleus.properties");
 		java.util.Date out = new java.util.Date();
 		if(reto.getFechaFin().compareTo(out)>0) {
 			User user = UserDAO.getInstance().find(usuario.getEmail());
 			if (user != null) {
-				RetoDAO.getInstance().save(reto);
-				user.anadirReto(reto);
-				UserDAO.getInstance().save(user);
+				
+				pm = pmf.getPersistenceManager();
+				tx = pm.currentTransaction();
+
+				try {
+					tx.begin();
+					System.out.println("   * Storing an object: " + reto);
+					pm.makePersistent(reto);
+					tx.commit();
+				} catch (Exception ex) {
+					System.out.println("   $ Error storing an object: " + ex.getMessage());
+				} finally {
+					if (tx != null && tx.isActive()) {
+						tx.rollback();
+					}
+
+					pm.close();
+				}
+				
+				pm = pmf.getPersistenceManager();
+				tx = pm.currentTransaction();
+
+				try {
+					tx.begin();
+					System.out.println("   * Storing an object: " + user);
+					pm.makePersistent(user);
+					tx.commit();
+				} catch (Exception ex) {
+					System.out.println("   $ Error storing an object: " + ex.getMessage());
+				} finally {
+					if (tx != null && tx.isActive()) {
+						tx.rollback();
+					}
+
+					pm.close();
+				}
+				
+				//RetoDAO.getInstance().save(reto);
+				//user.anadirReto(reto);
+				//UserDAO.getInstance().save(user);
 				//RetosActivos.add(reto);
 				//System.out.println(RetosActivos);
 				return true;
