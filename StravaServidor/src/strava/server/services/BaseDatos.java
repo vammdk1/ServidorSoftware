@@ -9,6 +9,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
+import strava.server.data.dao.UserDAO;
 import strava.server.data.domain.Proveedor;
 import strava.server.data.domain.Reto;
 import strava.server.data.domain.SesionEntrenamiento;

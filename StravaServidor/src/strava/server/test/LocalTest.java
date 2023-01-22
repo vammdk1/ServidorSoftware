@@ -139,6 +139,7 @@ public class LocalTest {
 		
 
 	System.out.println(products.get(0).getSesiones().toString());
+	System.out.println("Usuario: " + UserDAO.getInstance().find("alfonsoortega@gmail.com"));
 	SesionEntrenamientoDAO.getInstance().find("Cumbia mientras corro");
 	System.out.println("SEDAO" + SesionEntrenamientoDAO.getInstance().findFromUser(usuarioDAO.getNombre(), "Cumbia mientras corro"));
 	System.out.println("SEDAO" + SesionEntrenamientoDAO.getInstance().findFromUser(usuarioDAO.getNombre(), "Cumbia mientras corro 2"));

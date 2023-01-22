@@ -60,7 +60,7 @@ public class UserDAO extends DataAccessObjectBase implements IDataAccessObject<U
 	}
 
 	@Override
-	public User find(String param) {
+	public User find(String email) {
 		PersistenceManager pm = pmf.getPersistenceManager();
 		pm.setDetachAllOnCommit(true);
 		Transaction tx = pm.currentTransaction();
@@ -70,7 +70,7 @@ public class UserDAO extends DataAccessObjectBase implements IDataAccessObject<U
 		try {
 			tx.begin();
 						
-			Query<?> query = pm.newQuery("SELECT FROM " + User.class.getName() + " WHERE nombre == '" + param + "'");
+			Query<?> query = pm.newQuery("SELECT FROM " + User.class.getName() + " WHERE email == '" + email + "'");
 			query.setUnique(true);
 			result = (User) query.execute();
 			
