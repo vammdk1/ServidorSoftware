@@ -21,7 +21,7 @@ public class RetosAceptadosController {
 		try {
 			return this.serviceLocator.getService().verRetosAceptados(token);
 		} catch (RemoteException e) {
-			System.out.println("Error obteniendo retos");
+			System.out.println("Error obteniendo retos: " + e);
 			return null;
 		}
 		

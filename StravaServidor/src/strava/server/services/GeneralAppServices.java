@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
+import strava.server.data.dao.UserDAO;
 import strava.server.data.domain.Deportes;
 import strava.server.data.domain.Proveedor;
 import strava.server.data.domain.Reto;
@@ -76,6 +77,7 @@ public class GeneralAppServices {
 			Deportes[] d = Deportes.values();
 			Reto r = new Reto(reto.getNombre(), reto.getFechaIni(), reto.getFechaFin(), reto.getDistanciaObjetivo(), reto.getTiempoObjetivo(), d[reto.getDeporte().getIndex()]);
 			usuario.anadirReto(r);
+			UserDAO.getInstance().save(usuario);
 			return true;
 		} catch (Exception e) {
 			return false;

@@ -60,7 +60,7 @@ public class VentanaRetosActivos {
 		SelectorDeRetos.setFont(new Font("Tahoma", Font.PLAIN, 15));
 		SelectorDeRetos.setBounds(286, 11, 239, 31);
 		//TODO tiene que poder mostrar un estring
-		ActualizaReto();//Actualiza la lista de retos 
+		//ActualizaReto();//Actualiza la lista de retos 
 		//TODO Retos.add(SelectorDeRetos);
 		Retos.add(SelectorDeRetos);
 		
@@ -142,6 +142,20 @@ public class VentanaRetosActivos {
 		VPrincipal.getContentPane().add(Aceptar);
 		VPrincipal.setVisible(false);
 		
+		Aceptar.addActionListener(new ActionListener() {
+			
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				//TODO
+				System.out.println("Boton aceptar pulsado");
+				VPrincipal.setVisible(false);
+				controller.aceptarReto(controller.getRetos().get(SelectorDeRetos.getSelectedIndex()));
+				VentanaUsuario.VPrincipal.setVisible(true);
+				VentanaUsuario.actualizaSesiones();
+				VentanaUsuario.actualizaRetos();
+			}
+		});
+		
 		volver.addActionListener(new ActionListener() {
 			
 			@Override
@@ -174,6 +188,7 @@ public class VentanaRetosActivos {
 		
 		VentanaRetosActivos.VPrincipal.repaint();
 	}
+	
 	
 	public static void ActualizaReto() {
 		System.out.println("Obteniendo retos . . .");

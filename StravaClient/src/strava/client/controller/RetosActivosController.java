@@ -26,6 +26,15 @@ private static RetosActivosController instance;
 		}
 		
 	}
+	
+	public void aceptarReto(RetoDTO reto) {
+		try {
+			this.serviceLocator.getService().aceptarReto(VentanaUsuario.getToken(), reto);
+		} catch (RemoteException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
 
 	public static RetosActivosController getInstance() {
 		synchronized(RetosActivosController.class) {

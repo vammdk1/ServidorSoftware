@@ -144,6 +144,8 @@ public class BaseDatos {
 		Map<Reto, Float> listaCompleta = new HashMap<>();
 		User user = UserDAO.getInstance().find(usuario.getEmail());
 		listaCompleta = user.getRetos();
+		System.out.println(user.getRetos());
+		System.out.println(listaCompleta);
 		if(listaCompleta.size()>0) {
 			return listaCompleta;
 		}else {

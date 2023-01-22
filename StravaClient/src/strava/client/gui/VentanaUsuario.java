@@ -118,12 +118,12 @@ public class VentanaUsuario {
 			}
 		));
 		panel.add(table_1);
-		/*
+		
 		JButton MisRetos = new JButton("MisRetos");
 		MisRetos.setFont(new Font("Tahoma", Font.PLAIN, 18));
 		MisRetos.setBounds(473, 345, 178, 51);
 		VPrincipal.getContentPane().add(MisRetos);
-		*/
+		
 		model = (DefaultTableModel) table.getModel();
 		model1 = (DefaultTableModel) table_1.getModel();
 		VPrincipal.setVisible(false);
@@ -152,7 +152,7 @@ public class VentanaUsuario {
 	
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				System.out.println("Boton consultar reto pulsado");
+				System.out.println("Boton consultar reto pulsado \n");
 				//TODO solicitar retos y mandarlos a la ventana ?
 				VPrincipal.setVisible(false);
 				//VentanaRetosActivos.VPrincipal.();
@@ -160,6 +160,7 @@ public class VentanaUsuario {
 				VentanaRetosActivos.VPrincipal.setVisible(true);
 			}
 		});
+		
 		
 		MisRetos.addActionListener(new ActionListener() {
 			
