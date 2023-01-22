@@ -7,13 +7,13 @@ import javax.jdo.annotations.PersistenceCapable;
 @PersistenceCapable(detachable="true")
 public class SesionEntrenamiento {
 	
-	private Deportes deporte;
+	private Deportes deporte = null;
 	
 
-	private String titulo;
-	private float distancia;
-	private Date fechaHoraIni;
-	private float duracion;
+	private String titulo = null;
+	private float distancia = 0;
+	private Date fechaHoraIni = null;
+	private float duracion = 0;
 	
 	/**
 	 * Crea una sesion de entrenamiento

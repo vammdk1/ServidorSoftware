@@ -31,13 +31,14 @@ public class User  {
 	//private "nose" token;
 	
 	
+	@Join
+	@Persistent(mappedBy="titulo", dependentElement="true", defaultFetchGroup="true")
+	private List<SesionEntrenamiento> sesiones = new ArrayList<>();
 	//private transient ArrayList<Reto> retos = new ArrayList<>();
 	@Join
 	@Persistent(mappedBy="nombre", dependentElement="true", defaultFetchGroup="true")
 	private Map<Reto, Float> retos = new HashMap<>();
-	@Join
-	@Persistent(mappedBy="titulo", dependentElement="true", defaultFetchGroup="true")
-	private ArrayList<SesionEntrenamiento> sesiones = new ArrayList<>();
+
 	
 	public User(String nombre,String email,String fechaNac,float peso,int altura,int pulsoxMinuto,int pulsoReposo, Proveedor proveedor) {
 
@@ -176,7 +177,7 @@ public class User  {
 		return a + i;
 	}
 	
-	public ArrayList<SesionEntrenamiento> getSesiones() {
+	public List<SesionEntrenamiento> getSesiones() {
 		
 		return sesiones;
 		

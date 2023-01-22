@@ -144,7 +144,7 @@ public class BaseDatos {
 	}
 
 	public static List<SesionEntrenamiento> getSesionesEntrenamiento(User user) {
-		ArrayList<SesionEntrenamiento> listaCompleta = new ArrayList<>();
+		List<SesionEntrenamiento> listaCompleta = new ArrayList<>();
 		listaCompleta = UsuariosRegistrados.get(user.getEmail()).getSesiones();
 		if(listaCompleta.size()>0) {
 			return listaCompleta;

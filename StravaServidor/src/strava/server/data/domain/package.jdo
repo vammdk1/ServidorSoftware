@@ -60,6 +60,9 @@
             <field
                   name="retos"
                   persistence-modifier="persistent"/>
+            <field
+                  name="sesiones"
+                  persistence-modifier="persistent"/>
         </class>
         <class
               name="SesionEntrenamiento">
