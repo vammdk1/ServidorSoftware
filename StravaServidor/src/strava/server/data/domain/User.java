@@ -3,8 +3,10 @@ package strava.server.data.domain;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
+import javax.jdo.annotations.Discriminator;
 import javax.jdo.annotations.Join;
 import javax.jdo.annotations.PersistenceCapable;
 import javax.jdo.annotations.Persistent;
@@ -35,7 +37,7 @@ public class User  {
 	private Map<Reto, Float> retos = new HashMap<>();
 	@Join
 	@Persistent(mappedBy="titulo", dependentElement="true", defaultFetchGroup="true")
-	private transient ArrayList<SesionEntrenamiento> sesiones = new ArrayList<>();
+	private ArrayList<SesionEntrenamiento> sesiones = new ArrayList<>();
 	
 	public User(String nombre,String email,String fechaNac,float peso,int altura,int pulsoxMinuto,int pulsoReposo, Proveedor proveedor) {
 

@@ -2076,3 +2076,972 @@ java.sql.SQLSyntaxErrorException: BLOB/TEXT column 'NOMBRE' used in key specific
 18:48:22,321 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `RETO`.`NOMBRE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
 18:48:22,342 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `SESIONENTRENAMIENTO`.`DEPORTE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
 18:48:22,342 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `SESIONENTRENAMIENTO`.`TITULO` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+11:41:17,846 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.core.resources.natures" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+11:41:17,847 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.core.resources.builders" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+11:41:17,847 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.core.runtime.preferences" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+11:41:17,847 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.ui.console.consolePatternMatchListeners" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+11:41:17,847 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.ui.preferencePages" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+11:41:17,847 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.ui.propertyPages" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+11:41:17,847 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.ui.popupMenus" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+11:41:18,495 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.core.resources.natures" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+11:41:18,496 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.core.resources.builders" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+11:41:18,496 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.core.runtime.preferences" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+11:41:18,496 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.ui.console.consolePatternMatchListeners" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+11:41:18,496 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.ui.preferencePages" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+11:41:18,496 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.ui.propertyPages" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+11:41:18,498 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.ui.popupMenus" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+11:41:19,724 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.core.resources.natures" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+11:41:19,725 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.core.resources.builders" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+11:41:19,725 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.core.runtime.preferences" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+11:41:19,725 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.ui.console.consolePatternMatchListeners" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+11:41:19,725 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.ui.preferencePages" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+11:41:19,725 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.ui.propertyPages" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+11:41:19,726 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.ui.popupMenus" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+11:41:20,349 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USUARIOSTRAVA`.`CONTRASENNA` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+11:41:53,009 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.core.resources.natures" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+11:41:53,010 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.core.resources.builders" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+11:41:53,010 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.core.runtime.preferences" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+11:41:53,010 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.ui.console.consolePatternMatchListeners" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+11:41:53,010 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.ui.preferencePages" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+11:41:53,010 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.ui.propertyPages" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+11:41:53,010 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.ui.popupMenus" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+11:41:54,009 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.core.resources.natures" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+11:41:54,010 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.core.resources.builders" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+11:41:54,010 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.core.runtime.preferences" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+11:41:54,010 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.ui.console.consolePatternMatchListeners" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+11:41:54,010 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.ui.preferencePages" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+11:41:54,010 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.ui.propertyPages" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+11:41:54,010 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.ui.popupMenus" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+11:41:55,417 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.core.resources.natures" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+11:41:55,418 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.core.resources.builders" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+11:41:55,418 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.core.runtime.preferences" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+11:41:55,418 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.ui.console.consolePatternMatchListeners" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+11:41:55,418 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.ui.preferencePages" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+11:41:55,418 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.ui.propertyPages" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+11:41:55,418 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.ui.popupMenus" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+11:41:56,111 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USUARIOSTRAVA`.`CONTRASENNA` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+11:42:55,421 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.core.resources.natures" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+11:42:55,422 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.core.resources.builders" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+11:42:55,422 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.core.runtime.preferences" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+11:42:55,422 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.ui.console.consolePatternMatchListeners" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+11:42:55,422 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.ui.preferencePages" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+11:42:55,422 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.ui.propertyPages" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+11:42:55,422 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.ui.popupMenus" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+11:42:56,091 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.core.resources.natures" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+11:42:56,091 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.core.resources.builders" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+11:42:56,091 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.core.runtime.preferences" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+11:42:56,091 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.ui.console.consolePatternMatchListeners" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+11:42:56,091 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.ui.preferencePages" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+11:42:56,091 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.ui.propertyPages" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+11:42:56,092 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.ui.popupMenus" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+11:42:56,799 (main) WARN  [DataNucleus.MetaData] - Class strava.server.data.domain.UsuarioStrava is defined to use the same table as strava.server.data.domain.User yet this root class has not been defined with a discriminator!!!
+11:42:57,404 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.core.resources.natures" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+11:42:57,404 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.core.resources.builders" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+11:42:57,404 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.core.runtime.preferences" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+11:42:57,404 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.ui.console.consolePatternMatchListeners" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+11:42:57,406 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.ui.preferencePages" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+11:42:57,406 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.ui.propertyPages" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+11:42:57,406 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.ui.popupMenus" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+11:42:57,948 (main) WARN  [DataNucleus.MetaData] - Class strava.server.data.domain.UsuarioStrava is defined to use the same table as strava.server.data.domain.User yet this root class has not been defined with a discriminator!!!
+11:42:57,977 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`EMAIL` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+11:42:57,977 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`FECHANAC` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+11:42:57,977 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`NOMBRE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+11:42:57,977 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`PROVEEDOR` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+11:42:57,977 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`CONTRASENNA` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+11:42:57,994 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `RETO`.`DEPORTE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+11:42:57,994 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `RETO`.`NOMBRE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+11:42:58,011 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `SESIONENTRENAMIENTO`.`DEPORTE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+11:42:58,012 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `SESIONENTRENAMIENTO`.`TITULO` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+11:43:36,053 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.core.resources.natures" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+11:43:36,054 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.core.resources.builders" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+11:43:36,054 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.core.runtime.preferences" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+11:43:36,054 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.ui.console.consolePatternMatchListeners" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+11:43:36,054 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.ui.preferencePages" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+11:43:36,054 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.ui.propertyPages" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+11:43:36,054 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.ui.popupMenus" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+11:43:36,759 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.core.resources.natures" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+11:43:36,759 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.core.resources.builders" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+11:43:36,759 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.core.runtime.preferences" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+11:43:36,760 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.ui.console.consolePatternMatchListeners" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+11:43:36,760 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.ui.preferencePages" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+11:43:36,760 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.ui.propertyPages" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+11:43:36,760 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.ui.popupMenus" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+11:43:37,449 (main) WARN  [DataNucleus.MetaData] - Class strava.server.data.domain.UsuarioStrava is defined to use the same table as strava.server.data.domain.User yet this root class has not been defined with a discriminator!!!
+11:43:38,059 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.core.resources.natures" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+11:43:38,060 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.core.resources.builders" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+11:43:38,060 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.core.runtime.preferences" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+11:43:38,060 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.ui.console.consolePatternMatchListeners" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+11:43:38,060 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.ui.preferencePages" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+11:43:38,060 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.ui.propertyPages" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+11:43:38,060 (main) WARN  [DataNucleus.General] - Extension Point "org.eclipse.ui.popupMenus" no esta registrado, pero el plugin "org.datanucleus.ide.eclipse" definido en file:/C:/Users/alvar/eclipse-workspace/Strava/Strava/StravaServidor/lib/org.datanucleus.ide.eclipse_5.0.0.jar se lo refiere.
+11:43:38,612 (main) WARN  [DataNucleus.MetaData] - Class strava.server.data.domain.UsuarioStrava is defined to use the same table as strava.server.data.domain.User yet this root class has not been defined with a discriminator!!!
+11:43:38,645 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`EMAIL` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+11:43:38,645 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`FECHANAC` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+11:43:38,645 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`NOMBRE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+11:43:38,646 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`PROVEEDOR` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+11:43:38,646 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`CONTRASENNA` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+11:43:38,664 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `RETO`.`DEPORTE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+11:43:38,664 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `RETO`.`NOMBRE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+11:43:38,682 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `SESIONENTRENAMIENTO`.`DEPORTE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+11:43:38,682 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `SESIONENTRENAMIENTO`.`TITULO` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+11:45:26,373 (main) WARN  [DataNucleus.MetaData] - Class strava.server.data.domain.UsuarioStrava is defined to use the same table as strava.server.data.domain.User yet this root class has not been defined with a discriminator!!!
+11:45:27,519 (main) WARN  [DataNucleus.MetaData] - Class strava.server.data.domain.UsuarioStrava is defined to use the same table as strava.server.data.domain.User yet this root class has not been defined with a discriminator!!!
+11:45:27,550 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`EMAIL` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+11:45:27,550 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`FECHANAC` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+11:45:27,550 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`NOMBRE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+11:45:27,551 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`PROVEEDOR` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+11:45:27,551 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`CONTRASENNA` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+11:45:27,569 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `RETO`.`DEPORTE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+11:45:27,569 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `RETO`.`NOMBRE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+11:45:27,586 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `SESIONENTRENAMIENTO`.`DEPORTE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+11:45:27,586 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `SESIONENTRENAMIENTO`.`TITULO` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+11:46:07,211 (main) WARN  [DataNucleus.MetaData] - Class strava.server.data.domain.UsuarioStrava is defined to use the same table as strava.server.data.domain.User yet this root class has not been defined with a discriminator!!!
+11:46:08,400 (main) WARN  [DataNucleus.MetaData] - Class strava.server.data.domain.UsuarioStrava is defined to use the same table as strava.server.data.domain.User yet this root class has not been defined with a discriminator!!!
+11:46:08,430 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`EMAIL` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+11:46:08,430 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`FECHANAC` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+11:46:08,430 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`NOMBRE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+11:46:08,430 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`PROVEEDOR` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+11:46:08,430 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`CONTRASENNA` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+11:46:08,450 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `RETO`.`DEPORTE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+11:46:08,450 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `RETO`.`NOMBRE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+11:46:08,464 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `SESIONENTRENAMIENTO`.`DEPORTE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+11:46:08,466 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `SESIONENTRENAMIENTO`.`TITULO` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+11:58:45,707 (main) WARN  [DataNucleus.MetaData] - Class strava.server.data.domain.UsuarioStrava is defined to use the same table as strava.server.data.domain.User yet this root class has not been defined with a discriminator!!!
+11:58:46,851 (main) WARN  [DataNucleus.MetaData] - Class strava.server.data.domain.UsuarioStrava is defined to use the same table as strava.server.data.domain.User yet this root class has not been defined with a discriminator!!!
+11:58:46,879 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`EMAIL` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+11:58:46,879 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`FECHANAC` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+11:58:46,879 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`NOMBRE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+11:58:46,879 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`PROVEEDOR` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+11:58:46,880 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`CONTRASENNA` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+11:58:46,896 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `RETO`.`DEPORTE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+11:58:46,896 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `RETO`.`NOMBRE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+11:58:46,914 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `SESIONENTRENAMIENTO`.`DEPORTE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+11:58:46,914 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `SESIONENTRENAMIENTO`.`TITULO` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+11:59:48,222 (main) WARN  [DataNucleus.MetaData] - Class strava.server.data.domain.UsuarioStrava is defined to use the same table as strava.server.data.domain.User yet this root class has not been defined with a discriminator!!!
+11:59:49,382 (main) WARN  [DataNucleus.MetaData] - Class strava.server.data.domain.UsuarioStrava is defined to use the same table as strava.server.data.domain.User yet this root class has not been defined with a discriminator!!!
+11:59:49,413 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`EMAIL` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+11:59:49,413 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`FECHANAC` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+11:59:49,413 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`NOMBRE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+11:59:49,413 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`PROVEEDOR` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+11:59:49,413 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`CONTRASENNA` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+11:59:49,430 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `RETO`.`DEPORTE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+11:59:49,430 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `RETO`.`NOMBRE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+11:59:49,446 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `SESIONENTRENAMIENTO`.`DEPORTE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+11:59:49,447 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `SESIONENTRENAMIENTO`.`TITULO` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:00:51,172 (main) WARN  [DataNucleus.MetaData] - Class strava.server.data.domain.UsuarioStrava is defined to use the same table as strava.server.data.domain.User yet this root class has not been defined with a discriminator!!!
+12:00:52,300 (main) WARN  [DataNucleus.MetaData] - Class strava.server.data.domain.UsuarioStrava is defined to use the same table as strava.server.data.domain.User yet this root class has not been defined with a discriminator!!!
+12:00:52,329 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`EMAIL` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:00:52,329 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`FECHANAC` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:00:52,329 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`NOMBRE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:00:52,329 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`PROVEEDOR` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:00:52,330 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`CONTRASENNA` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:00:52,348 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `RETO`.`DEPORTE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:00:52,349 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `RETO`.`NOMBRE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:00:52,362 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `SESIONENTRENAMIENTO`.`DEPORTE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:00:52,363 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `SESIONENTRENAMIENTO`.`TITULO` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:01:40,055 (main) WARN  [DataNucleus.MetaData] - Class strava.server.data.domain.UsuarioStrava is defined to use the same table as strava.server.data.domain.User yet this root class has not been defined with a discriminator!!!
+12:01:41,215 (main) WARN  [DataNucleus.MetaData] - Class strava.server.data.domain.UsuarioStrava is defined to use the same table as strava.server.data.domain.User yet this root class has not been defined with a discriminator!!!
+12:01:41,246 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`EMAIL` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:01:41,246 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`FECHANAC` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:01:41,246 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`NOMBRE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:01:41,246 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`PROVEEDOR` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:01:41,246 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`CONTRASENNA` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:01:41,271 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `RETO`.`DEPORTE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:01:41,271 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `RETO`.`NOMBRE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:01:41,308 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `SESIONENTRENAMIENTO`.`DEPORTE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:01:41,308 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `SESIONENTRENAMIENTO`.`TITULO` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:02:26,622 (main) WARN  [DataNucleus.MetaData] - Class strava.server.data.domain.UsuarioStrava is defined to use the same table as strava.server.data.domain.User yet this root class has not been defined with a discriminator!!!
+12:02:27,798 (main) WARN  [DataNucleus.MetaData] - Class strava.server.data.domain.UsuarioStrava is defined to use the same table as strava.server.data.domain.User yet this root class has not been defined with a discriminator!!!
+12:02:27,827 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`EMAIL` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:02:27,827 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`FECHANAC` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:02:27,827 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`NOMBRE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:02:27,827 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`PROVEEDOR` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:02:27,827 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`CONTRASENNA` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:02:27,846 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `RETO`.`DEPORTE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:02:27,847 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `RETO`.`NOMBRE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:02:27,861 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `SESIONENTRENAMIENTO`.`DEPORTE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:02:27,861 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `SESIONENTRENAMIENTO`.`TITULO` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:02:50,796 (main) WARN  [DataNucleus.MetaData] - Class strava.server.data.domain.UsuarioStrava is defined to use the same table as strava.server.data.domain.User yet this root class has not been defined with a discriminator!!!
+12:02:51,941 (main) WARN  [DataNucleus.MetaData] - Class strava.server.data.domain.UsuarioStrava is defined to use the same table as strava.server.data.domain.User yet this root class has not been defined with a discriminator!!!
+12:02:51,971 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`EMAIL` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:02:51,971 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`FECHANAC` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:02:51,972 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`NOMBRE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:02:51,972 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`PROVEEDOR` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:02:51,972 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`CONTRASENNA` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:02:51,988 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `RETO`.`DEPORTE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:02:51,988 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `RETO`.`NOMBRE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:02:52,002 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `SESIONENTRENAMIENTO`.`DEPORTE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:02:52,003 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `SESIONENTRENAMIENTO`.`TITULO` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:03:17,526 (main) WARN  [DataNucleus.MetaData] - Class strava.server.data.domain.UsuarioStrava is defined to use the same table as strava.server.data.domain.User yet this root class has not been defined with a discriminator!!!
+12:03:18,697 (main) WARN  [DataNucleus.MetaData] - Class strava.server.data.domain.UsuarioStrava is defined to use the same table as strava.server.data.domain.User yet this root class has not been defined with a discriminator!!!
+12:03:18,728 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`EMAIL` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:03:18,728 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`FECHANAC` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:03:18,728 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`NOMBRE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:03:18,728 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`PROVEEDOR` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:03:18,729 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`CONTRASENNA` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:03:18,748 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `RETO`.`DEPORTE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:03:18,748 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `RETO`.`NOMBRE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:03:18,765 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `SESIONENTRENAMIENTO`.`DEPORTE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:03:18,766 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `SESIONENTRENAMIENTO`.`TITULO` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:03:54,597 (main) WARN  [DataNucleus.MetaData] - Class strava.server.data.domain.UsuarioStrava is defined to use the same table as strava.server.data.domain.User yet this root class has not been defined with a discriminator!!!
+12:03:55,756 (main) WARN  [DataNucleus.MetaData] - Class strava.server.data.domain.UsuarioStrava is defined to use the same table as strava.server.data.domain.User yet this root class has not been defined with a discriminator!!!
+12:03:55,786 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`EMAIL` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:03:55,787 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`FECHANAC` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:03:55,787 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`NOMBRE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:03:55,787 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`PROVEEDOR` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:03:55,787 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`CONTRASENNA` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:03:55,806 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `RETO`.`DEPORTE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:03:55,806 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `RETO`.`NOMBRE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:03:55,822 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `SESIONENTRENAMIENTO`.`DEPORTE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:03:55,822 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `SESIONENTRENAMIENTO`.`TITULO` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:08:21,962 (main) WARN  [DataNucleus.MetaData] - Class strava.server.data.domain.UsuarioStrava is defined to use the same table as strava.server.data.domain.User yet this root class has not been defined with a discriminator!!!
+12:08:23,089 (main) WARN  [DataNucleus.MetaData] - Class strava.server.data.domain.UsuarioStrava is defined to use the same table as strava.server.data.domain.User yet this root class has not been defined with a discriminator!!!
+12:08:23,118 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`EMAIL` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:08:23,118 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`FECHANAC` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:08:23,118 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`NOMBRE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:08:23,119 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`PROVEEDOR` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:08:23,119 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`CONTRASENNA` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:08:23,136 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `RETO`.`DEPORTE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:08:23,137 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `RETO`.`NOMBRE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:08:23,156 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `SESIONENTRENAMIENTO`.`DEPORTE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:08:23,156 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `SESIONENTRENAMIENTO`.`TITULO` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:08:45,628 (main) WARN  [DataNucleus.MetaData] - Class strava.server.data.domain.UsuarioStrava is defined to use the same table as strava.server.data.domain.User yet this root class has not been defined with a discriminator!!!
+12:08:46,862 (main) WARN  [DataNucleus.MetaData] - Class strava.server.data.domain.UsuarioStrava is defined to use the same table as strava.server.data.domain.User yet this root class has not been defined with a discriminator!!!
+12:08:46,891 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`EMAIL` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:08:46,892 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`FECHANAC` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:08:46,892 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`NOMBRE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:08:46,892 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`PROVEEDOR` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:08:46,892 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`CONTRASENNA` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:08:46,911 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `RETO`.`DEPORTE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:08:46,911 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `RETO`.`NOMBRE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:08:46,927 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `SESIONENTRENAMIENTO`.`DEPORTE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:08:46,927 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `SESIONENTRENAMIENTO`.`TITULO` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:09:01,488 (main) WARN  [DataNucleus.MetaData] - Class strava.server.data.domain.UsuarioStrava is defined to use the same table as strava.server.data.domain.User yet this root class has not been defined with a discriminator!!!
+12:09:02,639 (main) WARN  [DataNucleus.MetaData] - Class strava.server.data.domain.UsuarioStrava is defined to use the same table as strava.server.data.domain.User yet this root class has not been defined with a discriminator!!!
+12:09:02,669 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`EMAIL` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:09:02,670 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`FECHANAC` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:09:02,670 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`NOMBRE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:09:02,670 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`PROVEEDOR` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:09:02,670 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`CONTRASENNA` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:09:02,687 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `RETO`.`DEPORTE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:09:02,687 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `RETO`.`NOMBRE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:09:02,704 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `SESIONENTRENAMIENTO`.`DEPORTE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:09:02,705 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `SESIONENTRENAMIENTO`.`TITULO` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:10:26,678 (main) WARN  [DataNucleus.MetaData] - Class strava.server.data.domain.UsuarioStrava is defined to use the same table as strava.server.data.domain.User yet this root class has not been defined with a discriminator!!!
+12:10:27,809 (main) WARN  [DataNucleus.MetaData] - Class strava.server.data.domain.UsuarioStrava is defined to use the same table as strava.server.data.domain.User yet this root class has not been defined with a discriminator!!!
+12:10:27,837 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`EMAIL` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:10:27,837 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`FECHANAC` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:10:27,837 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`NOMBRE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:10:27,837 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`PROVEEDOR` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:10:27,837 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`CONTRASENNA` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:10:27,856 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `RETO`.`DEPORTE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:10:27,856 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `RETO`.`NOMBRE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:10:27,885 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `SESIONENTRENAMIENTO`.`DEPORTE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:10:27,885 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `SESIONENTRENAMIENTO`.`TITULO` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:11:45,204 (main) WARN  [DataNucleus.MetaData] - Class strava.server.data.domain.UsuarioStrava is defined to use the same table as strava.server.data.domain.User yet this root class has not been defined with a discriminator!!!
+12:11:46,394 (main) WARN  [DataNucleus.MetaData] - Class strava.server.data.domain.UsuarioStrava is defined to use the same table as strava.server.data.domain.User yet this root class has not been defined with a discriminator!!!
+12:11:46,422 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`EMAIL` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:11:46,423 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`FECHANAC` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:11:46,423 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`NOMBRE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:11:46,423 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`PROVEEDOR` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:11:46,423 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`CONTRASENNA` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:11:46,443 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `RETO`.`DEPORTE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:11:46,443 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `RETO`.`NOMBRE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:11:46,459 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `SESIONENTRENAMIENTO`.`DEPORTE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:11:46,459 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `SESIONENTRENAMIENTO`.`TITULO` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:12:46,305 (main) WARN  [DataNucleus.MetaData] - Class strava.server.data.domain.UsuarioStrava is defined to use the same table as strava.server.data.domain.User yet this root class has not been defined with a discriminator!!!
+12:12:47,497 (main) WARN  [DataNucleus.MetaData] - Class strava.server.data.domain.UsuarioStrava is defined to use the same table as strava.server.data.domain.User yet this root class has not been defined with a discriminator!!!
+12:12:47,525 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`EMAIL` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:12:47,525 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`FECHANAC` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:12:47,525 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`NOMBRE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:12:47,526 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`PROVEEDOR` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:12:47,526 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`CONTRASENNA` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:12:47,547 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `RETO`.`DEPORTE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:12:47,547 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `RETO`.`NOMBRE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:12:47,564 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `SESIONENTRENAMIENTO`.`DEPORTE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:12:47,564 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `SESIONENTRENAMIENTO`.`TITULO` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:12:48,416 (main) WARN  [DataNucleus.MetaData] - Class strava.server.data.domain.UsuarioStrava is defined to use the same table as strava.server.data.domain.User yet this root class has not been defined with a discriminator!!!
+12:13:45,307 (main) WARN  [DataNucleus.MetaData] - Class strava.server.data.domain.UsuarioStrava is defined to use the same table as strava.server.data.domain.User yet this root class has not been defined with a discriminator!!!
+12:13:46,462 (main) WARN  [DataNucleus.MetaData] - Class strava.server.data.domain.UsuarioStrava is defined to use the same table as strava.server.data.domain.User yet this root class has not been defined with a discriminator!!!
+12:13:46,491 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`EMAIL` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:13:46,491 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`FECHANAC` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:13:46,492 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`NOMBRE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:13:46,492 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`PROVEEDOR` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:13:46,492 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`CONTRASENNA` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:13:46,510 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `RETO`.`DEPORTE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:13:46,510 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `RETO`.`NOMBRE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:13:46,526 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `SESIONENTRENAMIENTO`.`DEPORTE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:13:46,526 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `SESIONENTRENAMIENTO`.`TITULO` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:13:47,397 (main) WARN  [DataNucleus.MetaData] - Class strava.server.data.domain.UsuarioStrava is defined to use the same table as strava.server.data.domain.User yet this root class has not been defined with a discriminator!!!
+12:20:32,377 (main) WARN  [DataNucleus.MetaData] - Class strava.server.data.domain.UsuarioStrava is defined to use the same table as strava.server.data.domain.User yet this root class has not been defined with a discriminator!!!
+12:20:33,526 (main) WARN  [DataNucleus.MetaData] - Class strava.server.data.domain.UsuarioStrava is defined to use the same table as strava.server.data.domain.User yet this root class has not been defined with a discriminator!!!
+12:20:33,555 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`EMAIL` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:20:33,555 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`FECHANAC` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:20:33,555 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`NOMBRE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:20:33,555 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`PROVEEDOR` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:20:33,556 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`CONTRASENNA` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:20:33,575 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `RETO`.`DEPORTE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:20:33,575 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `RETO`.`NOMBRE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:20:33,592 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `SESIONENTRENAMIENTO`.`DEPORTE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:20:33,592 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `SESIONENTRENAMIENTO`.`TITULO` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:20:34,461 (main) WARN  [DataNucleus.MetaData] - Class strava.server.data.domain.UsuarioStrava is defined to use the same table as strava.server.data.domain.User yet this root class has not been defined with a discriminator!!!
+12:21:15,542 (main) WARN  [DataNucleus.MetaData] - Class strava.server.data.domain.UsuarioStrava is defined to use the same table as strava.server.data.domain.User yet this root class has not been defined with a discriminator!!!
+12:21:16,823 (main) WARN  [DataNucleus.MetaData] - Class strava.server.data.domain.UsuarioStrava is defined to use the same table as strava.server.data.domain.User yet this root class has not been defined with a discriminator!!!
+12:21:16,858 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`EMAIL` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:21:16,858 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`FECHANAC` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:21:16,858 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`NOMBRE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:21:16,858 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`PROVEEDOR` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:21:16,858 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`CONTRASENNA` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:21:16,879 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `RETO`.`DEPORTE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:21:16,880 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `RETO`.`NOMBRE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:21:16,896 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `SESIONENTRENAMIENTO`.`DEPORTE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:21:16,896 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `SESIONENTRENAMIENTO`.`TITULO` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:21:17,817 (main) WARN  [DataNucleus.MetaData] - Class strava.server.data.domain.UsuarioStrava is defined to use the same table as strava.server.data.domain.User yet this root class has not been defined with a discriminator!!!
+12:22:07,148 (main) WARN  [DataNucleus.MetaData] - Class strava.server.data.domain.UsuarioStrava is defined to use the same table as strava.server.data.domain.User yet this root class has not been defined with a discriminator!!!
+12:22:08,309 (main) WARN  [DataNucleus.MetaData] - Class strava.server.data.domain.UsuarioStrava is defined to use the same table as strava.server.data.domain.User yet this root class has not been defined with a discriminator!!!
+12:22:08,340 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`EMAIL` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:22:08,341 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`FECHANAC` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:22:08,341 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`NOMBRE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:22:08,341 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`PROVEEDOR` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:22:08,341 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`CONTRASENNA` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:22:08,361 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `RETO`.`DEPORTE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:22:08,361 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `RETO`.`NOMBRE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:22:08,379 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `SESIONENTRENAMIENTO`.`DEPORTE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:22:08,379 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `SESIONENTRENAMIENTO`.`TITULO` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:22:09,241 (main) WARN  [DataNucleus.MetaData] - Class strava.server.data.domain.UsuarioStrava is defined to use the same table as strava.server.data.domain.User yet this root class has not been defined with a discriminator!!!
+12:22:35,823 (main) WARN  [DataNucleus.MetaData] - Class strava.server.data.domain.UsuarioStrava is defined to use the same table as strava.server.data.domain.User yet this root class has not been defined with a discriminator!!!
+12:22:37,006 (main) WARN  [DataNucleus.MetaData] - Class strava.server.data.domain.UsuarioStrava is defined to use the same table as strava.server.data.domain.User yet this root class has not been defined with a discriminator!!!
+12:22:37,037 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`EMAIL` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:22:37,037 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`FECHANAC` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:22:37,037 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`NOMBRE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:22:37,037 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`PROVEEDOR` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:22:37,038 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`CONTRASENNA` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:22:37,055 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `RETO`.`DEPORTE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:22:37,055 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `RETO`.`NOMBRE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:22:37,071 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `SESIONENTRENAMIENTO`.`DEPORTE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:22:37,071 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `SESIONENTRENAMIENTO`.`TITULO` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:22:37,957 (main) WARN  [DataNucleus.MetaData] - Class strava.server.data.domain.UsuarioStrava is defined to use the same table as strava.server.data.domain.User yet this root class has not been defined with a discriminator!!!
+12:23:12,955 (main) WARN  [DataNucleus.MetaData] - Class strava.server.data.domain.UsuarioStrava is defined to use the same table as strava.server.data.domain.User yet this root class has not been defined with a discriminator!!!
+12:23:14,121 (main) WARN  [DataNucleus.MetaData] - Class strava.server.data.domain.UsuarioStrava is defined to use the same table as strava.server.data.domain.User yet this root class has not been defined with a discriminator!!!
+12:23:14,153 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`EMAIL` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:23:14,154 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`FECHANAC` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:23:14,154 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`NOMBRE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:23:14,154 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`PROVEEDOR` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:23:14,154 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`CONTRASENNA` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:23:14,176 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `RETO`.`DEPORTE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:23:14,176 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `RETO`.`NOMBRE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:23:14,192 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `SESIONENTRENAMIENTO`.`DEPORTE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:23:14,193 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `SESIONENTRENAMIENTO`.`TITULO` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:23:15,043 (main) WARN  [DataNucleus.MetaData] - Class strava.server.data.domain.UsuarioStrava is defined to use the same table as strava.server.data.domain.User yet this root class has not been defined with a discriminator!!!
+12:24:11,840 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `RETO`.`DEPORTE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:24:11,840 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `RETO`.`NOMBRE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:24:11,860 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `SESIONENTRENAMIENTO`.`DEPORTE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:24:11,860 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `SESIONENTRENAMIENTO`.`TITULO` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:24:11,876 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`EMAIL` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:24:11,876 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`FECHANAC` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:24:11,876 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`NOMBRE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:24:11,876 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`PROVEEDOR` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:24:52,558 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `RETO`.`DEPORTE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:24:52,559 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `RETO`.`NOMBRE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:24:52,577 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `SESIONENTRENAMIENTO`.`DEPORTE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:24:52,577 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `SESIONENTRENAMIENTO`.`TITULO` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:24:52,592 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`EMAIL` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:24:52,592 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`FECHANAC` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:24:52,592 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`NOMBRE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:24:52,592 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`PROVEEDOR` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:26:34,511 (main) WARN  [DataNucleus.MetaData] - Class strava.server.data.domain.UsuarioStrava is defined to use the same table as strava.server.data.domain.User yet this root class has not been defined with a discriminator!!!
+12:26:35,657 (main) WARN  [DataNucleus.MetaData] - Class strava.server.data.domain.UsuarioStrava is defined to use the same table as strava.server.data.domain.User yet this root class has not been defined with a discriminator!!!
+12:26:35,685 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`EMAIL` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:26:35,685 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`FECHANAC` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:26:35,686 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`NOMBRE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:26:35,686 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`PROVEEDOR` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:26:35,686 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`CONTRASENNA` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:26:35,705 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `RETO`.`DEPORTE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:26:35,705 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `RETO`.`NOMBRE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:26:35,719 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `SESIONENTRENAMIENTO`.`DEPORTE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:26:35,719 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `SESIONENTRENAMIENTO`.`TITULO` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:26:36,524 (main) WARN  [DataNucleus.MetaData] - Class strava.server.data.domain.UsuarioStrava is defined to use the same table as strava.server.data.domain.User yet this root class has not been defined with a discriminator!!!
+12:34:10,818 (main) WARN  [DataNucleus.MetaData] - Class strava.server.data.domain.UsuarioStrava is defined to use the same table as strava.server.data.domain.User yet this root class has not been defined with a discriminator!!!
+12:34:12,003 (main) WARN  [DataNucleus.MetaData] - Class strava.server.data.domain.UsuarioStrava is defined to use the same table as strava.server.data.domain.User yet this root class has not been defined with a discriminator!!!
+12:34:12,033 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`EMAIL` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:34:12,033 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`FECHANAC` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:34:12,033 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`NOMBRE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:34:12,033 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`PROVEEDOR` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:34:12,034 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`CONTRASENNA` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:34:12,052 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `RETO`.`DEPORTE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:34:12,052 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `RETO`.`NOMBRE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:34:12,067 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `SESIONENTRENAMIENTO`.`DEPORTE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:34:12,067 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `SESIONENTRENAMIENTO`.`TITULO` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:34:12,926 (main) WARN  [DataNucleus.MetaData] - Class strava.server.data.domain.UsuarioStrava is defined to use the same table as strava.server.data.domain.User yet this root class has not been defined with a discriminator!!!
+12:34:37,346 (main) WARN  [DataNucleus.MetaData] - Class strava.server.data.domain.UsuarioStrava is defined to use the same table as strava.server.data.domain.User yet this root class has not been defined with a discriminator!!!
+12:34:38,523 (main) WARN  [DataNucleus.MetaData] - Class strava.server.data.domain.UsuarioStrava is defined to use the same table as strava.server.data.domain.User yet this root class has not been defined with a discriminator!!!
+12:34:38,552 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`EMAIL` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:34:38,552 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`FECHANAC` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:34:38,552 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`NOMBRE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:34:38,552 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`PROVEEDOR` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:34:38,552 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`CONTRASENNA` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:34:38,573 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `RETO`.`DEPORTE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:34:38,574 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `RETO`.`NOMBRE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:34:38,589 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `SESIONENTRENAMIENTO`.`DEPORTE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:34:38,589 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `SESIONENTRENAMIENTO`.`TITULO` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:34:39,455 (main) WARN  [DataNucleus.MetaData] - Class strava.server.data.domain.UsuarioStrava is defined to use the same table as strava.server.data.domain.User yet this root class has not been defined with a discriminator!!!
+12:37:34,199 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `RETO`.`DEPORTE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:37:34,200 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `RETO`.`NOMBRE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:37:34,217 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `SESIONENTRENAMIENTO`.`DEPORTE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:37:34,218 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `SESIONENTRENAMIENTO`.`TITULO` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:37:34,234 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`EMAIL` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:37:34,234 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`FECHANAC` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:37:34,235 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`NOMBRE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:37:34,235 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`PROVEEDOR` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:37:34,247 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USUARIOSTRAVA`.`CONTRASENNA` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:40:05,015 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `RETO`.`DEPORTE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:40:05,016 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `RETO`.`NOMBRE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:40:05,033 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `SESIONENTRENAMIENTO`.`DEPORTE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:40:05,033 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `SESIONENTRENAMIENTO`.`TITULO` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:40:05,049 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`EMAIL` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:40:05,049 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`FECHANAC` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:40:05,049 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`NOMBRE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:40:05,049 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`PROVEEDOR` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:40:05,061 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USUARIOSTRAVA`.`CONTRASENNA` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:41:09,036 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `RETO`.`DEPORTE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:41:09,038 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `RETO`.`NOMBRE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:41:09,056 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `SESIONENTRENAMIENTO`.`DEPORTE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:41:09,056 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `SESIONENTRENAMIENTO`.`TITULO` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:41:09,072 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`EMAIL` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:41:09,073 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`FECHANAC` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:41:09,073 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`NOMBRE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:41:09,073 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`PROVEEDOR` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:41:09,086 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USUARIOSTRAVA`.`CONTRASENNA` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:47:01,726 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `RETO`.`DEPORTE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:47:01,727 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `RETO`.`NOMBRE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:47:01,746 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `SESIONENTRENAMIENTO`.`DEPORTE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:47:01,746 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `SESIONENTRENAMIENTO`.`TITULO` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:47:01,763 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`EMAIL` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:47:01,763 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`FECHANAC` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:47:01,763 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`NOMBRE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:47:01,763 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`PROVEEDOR` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:47:01,779 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USUARIOSTRAVA`.`CONTRASENNA` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:47:36,861 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `RETO`.`DEPORTE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:47:36,861 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `RETO`.`NOMBRE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:47:36,878 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `SESIONENTRENAMIENTO`.`DEPORTE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:47:36,879 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `SESIONENTRENAMIENTO`.`TITULO` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:47:36,892 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`EMAIL` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:47:36,892 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`FECHANAC` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:47:36,892 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`NOMBRE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:47:36,892 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`PROVEEDOR` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:47:36,905 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USUARIOSTRAVA`.`CONTRASENNA` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:49:01,778 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `RETO`.`DEPORTE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:49:01,778 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `RETO`.`NOMBRE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:49:01,795 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `SESIONENTRENAMIENTO`.`DEPORTE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:49:01,795 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `SESIONENTRENAMIENTO`.`TITULO` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:49:01,811 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`EMAIL` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:49:01,811 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`FECHANAC` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:49:01,811 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`NOMBRE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:49:01,811 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`PROVEEDOR` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:49:01,822 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USUARIOSTRAVA`.`CONTRASENNA` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:49:25,771 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `RETO`.`DEPORTE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:49:25,772 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `RETO`.`NOMBRE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:49:25,788 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `SESIONENTRENAMIENTO`.`DEPORTE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:49:25,788 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `SESIONENTRENAMIENTO`.`TITULO` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:49:25,804 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`EMAIL` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:49:25,805 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`FECHANAC` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:49:25,805 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`NOMBRE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:49:25,805 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`PROVEEDOR` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:49:25,817 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USUARIOSTRAVA`.`CONTRASENNA` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:51:41,818 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `RETO`.`DEPORTE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:51:41,819 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `RETO`.`NOMBRE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:51:41,835 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `SESIONENTRENAMIENTO`.`DEPORTE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:51:41,835 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `SESIONENTRENAMIENTO`.`TITULO` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:51:41,851 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`EMAIL` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:51:41,851 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`FECHANAC` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:51:41,851 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`NOMBRE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:51:41,851 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`PROVEEDOR` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:51:41,863 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USUARIOSTRAVA`.`CONTRASENNA` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:52:20,193 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `RETO`.`DEPORTE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:52:20,194 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `RETO`.`NOMBRE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:52:20,211 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `SESIONENTRENAMIENTO`.`DEPORTE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:52:20,211 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `SESIONENTRENAMIENTO`.`TITULO` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:52:20,225 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`EMAIL` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:52:20,225 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`FECHANAC` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:52:20,225 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`NOMBRE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:52:20,225 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`PROVEEDOR` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:52:20,240 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USUARIOSTRAVA`.`CONTRASENNA` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:55:24,213 (main) ERROR [DataNucleus.Datastore.Schema] - Una excepcion estaba tirada durante la addicion/validacion de algunas class(es) : La generación del nuevo tipo de Mapping org.datanucleus.store.rdbms.mapping.java.CollectionMapping ha fallada : Clase "strava.server.data.domain.User" campo "sesiones" : tiene "mapped-by" de "nombre". Este campo no existe en el otro lado de la relación ("strava.server.data.domain.SesionEntrenamiento")!!
+Clase "strava.server.data.domain.User" campo "sesiones" : tiene "mapped-by" de "nombre". Este campo no existe en el otro lado de la relación ("strava.server.data.domain.SesionEntrenamiento")!!
+org.datanucleus.exceptions.NucleusUserException: Clase "strava.server.data.domain.User" campo "sesiones" : tiene "mapped-by" de "nombre". Este campo no existe en el otro lado de la relación ("strava.server.data.domain.SesionEntrenamiento")!!
+	at org.datanucleus.metadata.AbstractMemberMetaData.setRelation(AbstractMemberMetaData.java:2712)
+	at org.datanucleus.metadata.AbstractMemberMetaData.getRelatedMemberMetaData(AbstractMemberMetaData.java:2975)
+	at org.datanucleus.store.rdbms.identifier.DNIdentifierFactory.newTableIdentifier(DNIdentifierFactory.java:133)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.addJoinTableForContainer(RDBMSStoreManager.java:3741)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.newJoinTable(RDBMSStoreManager.java:2895)
+	at org.datanucleus.store.rdbms.mapping.java.AbstractContainerMapping.initialize(AbstractContainerMapping.java:85)
+	at org.datanucleus.store.rdbms.mapping.MappingManagerImpl.getMapping(MappingManagerImpl.java:663)
+	at org.datanucleus.store.rdbms.table.ClassTable.manageMembers(ClassTable.java:648)
+	at org.datanucleus.store.rdbms.table.ClassTable.manageClass(ClassTable.java:554)
+	at org.datanucleus.store.rdbms.table.ClassTable.initializeForClass(ClassTable.java:1380)
+	at org.datanucleus.store.rdbms.table.ClassTable.initialize(ClassTable.java:273)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.initializeClassTables(RDBMSStoreManager.java:3393)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.run(RDBMSStoreManager.java:3016)
+	at org.datanucleus.store.rdbms.AbstractSchemaTransaction.execute(AbstractSchemaTransaction.java:118)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.manageClasses(RDBMSStoreManager.java:1624)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.deleteSchemaForClasses(RDBMSStoreManager.java:4192)
+	at org.datanucleus.store.schema.SchemaTool.deleteSchemaForClasses(SchemaTool.java:512)
+	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:427)
+
+La generación del nuevo tipo de Mapping org.datanucleus.store.rdbms.mapping.java.CollectionMapping ha fallada : Clase "strava.server.data.domain.User" campo "sesiones" : tiene "mapped-by" de "nombre". Este campo no existe en el otro lado de la relación ("strava.server.data.domain.SesionEntrenamiento")!!
+Clase "strava.server.data.domain.User" campo "sesiones" : tiene "mapped-by" de "nombre". Este campo no existe en el otro lado de la relación ("strava.server.data.domain.SesionEntrenamiento")!!
+org.datanucleus.exceptions.NucleusUserException: Clase "strava.server.data.domain.User" campo "sesiones" : tiene "mapped-by" de "nombre". Este campo no existe en el otro lado de la relación ("strava.server.data.domain.SesionEntrenamiento")!!
+	at org.datanucleus.metadata.AbstractMemberMetaData.setRelation(AbstractMemberMetaData.java:2712)
+	at org.datanucleus.metadata.AbstractMemberMetaData.getRelatedMemberMetaData(AbstractMemberMetaData.java:2975)
+	at org.datanucleus.store.rdbms.identifier.DNIdentifierFactory.newTableIdentifier(DNIdentifierFactory.java:133)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.addJoinTableForContainer(RDBMSStoreManager.java:3741)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.newJoinTable(RDBMSStoreManager.java:2895)
+	at org.datanucleus.store.rdbms.mapping.java.AbstractContainerMapping.initialize(AbstractContainerMapping.java:85)
+	at org.datanucleus.store.rdbms.mapping.MappingManagerImpl.getMapping(MappingManagerImpl.java:663)
+	at org.datanucleus.store.rdbms.table.ClassTable.manageMembers(ClassTable.java:648)
+	at org.datanucleus.store.rdbms.table.ClassTable.manageClass(ClassTable.java:554)
+	at org.datanucleus.store.rdbms.table.ClassTable.initializeForClass(ClassTable.java:1380)
+	at org.datanucleus.store.rdbms.table.ClassTable.initialize(ClassTable.java:273)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.initializeClassTables(RDBMSStoreManager.java:3393)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.run(RDBMSStoreManager.java:3016)
+	at org.datanucleus.store.rdbms.AbstractSchemaTransaction.execute(AbstractSchemaTransaction.java:118)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.manageClasses(RDBMSStoreManager.java:1624)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.deleteSchemaForClasses(RDBMSStoreManager.java:4192)
+	at org.datanucleus.store.schema.SchemaTool.deleteSchemaForClasses(SchemaTool.java:512)
+	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:427)
+
+org.datanucleus.exceptions.NucleusException: La generación del nuevo tipo de Mapping org.datanucleus.store.rdbms.mapping.java.CollectionMapping ha fallada : Clase "strava.server.data.domain.User" campo "sesiones" : tiene "mapped-by" de "nombre". Este campo no existe en el otro lado de la relación ("strava.server.data.domain.SesionEntrenamiento")!!
+Clase "strava.server.data.domain.User" campo "sesiones" : tiene "mapped-by" de "nombre". Este campo no existe en el otro lado de la relación ("strava.server.data.domain.SesionEntrenamiento")!!
+org.datanucleus.exceptions.NucleusUserException: Clase "strava.server.data.domain.User" campo "sesiones" : tiene "mapped-by" de "nombre". Este campo no existe en el otro lado de la relación ("strava.server.data.domain.SesionEntrenamiento")!!
+	at org.datanucleus.metadata.AbstractMemberMetaData.setRelation(AbstractMemberMetaData.java:2712)
+	at org.datanucleus.metadata.AbstractMemberMetaData.getRelatedMemberMetaData(AbstractMemberMetaData.java:2975)
+	at org.datanucleus.store.rdbms.identifier.DNIdentifierFactory.newTableIdentifier(DNIdentifierFactory.java:133)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.addJoinTableForContainer(RDBMSStoreManager.java:3741)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.newJoinTable(RDBMSStoreManager.java:2895)
+	at org.datanucleus.store.rdbms.mapping.java.AbstractContainerMapping.initialize(AbstractContainerMapping.java:85)
+	at org.datanucleus.store.rdbms.mapping.MappingManagerImpl.getMapping(MappingManagerImpl.java:663)
+	at org.datanucleus.store.rdbms.table.ClassTable.manageMembers(ClassTable.java:648)
+	at org.datanucleus.store.rdbms.table.ClassTable.manageClass(ClassTable.java:554)
+	at org.datanucleus.store.rdbms.table.ClassTable.initializeForClass(ClassTable.java:1380)
+	at org.datanucleus.store.rdbms.table.ClassTable.initialize(ClassTable.java:273)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.initializeClassTables(RDBMSStoreManager.java:3393)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.run(RDBMSStoreManager.java:3016)
+	at org.datanucleus.store.rdbms.AbstractSchemaTransaction.execute(AbstractSchemaTransaction.java:118)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.manageClasses(RDBMSStoreManager.java:1624)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.deleteSchemaForClasses(RDBMSStoreManager.java:4192)
+	at org.datanucleus.store.schema.SchemaTool.deleteSchemaForClasses(SchemaTool.java:512)
+	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:427)
+
+	at org.datanucleus.store.rdbms.mapping.MappingManagerImpl.getMapping(MappingManagerImpl.java:673)
+	at org.datanucleus.store.rdbms.table.ClassTable.manageMembers(ClassTable.java:648)
+	at org.datanucleus.store.rdbms.table.ClassTable.manageClass(ClassTable.java:554)
+	at org.datanucleus.store.rdbms.table.ClassTable.initializeForClass(ClassTable.java:1380)
+	at org.datanucleus.store.rdbms.table.ClassTable.initialize(ClassTable.java:273)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.initializeClassTables(RDBMSStoreManager.java:3393)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.run(RDBMSStoreManager.java:3016)
+	at org.datanucleus.store.rdbms.AbstractSchemaTransaction.execute(AbstractSchemaTransaction.java:118)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.manageClasses(RDBMSStoreManager.java:1624)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.deleteSchemaForClasses(RDBMSStoreManager.java:4192)
+	at org.datanucleus.store.schema.SchemaTool.deleteSchemaForClasses(SchemaTool.java:512)
+	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:427)
+Caused by: org.datanucleus.exceptions.NucleusUserException: Clase "strava.server.data.domain.User" campo "sesiones" : tiene "mapped-by" de "nombre". Este campo no existe en el otro lado de la relación ("strava.server.data.domain.SesionEntrenamiento")!!
+	at org.datanucleus.metadata.AbstractMemberMetaData.setRelation(AbstractMemberMetaData.java:2712)
+	at org.datanucleus.metadata.AbstractMemberMetaData.getRelatedMemberMetaData(AbstractMemberMetaData.java:2975)
+	at org.datanucleus.store.rdbms.identifier.DNIdentifierFactory.newTableIdentifier(DNIdentifierFactory.java:133)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.addJoinTableForContainer(RDBMSStoreManager.java:3741)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.newJoinTable(RDBMSStoreManager.java:2895)
+	at org.datanucleus.store.rdbms.mapping.java.AbstractContainerMapping.initialize(AbstractContainerMapping.java:85)
+	at org.datanucleus.store.rdbms.mapping.MappingManagerImpl.getMapping(MappingManagerImpl.java:663)
+	... 11 more
+Nested Throwables StackTrace:
+Clase "strava.server.data.domain.User" campo "sesiones" : tiene "mapped-by" de "nombre". Este campo no existe en el otro lado de la relación ("strava.server.data.domain.SesionEntrenamiento")!!
+org.datanucleus.exceptions.NucleusUserException: Clase "strava.server.data.domain.User" campo "sesiones" : tiene "mapped-by" de "nombre". Este campo no existe en el otro lado de la relación ("strava.server.data.domain.SesionEntrenamiento")!!
+	at org.datanucleus.metadata.AbstractMemberMetaData.setRelation(AbstractMemberMetaData.java:2712)
+	at org.datanucleus.metadata.AbstractMemberMetaData.getRelatedMemberMetaData(AbstractMemberMetaData.java:2975)
+	at org.datanucleus.store.rdbms.identifier.DNIdentifierFactory.newTableIdentifier(DNIdentifierFactory.java:133)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.addJoinTableForContainer(RDBMSStoreManager.java:3741)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.newJoinTable(RDBMSStoreManager.java:2895)
+	at org.datanucleus.store.rdbms.mapping.java.AbstractContainerMapping.initialize(AbstractContainerMapping.java:85)
+	at org.datanucleus.store.rdbms.mapping.MappingManagerImpl.getMapping(MappingManagerImpl.java:663)
+	at org.datanucleus.store.rdbms.table.ClassTable.manageMembers(ClassTable.java:648)
+	at org.datanucleus.store.rdbms.table.ClassTable.manageClass(ClassTable.java:554)
+	at org.datanucleus.store.rdbms.table.ClassTable.initializeForClass(ClassTable.java:1380)
+	at org.datanucleus.store.rdbms.table.ClassTable.initialize(ClassTable.java:273)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.initializeClassTables(RDBMSStoreManager.java:3393)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.run(RDBMSStoreManager.java:3016)
+	at org.datanucleus.store.rdbms.AbstractSchemaTransaction.execute(AbstractSchemaTransaction.java:118)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.manageClasses(RDBMSStoreManager.java:1624)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.deleteSchemaForClasses(RDBMSStoreManager.java:4192)
+	at org.datanucleus.store.schema.SchemaTool.deleteSchemaForClasses(SchemaTool.java:512)
+	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:427)
+
+12:55:24,214 (main) ERROR [DataNucleus.SchemaTool] - DataNucleus SchemaTool ha lanzado una excepción. Por favor consulte el Log para ver más detalles: La generación del nuevo tipo de Mapping org.datanucleus.store.rdbms.mapping.java.CollectionMapping ha fallada : Clase "strava.server.data.domain.User" campo "sesiones" : tiene "mapped-by" de "nombre". Este campo no existe en el otro lado de la relación ("strava.server.data.domain.SesionEntrenamiento")!!
+Clase "strava.server.data.domain.User" campo "sesiones" : tiene "mapped-by" de "nombre". Este campo no existe en el otro lado de la relación ("strava.server.data.domain.SesionEntrenamiento")!!
+org.datanucleus.exceptions.NucleusUserException: Clase "strava.server.data.domain.User" campo "sesiones" : tiene "mapped-by" de "nombre". Este campo no existe en el otro lado de la relación ("strava.server.data.domain.SesionEntrenamiento")!!
+	at org.datanucleus.metadata.AbstractMemberMetaData.setRelation(AbstractMemberMetaData.java:2712)
+	at org.datanucleus.metadata.AbstractMemberMetaData.getRelatedMemberMetaData(AbstractMemberMetaData.java:2975)
+	at org.datanucleus.store.rdbms.identifier.DNIdentifierFactory.newTableIdentifier(DNIdentifierFactory.java:133)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.addJoinTableForContainer(RDBMSStoreManager.java:3741)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.newJoinTable(RDBMSStoreManager.java:2895)
+	at org.datanucleus.store.rdbms.mapping.java.AbstractContainerMapping.initialize(AbstractContainerMapping.java:85)
+	at org.datanucleus.store.rdbms.mapping.MappingManagerImpl.getMapping(MappingManagerImpl.java:663)
+	at org.datanucleus.store.rdbms.table.ClassTable.manageMembers(ClassTable.java:648)
+	at org.datanucleus.store.rdbms.table.ClassTable.manageClass(ClassTable.java:554)
+	at org.datanucleus.store.rdbms.table.ClassTable.initializeForClass(ClassTable.java:1380)
+	at org.datanucleus.store.rdbms.table.ClassTable.initialize(ClassTable.java:273)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.initializeClassTables(RDBMSStoreManager.java:3393)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.run(RDBMSStoreManager.java:3016)
+	at org.datanucleus.store.rdbms.AbstractSchemaTransaction.execute(AbstractSchemaTransaction.java:118)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.manageClasses(RDBMSStoreManager.java:1624)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.deleteSchemaForClasses(RDBMSStoreManager.java:4192)
+	at org.datanucleus.store.schema.SchemaTool.deleteSchemaForClasses(SchemaTool.java:512)
+	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:427)
+
+La generación del nuevo tipo de Mapping org.datanucleus.store.rdbms.mapping.java.CollectionMapping ha fallada : Clase "strava.server.data.domain.User" campo "sesiones" : tiene "mapped-by" de "nombre". Este campo no existe en el otro lado de la relación ("strava.server.data.domain.SesionEntrenamiento")!!
+Clase "strava.server.data.domain.User" campo "sesiones" : tiene "mapped-by" de "nombre". Este campo no existe en el otro lado de la relación ("strava.server.data.domain.SesionEntrenamiento")!!
+org.datanucleus.exceptions.NucleusUserException: Clase "strava.server.data.domain.User" campo "sesiones" : tiene "mapped-by" de "nombre". Este campo no existe en el otro lado de la relación ("strava.server.data.domain.SesionEntrenamiento")!!
+	at org.datanucleus.metadata.AbstractMemberMetaData.setRelation(AbstractMemberMetaData.java:2712)
+	at org.datanucleus.metadata.AbstractMemberMetaData.getRelatedMemberMetaData(AbstractMemberMetaData.java:2975)
+	at org.datanucleus.store.rdbms.identifier.DNIdentifierFactory.newTableIdentifier(DNIdentifierFactory.java:133)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.addJoinTableForContainer(RDBMSStoreManager.java:3741)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.newJoinTable(RDBMSStoreManager.java:2895)
+	at org.datanucleus.store.rdbms.mapping.java.AbstractContainerMapping.initialize(AbstractContainerMapping.java:85)
+	at org.datanucleus.store.rdbms.mapping.MappingManagerImpl.getMapping(MappingManagerImpl.java:663)
+	at org.datanucleus.store.rdbms.table.ClassTable.manageMembers(ClassTable.java:648)
+	at org.datanucleus.store.rdbms.table.ClassTable.manageClass(ClassTable.java:554)
+	at org.datanucleus.store.rdbms.table.ClassTable.initializeForClass(ClassTable.java:1380)
+	at org.datanucleus.store.rdbms.table.ClassTable.initialize(ClassTable.java:273)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.initializeClassTables(RDBMSStoreManager.java:3393)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.run(RDBMSStoreManager.java:3016)
+	at org.datanucleus.store.rdbms.AbstractSchemaTransaction.execute(AbstractSchemaTransaction.java:118)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.manageClasses(RDBMSStoreManager.java:1624)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.deleteSchemaForClasses(RDBMSStoreManager.java:4192)
+	at org.datanucleus.store.schema.SchemaTool.deleteSchemaForClasses(SchemaTool.java:512)
+	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:427)
+
+org.datanucleus.exceptions.NucleusException: La generación del nuevo tipo de Mapping org.datanucleus.store.rdbms.mapping.java.CollectionMapping ha fallada : Clase "strava.server.data.domain.User" campo "sesiones" : tiene "mapped-by" de "nombre". Este campo no existe en el otro lado de la relación ("strava.server.data.domain.SesionEntrenamiento")!!
+Clase "strava.server.data.domain.User" campo "sesiones" : tiene "mapped-by" de "nombre". Este campo no existe en el otro lado de la relación ("strava.server.data.domain.SesionEntrenamiento")!!
+org.datanucleus.exceptions.NucleusUserException: Clase "strava.server.data.domain.User" campo "sesiones" : tiene "mapped-by" de "nombre". Este campo no existe en el otro lado de la relación ("strava.server.data.domain.SesionEntrenamiento")!!
+	at org.datanucleus.metadata.AbstractMemberMetaData.setRelation(AbstractMemberMetaData.java:2712)
+	at org.datanucleus.metadata.AbstractMemberMetaData.getRelatedMemberMetaData(AbstractMemberMetaData.java:2975)
+	at org.datanucleus.store.rdbms.identifier.DNIdentifierFactory.newTableIdentifier(DNIdentifierFactory.java:133)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.addJoinTableForContainer(RDBMSStoreManager.java:3741)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.newJoinTable(RDBMSStoreManager.java:2895)
+	at org.datanucleus.store.rdbms.mapping.java.AbstractContainerMapping.initialize(AbstractContainerMapping.java:85)
+	at org.datanucleus.store.rdbms.mapping.MappingManagerImpl.getMapping(MappingManagerImpl.java:663)
+	at org.datanucleus.store.rdbms.table.ClassTable.manageMembers(ClassTable.java:648)
+	at org.datanucleus.store.rdbms.table.ClassTable.manageClass(ClassTable.java:554)
+	at org.datanucleus.store.rdbms.table.ClassTable.initializeForClass(ClassTable.java:1380)
+	at org.datanucleus.store.rdbms.table.ClassTable.initialize(ClassTable.java:273)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.initializeClassTables(RDBMSStoreManager.java:3393)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.run(RDBMSStoreManager.java:3016)
+	at org.datanucleus.store.rdbms.AbstractSchemaTransaction.execute(AbstractSchemaTransaction.java:118)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.manageClasses(RDBMSStoreManager.java:1624)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.deleteSchemaForClasses(RDBMSStoreManager.java:4192)
+	at org.datanucleus.store.schema.SchemaTool.deleteSchemaForClasses(SchemaTool.java:512)
+	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:427)
+
+	at org.datanucleus.store.rdbms.mapping.MappingManagerImpl.getMapping(MappingManagerImpl.java:673)
+	at org.datanucleus.store.rdbms.table.ClassTable.manageMembers(ClassTable.java:648)
+	at org.datanucleus.store.rdbms.table.ClassTable.manageClass(ClassTable.java:554)
+	at org.datanucleus.store.rdbms.table.ClassTable.initializeForClass(ClassTable.java:1380)
+	at org.datanucleus.store.rdbms.table.ClassTable.initialize(ClassTable.java:273)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.initializeClassTables(RDBMSStoreManager.java:3393)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.run(RDBMSStoreManager.java:3016)
+	at org.datanucleus.store.rdbms.AbstractSchemaTransaction.execute(AbstractSchemaTransaction.java:118)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.manageClasses(RDBMSStoreManager.java:1624)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.deleteSchemaForClasses(RDBMSStoreManager.java:4192)
+	at org.datanucleus.store.schema.SchemaTool.deleteSchemaForClasses(SchemaTool.java:512)
+	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:427)
+Caused by: org.datanucleus.exceptions.NucleusUserException: Clase "strava.server.data.domain.User" campo "sesiones" : tiene "mapped-by" de "nombre". Este campo no existe en el otro lado de la relación ("strava.server.data.domain.SesionEntrenamiento")!!
+	at org.datanucleus.metadata.AbstractMemberMetaData.setRelation(AbstractMemberMetaData.java:2712)
+	at org.datanucleus.metadata.AbstractMemberMetaData.getRelatedMemberMetaData(AbstractMemberMetaData.java:2975)
+	at org.datanucleus.store.rdbms.identifier.DNIdentifierFactory.newTableIdentifier(DNIdentifierFactory.java:133)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.addJoinTableForContainer(RDBMSStoreManager.java:3741)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.newJoinTable(RDBMSStoreManager.java:2895)
+	at org.datanucleus.store.rdbms.mapping.java.AbstractContainerMapping.initialize(AbstractContainerMapping.java:85)
+	at org.datanucleus.store.rdbms.mapping.MappingManagerImpl.getMapping(MappingManagerImpl.java:663)
+	... 11 more
+Nested Throwables StackTrace:
+Clase "strava.server.data.domain.User" campo "sesiones" : tiene "mapped-by" de "nombre". Este campo no existe en el otro lado de la relación ("strava.server.data.domain.SesionEntrenamiento")!!
+org.datanucleus.exceptions.NucleusUserException: Clase "strava.server.data.domain.User" campo "sesiones" : tiene "mapped-by" de "nombre". Este campo no existe en el otro lado de la relación ("strava.server.data.domain.SesionEntrenamiento")!!
+	at org.datanucleus.metadata.AbstractMemberMetaData.setRelation(AbstractMemberMetaData.java:2712)
+	at org.datanucleus.metadata.AbstractMemberMetaData.getRelatedMemberMetaData(AbstractMemberMetaData.java:2975)
+	at org.datanucleus.store.rdbms.identifier.DNIdentifierFactory.newTableIdentifier(DNIdentifierFactory.java:133)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.addJoinTableForContainer(RDBMSStoreManager.java:3741)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.newJoinTable(RDBMSStoreManager.java:2895)
+	at org.datanucleus.store.rdbms.mapping.java.AbstractContainerMapping.initialize(AbstractContainerMapping.java:85)
+	at org.datanucleus.store.rdbms.mapping.MappingManagerImpl.getMapping(MappingManagerImpl.java:663)
+	at org.datanucleus.store.rdbms.table.ClassTable.manageMembers(ClassTable.java:648)
+	at org.datanucleus.store.rdbms.table.ClassTable.manageClass(ClassTable.java:554)
+	at org.datanucleus.store.rdbms.table.ClassTable.initializeForClass(ClassTable.java:1380)
+	at org.datanucleus.store.rdbms.table.ClassTable.initialize(ClassTable.java:273)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.initializeClassTables(RDBMSStoreManager.java:3393)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.run(RDBMSStoreManager.java:3016)
+	at org.datanucleus.store.rdbms.AbstractSchemaTransaction.execute(AbstractSchemaTransaction.java:118)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.manageClasses(RDBMSStoreManager.java:1624)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.deleteSchemaForClasses(RDBMSStoreManager.java:4192)
+	at org.datanucleus.store.schema.SchemaTool.deleteSchemaForClasses(SchemaTool.java:512)
+	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:427)
+12:55:54,659 (main) ERROR [DataNucleus.Datastore.Schema] - Una excepcion estaba tirada durante la addicion/validacion de algunas class(es) : La generación del nuevo tipo de Mapping org.datanucleus.store.rdbms.mapping.java.CollectionMapping ha fallada : Clase "strava.server.data.domain.User" campo "sesiones" : tiene "mapped-by" de "nombre". Este campo no existe en el otro lado de la relación ("strava.server.data.domain.SesionEntrenamiento")!!
+Clase "strava.server.data.domain.User" campo "sesiones" : tiene "mapped-by" de "nombre". Este campo no existe en el otro lado de la relación ("strava.server.data.domain.SesionEntrenamiento")!!
+org.datanucleus.exceptions.NucleusUserException: Clase "strava.server.data.domain.User" campo "sesiones" : tiene "mapped-by" de "nombre". Este campo no existe en el otro lado de la relación ("strava.server.data.domain.SesionEntrenamiento")!!
+	at org.datanucleus.metadata.AbstractMemberMetaData.setRelation(AbstractMemberMetaData.java:2712)
+	at org.datanucleus.metadata.AbstractMemberMetaData.getRelatedMemberMetaData(AbstractMemberMetaData.java:2975)
+	at org.datanucleus.store.rdbms.identifier.DNIdentifierFactory.newTableIdentifier(DNIdentifierFactory.java:133)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.addJoinTableForContainer(RDBMSStoreManager.java:3741)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.newJoinTable(RDBMSStoreManager.java:2895)
+	at org.datanucleus.store.rdbms.mapping.java.AbstractContainerMapping.initialize(AbstractContainerMapping.java:85)
+	at org.datanucleus.store.rdbms.mapping.MappingManagerImpl.getMapping(MappingManagerImpl.java:663)
+	at org.datanucleus.store.rdbms.table.ClassTable.manageMembers(ClassTable.java:648)
+	at org.datanucleus.store.rdbms.table.ClassTable.manageClass(ClassTable.java:554)
+	at org.datanucleus.store.rdbms.table.ClassTable.initializeForClass(ClassTable.java:1380)
+	at org.datanucleus.store.rdbms.table.ClassTable.initialize(ClassTable.java:273)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.initializeClassTables(RDBMSStoreManager.java:3393)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.run(RDBMSStoreManager.java:3016)
+	at org.datanucleus.store.rdbms.AbstractSchemaTransaction.execute(AbstractSchemaTransaction.java:118)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.manageClasses(RDBMSStoreManager.java:1624)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.deleteSchemaForClasses(RDBMSStoreManager.java:4192)
+	at org.datanucleus.store.schema.SchemaTool.deleteSchemaForClasses(SchemaTool.java:512)
+	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:427)
+
+La generación del nuevo tipo de Mapping org.datanucleus.store.rdbms.mapping.java.CollectionMapping ha fallada : Clase "strava.server.data.domain.User" campo "sesiones" : tiene "mapped-by" de "nombre". Este campo no existe en el otro lado de la relación ("strava.server.data.domain.SesionEntrenamiento")!!
+Clase "strava.server.data.domain.User" campo "sesiones" : tiene "mapped-by" de "nombre". Este campo no existe en el otro lado de la relación ("strava.server.data.domain.SesionEntrenamiento")!!
+org.datanucleus.exceptions.NucleusUserException: Clase "strava.server.data.domain.User" campo "sesiones" : tiene "mapped-by" de "nombre". Este campo no existe en el otro lado de la relación ("strava.server.data.domain.SesionEntrenamiento")!!
+	at org.datanucleus.metadata.AbstractMemberMetaData.setRelation(AbstractMemberMetaData.java:2712)
+	at org.datanucleus.metadata.AbstractMemberMetaData.getRelatedMemberMetaData(AbstractMemberMetaData.java:2975)
+	at org.datanucleus.store.rdbms.identifier.DNIdentifierFactory.newTableIdentifier(DNIdentifierFactory.java:133)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.addJoinTableForContainer(RDBMSStoreManager.java:3741)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.newJoinTable(RDBMSStoreManager.java:2895)
+	at org.datanucleus.store.rdbms.mapping.java.AbstractContainerMapping.initialize(AbstractContainerMapping.java:85)
+	at org.datanucleus.store.rdbms.mapping.MappingManagerImpl.getMapping(MappingManagerImpl.java:663)
+	at org.datanucleus.store.rdbms.table.ClassTable.manageMembers(ClassTable.java:648)
+	at org.datanucleus.store.rdbms.table.ClassTable.manageClass(ClassTable.java:554)
+	at org.datanucleus.store.rdbms.table.ClassTable.initializeForClass(ClassTable.java:1380)
+	at org.datanucleus.store.rdbms.table.ClassTable.initialize(ClassTable.java:273)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.initializeClassTables(RDBMSStoreManager.java:3393)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.run(RDBMSStoreManager.java:3016)
+	at org.datanucleus.store.rdbms.AbstractSchemaTransaction.execute(AbstractSchemaTransaction.java:118)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.manageClasses(RDBMSStoreManager.java:1624)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.deleteSchemaForClasses(RDBMSStoreManager.java:4192)
+	at org.datanucleus.store.schema.SchemaTool.deleteSchemaForClasses(SchemaTool.java:512)
+	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:427)
+
+org.datanucleus.exceptions.NucleusException: La generación del nuevo tipo de Mapping org.datanucleus.store.rdbms.mapping.java.CollectionMapping ha fallada : Clase "strava.server.data.domain.User" campo "sesiones" : tiene "mapped-by" de "nombre". Este campo no existe en el otro lado de la relación ("strava.server.data.domain.SesionEntrenamiento")!!
+Clase "strava.server.data.domain.User" campo "sesiones" : tiene "mapped-by" de "nombre". Este campo no existe en el otro lado de la relación ("strava.server.data.domain.SesionEntrenamiento")!!
+org.datanucleus.exceptions.NucleusUserException: Clase "strava.server.data.domain.User" campo "sesiones" : tiene "mapped-by" de "nombre". Este campo no existe en el otro lado de la relación ("strava.server.data.domain.SesionEntrenamiento")!!
+	at org.datanucleus.metadata.AbstractMemberMetaData.setRelation(AbstractMemberMetaData.java:2712)
+	at org.datanucleus.metadata.AbstractMemberMetaData.getRelatedMemberMetaData(AbstractMemberMetaData.java:2975)
+	at org.datanucleus.store.rdbms.identifier.DNIdentifierFactory.newTableIdentifier(DNIdentifierFactory.java:133)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.addJoinTableForContainer(RDBMSStoreManager.java:3741)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.newJoinTable(RDBMSStoreManager.java:2895)
+	at org.datanucleus.store.rdbms.mapping.java.AbstractContainerMapping.initialize(AbstractContainerMapping.java:85)
+	at org.datanucleus.store.rdbms.mapping.MappingManagerImpl.getMapping(MappingManagerImpl.java:663)
+	at org.datanucleus.store.rdbms.table.ClassTable.manageMembers(ClassTable.java:648)
+	at org.datanucleus.store.rdbms.table.ClassTable.manageClass(ClassTable.java:554)
+	at org.datanucleus.store.rdbms.table.ClassTable.initializeForClass(ClassTable.java:1380)
+	at org.datanucleus.store.rdbms.table.ClassTable.initialize(ClassTable.java:273)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.initializeClassTables(RDBMSStoreManager.java:3393)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.run(RDBMSStoreManager.java:3016)
+	at org.datanucleus.store.rdbms.AbstractSchemaTransaction.execute(AbstractSchemaTransaction.java:118)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.manageClasses(RDBMSStoreManager.java:1624)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.deleteSchemaForClasses(RDBMSStoreManager.java:4192)
+	at org.datanucleus.store.schema.SchemaTool.deleteSchemaForClasses(SchemaTool.java:512)
+	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:427)
+
+	at org.datanucleus.store.rdbms.mapping.MappingManagerImpl.getMapping(MappingManagerImpl.java:673)
+	at org.datanucleus.store.rdbms.table.ClassTable.manageMembers(ClassTable.java:648)
+	at org.datanucleus.store.rdbms.table.ClassTable.manageClass(ClassTable.java:554)
+	at org.datanucleus.store.rdbms.table.ClassTable.initializeForClass(ClassTable.java:1380)
+	at org.datanucleus.store.rdbms.table.ClassTable.initialize(ClassTable.java:273)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.initializeClassTables(RDBMSStoreManager.java:3393)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.run(RDBMSStoreManager.java:3016)
+	at org.datanucleus.store.rdbms.AbstractSchemaTransaction.execute(AbstractSchemaTransaction.java:118)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.manageClasses(RDBMSStoreManager.java:1624)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.deleteSchemaForClasses(RDBMSStoreManager.java:4192)
+	at org.datanucleus.store.schema.SchemaTool.deleteSchemaForClasses(SchemaTool.java:512)
+	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:427)
+Caused by: org.datanucleus.exceptions.NucleusUserException: Clase "strava.server.data.domain.User" campo "sesiones" : tiene "mapped-by" de "nombre". Este campo no existe en el otro lado de la relación ("strava.server.data.domain.SesionEntrenamiento")!!
+	at org.datanucleus.metadata.AbstractMemberMetaData.setRelation(AbstractMemberMetaData.java:2712)
+	at org.datanucleus.metadata.AbstractMemberMetaData.getRelatedMemberMetaData(AbstractMemberMetaData.java:2975)
+	at org.datanucleus.store.rdbms.identifier.DNIdentifierFactory.newTableIdentifier(DNIdentifierFactory.java:133)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.addJoinTableForContainer(RDBMSStoreManager.java:3741)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.newJoinTable(RDBMSStoreManager.java:2895)
+	at org.datanucleus.store.rdbms.mapping.java.AbstractContainerMapping.initialize(AbstractContainerMapping.java:85)
+	at org.datanucleus.store.rdbms.mapping.MappingManagerImpl.getMapping(MappingManagerImpl.java:663)
+	... 11 more
+Nested Throwables StackTrace:
+Clase "strava.server.data.domain.User" campo "sesiones" : tiene "mapped-by" de "nombre". Este campo no existe en el otro lado de la relación ("strava.server.data.domain.SesionEntrenamiento")!!
+org.datanucleus.exceptions.NucleusUserException: Clase "strava.server.data.domain.User" campo "sesiones" : tiene "mapped-by" de "nombre". Este campo no existe en el otro lado de la relación ("strava.server.data.domain.SesionEntrenamiento")!!
+	at org.datanucleus.metadata.AbstractMemberMetaData.setRelation(AbstractMemberMetaData.java:2712)
+	at org.datanucleus.metadata.AbstractMemberMetaData.getRelatedMemberMetaData(AbstractMemberMetaData.java:2975)
+	at org.datanucleus.store.rdbms.identifier.DNIdentifierFactory.newTableIdentifier(DNIdentifierFactory.java:133)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.addJoinTableForContainer(RDBMSStoreManager.java:3741)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.newJoinTable(RDBMSStoreManager.java:2895)
+	at org.datanucleus.store.rdbms.mapping.java.AbstractContainerMapping.initialize(AbstractContainerMapping.java:85)
+	at org.datanucleus.store.rdbms.mapping.MappingManagerImpl.getMapping(MappingManagerImpl.java:663)
+	at org.datanucleus.store.rdbms.table.ClassTable.manageMembers(ClassTable.java:648)
+	at org.datanucleus.store.rdbms.table.ClassTable.manageClass(ClassTable.java:554)
+	at org.datanucleus.store.rdbms.table.ClassTable.initializeForClass(ClassTable.java:1380)
+	at org.datanucleus.store.rdbms.table.ClassTable.initialize(ClassTable.java:273)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.initializeClassTables(RDBMSStoreManager.java:3393)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.run(RDBMSStoreManager.java:3016)
+	at org.datanucleus.store.rdbms.AbstractSchemaTransaction.execute(AbstractSchemaTransaction.java:118)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.manageClasses(RDBMSStoreManager.java:1624)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.deleteSchemaForClasses(RDBMSStoreManager.java:4192)
+	at org.datanucleus.store.schema.SchemaTool.deleteSchemaForClasses(SchemaTool.java:512)
+	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:427)
+
+12:55:54,660 (main) ERROR [DataNucleus.SchemaTool] - DataNucleus SchemaTool ha lanzado una excepción. Por favor consulte el Log para ver más detalles: La generación del nuevo tipo de Mapping org.datanucleus.store.rdbms.mapping.java.CollectionMapping ha fallada : Clase "strava.server.data.domain.User" campo "sesiones" : tiene "mapped-by" de "nombre". Este campo no existe en el otro lado de la relación ("strava.server.data.domain.SesionEntrenamiento")!!
+Clase "strava.server.data.domain.User" campo "sesiones" : tiene "mapped-by" de "nombre". Este campo no existe en el otro lado de la relación ("strava.server.data.domain.SesionEntrenamiento")!!
+org.datanucleus.exceptions.NucleusUserException: Clase "strava.server.data.domain.User" campo "sesiones" : tiene "mapped-by" de "nombre". Este campo no existe en el otro lado de la relación ("strava.server.data.domain.SesionEntrenamiento")!!
+	at org.datanucleus.metadata.AbstractMemberMetaData.setRelation(AbstractMemberMetaData.java:2712)
+	at org.datanucleus.metadata.AbstractMemberMetaData.getRelatedMemberMetaData(AbstractMemberMetaData.java:2975)
+	at org.datanucleus.store.rdbms.identifier.DNIdentifierFactory.newTableIdentifier(DNIdentifierFactory.java:133)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.addJoinTableForContainer(RDBMSStoreManager.java:3741)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.newJoinTable(RDBMSStoreManager.java:2895)
+	at org.datanucleus.store.rdbms.mapping.java.AbstractContainerMapping.initialize(AbstractContainerMapping.java:85)
+	at org.datanucleus.store.rdbms.mapping.MappingManagerImpl.getMapping(MappingManagerImpl.java:663)
+	at org.datanucleus.store.rdbms.table.ClassTable.manageMembers(ClassTable.java:648)
+	at org.datanucleus.store.rdbms.table.ClassTable.manageClass(ClassTable.java:554)
+	at org.datanucleus.store.rdbms.table.ClassTable.initializeForClass(ClassTable.java:1380)
+	at org.datanucleus.store.rdbms.table.ClassTable.initialize(ClassTable.java:273)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.initializeClassTables(RDBMSStoreManager.java:3393)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.run(RDBMSStoreManager.java:3016)
+	at org.datanucleus.store.rdbms.AbstractSchemaTransaction.execute(AbstractSchemaTransaction.java:118)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.manageClasses(RDBMSStoreManager.java:1624)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.deleteSchemaForClasses(RDBMSStoreManager.java:4192)
+	at org.datanucleus.store.schema.SchemaTool.deleteSchemaForClasses(SchemaTool.java:512)
+	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:427)
+
+La generación del nuevo tipo de Mapping org.datanucleus.store.rdbms.mapping.java.CollectionMapping ha fallada : Clase "strava.server.data.domain.User" campo "sesiones" : tiene "mapped-by" de "nombre". Este campo no existe en el otro lado de la relación ("strava.server.data.domain.SesionEntrenamiento")!!
+Clase "strava.server.data.domain.User" campo "sesiones" : tiene "mapped-by" de "nombre". Este campo no existe en el otro lado de la relación ("strava.server.data.domain.SesionEntrenamiento")!!
+org.datanucleus.exceptions.NucleusUserException: Clase "strava.server.data.domain.User" campo "sesiones" : tiene "mapped-by" de "nombre". Este campo no existe en el otro lado de la relación ("strava.server.data.domain.SesionEntrenamiento")!!
+	at org.datanucleus.metadata.AbstractMemberMetaData.setRelation(AbstractMemberMetaData.java:2712)
+	at org.datanucleus.metadata.AbstractMemberMetaData.getRelatedMemberMetaData(AbstractMemberMetaData.java:2975)
+	at org.datanucleus.store.rdbms.identifier.DNIdentifierFactory.newTableIdentifier(DNIdentifierFactory.java:133)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.addJoinTableForContainer(RDBMSStoreManager.java:3741)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.newJoinTable(RDBMSStoreManager.java:2895)
+	at org.datanucleus.store.rdbms.mapping.java.AbstractContainerMapping.initialize(AbstractContainerMapping.java:85)
+	at org.datanucleus.store.rdbms.mapping.MappingManagerImpl.getMapping(MappingManagerImpl.java:663)
+	at org.datanucleus.store.rdbms.table.ClassTable.manageMembers(ClassTable.java:648)
+	at org.datanucleus.store.rdbms.table.ClassTable.manageClass(ClassTable.java:554)
+	at org.datanucleus.store.rdbms.table.ClassTable.initializeForClass(ClassTable.java:1380)
+	at org.datanucleus.store.rdbms.table.ClassTable.initialize(ClassTable.java:273)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.initializeClassTables(RDBMSStoreManager.java:3393)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.run(RDBMSStoreManager.java:3016)
+	at org.datanucleus.store.rdbms.AbstractSchemaTransaction.execute(AbstractSchemaTransaction.java:118)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.manageClasses(RDBMSStoreManager.java:1624)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.deleteSchemaForClasses(RDBMSStoreManager.java:4192)
+	at org.datanucleus.store.schema.SchemaTool.deleteSchemaForClasses(SchemaTool.java:512)
+	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:427)
+
+org.datanucleus.exceptions.NucleusException: La generación del nuevo tipo de Mapping org.datanucleus.store.rdbms.mapping.java.CollectionMapping ha fallada : Clase "strava.server.data.domain.User" campo "sesiones" : tiene "mapped-by" de "nombre". Este campo no existe en el otro lado de la relación ("strava.server.data.domain.SesionEntrenamiento")!!
+Clase "strava.server.data.domain.User" campo "sesiones" : tiene "mapped-by" de "nombre". Este campo no existe en el otro lado de la relación ("strava.server.data.domain.SesionEntrenamiento")!!
+org.datanucleus.exceptions.NucleusUserException: Clase "strava.server.data.domain.User" campo "sesiones" : tiene "mapped-by" de "nombre". Este campo no existe en el otro lado de la relación ("strava.server.data.domain.SesionEntrenamiento")!!
+	at org.datanucleus.metadata.AbstractMemberMetaData.setRelation(AbstractMemberMetaData.java:2712)
+	at org.datanucleus.metadata.AbstractMemberMetaData.getRelatedMemberMetaData(AbstractMemberMetaData.java:2975)
+	at org.datanucleus.store.rdbms.identifier.DNIdentifierFactory.newTableIdentifier(DNIdentifierFactory.java:133)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.addJoinTableForContainer(RDBMSStoreManager.java:3741)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.newJoinTable(RDBMSStoreManager.java:2895)
+	at org.datanucleus.store.rdbms.mapping.java.AbstractContainerMapping.initialize(AbstractContainerMapping.java:85)
+	at org.datanucleus.store.rdbms.mapping.MappingManagerImpl.getMapping(MappingManagerImpl.java:663)
+	at org.datanucleus.store.rdbms.table.ClassTable.manageMembers(ClassTable.java:648)
+	at org.datanucleus.store.rdbms.table.ClassTable.manageClass(ClassTable.java:554)
+	at org.datanucleus.store.rdbms.table.ClassTable.initializeForClass(ClassTable.java:1380)
+	at org.datanucleus.store.rdbms.table.ClassTable.initialize(ClassTable.java:273)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.initializeClassTables(RDBMSStoreManager.java:3393)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.run(RDBMSStoreManager.java:3016)
+	at org.datanucleus.store.rdbms.AbstractSchemaTransaction.execute(AbstractSchemaTransaction.java:118)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.manageClasses(RDBMSStoreManager.java:1624)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.deleteSchemaForClasses(RDBMSStoreManager.java:4192)
+	at org.datanucleus.store.schema.SchemaTool.deleteSchemaForClasses(SchemaTool.java:512)
+	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:427)
+
+	at org.datanucleus.store.rdbms.mapping.MappingManagerImpl.getMapping(MappingManagerImpl.java:673)
+	at org.datanucleus.store.rdbms.table.ClassTable.manageMembers(ClassTable.java:648)
+	at org.datanucleus.store.rdbms.table.ClassTable.manageClass(ClassTable.java:554)
+	at org.datanucleus.store.rdbms.table.ClassTable.initializeForClass(ClassTable.java:1380)
+	at org.datanucleus.store.rdbms.table.ClassTable.initialize(ClassTable.java:273)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.initializeClassTables(RDBMSStoreManager.java:3393)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.run(RDBMSStoreManager.java:3016)
+	at org.datanucleus.store.rdbms.AbstractSchemaTransaction.execute(AbstractSchemaTransaction.java:118)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.manageClasses(RDBMSStoreManager.java:1624)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.deleteSchemaForClasses(RDBMSStoreManager.java:4192)
+	at org.datanucleus.store.schema.SchemaTool.deleteSchemaForClasses(SchemaTool.java:512)
+	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:427)
+Caused by: org.datanucleus.exceptions.NucleusUserException: Clase "strava.server.data.domain.User" campo "sesiones" : tiene "mapped-by" de "nombre". Este campo no existe en el otro lado de la relación ("strava.server.data.domain.SesionEntrenamiento")!!
+	at org.datanucleus.metadata.AbstractMemberMetaData.setRelation(AbstractMemberMetaData.java:2712)
+	at org.datanucleus.metadata.AbstractMemberMetaData.getRelatedMemberMetaData(AbstractMemberMetaData.java:2975)
+	at org.datanucleus.store.rdbms.identifier.DNIdentifierFactory.newTableIdentifier(DNIdentifierFactory.java:133)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.addJoinTableForContainer(RDBMSStoreManager.java:3741)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.newJoinTable(RDBMSStoreManager.java:2895)
+	at org.datanucleus.store.rdbms.mapping.java.AbstractContainerMapping.initialize(AbstractContainerMapping.java:85)
+	at org.datanucleus.store.rdbms.mapping.MappingManagerImpl.getMapping(MappingManagerImpl.java:663)
+	... 11 more
+Nested Throwables StackTrace:
+Clase "strava.server.data.domain.User" campo "sesiones" : tiene "mapped-by" de "nombre". Este campo no existe en el otro lado de la relación ("strava.server.data.domain.SesionEntrenamiento")!!
+org.datanucleus.exceptions.NucleusUserException: Clase "strava.server.data.domain.User" campo "sesiones" : tiene "mapped-by" de "nombre". Este campo no existe en el otro lado de la relación ("strava.server.data.domain.SesionEntrenamiento")!!
+	at org.datanucleus.metadata.AbstractMemberMetaData.setRelation(AbstractMemberMetaData.java:2712)
+	at org.datanucleus.metadata.AbstractMemberMetaData.getRelatedMemberMetaData(AbstractMemberMetaData.java:2975)
+	at org.datanucleus.store.rdbms.identifier.DNIdentifierFactory.newTableIdentifier(DNIdentifierFactory.java:133)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.addJoinTableForContainer(RDBMSStoreManager.java:3741)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.newJoinTable(RDBMSStoreManager.java:2895)
+	at org.datanucleus.store.rdbms.mapping.java.AbstractContainerMapping.initialize(AbstractContainerMapping.java:85)
+	at org.datanucleus.store.rdbms.mapping.MappingManagerImpl.getMapping(MappingManagerImpl.java:663)
+	at org.datanucleus.store.rdbms.table.ClassTable.manageMembers(ClassTable.java:648)
+	at org.datanucleus.store.rdbms.table.ClassTable.manageClass(ClassTable.java:554)
+	at org.datanucleus.store.rdbms.table.ClassTable.initializeForClass(ClassTable.java:1380)
+	at org.datanucleus.store.rdbms.table.ClassTable.initialize(ClassTable.java:273)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.initializeClassTables(RDBMSStoreManager.java:3393)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.run(RDBMSStoreManager.java:3016)
+	at org.datanucleus.store.rdbms.AbstractSchemaTransaction.execute(AbstractSchemaTransaction.java:118)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.manageClasses(RDBMSStoreManager.java:1624)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.deleteSchemaForClasses(RDBMSStoreManager.java:4192)
+	at org.datanucleus.store.schema.SchemaTool.deleteSchemaForClasses(SchemaTool.java:512)
+	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:427)
+12:56:11,826 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `RETO`.`DEPORTE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:56:11,827 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `RETO`.`NOMBRE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:56:11,846 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `SESIONENTRENAMIENTO`.`DEPORTE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:56:11,846 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `SESIONENTRENAMIENTO`.`TITULO` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:56:11,864 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`EMAIL` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:56:11,864 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`FECHANAC` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:56:11,864 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`NOMBRE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:56:11,864 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`PROVEEDOR` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:56:11,877 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USUARIOSTRAVA`.`CONTRASENNA` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:58:43,136 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `RETO`.`DEPORTE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:58:43,137 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `RETO`.`NOMBRE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:58:43,155 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `SESIONENTRENAMIENTO`.`DEPORTE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:58:43,155 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `SESIONENTRENAMIENTO`.`TITULO` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:58:43,170 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`EMAIL` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:58:43,170 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`FECHANAC` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:58:43,170 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`NOMBRE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:58:43,170 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`PROVEEDOR` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+12:58:43,183 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USUARIOSTRAVA`.`CONTRASENNA` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+13:00:01,066 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `RETO`.`DEPORTE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+13:00:01,067 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `RETO`.`NOMBRE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+13:00:01,083 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `SESIONENTRENAMIENTO`.`DEPORTE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+13:00:01,084 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `SESIONENTRENAMIENTO`.`TITULO` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+13:00:01,099 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`EMAIL` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+13:00:01,099 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`FECHANAC` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+13:00:01,099 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`NOMBRE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+13:00:01,099 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`PROVEEDOR` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+13:00:01,112 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USUARIOSTRAVA`.`CONTRASENNA` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+13:01:29,270 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `RETO`.`DEPORTE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+13:01:29,271 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `RETO`.`NOMBRE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+13:01:29,288 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `SESIONENTRENAMIENTO`.`DEPORTE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+13:01:29,288 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `SESIONENTRENAMIENTO`.`TITULO` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+13:01:29,305 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`EMAIL` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+13:01:29,306 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`FECHANAC` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+13:01:29,306 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`NOMBRE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+13:01:29,306 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`PROVEEDOR` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+13:01:29,319 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USUARIOSTRAVA`.`CONTRASENNA` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+13:01:53,909 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `RETO`.`DEPORTE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+13:01:53,911 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `RETO`.`NOMBRE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+13:01:53,927 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `SESIONENTRENAMIENTO`.`DEPORTE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+13:01:53,927 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `SESIONENTRENAMIENTO`.`TITULO` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+13:01:53,944 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`EMAIL` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+13:01:53,944 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`FECHANAC` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+13:01:53,944 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`NOMBRE` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+13:01:53,944 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USER`.`PROVEEDOR` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.
+13:01:53,959 (main) WARN  [DataNucleus.Datastore.Schema] - La columna `USUARIOSTRAVA`.`CONTRASENNA` tiene una precision/escala, pero el tipo de la columna de la base de datos no permite nada.

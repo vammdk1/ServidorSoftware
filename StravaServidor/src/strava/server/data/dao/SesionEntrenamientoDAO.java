@@ -10,6 +10,7 @@ import javax.jdo.Transaction;
 
 import strava.server.data.domain.Reto;
 import strava.server.data.domain.SesionEntrenamiento;
+import strava.server.data.domain.User;
 
 public class SesionEntrenamientoDAO extends DataAccessObjectBase implements IDataAccessObject<SesionEntrenamiento> {
 
@@ -85,6 +86,48 @@ public class SesionEntrenamientoDAO extends DataAccessObjectBase implements IDat
 		}
 
 		return result;
+	}
+	
+	public SesionEntrenamiento findFromUser(String user, String sesion) {
+		PersistenceManager pm = pmf.getPersistenceManager();
+		pm.setDetachAllOnCommit(true);
+		Transaction tx = pm.currentTransaction();
+		
+		SesionEntrenamiento sesionEntrenamientoResult = null; 
+		User usuarioResult = null;
+
+		try {
+			tx.begin();
+						
+			Query<?> query1 = pm.newQuery("SELECT FROM " + User.class.getName() + " WHERE nombre == '" + user + "'");
+			
+			query1.setUnique(true);
+			usuarioResult = (User) query1.execute();
+			
+			sesionEntrenamientoResult = SesionEntrenamientoDAO.getInstance().find(sesion);
+			System.out.println("findFromUser Retos: " + usuarioResult.getRetos());
+			
+			for (SesionEntrenamiento sesionEntrenamientoKeys : usuarioResult.getSesiones()) {
+				if (sesionEntrenamientoKeys.getTitulo() == sesion) {
+					break;
+				}
+				sesionEntrenamientoResult = null;
+			}
+			
+			System.out.println("findFromUser Retos 2: " + usuarioResult.getRetos());
+			
+			tx.commit();
+		} catch (Exception ex) {
+			System.out.println("  $ Error querying a Category: " + ex.getMessage());
+		} finally {
+			if (tx != null && tx.isActive()) {
+				tx.rollback();
+			}
+
+			pm.close();
+		}
+
+		return sesionEntrenamientoResult;
 	}
 
 	public static SesionEntrenamientoDAO getInstance() {

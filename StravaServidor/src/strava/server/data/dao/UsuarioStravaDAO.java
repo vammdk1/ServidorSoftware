@@ -8,40 +8,39 @@ import javax.jdo.PersistenceManager;
 import javax.jdo.Query;
 import javax.jdo.Transaction;
 
-import strava.server.data.domain.Reto;
-import strava.server.data.domain.SesionEntrenamiento;
 import strava.server.data.domain.User;
+import strava.server.data.domain.UsuarioStrava;
 
-public class UserDAO extends DataAccessObjectBase implements IDataAccessObject<User> {
+public class UsuarioStravaDAO extends DataAccessObjectBase implements IDataAccessObject<UsuarioStrava>{
+
+	private static UsuarioStravaDAO instance;
 	
-	private static UserDAO instance;
-	
-	private UserDAO() {}
+	private UsuarioStravaDAO() {}
 
 	@Override
-	public void save(User object) {
+	public void save(UsuarioStrava object) {
 		super.saveObject(object);
 	}
 
 	@Override
-	public void delete(User object) {
+	public void delete(UsuarioStrava object) {
 		super.deleteObject(object);
 	}
 
 	@Override
-	public List<User> getAll() {
+	public List<UsuarioStrava> getAll() {
 		PersistenceManager pm = pmf.getPersistenceManager();
 		pm.setDetachAllOnCommit(true);
 		Transaction tx = pm.currentTransaction();
 
-		List<User> users = new ArrayList<>();
+		List<UsuarioStrava> users = new ArrayList<>();
 		
 		try {
 			tx.begin();
 			
-			Extent<User> extent = pm.getExtent(User.class, true);
+			Extent<UsuarioStrava> extent = pm.getExtent(UsuarioStrava.class, true);
 
-			for (User user : extent) {
+			for (UsuarioStrava user : extent) {
 				users.add(user);
 			}
 
@@ -60,19 +59,19 @@ public class UserDAO extends DataAccessObjectBase implements IDataAccessObject<U
 	}
 
 	@Override
-	public User find(String param) {
+	public UsuarioStrava find(String param) {
 		PersistenceManager pm = pmf.getPersistenceManager();
 		pm.setDetachAllOnCommit(true);
 		Transaction tx = pm.currentTransaction();
 		
-		User result = null; 
+		UsuarioStrava result = null; 
 
 		try {
 			tx.begin();
 						
 			Query<?> query = pm.newQuery("SELECT FROM " + User.class.getName() + " WHERE nombre == '" + param + "'");
 			query.setUnique(true);
-			result = (User) query.execute();
+			result = (UsuarioStrava) query.execute();
 			
 			tx.commit();
 		} catch (Exception ex) {
@@ -88,11 +87,12 @@ public class UserDAO extends DataAccessObjectBase implements IDataAccessObject<U
 		return result;
 	}
 
-	public static UserDAO getInstance() {
+	public static UsuarioStravaDAO getInstance() {
 		if (instance == null) {
-			instance = new UserDAO();
+			instance = new UsuarioStravaDAO();
 		}
 		
 		return instance;
 	}
+
 }

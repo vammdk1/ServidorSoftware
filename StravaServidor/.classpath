@@ -13,7 +13,6 @@
 	<classpathentry exported="true" kind="lib" path="lib/commons-codec-1.15.jar"/>
 	<classpathentry kind="lib" path="lib/GoogleLogin.jar"/>
 	<classpathentry kind="lib" path="lib/FacebookLogin.jar"/>
-	<classpathentry kind="lib" path="lib/org.datanucleus.ide.eclipse_5.0.0.jar"/>
 	<classpathentry kind="lib" path="lib/datanucleus-api-jdo-6.0.1.jar"/>
 	<classpathentry kind="lib" path="lib/datanucleus-cache-6.0.0-release.jar"/>
 	<classpathentry kind="lib" path="lib/datanucleus-core-6.0.2.jar"/>

@@ -68,7 +68,7 @@ public class RetoDAO extends DataAccessObjectBase implements IDataAccessObject<R
 		try {
 			tx.begin();
 						
-			Query<?> query = pm.newQuery("SELECT R.* FROM USER_RETOS UR, RETO R, USER U " + " WHERE R.NOMBRE == '" + param + "' AND R.RETO_ID == UR.RETO_ID_KID AND UR.USER_ID_OID == U.USER_ID");
+			Query<?> query = pm.newQuery("SELECT FROM " + Reto.class.getName() + " WHERE nombre == '" + param + "'");
 			query.setUnique(true);
 			result = (Reto) query.execute();
 			
@@ -84,6 +84,48 @@ public class RetoDAO extends DataAccessObjectBase implements IDataAccessObject<R
 		}
 
 		return result;
+	}
+	
+	public Reto findFromUser(String user, String reto) {
+		PersistenceManager pm = pmf.getPersistenceManager();
+		pm.setDetachAllOnCommit(true);
+		Transaction tx = pm.currentTransaction();
+		
+		Reto retoResult = null; 
+		User usuarioResult = null;
+
+		try {
+			tx.begin();
+						
+			Query<?> query1 = pm.newQuery("SELECT FROM " + User.class.getName() + " WHERE nombre == '" + user + "'");
+			
+			query1.setUnique(true);
+			usuarioResult = (User) query1.execute();
+			
+			retoResult = RetoDAO.getInstance().find(reto);
+			System.out.println("findFromUser Retos: " + usuarioResult.getRetos());
+			
+			for (Reto retoKeys : usuarioResult.getRetos().keySet()) {
+				if (retoKeys.getNombre() == reto) {
+					break;
+				}
+				retoResult = null;
+			}
+			
+			System.out.println("findFromUser Retos 2: " + usuarioResult.getRetos());
+			
+			tx.commit();
+		} catch (Exception ex) {
+			System.out.println("  $ Error querying a Category: " + ex.getMessage());
+		} finally {
+			if (tx != null && tx.isActive()) {
+				tx.rollback();
+			}
+
+			pm.close();
+		}
+
+		return retoResult;
 	}
 
 	public static RetoDAO getInstance() {

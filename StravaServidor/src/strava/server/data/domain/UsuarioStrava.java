@@ -3,9 +3,12 @@ package strava.server.data.domain;
 import java.io.Serializable;
 import java.util.Date;
 
+import javax.jdo.annotations.Inheritance;
+import javax.jdo.annotations.InheritanceStrategy;
 import javax.jdo.annotations.PersistenceCapable;
 
 @PersistenceCapable(detachable="true")
+@Inheritance(strategy = InheritanceStrategy.NEW_TABLE)
 public class UsuarioStrava extends User {
 	/**
 	 * 
