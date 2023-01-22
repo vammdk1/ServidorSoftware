@@ -58,10 +58,10 @@
                   name="proveedor"
                   persistence-modifier="persistent"/>
             <field
-                  name="retos"
+                  name="sesiones"
                   persistence-modifier="persistent"/>
             <field
-                  name="sesiones"
+                  name="retos"
                   persistence-modifier="persistent"/>
         </class>
         <class

@@ -9,6 +9,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
+import strava.server.data.dao.RetoDAO;
 import strava.server.data.dao.UserDAO;
 import strava.server.data.domain.Proveedor;
 import strava.server.data.domain.Reto;
@@ -20,8 +21,7 @@ import strava.server.gateway.GoogleServiceGateway;
 
 public class BaseDatos {
 	
-	private static Map<String, User> UsuariosRegistrados = new HashMap<>();
-	private static ArrayList<Reto> RetosActivos = new ArrayList<>();
+	//private static ArrayList<Reto> RetosActivos = new ArrayList<>();
 	private static ArrayList<SesionEntrenamiento> SesionesEntrenamiento = new ArrayList<>();
 
 	/**
@@ -30,17 +30,18 @@ public class BaseDatos {
 	 * @return devuelve un usuario o un null que bloquea el inicio de sesion
 	 */
 	public static User comprobarCuenta(User usuario) {
-		if(UsuariosRegistrados.containsKey(usuario.getEmail())) {
-			if(!UsuariosRegistrados.get(usuario.getEmail()).getProveedor().equals("LOCAL")) {
+		User user = UserDAO.getInstance().find(usuario.getEmail());
+			if (user != null) {
+				if(!user.getProveedor().equals("LOCAL")) {
 					System.out.println("Es un usuario NoStrava:"+ usuario.getEmail()+ "||" + usuario.getProveedor());
-					return UsuariosRegistrados.get(usuario.getEmail());
-			}else {
-					String sha1 = org.apache.commons.codec.digest.DigestUtils.sha1Hex(((UsuarioStrava) UsuariosRegistrados.get(usuario.getEmail())).getContrasenna());
+					return user;
+				} else {
+					String sha1 = org.apache.commons.codec.digest.DigestUtils.sha1Hex((((UsuarioStrava) user).getContrasenna()));
 					System.out.println("Es un usuario Strava:"+((UsuarioStrava) usuario).getContrasenna()+"||"+sha1);
 					
 					if(sha1.equals(((UsuarioStrava) usuario).getContrasenna())) {
 						System.out.println("* RemoteFacade Login(): correcto");
-						return UsuariosRegistrados.get(usuario.getEmail());
+						return user;
 					}else {
 						return null;
 					}
@@ -56,13 +57,16 @@ public class BaseDatos {
 	 * @throws RemoteException 
 	 */
 	public static boolean RegistrarUsuario(User NuevoUsuario, String password) throws RemoteException {
-		if(!UsuariosRegistrados.containsKey(NuevoUsuario.getEmail())) {
+		User user = UserDAO.getInstance().find(NuevoUsuario.getEmail()); 
+		if (user == null) {
 			if (NuevoUsuario.getProveedor()==Proveedor.LOCAL) {
-				UsuariosRegistrados.put(NuevoUsuario.getEmail(), NuevoUsuario);
-			}else if (NuevoUsuario.getProveedor() == Proveedor.FACEBOOK){
+				UserDAO.getInstance().save(NuevoUsuario);
+				}
+			else if (NuevoUsuario.getProveedor() == Proveedor.FACEBOOK){
 				if (FacebookServiceGateway.getInstance().iniciarSesion(NuevoUsuario.getEmail(), password)) {
 				//se conecta con facebook
-					UsuariosRegistrados.put(NuevoUsuario.getEmail(), NuevoUsuario);
+					//UsuariosRegistrados.put(NuevoUsuario.getEmail(), NuevoUsuario);
+					UserDAO.getInstance().save(NuevoUsuario);
 				}
 				else {
 					//TODO registrar usuaios de google
@@ -71,7 +75,8 @@ public class BaseDatos {
 				}
 			}else if(NuevoUsuario.getProveedor()==Proveedor.GOOGLE) {
 				if(GoogleServiceGateway.getInstance().GoogleLogin(NuevoUsuario.getEmail(), password)) {
-					UsuariosRegistrados.put(NuevoUsuario.getEmail(), NuevoUsuario);
+					//UsuariosRegistrados.put(NuevoUsuario.getEmail(), NuevoUsuario);
+					UserDAO.getInstance().save(NuevoUsuario);
 				}
 				else {
 					//TODO registrar usuaios de google
@@ -90,9 +95,12 @@ public class BaseDatos {
 	public static boolean RegistrarReto(User usuario,Reto reto) {
 		java.util.Date out = new java.util.Date();
 		if(reto.getFechaFin().compareTo(out)>0) {
-			if(UsuariosRegistrados.get(usuario.getEmail())!=null) {
-				UsuariosRegistrados.get(usuario.getEmail()).anadirReto(reto);
-				RetosActivos.add(reto);
+			User user = UserDAO.getInstance().find(usuario.getEmail());
+			if (user != null) {
+				RetoDAO.getInstance().save(reto);
+				user.anadirReto(reto);
+				UserDAO.getInstance().save(user);
+				//RetosActivos.add(reto);
 				//System.out.println(RetosActivos);
 				return true;
 			}else {
@@ -107,6 +115,7 @@ public class BaseDatos {
 	
 	public static ArrayList<Reto> getRetosActivos(){
 		ArrayList<Reto> listaCompleta = new ArrayList<>();
+		ArrayList<Reto> RetosActivos = (ArrayList<Reto>) RetoDAO.getInstance().getAll();
 		java.util.Date out = new java.util.Date();
 		if(RetosActivos.size()>=0) {
 			for (int i = 0; i <= RetosActivos.size()-1; i++) {
@@ -124,13 +133,17 @@ public class BaseDatos {
 	}
 
 	public static boolean agregarEntrenamiento(User usuario, SesionEntrenamiento sesion) {
-		UsuariosRegistrados.get(usuario.getEmail()).anadirSesion(sesion);
+		User user = UserDAO.getInstance().find(usuario.getEmail());
+		user.anadirSesion(sesion);
+		UserDAO.getInstance().save(user);
+		//UsuariosRegistrados.get(usuario.getEmail()).anadirSesion(sesion);
 		return true;
 	}
 
 	public static Map<Reto, Float> getRetosAceptados(User usuario) {
 		Map<Reto, Float> listaCompleta = new HashMap<>();
-		listaCompleta=UsuariosRegistrados.get(usuario.getEmail()).getRetos();
+		User user = UserDAO.getInstance().find(usuario.getEmail());
+		listaCompleta = user.getRetos();
 		if(listaCompleta.size()>0) {
 			return listaCompleta;
 		}else {
@@ -138,15 +151,17 @@ public class BaseDatos {
 		}
 	}
 	
+	/*
 	public static void getDatos() {
 		for (var entry : UsuariosRegistrados.entrySet()) {
 		    System.out.println(entry.getKey() + "/" + entry.getValue());
 		}
-	}
+	}*/
 
 	public static List<SesionEntrenamiento> getSesionesEntrenamiento(User user) {
 		List<SesionEntrenamiento> listaCompleta = new ArrayList<>();
-		listaCompleta = UsuariosRegistrados.get(user.getEmail()).getSesiones();
+		User usuario = UserDAO.getInstance().find(user.getEmail());
+		listaCompleta = usuario.getSesiones();
 		if(listaCompleta.size()>0) {
 			return listaCompleta;
 		}else {
