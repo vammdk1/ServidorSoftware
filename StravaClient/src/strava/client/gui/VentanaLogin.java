@@ -107,6 +107,7 @@ public class VentanaLogin {
 						VentanaUsuario.setToken(controller.getToken());
 						VPrincipal.setVisible(false);
 						VentanaUsuario.actualizaSesiones();
+						VentanaUsuario.actualizaRetos();
 					} else {
 						JOptionPane.showMessageDialog(null, "Correo o contrase�a erroneos", "Inicio de sesion - Error", JOptionPane.INFORMATION_MESSAGE);	
 					}
@@ -131,6 +132,7 @@ public class VentanaLogin {
 						VentanaUsuario.setToken(controller.getToken());
 						VPrincipal.setVisible(false);
 						VentanaUsuario.actualizaSesiones();
+						VentanaUsuario.actualizaRetos();
 					} else {
 						JOptionPane.showMessageDialog(null, "Correo o contrase�a erroneos", "Inicio de sesion - Error", JOptionPane.INFORMATION_MESSAGE);	
 					}
@@ -155,6 +157,7 @@ public class VentanaLogin {
 						VentanaUsuario.setToken(controller.getToken());
 						VPrincipal.setVisible(false);
 						VentanaUsuario.actualizaSesiones();
+						VentanaUsuario.actualizaRetos();
 					} else {
 						JOptionPane.showMessageDialog(null, "Correo o contrase�a erroneos", "Inicio de sesion - Error", JOptionPane.INFORMATION_MESSAGE);	
 					}

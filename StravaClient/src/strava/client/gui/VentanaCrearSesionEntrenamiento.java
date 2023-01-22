@@ -170,6 +170,7 @@ public class VentanaCrearSesionEntrenamiento {
 				VPrincipal.setVisible(false);
 				VentanaUsuario.VPrincipal.setVisible(true);
 				VentanaUsuario.actualizaSesiones();
+				VentanaUsuario.actualizaRetos();
 			}
 		});
 		
@@ -188,6 +189,7 @@ public class VentanaCrearSesionEntrenamiento {
 					VPrincipal.setVisible(false);
 					VentanaUsuario.VPrincipal.setVisible(true);
 					VentanaUsuario.actualizaSesiones();
+					VentanaUsuario.actualizaRetos();
 				} catch (ParseException e1) {
 					JOptionPane.showMessageDialog(null, "Hay un dato incorrecto o incompleto", "Crear sesion de entrenamiento - Error", JOptionPane.INFORMATION_MESSAGE);	
 					System.out.println("Formato de fecha y hora erróneos. Utilice el formato 'DD/MM/YYYY HH:MM'");

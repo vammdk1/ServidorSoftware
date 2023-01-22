@@ -174,6 +174,7 @@ public class VentanaCrearReto {
 				VPrincipal.setVisible(false);
 				VentanaUsuario.VPrincipal.setVisible(true);
 				VentanaUsuario.actualizaSesiones();
+				VentanaUsuario.actualizaRetos();
 			}
 		});
 		

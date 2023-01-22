@@ -36,7 +36,7 @@ public class MainProgram {
 		VentanaRegistro ventanaRegistro = new VentanaRegistro(RegisterController.getInstance());
 		VentanaRegistro2 ventanaRegistro2 = new VentanaRegistro2(RegisterController.getInstance());
 		
-		VentanaUsuario ventanaUsuario = new VentanaUsuario(LoginController.getInstance(), SesionEntrenamientoController.getInstance());
+		VentanaUsuario ventanaUsuario = new VentanaUsuario(LoginController.getInstance(), SesionEntrenamientoController.getInstance(), RetosAceptadosController.getInstance());
 		
 		RegisterController.getInstance().register("prueba", "prueba@gmail.com", "01-01-0001", 0, 0, 0, 0, "prueba", ProveedorDTO.LOCAL);
 		

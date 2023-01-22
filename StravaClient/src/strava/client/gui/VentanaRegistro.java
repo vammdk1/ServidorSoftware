@@ -126,9 +126,9 @@ public class VentanaRegistro {
 					System.out.println("boton registro pulsado");
 					UserDTO usuario = new UserDTO();
 					//nombre.getText(), correo.getText(), fecha.getText(), 0f, 0, 0, 0, p.LOCAL
-					usuario.setNombre(fecha.getText());
+					usuario.setNombre(nombre.getText());
 					usuario.setEmail(correo.getText());
-					usuario.setFechancto(nombre.getText());
+					usuario.setFechancto(fecha.getText());
 					usuario.setProveedor(p);
 					System.out.println("creando usuario: " + usuario);
 					VentanaRegistro2.setUsuario(usuario);

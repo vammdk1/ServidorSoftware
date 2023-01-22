@@ -151,6 +151,7 @@ public class VentanaRetosActivos {
 				VPrincipal.setVisible(false);
 				VentanaUsuario.VPrincipal.setVisible(true);
 				VentanaUsuario.actualizaSesiones();
+				VentanaUsuario.actualizaRetos();
 			}
 		});
 		

@@ -17,9 +17,9 @@ public class RetosAceptadosController {
 		this.serviceLocator = ServiceLocator.getInstance();
 	}
 	
-	public Map<RetoDTO, Float> getRetos() {
+	public Map<RetoDTO, Float> getRetos(long token) {
 		try {
-			return this.serviceLocator.getService().verRetosAceptados(VentanaUsuario.getToken());
+			return this.serviceLocator.getService().verRetosAceptados(token);
 		} catch (RemoteException e) {
 			System.out.println("Error obteniendo retos");
 			return null;

@@ -145,7 +145,7 @@ public class VentanaRetosAceptados {
 				VentanaUsuario.VPrincipal.setVisible(true);
 			}
 		});
-		
+		/*
 		SelectorDeRetos.addActionListener(new ActionListener() {
 			
 			@Override
@@ -166,7 +166,7 @@ public class VentanaRetosAceptados {
 				TiObj.setText(ret.getTiempoObjetivo()+"");
 				Deporte.setText(ret.getDeporte().toString());
 				Porcentaje.setText(todosRetos.get(ret)*100+"");
-				/*
+				++++++++++++++++
 				int i = SelectorDeRetos.getSelectedIndex();
 				Map<RetoDTO,Float> todosRetos = controller.getRetos();
 				List<RetoDTO> retos = (List<RetoDTO>) todosRetos.keySet();
@@ -177,13 +177,15 @@ public class VentanaRetosAceptados {
 				TiObj.setText(retos.get(i).getTiempoObjetivo()+"");
 				Deporte.setText(retos.get(i).getDeporte().toString());
 				Porcentaje.setText(todosRetos.get(retos.get(i))+"");
-				*/
+				++++++++++++++++++++
 			}
 		});
+		*/
 	}
 	
 	
 	public static void ActualizaReto() {
+		/*
 		try {
 			System.out.println("Obteniendo retos . . .");
 			Map<RetoDTO, Float> retos = controller.getRetos();
@@ -203,6 +205,6 @@ public class VentanaRetosAceptados {
 		} catch (Exception e) {
 			System.out.println("Error actualizando");
 		}
-		
+		*/
 	}
 }

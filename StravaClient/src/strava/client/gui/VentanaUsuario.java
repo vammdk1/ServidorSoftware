@@ -11,6 +11,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.text.SimpleDateFormat;
 import java.util.List;
+import java.util.Map;
 
 import javax.swing.BorderFactory;
 import javax.swing.JButton;
@@ -24,8 +25,10 @@ import javax.swing.SwingConstants;
 
 import strava.client.controller.LoginController;
 import strava.client.controller.RetoController;
+import strava.client.controller.RetosAceptadosController;
 import strava.client.controller.SesionEntrenamientoController;
 import strava.client.remote.ServiceLocator;
+import strava.server.data.dto.RetoDTO;
 import strava.server.data.dto.SesionEntrenamientoDTO;
 
 import java.awt.GridLayout;
@@ -42,17 +45,21 @@ public class VentanaUsuario {
 	
 	private LoginController controller;
 	private static SesionEntrenamientoController sController;
+	private static RetosAceptadosController rAController;
 	private JTable table;
 	private static JTable tabla;
 	
 	private static long token;
 	
 	private static DefaultTableModel model;
+	private static DefaultTableModel model1;
+	private JTable table_1;
 	
-	public VentanaUsuario(LoginController login, SesionEntrenamientoController ses)
+	public VentanaUsuario(LoginController login, SesionEntrenamientoController ses, RetosAceptadosController ret)
 	{
 		this.controller = login;
 		this.sController = ses;
+		this.rAController = ret;
 		
 		VPrincipal.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		VPrincipal.setSize(new Dimension(750, 500));
@@ -85,8 +92,9 @@ public class VentanaUsuario {
 		VPrincipal.getContentPane().add(CerrarSesion);
 		
 		JPanel panel = new JPanel();
-		panel.setBounds(0, 131, 385, 330);
+		panel.setBounds(0, 131, 385, 319);
 		VPrincipal.getContentPane().add(panel);
+		panel.setLayout(new FlowLayout(FlowLayout.CENTER, 5, 5));
 		
 		//Area de entrenamientos
 		table = new JTable();
@@ -100,11 +108,24 @@ public class VentanaUsuario {
 		));
 		panel.add(table);
 		
+		table_1 = new JTable();
+		table_1.setModel(new DefaultTableModel(
+			new Object[][] {
+				{"Nombre", "Fecha", "Objetivo", "Deporte", "Porcentaje"},
+			},
+			new String[] {
+				"Nombre", "Fecha", "Objetivo", "Deporte", "Porcentaje"
+			}
+		));
+		panel.add(table_1);
+		/*
 		JButton MisRetos = new JButton("MisRetos");
 		MisRetos.setFont(new Font("Tahoma", Font.PLAIN, 18));
 		MisRetos.setBounds(473, 345, 178, 51);
 		VPrincipal.getContentPane().add(MisRetos);
+		*/
 		model = (DefaultTableModel) table.getModel();
+		model1 = (DefaultTableModel) table_1.getModel();
 		VPrincipal.setVisible(false);
 	
 		CrearSesionEntrenamiento.addActionListener(new ActionListener() {
@@ -185,6 +206,17 @@ public class VentanaUsuario {
 			SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
 			//No funciona bien el día
 			model.addRow(new String[]{sesion.getTitulo(), sesion.getDeporte()+"", sesion.getDistancia()+"", sesion.getDuracion()+"", sdf.format(sesion.getFechaHoraInicio())});
-			}
 		}
+	}
+	public static void actualizaRetos() {
+		Map<RetoDTO, Float> retos = rAController.getRetos(token);
+		model1.setNumRows(1);
+		for(RetoDTO reto : retos.keySet()) 
+		{
+			//"nombre", "fecha", "objetivo", "deporte", "duracion"
+			SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+			model1.addRow(new String[] {reto.getNombre(),sdf.format(reto.getFechaIni()),reto.getDistanciaObjetivo()+"",reto.getDeporte()+"",retos.get(reto)+""});
+			
+		}
+	}
 }
