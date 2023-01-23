@@ -37,6 +37,7 @@ import javax.swing.JLabel;
 import java.awt.FlowLayout;
 import javax.swing.JTable;
 import javax.swing.table.DefaultTableModel;
+import javax.swing.JSeparator;
 
 public class VentanaUsuario {
 	static JFrame VPrincipal = new JFrame("STRAVA");
@@ -62,39 +63,42 @@ public class VentanaUsuario {
 		this.rAController = ret;
 		
 		VPrincipal.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		VPrincipal.setSize(new Dimension(750, 500));
+		VPrincipal.setSize(new Dimension(840, 500));
 		VPrincipal.getContentPane().setLayout(null);
 		
 		JLabel lblPanelDeUsuario = new JLabel("Panel de usuario");
 		lblPanelDeUsuario.setHorizontalAlignment(SwingConstants.CENTER);
 		lblPanelDeUsuario.setFont(new Font("Tahoma", Font.PLAIN, 42));
-		lblPanelDeUsuario.setBounds(175, 10, 397, 51);
+		lblPanelDeUsuario.setBounds(240, 11, 400, 51);
 		VPrincipal.getContentPane().add(lblPanelDeUsuario);
 		
 		JButton CrearSesionEntrenamiento = new JButton("Crear sesion de entrenamiento");
 		CrearSesionEntrenamiento.setFont(new Font("Tahoma", Font.PLAIN, 18));
-		CrearSesionEntrenamiento.setBounds(416, 119, 295, 51);
+		CrearSesionEntrenamiento.setBounds(519, 129, 295, 51);
 		VPrincipal.getContentPane().add(CrearSesionEntrenamiento);
 		
 		JButton CrearReto = new JButton("Crear un reto");
 		CrearReto.setFont(new Font("Tahoma", Font.PLAIN, 18));
-		CrearReto.setBounds(473, 191, 178, 51);
+		CrearReto.setBounds(575, 191, 178, 51);
 		VPrincipal.getContentPane().add(CrearReto);
 		
 		JButton ConsultarReto = new JButton("Todos los retos");
 		ConsultarReto.setFont(new Font("Tahoma", Font.PLAIN, 18));	
-		ConsultarReto.setBounds(473, 268, 178, 51);
+		ConsultarReto.setBounds(575, 253, 178, 51);
 		VPrincipal.getContentPane().add(ConsultarReto);
 		
 		JButton CerrarSesion = new JButton("Cerrar sesion");
 		CerrarSesion.setFont(new Font("Tahoma", Font.PLAIN, 16));
-		CerrarSesion.setBounds(589, 407, 135, 43);
+		CerrarSesion.setBounds(666, 406, 135, 43);
 		VPrincipal.getContentPane().add(CerrarSesion);
 		
 		JPanel panel = new JPanel();
-		panel.setBounds(0, 131, 385, 319);
+		panel.setBounds(0, 130, 496, 319);
 		VPrincipal.getContentPane().add(panel);
 		panel.setLayout(new FlowLayout(FlowLayout.CENTER, 5, 5));
+		
+		JLabel lblNewLabel = new JLabel("Sesiones de entrenamiento:");
+		panel.add(lblNewLabel);
 		
 		//Area de entrenamientos
 		table = new JTable();
@@ -107,8 +111,18 @@ public class VentanaUsuario {
 			}
 		));
 		panel.add(table);
+		//VPrincipal.getContentPane().add(MisRetos);
+		
+		model = (DefaultTableModel) table.getModel();
+		
+		JLabel lblNewLabel_2 = new JLabel("                    ");
+		panel.add(lblNewLabel_2);
+		
+		JLabel lblNewLabel_1 = new JLabel("Retos aceptados:");
+		panel.add(lblNewLabel_1);
 		
 		table_1 = new JTable();
+		panel.add(table_1);
 		table_1.setModel(new DefaultTableModel(
 			new Object[][] {
 				{"Nombre", "Fecha Inicio", "Fecha Fin", "Objetivo", "Deporte", "Porcentaje"},
@@ -117,15 +131,11 @@ public class VentanaUsuario {
 				"Nombre", "Fecha Inicio", "Fecha Fin", "Objetivo", "Deporte", "Porcentaje"
 			}
 		));
-		panel.add(table_1);
+		model1 = (DefaultTableModel) table_1.getModel();
 		
 		JButton MisRetos = new JButton("MisRetos");
 		MisRetos.setFont(new Font("Tahoma", Font.PLAIN, 18));
 		MisRetos.setBounds(473, 345, 178, 51);
-		//VPrincipal.getContentPane().add(MisRetos);
-		
-		model = (DefaultTableModel) table.getModel();
-		model1 = (DefaultTableModel) table_1.getModel();
 		VPrincipal.setVisible(false);
 	
 		CrearSesionEntrenamiento.addActionListener(new ActionListener() {
