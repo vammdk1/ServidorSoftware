@@ -30,7 +30,7 @@ public class RetoController {
 		try {
 			return this.serviceLocator.getService().crearReto(token,reto);
 		} catch (RemoteException e) {
-			System.out.println("# Error creando una sesión de entrenamiento: " + e);
+			System.out.println("# Error creando un reto: " + e);
 			return false;
 		}
 	}

@@ -3,17 +3,24 @@ package strava.server.data.domain;
 import java.util.Date;
 
 import javax.jdo.annotations.PersistenceCapable;
+import javax.jdo.annotations.Persistent;
 
 @PersistenceCapable(detachable="true")
 public class Reto {
 	/**
 	 * 
 	 */
+	@Persistent
 	private String nombre = null;
+	@Persistent
 	private Date fechaIni = null;
+	@Persistent
 	private Date fechaFin = null;
+	@Persistent
 	private float distanciaObj = 0;
+	@Persistent
 	private float tiempoObj = 0;
+	@Persistent
 	private Deportes deporte = null;
 	/**
 	 * 

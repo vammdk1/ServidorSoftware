@@ -20,23 +20,31 @@ public class User  {
 	//fecha nac, peso ,altura, frec car 1 , frec car 2,token token
 	
 
+	@Persistent
 	private String nombre;
+	@Persistent
 	private String email;
+	@Persistent
 	private String fechaNac;
+	@Persistent
 	private float peso;
+	@Persistent
 	private int altura;
+	@Persistent
 	private int pulsoxMinuto;
+	@Persistent
 	private int pulsoReposo;
+	@Persistent
 	private Proveedor proveedor;
 	//private "nose" token;
 	
 	
 	@Join
-	@Persistent(mappedBy="titulo", dependentElement="true", defaultFetchGroup="true")
+	@Persistent(dependentElement="true", mappedBy="titulo", defaultFetchGroup="true")
 	private List<SesionEntrenamiento> sesiones = new ArrayList<>();
 	//private transient ArrayList<Reto> retos = new ArrayList<>();
 	@Join
-	@Persistent(mappedBy="nombre", dependentElement="true", defaultFetchGroup="true")
+	@Persistent(dependentElement="true", mappedBy="nombre", defaultFetchGroup="true")
 	private Map<Reto, Float> retos = new HashMap<>();
 
 	

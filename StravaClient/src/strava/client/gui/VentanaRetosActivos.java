@@ -191,23 +191,11 @@ public class VentanaRetosActivos {
 	
 	
 	public static void ActualizaReto() {
-		System.out.println("Obteniendo retos . . .");
-		List<RetoDTO> retos = controller.getRetos();
-		SelectorDeRetos.removeAllItems();
-		for (RetoDTO reto : retos) {
-			System.out.println("prueba . . .");
-			
-			System.out.println(reto.getNombre() + " " +
-					reto.getDeporte() + " " +
-					reto.getDistanciaObjetivo() + " " +
-					reto.getTiempoObjetivo() + " " +
-					reto.getFechaIni() + " " +
-					reto.getFechaFin());
-			SelectorDeRetos.addItem(reto);
-		}
+        System.out.println("Obteniendo retos . . .");
+        List<RetoDTO> retos = controller.getRetos();
+        SelectorDeRetos.setModel(new DefaultComboBoxModel(retos.toArray()));
 
-		
-	}
+    }
 	
 
 }

@@ -108,6 +108,7 @@ public class BaseDatos {
 			User user = UserDAO.getInstance().find(usuario.getEmail());
 			if (user != null) {
 				
+				/*
 				pm = pmf.getPersistenceManager();
 				tx = pm.currentTransaction();
 
@@ -142,11 +143,11 @@ public class BaseDatos {
 					}
 
 					pm.close();
-				}
+				}*/
 				
-				//RetoDAO.getInstance().save(reto);
-				//user.anadirReto(reto);
-				//UserDAO.getInstance().save(user);
+				RetoDAO.getInstance().save(reto);
+				user.anadirReto(reto);
+				UserDAO.getInstance().save(user);
 				//RetosActivos.add(reto);
 				//System.out.println(RetosActivos);
 				return true;
@@ -169,10 +170,11 @@ public class BaseDatos {
 			for (int i = 0; i < RetosActivos.size(); i++) {
 				System.out.println("Reto: " + RetosActivos.get(i) + " " + (RetosActivos.get(i).getFechaFin().compareTo(out)<0));
 				if(RetosActivos.get(i).getFechaFin().compareTo(out)<0) {
-					RetoDAO.getInstance().delete(RetoDAO.getInstance().find(RetosActivos.get(i).getNombre()));
+					//RetoDAO.getInstance().delete(RetoDAO.getInstance().find(RetosActivos.get(i).getNombre()));
+					RetosActivos.remove(i);
 				}	
 			}
-			RetosActivos = (ArrayList<Reto>) RetoDAO.getInstance().getAll();
+			//RetosActivos = (ArrayList<Reto>) RetoDAO.getInstance().getAll();
 			//RetosActivos=listaCompleta;
 			System.out.println("Retos: " + RetosActivos);
 			return RetosActivos; 

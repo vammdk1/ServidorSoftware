@@ -193,6 +193,7 @@ public class VentanaCrearReto {
 					//controller.crearReto(VentanaUsuario.getToken(), titulo.getText(), tfDeporte.getText(), fechaInicio, fechaFin, y, x);
 					VPrincipal.setVisible(false);
 					VentanaUsuario.VPrincipal.setVisible(true);
+					VentanaUsuario.actualizaRetos();
 				} catch (ParseException e1) {
 					JOptionPane.showMessageDialog(null, "Hay un dato incorrecto o incompleto", "Crear un reto - Error", JOptionPane.INFORMATION_MESSAGE);	
 				}

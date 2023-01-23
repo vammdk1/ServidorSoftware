@@ -111,10 +111,10 @@ public class VentanaUsuario {
 		table_1 = new JTable();
 		table_1.setModel(new DefaultTableModel(
 			new Object[][] {
-				{"Nombre", "Fecha", "Objetivo", "Deporte", "Porcentaje"},
+				{"Nombre", "Fecha Inicio", "Fecha Fin", "Objetivo", "Deporte", "Porcentaje"},
 			},
 			new String[] {
-				"Nombre", "Fecha", "Objetivo", "Deporte", "Porcentaje"
+				"Nombre", "Fecha Inicio", "Fecha Fin", "Objetivo", "Deporte", "Porcentaje"
 			}
 		));
 		panel.add(table_1);
@@ -122,7 +122,7 @@ public class VentanaUsuario {
 		JButton MisRetos = new JButton("MisRetos");
 		MisRetos.setFont(new Font("Tahoma", Font.PLAIN, 18));
 		MisRetos.setBounds(473, 345, 178, 51);
-		VPrincipal.getContentPane().add(MisRetos);
+		//VPrincipal.getContentPane().add(MisRetos);
 		
 		model = (DefaultTableModel) table.getModel();
 		model1 = (DefaultTableModel) table_1.getModel();
@@ -199,25 +199,38 @@ public class VentanaUsuario {
 	}
 	
 	public static void actualizaSesiones() {
-		
-		List<SesionEntrenamientoDTO> sesiones = sController.getSesiones(token);
-		model.setNumRows(1);
-		for (SesionEntrenamientoDTO sesion : sesiones) {
-			//"Titulo", "Deporte", "Distancia", "Duracion", "Fecha inicio"
-			SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
-			//No funciona bien el día
-			model.addRow(new String[]{sesion.getTitulo(), sesion.getDeporte()+"", sesion.getDistancia()+"", sesion.getDuracion()+"", sdf.format(sesion.getFechaHoraInicio())});
-		}
-	}
+        List<SesionEntrenamientoDTO> sesiones = sController.getSesiones(token);
+        try {
+            model.setNumRows(1);
+            for (SesionEntrenamientoDTO sesion : sesiones) {
+                //"Titulo", "Deporte", "Distancia", "Duracion", "Fecha inicio"
+                SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+                //No funciona bien el día
+                model.addRow(new String[]{sesion.getTitulo(), sesion.getDeporte()+"", sesion.getDistancia()+"", sesion.getDuracion()+"", sdf.format(sesion.getFechaHoraInicio())});
+            }
+        } catch (Exception e) {
+            // TODO: handle exception
+            System.out.println("no hay sesiones de entrenamiento");
+        }
+
+    }
+	
 	public static void actualizaRetos() {
-		Map<RetoDTO, Float> retos = rAController.getRetos(token);
-		model1.setNumRows(1);
-		for(RetoDTO reto : retos.keySet()) 
-		{
-			//"nombre", "fecha", "objetivo", "deporte", "duracion"
-			SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
-			model1.addRow(new String[] {reto.getNombre(),sdf.format(reto.getFechaIni()),reto.getDistanciaObjetivo()+"",reto.getDeporte()+"",retos.get(reto)+""});
-			
-		}
-	}
+        System.out.println("actualizando Retos");
+        Map<RetoDTO, Float> retos = rAController.getRetos(token);
+        System.out.println("p1");
+        try {
+            model1.setNumRows(1);
+            for(RetoDTO reto : retos.keySet()) 
+            {
+                //"nombre", "fecha", "objetivo", "deporte", "duracion"
+                SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+                model1.addRow(new String[] {reto.getNombre(),sdf.format(reto.getFechaIni()), sdf.format(reto.getFechaFin()), reto.getDistanciaObjetivo()+"",reto.getDeporte()+"",retos.get(reto)+""});
+            }
+        } catch (Exception e) {
+            // TODO: handle exception
+            System.out.println("no hay retos");
+        }
+
+    }
 }

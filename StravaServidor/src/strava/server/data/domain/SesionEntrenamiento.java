@@ -3,16 +3,21 @@ package strava.server.data.domain;
 import java.util.Date;
 
 import javax.jdo.annotations.PersistenceCapable;
+import javax.jdo.annotations.Persistent;
 
 @PersistenceCapable(detachable="true")
 public class SesionEntrenamiento {
 	
+	@Persistent
 	private Deportes deporte = null;
 	
-
+	@Persistent
 	private String titulo = null;
+	@Persistent
 	private float distancia = 0;
+	@Persistent
 	private Date fechaHoraIni = null;
+	@Persistent
 	private float duracion = 0;
 	
 	/**
