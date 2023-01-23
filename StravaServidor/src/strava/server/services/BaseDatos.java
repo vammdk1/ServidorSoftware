@@ -40,11 +40,12 @@ public class BaseDatos {
 	public static User comprobarCuenta(User usuario) {
 		User user = UserDAO.getInstance().find(usuario.getEmail());
 			if (user != null) {
-				if(!user.getProveedor().equals("LOCAL")) {
+				if(!user.getProveedor().equals(Proveedor.LOCAL)) {
 					System.out.println("Es un usuario NoStrava:"+ usuario.getEmail()+ "||" + usuario.getProveedor());
 					return user;
 				} else {
 					String sha1 = org.apache.commons.codec.digest.DigestUtils.sha1Hex((((UsuarioStrava) user).getContrasenna()));
+					System.out.println(((UsuarioStrava) UserDAO.getInstance().find(usuario.getEmail())).getContrasenna());
 					System.out.println("Es un usuario Strava:"+((UsuarioStrava) usuario).getContrasenna()+"||"+sha1);
 					
 					if(sha1.equals(((UsuarioStrava) usuario).getContrasenna())) {
@@ -68,7 +69,8 @@ public class BaseDatos {
 		User user = UserDAO.getInstance().find(NuevoUsuario.getEmail()); 
 		if (user == null) {
 			if (NuevoUsuario.getProveedor()==Proveedor.LOCAL) {
-				UserDAO.getInstance().save(NuevoUsuario);
+				UsuarioStrava usuarioSave = new UsuarioStrava(NuevoUsuario.getNombre(), NuevoUsuario.getEmail(), NuevoUsuario.getFechaNac(), NuevoUsuario.getPeso(), NuevoUsuario.getAltura(), NuevoUsuario.getPulsoxMinuto(), NuevoUsuario.getPulsoReposo(), NuevoUsuario.getProveedor(), password);
+				UserDAO.getInstance().save(usuarioSave);
 				}
 			else if (NuevoUsuario.getProveedor() == Proveedor.FACEBOOK){
 				if (FacebookServiceGateway.getInstance().iniciarSesion(NuevoUsuario.getEmail(), password)) {
