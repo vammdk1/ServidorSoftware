@@ -14,6 +14,7 @@ import strava.server.remote.RemoteFacade;
 
 public class MainProgram {
 
+	@SuppressWarnings("unchecked")
 	public static void main(String[] args) {	
 		//Activate Security Manager. It is needed for RMI.
 		if (System.getSecurityManager() == null) {

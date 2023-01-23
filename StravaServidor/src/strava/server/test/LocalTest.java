@@ -13,7 +13,6 @@ import javax.jdo.Transaction;
 import strava.server.data.dao.RetoDAO;
 import strava.server.data.dao.SesionEntrenamientoDAO;
 import strava.server.data.dao.UserDAO;
-import strava.server.data.dao.UsuarioStravaDAO;
 import strava.server.data.domain.Deportes;
 import strava.server.data.domain.Proveedor;
 import strava.server.data.domain.Reto;
