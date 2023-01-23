@@ -161,18 +161,19 @@ public class BaseDatos {
 	}
 	
 	public static ArrayList<Reto> getRetosActivos(){
-		ArrayList<Reto> listaCompleta = new ArrayList<>();
+		//ArrayList<Reto> listaCompleta = new ArrayList<>();
 		ArrayList<Reto> RetosActivos = (ArrayList<Reto>) RetoDAO.getInstance().getAll();
+		//System.out.println(RetoDAO.getInstance().getAll());
 		java.util.Date out = new java.util.Date();
-		if(RetosActivos.size()>=0) {
-			for (int i = 0; i <= RetosActivos.size()-1; i++) {
+		if(RetosActivos.size()>0) {
+			/*for (int i = 0; i < RetosActivos.size(); i++) {
 				if(RetosActivos.get(i).getFechaFin().compareTo(out)>0) {
 					listaCompleta.add(RetosActivos.get(i));
 				}	
-			}
-			RetosActivos=listaCompleta;
-			System.out.println(listaCompleta);
-			return listaCompleta; 
+			}*/
+			//RetosActivos=listaCompleta;
+			//System.out.println("Retos: " + RetosActivos);
+			return RetosActivos; 
 		}else {
 			return null;
 		}

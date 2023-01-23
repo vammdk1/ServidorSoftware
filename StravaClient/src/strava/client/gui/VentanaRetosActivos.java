@@ -41,7 +41,7 @@ public class VentanaRetosActivos {
 	static int y = 300;
 	
 	private static RetosActivosController controller;
-	private static JComboBox SelectorDeRetos;
+	private static JComboBox<RetoDTO> SelectorDeRetos;
 	
 	public VentanaRetosActivos(RetosActivosController reto)
 	{
@@ -203,7 +203,7 @@ public class VentanaRetosActivos {
 					reto.getTiempoObjetivo() + " " +
 					reto.getFechaIni() + " " +
 					reto.getFechaFin());
-			SelectorDeRetos.addItem(reto.toString());
+			SelectorDeRetos.addItem(reto);
 		}
 
 		
