@@ -1,5 +1,6 @@
 package strava.server.data.domain;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashMap;
@@ -12,7 +13,7 @@ import javax.jdo.annotations.PersistenceCapable;
 import javax.jdo.annotations.Persistent;
 
 @PersistenceCapable(detachable="true")
-public class User  {	
+public class User implements Serializable {	
 	/**
 	 * 
 	 */

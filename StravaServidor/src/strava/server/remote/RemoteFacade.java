@@ -1,5 +1,6 @@
 package strava.server.remote;
 
+import java.io.Serializable;
 import java.rmi.RemoteException; 
 import java.rmi.server.UnicastRemoteObject;
 import java.util.ArrayList;
@@ -21,7 +22,7 @@ import strava.server.services.LoginAppService;
 
 
 
-public class RemoteFacade extends UnicastRemoteObject implements IRemoteFacade {	
+public class RemoteFacade extends UnicastRemoteObject implements IRemoteFacade, Serializable {	
 	private static final long serialVersionUID = 1L;
 
 
@@ -174,16 +175,7 @@ public class RemoteFacade extends UnicastRemoteObject implements IRemoteFacade {
 		throw new RemoteException("No hay retos aceptados");
 	}
 	
-	public synchronized User obtenerUsuario(long token) throws RemoteException {
-		if (this.serverState.containsKey(token)) {
-			return this.serverState.get(token);
-		}
-		else {
-			System.out.println("Error: no existe usuario para ese token");
-			return null;
-		}
-		
-	}
+
 	
 	public void aceptarReto(long token, RetoDTO reto)  throws RemoteException {
 		if(GeneralAppServices.aceptarReto(serverState.get(token),reto)) {
