@@ -21,21 +21,13 @@ public class User implements Serializable {
 	//fecha nac, peso ,altura, frec car 1 , frec car 2,token token
 	
 
-	@Persistent
 	private String nombre;
-	@Persistent
 	private String email;
-	@Persistent
 	private String fechaNac;
-	@Persistent
 	private float peso;
-	@Persistent
 	private int altura;
-	@Persistent
 	private int pulsoxMinuto;
-	@Persistent
 	private int pulsoReposo;
-	@Persistent
 	private Proveedor proveedor;
 	//private "nose" token;
 	

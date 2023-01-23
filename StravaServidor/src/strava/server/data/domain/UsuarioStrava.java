@@ -18,7 +18,6 @@ public class UsuarioStrava extends User {
 	/**
 	 * 
 	 */
-	@Persistent
 	private String contrasenna;
 
 	public UsuarioStrava(String nombre, String email, String fechaNac, float peso, int altura, int pulsoxMinuto,
