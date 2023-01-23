@@ -235,7 +235,7 @@ public class VentanaUsuario {
             {
                 //"nombre", "fecha", "objetivo", "deporte", "duracion"
                 SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
-                model1.addRow(new String[] {reto.getNombre(),sdf.format(reto.getFechaIni()), sdf.format(reto.getFechaFin()), reto.getDistanciaObjetivo()+"",reto.getDeporte()+"",retos.get(reto)+""});
+                model1.addRow(new String[] {reto.getNombre(),sdf.format(reto.getFechaIni()), sdf.format(reto.getFechaFin()), reto.getDistanciaObjetivo()+"",reto.getDeporte()+"",String.format("%.02f",retos.get(reto)*100)+"%"});
             }
         } catch (Exception e) {
             // TODO: handle exception
